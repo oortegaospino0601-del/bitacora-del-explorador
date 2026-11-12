@@ -1,0 +1,35 @@
+{
+  "slug": "leonidas-2026",
+  "title": "Esta semana llueven estrellas: las Leónidas",
+  "palette": "space",
+  "sentences": [
+    {
+      "text": "¿Sabías que esta semana llueven estrellas, y que una vez cayeron más de cien mil en una sola hora?",
+      "scene": {"type": "title", "big": "ESTA\nSEMANA\nLLUEVEN\nESTRELLAS"}
+    },
+    {
+      "text": "Se llaman Leónidas, su pico es entre el 17 y el 18 de noviembre y no necesitas telescopio.",
+      "tts": "Se llaman Leónidas, su pico es entre el diecisiete y el dieciocho de noviembre y no necesitas telescopio.",
+      "scene": {"type": "list", "title": "Las Leónidas", "items": ["Pico: 17 al 18 de noviembre", "La Luna se oculta temprano", "Sin telescopio"]}
+    },
+    {
+      "text": "Son granos de polvo de un cometa que chocan con el aire a unos 71 kilómetros por segundo.",
+      "tts": "Son granos de polvo de un cometa que chocan con el aire a unos setenta y un kilómetros por segundo.",
+      "scene": {"type": "number", "value": 71, "unit": "km/s", "label": "velocidad de los meteoros al chocar con la atmósfera"}
+    },
+    {
+      "text": "Ese cometa se llama Tempel-Tuttle, da una vuelta al Sol cada 33 años y vuelve en 2031.",
+      "tts": "Ese cometa se llama Tempel Tutl, da una vuelta al Sol cada treinta y tres años y vuelve en dos mil treinta y uno.",
+      "scene": {"type": "orbit", "center": "Sol", "bodies": [{"label": "Tierra", "radius": 0.45, "period": 4, "color": "#4aa3ff"}, {"label": "Cometa", "radius": 0.9, "period": 12}]}
+    },
+    {
+      "text": "En 1833 los testigos contaron más de cien mil meteoros por hora. Este año se esperan unos quince, en el mejor de los casos.",
+      "tts": "En mil ochocientos treinta y tres los testigos contaron más de cien mil meteoros por hora. Este año se esperan unos quince, en el mejor de los casos.",
+      "scene": {"type": "bars", "title": "Meteoros por hora", "items": [{"label": "1833 (testigos)", "value": 100000, "display": "+100 000"}, {"label": "2026 (máx. ideal)", "value": 15, "display": "~15"}]}
+    },
+    {
+      "text": "No será una tormenta, pero sí los meteoros más veloces del año. ¿Saldrás a mirar el cielo? Cuéntamelo en los comentarios.",
+      "scene": {"type": "statement", "text": "¿Saldrás a mirar el cielo esta semana?", "highlight": ["cielo"]}
+    }
+  ]
+}
