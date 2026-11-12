@@ -1,0 +1,49 @@
+{
+  "slug": "ejemplo-venus",
+  "title": "En Venus un día dura más que un año",
+  "palette": "space",
+  "sentences": [
+    {
+      "text": "¿Sabías que en Venus un día dura más que un año?",
+      "scene": {"type": "title", "big": "EN VENUS\nUN DÍA DURA\nMÁS QUE\nUN AÑO"}
+    },
+    {
+      "text": "Venus tarda 243 días terrestres en girar una vez sobre sí mismo.",
+      "scene": {"type": "number", "value": 243, "unit": "días", "label": "para dar una sola vuelta sobre sí mismo"}
+    },
+    {
+      "text": "Pero solo necesita 225 días para dar la vuelta completa al Sol.",
+      "scene": {
+        "type": "orbit",
+        "center": "Sol",
+        "bodies": [
+          {"label": "Venus", "radius": 0.45, "period": 5},
+          {"label": "Tierra", "radius": 0.9, "period": 8}
+        ]
+      }
+    },
+    {
+      "text": "Es decir, su día es más largo que su año.",
+      "scene": {
+        "type": "bars",
+        "title": "Venus, en días terrestres",
+        "items": [
+          {"label": "Un día (una rotación)", "value": 243, "display": "243"},
+          {"label": "Un año (una órbita)", "value": 225, "display": "225"}
+        ]
+      }
+    },
+    {
+      "text": "Y hay más: gira al revés que la mayoría de los planetas, así que allá el Sol sale por el oeste.",
+      "scene": {
+        "type": "list",
+        "title": "Venus es raro",
+        "items": ["Gira al revés", "El Sol sale por el oeste", "Pero su día solar dura 117 días"]
+      }
+    },
+    {
+      "text": "¿Cuál es el dato más raro del espacio que conoces? Cuéntamelo en los comentarios.",
+      "scene": {"type": "statement", "text": "¿Cuál es el dato más raro del espacio?", "highlight": ["raro"]}
+    }
+  ]
+}
