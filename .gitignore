@@ -1,0 +1,5 @@
+node_modules/
+studio/work/
+studio/out/
+studio/public/audio.wav
+__pycache__/
