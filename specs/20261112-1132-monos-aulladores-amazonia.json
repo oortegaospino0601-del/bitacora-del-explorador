@@ -1,0 +1,96 @@
+{
+  "slug": "monos-aulladores-amazonia",
+  "title": "Dos monos nuevos en la Amazonia",
+  "palette": "forest",
+  "sentences": [
+    {
+      "text": "¿Sabías que acaban de descubrir dos monos nuevos en la Amazonia, y hacía más de 80 años que no pasaba?",
+      "scene": {
+        "type": "title",
+        "big": "DOS\nMONOS\nNUEVOS\nAMAZONIA",
+        "sub": "descubiertos esta semana"
+      }
+    },
+    {
+      "text": "Son monos aulladores, famosos por rugir tan fuerte que se les oye a kilómetros de distancia.",
+      "scene": {
+        "type": "statement",
+        "text": "Rugen tan fuerte que se oyen a kilómetros",
+        "highlight": [
+          "kilómetros"
+        ]
+      }
+    },
+    {
+      "text": "Se llaman Alouatta iroi y Alouatta matogrossensis, y viven en la Amazonia brasileña.",
+      "tts": "Se llaman Alouata iroi y Alouata matogrosensis, y viven en la Amazonia brasileña.",
+      "scene": {
+        "type": "list",
+        "title": "Las dos especies nuevas",
+        "items": [
+          "Alouatta iroi",
+          "A. matogrossensis",
+          "Amazonia brasileña"
+        ]
+      }
+    },
+    {
+      "text": "La última especie de aullador descrita fue en 1941, hace más de 80 años.",
+      "tts": "La última especie de aullador descrita fue en mil novecientos cuarenta y uno, hace más de ochenta años.",
+      "scene": {
+        "type": "number",
+        "value": 80,
+        "suffix": "+",
+        "unit": "años",
+        "label": "desde el último aullador descrito, en 1941"
+      }
+    },
+    {
+      "text": "Se cree que ríos enormes como el Amazonas y el Xingu los separaron durante mucho tiempo.",
+      "tts": "Se cree que ríos enormes como el Amazonas y el Shingú los separaron durante mucho tiempo.",
+      "scene": {
+        "type": "list",
+        "title": "Ríos que los separaron",
+        "items": [
+          "Amazonas",
+          "Xingu"
+        ]
+      }
+    },
+    {
+      "text": "Para descubrirlos compararon el ADN de 11 especies de monos aulladores.",
+      "scene": {
+        "type": "number",
+        "value": 11,
+        "unit": "especies",
+        "label": "de aulladores comparadas con ADN"
+      }
+    },
+    {
+      "text": "Una vive en una zona con deforestación, y muchas aún no tienen evaluación de conservación.",
+      "scene": {
+        "type": "list",
+        "title": "El gran reto",
+        "items": [
+          "Deforestación",
+          "Bosque fragmentado",
+          "Sin evaluación oficial"
+        ]
+      }
+    },
+    {
+      "text": "¿Qué otros animales crees que aún no conocemos? Cuéntamelo en los comentarios.",
+      "scene": {
+        "type": "statement",
+        "text": "¿Qué animales aún no conocemos?",
+        "highlight": [
+          "aún no"
+        ]
+      }
+    }
+  ],
+  "outro": {
+    "line1": "Parece mentira\npero es real",
+    "line2": "Sígueme para más datos"
+  }
+}
