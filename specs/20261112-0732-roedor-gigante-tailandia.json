@@ -1,0 +1,37 @@
+{
+  "slug": "roedor-gigante-tailandia",
+  "title": "El roedor gigante de 30 kilos que vivió en Tailandia",
+  "palette": "forest",
+  "sentences": [
+    {
+      "text": "¿Sabías que en Tailandia vivió un roedor de unos 30 kilos?",
+      "scene": {"type": "title", "big": "RATÓN\nDE 30\nKILOS", "sub": "descubierto esta semana"}
+    },
+    {
+      "text": "Vivió hace unos 34 millones de años, y los científicos acaban de darlo a conocer.",
+      "scene": {"type": "number", "value": 34, "unit": "millones de años", "label": "de antigüedad"}
+    },
+    {
+      "text": "Lo llamaron Yakamys, que significa ratón gigante.",
+      "tts": "Lo llamaron Yákamis, que significa ratón gigante.",
+      "scene": {"type": "list", "title": "Yakamys", "items": ["Yaka = gigante", "Mys = ratón", "Krabi, Tailandia"]}
+    },
+    {
+      "text": "Lo más increíble: de todo el animal solo se encontraron dos dientes.",
+      "scene": {"type": "statement", "text": "Solo 2 dientes", "highlight": ["2 dientes"]}
+    },
+    {
+      "text": "Con ellos calcularon que pesaba unos 30 kilos, el doble que otros roedores de su época.",
+      "scene": {"type": "bars", "title": "Peso estimado", "items": [{"label": "Yakamys", "value": 30, "display": "~30 kg"}, {"label": "Otros roedores de su época", "value": 15, "display": "~15 kg"}]}
+    },
+    {
+      "text": "Aun así, es solo una estimación, y todavía no se sabe qué comía ni cómo se veía.",
+      "scene": {"type": "list", "title": "Aún sin respuesta", "items": ["¿Qué comía?", "¿Cómo se veía?", "¿Cuánto pesaba exacto?"]}
+    },
+    {
+      "text": "¿Te darían miedo los roedores de 30 kilos? Cuéntamelo en los comentarios.",
+      "scene": {"type": "statement", "text": "¿Te darían miedo los roedores de 30 kilos?", "highlight": ["miedo"]}
+    }
+  ],
+  "outro": {"line1": "Parece mentira\npero es real", "line2": "Sígueme para más datos"}
+}
