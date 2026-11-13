@@ -1,0 +1,25 @@
+{
+  "slug": "gato-tilcayo",
+  "title": "El gatito que nadie conocía",
+  "composition": "Short-chat",
+  "loopMsg": "Encontramos un gatito solito. Nos lo quedamos.",
+  "sentences": [
+    {"text": "Una familia en Bolivia crió durante un año un gatito que la ciencia no conocía.",
+     "scene": {"chat": [{"chip": "Yungas, Bolivia · 2016"}, {"from": "familia", "text": "Encontramos un gatito solito. Nos lo quedamos."}]}},
+    {"text": "Lo hallaron solo cerca del bosque y creyeron que era un gato doméstico.",
+     "scene": {"chat": [{"from": "familia", "text": "Es un gato normal, ¿no?"}]}},
+    {"text": "Hasta que empezó a perseguir las gallinas de los vecinos, y lo entregaron a un refugio.",
+     "scene": {"chat": [{"from": "familia", "text": "¡Persigue las gallinas! Mejor se lo llevamos al refugio."}, {"from": "refugio", "text": "Lo recibimos."}]}},
+    {"text": "Allí una bióloga pensó que era un gato tigre común… pero algo no cuadraba.",
+     "scene": {"chat": [{"from": "refugio", "text": "Parece un gato tigre común… pero algo no cuadra."}]}},
+    {"text": "Casi diez años de análisis genéticos, incluso con cráneos de museo de hace un siglo, lo confirmaron.",
+     "scene": {"chat": [{"chip": "Casi 10 años después"}, {"from": "lab", "text": "Comparamos su ADN con cráneos de museo de hace un siglo."}, {"from": "lab", "text": "No coincide con ninguna especie conocida."}]}},
+    {"text": "En septiembre de 2026 se publicó: es el primer felino vivo nuevo descrito en más de cien años.",
+     "scene": {"chat": [{"chip": "17 sep 2026 · Current Biology"}, {"card": {"title": "NUEVA ESPECIE", "big": "Leopardus tilcayo", "line": "Primer felino vivo nuevo en más de 100 años"}}]}},
+    {"text": "Se llama tilcayo, como ya le decían los vecinos, y nadie sabe cuántos quedan.",
+     "scene": {"chat": [{"from": "lab", "text": "Lo llamamos tilcayo, como lo llaman los vecinos."}, {"from": "lab", "text": "¿Cuántos quedan? Nadie lo sabe."}]}},
+    {"text": "Su familia nunca lo sospechó. ¿Tú habrías notado la diferencia?",
+     "scene": {"chat": [{"from": "familia", "text": "¿Entonces nuestro gatito era…?"}, {"text": "¿Tú lo habrías notado?", "poll": ["SÍ", "NO"]}]}}
+  ],
+  "outro": {"line1": "Parece mentira\npero es real", "line2": "Sígueme para más datos"}
+}
