@@ -1,0 +1,31 @@
+{
+  "slug": "catapulta-humana",
+  "title": "De 0 a 180 km/h en 2 segundos: la catapulta humana",
+  "composition": "Short-plano",
+  "plano": "Nº 6",
+  "sentences": [
+    {"text": "Imagina ir de 0 a 180 kilómetros por hora en poco más de dos segundos.",
+     "scene": {"kind": "speed", "kicker": "DATO DE PARTIDA", "alt": [360, 360]}},
+    {"text": "Dos paracaidistas lo hicieron el 5 de noviembre, en la chimenea más alta de Europa, en Eslovenia.",
+     "scene": {"kind": "dim", "kicker": "LUGAR · TRBOVLJE, ESLOVENIA", "big": "360 M", "note": "la chimenea más alta de Europa", "hl": "chimney", "alt": [360, 360]}},
+    {"text": "Un equipo tardó dos años y medio en construir una catapulta vertical de 60 metros.",
+     "scene": {"kind": "dim", "kicker": "LA MÁQUINA", "big": "60 M", "note": "catapulta vertical · 2,5 años de construcción", "hl": "catapult", "alt": [360, 360]}},
+    {"text": "Se llaman Dani Román, de España, y Fred Fugen, de Francia.",
+     "tts": "Se llaman Dani Román, de España, y Fred Fuyán, de Francia.",
+     "scene": {"kind": "pilots", "kicker": "LOS PILOTOS", "names": [["DANI ROMÁN", "ESPAÑA · WINGSUIT"], ["FRED FUGEN", "FRANCIA · BASE JUMP"]], "alt": [360, 360]}},
+    {"text": "Tres. Dos. Uno. ¡Ya!",
+     "scene": {"kind": "count", "kicker": "CUENTA ATRÁS", "alt": [360, 360]}},
+    {"text": "De 0 a 180 en 2,15 segundos, con hasta 4,2 G.",
+     "tts": "De cero a ciento ochenta en dos coma quince segundos, con hasta cuatro coma dos ge.",
+     "scene": {"kind": "g", "kicker": "TELEMETRÍA", "big": "4,2 G", "note": "0 → 180 km/h · 2,15 s", "alt": [360, 425]}},
+    {"text": "Román subió 100,36 metros después de salir de la cápsula: récord Guinness.",
+     "tts": "Román subió cien coma treinta y seis metros después de salir de la cápsula: récord Guines.",
+     "scene": {"kind": "record", "kicker": "RÉCORD GUINNESS", "big": "100,36 M", "note": "mayor altura con catapulta humana", "alt": [425, 460]}},
+    {"text": "Y lanzados a la vez, sumaron 151,72 metros: otro récord.",
+     "tts": "Y lanzados a la vez, sumaron ciento cincuenta y uno coma setenta y dos metros: otro récord.",
+     "scene": {"kind": "twin", "kicker": "SEGUNDO RÉCORD · LANZAMIENTO DOBLE", "big": "151,72 M", "note": "75,97 m + 75,75 m", "alt": [440, 436]}},
+    {"text": "Después abrieron el paracaídas y bajaron. ¿Tú te subirías a esa catapulta?",
+     "scene": {"kind": "ask", "kicker": "TU TURNO", "alt": [436, 365]}}
+  ],
+  "outro": {"line1": "Parece mentira\npero es real", "line2": "¿Sí o no? Cuéntame abajo"}
+}
