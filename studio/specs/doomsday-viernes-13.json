@@ -1,0 +1,27 @@
+{
+  "slug": "doomsday-viernes-13",
+  "title": "Hoy se acaba el mundo (según un estudio de 1960)",
+  "composition": "Short-crt",
+  "loopLine": "> doomsday.exe",
+  "sentences": [
+    {"text": "Hoy es viernes 13, y un estudio de 1960 dijo que hoy se acababa el mundo.",
+     "scene": {"term": ["> doomsday.exe", "FECHA: VIE 13 NOV 2026", "! ¿FIN DEL MUNDO?"], "plot": "none"}},
+    {"text": "Lo publicó el físico Heinz von Foerster con dos estudiantes en la revista Science: Día del Juicio, viernes 13 de noviembre de 2026.",
+     "tts": "Lo publicó el físico Heinz fon Férster con dos estudiantes en la revista Sáiens: Día del Juicio, viernes trece de noviembre de dos mil veintiséis.",
+     "scene": {"term": ["> cargar estudio_1960", "AUTOR: H. VON FOERSTER", "REVISTA: SCIENCE"], "plot": "none"}},
+    {"text": "Con 24 estimaciones de población, su curva se disparaba al infinito justo ese día.",
+     "scene": {"term": ["> extrapolar(24)", "! RESULTADO: INFINITO"], "plot": "hyper"}},
+    {"text": "En parte era una broma: ese día es el cumpleaños de von Foerster.",
+     "tts": "En parte era una broma: ese día es el cumpleaños de fon Férster.",
+     "scene": {"term": ["> verificar_broma", "13 NOV = CUMPLEAÑOS", "! ¿COINCIDENCIA?"], "plot": "none"}},
+    {"text": "Pero hacia 1993 la población real empezó a quedarse por debajo de la curva.",
+     "scene": {"term": ["> comparar(real)", "! ERROR: NO COINCIDE"], "plot": "diverge"}},
+    {"text": "La natalidad bajó a casi la mitad, y la ONU calcula un máximo de 10.300 millones en los años 2080.",
+     "scene": {"term": ["> proyección_ONU", "PICO: AÑOS 2080"], "plot": "peak"}},
+    {"text": "Hoy no se acaba el mundo: era una curva, no una profecía.",
+     "scene": {"term": ["> resultado"], "plot": "none", "big": "DESMENTIDO"}},
+    {"text": "Dime: ¿las matemáticas pueden predecir el futuro, sí o no?",
+     "scene": {"term": ["> ¿predecir_futuro?", "[SÍ]   [NO]"], "plot": "none"}}
+  ],
+  "outro": {"line1": "Parece mentira\npero es real", "line2": "Sígueme para más datos"}
+}
