@@ -1,0 +1,18 @@
+{
+  "slug": "jaguar-gaspar",
+  "title": "El jaguar que caminó 2.122 km",
+  "composition": "Short-comic",
+  "sentences": [
+    {"text": "Un jaguar caminó 2.122 kilómetros, ¿y nadie sabe por qué?", "scene": {"kind": "big", "big": "2.122 KM", "sub": "¿POR QUÉ?", "color": "#ff2e88", "size": 250}},
+    {"text": "Se llama Gaspar, tiene ocho años y vive junto al río Araguaia, en Brasil.", "scene": {"kind": "big", "big": "GASPAR", "sub": "8 AÑOS · BRASIL", "color": "#18c8ff", "size": 230}},
+    {"text": "Su territorio normal mide unos 700 kilómetros cuadrados.", "scene": {"kind": "square"}},
+    {"text": "Pero un collar GPS lo descubrió caminando sin parar durante 381 días.", "scene": {"kind": "big", "big": "381 DÍAS", "sub": "COLLAR GPS", "color": "#ff2e88", "size": 230}},
+    {"text": "Casi en línea recta, de la Amazonía al Cerrado.", "scene": {"kind": "map"}},
+    {"text": "Lo normal en estos viajes es entre 60 y 100 kilómetros.", "tts": "Lo normal en estos viajes es entre sesenta y cien kilómetros.", "scene": {"kind": "duel"}},
+    {"text": "Gaspar hizo más de 20 veces eso.", "scene": {"kind": "big", "big": "¡20 VECES!", "sub": "MÁS", "color": "#ff2e88", "size": 240}},
+    {"text": "Y la distancia real probablemente es mayor.", "scene": {"kind": "big", "big": "¡Y MÁS!", "sub": "DISTANCIA REAL", "color": "#18c8ff", "size": 250}},
+    {"text": "En noviembre de 2025 el collar dejó de transmitir, y no se sabe qué le pasó.", "scene": {"kind": "big", "big": "SEÑAL PERDIDA", "sub": "NOV 2025", "color": "#ff2e88", "size": 190}},
+    {"text": "Los científicos dicen que hay que repensar cómo protegemos a los jaguares.", "scene": {"kind": "big", "big": "NUEVAS RUTAS", "sub": "CORREDORES", "color": "#18c8ff", "size": 190}},
+    {"text": "¿Tú crees que huía de algo, o buscaba algo?", "scene": {"kind": "big", "big": "¿HUÍA O BUSCABA?", "color": "#ff2e88", "size": 170}}
+  ]
+}
