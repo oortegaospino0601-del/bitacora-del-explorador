@@ -148,23 +148,50 @@ def build_voice(spec):
     return narration, timings, outro_start, total
 
 
-def mix_audio(narration, total):
+def mix_audio(narration, total, spec=None):
+    """Mezcla la voz con un fondo. Si el guion trae "music" (ruta a un audio, relativa al
+    guion), usa esa canción bajita y la atenúa aún más mientras habla la voz (ducking).
+    Campos opcionales: "musicStart" (segundo de la canción donde empieza, def. 0),
+    "musicVolume" (0-1, def. 0.22). Sin "music" usa el fondo sonoro suave de siempre."""
+    spec = spec or {}
     WORK.mkdir(parents=True, exist_ok=True)
     PUBLIC.mkdir(parents=True, exist_ok=True)
     nar = WORK / "narration.wav"
     sf.write(str(nar), narration, SR)
     T = f"{total:.3f}"
     fade_out_at = f"{max(0.0, total - 2.5):.3f}"
-    tones = [110.0, 130.81, 164.81, 220.0]
-    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(nar)]
-    for f in tones:
-        cmd += ["-f", "lavfi", "-t", T, "-i", f"sine=f={f}:r=44100"]
-    fc = (
-        "[1][2][3][4]amix=inputs=4:normalize=0,volume=0.05,lowpass=f=700,tremolo=f=0.18:d=0.6,"
-        f"afade=t=in:st=0:d=2,afade=t=out:st={fade_out_at}:d=2.5[bed];"
-        "[0]aresample=44100,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=44100[voice];"
-        f"[voice][bed]amix=inputs=2:normalize=0:duration=longest,atrim=0:{T}[mix]"
-    )
+    music = spec.get("music")
+    if music:
+        mpath = Path(music)
+        if not mpath.is_absolute():
+            mpath = (Path(spec.get("_dir", ".")) / mpath).resolve()
+        assert mpath.exists(), f"no encuentro la música: {mpath}"
+        vol = float(spec.get("musicVolume", 0.22))
+        ss = float(spec.get("musicStart", 0))
+        cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(nar), "-ss", f"{ss:.3f}", "-i", str(mpath)]
+        fc = (
+            "[0]aresample=44100,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=44100,asplit=2[voice][sc];"
+            f"[1]aresample=44100,aformat=channel_layouts=stereo,atrim=0:{T},asetpts=PTS-STARTPTS,volume={vol},"
+            f"afade=t=in:st=0:d=1.5,afade=t=out:st={fade_out_at}:d=2.5[m];"
+            "[sc]aformat=channel_layouts=stereo[scs];"
+            "[m][scs]sidechaincompress=threshold=0.02:ratio=4:attack=30:release=600[bed];"
+            f"[voice]aformat=channel_layouts=stereo[v2];"
+            f"[v2][bed]amix=inputs=2:normalize=0:duration=longest,apad,atrim=0:{T}[mix]"
+        )
+    else:
+        tones = [110.0, 130.81, 164.81, 220.0]
+        cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(nar)]
+        for f in tones:
+            cmd += ["-f", "lavfi", "-t", T, "-i", f"sine=f={f}:r=44100"]
+        fc = (
+            "[1][2][3][4]amix=inputs=4:normalize=0,volume=0.05,lowpass=f=700,tremolo=f=0.18:d=0.6,"
+            f"afade=t=in:st=0:d=2,afade=t=out:st={fade_out_at}:d=2.5[bed];"
+            "[0]aresample=44100,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=44100[voice];"
+            f"[voice][bed]amix=inputs=2:normalize=0:duration=longest,atrim=0:{T}[mix]"
+        )
+    if spec.get("bed") is False and not music:
+        cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(nar)]
+        fc = f"[0]aresample=44100,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=44100,apad,atrim=0:{T}[mix]"
     cmd += ["-filter_complex", fc, "-map", "[mix]", "-ac", "2", "-ar", "44100", str(PUBLIC / "audio.wav")]
     sh(cmd)
 
@@ -235,7 +262,8 @@ def main():
     narration, timings, outro_start, total = build_voice(spec)
     if total > 59:
         raise SystemExit(f"El video duraría {total:.1f}s (>59). Acorta el guion.")
-    mix_audio(narration, total)
+    spec["_dir"] = str(spec_path.parent)
+    mix_audio(narration, total, spec)
     props = {"spec": spec, "timings": timings, "totalSeconds": total, "outroStart": outro_start, "audioFile": "audio.wav"}
     (WORK / "props.json").write_text(json.dumps(props, ensure_ascii=False), encoding="utf-8")
     print(f"Duración total: {total:.1f}s. Renderizando con Remotion ...", flush=True)

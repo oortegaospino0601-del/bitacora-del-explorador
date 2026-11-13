@@ -1,0 +1,97 @@
+{
+ "slug": "santurce-nsqk-voz",
+ "title": "La historia detrás de Santurce, de Nsqk",
+ "composition": "Short-mosca",
+ "meta": {
+  "album": "mosca",
+  "tag": "DETRÁS DE\nLA CANCIÓN"
+ },
+ "outroSeconds": 4.2,
+ "outroScene": {
+  "text": "lo que no dijiste\ntambién se queda.",
+  "highlight": [
+   "queda."
+  ],
+  "sub": "SANTURCE · NSQK · MOSCA",
+  "size": 104,
+  "fly": true
+ },
+ "sentences": [
+  {
+   "text": "Mientras su abuelo preguntaba por él, Nsqk estaba grabando en un estudio.",
+   "tts": "Mientras su abuelo preguntaba por él, Nesquik estaba grabando en un estudio.",
+   "scene": {
+    "kind": "studio"
+   }
+  },
+  {
+   "text": "Esa es la historia detrás de Santurce, una canción de su nuevo álbum, mosca.",
+   "scene": {
+    "kind": "title",
+    "big": "santurce",
+    "sub": "NSQK",
+    "sub2": "del álbum mosca · 2026"
+   }
+  },
+  {
+   "text": "Mosca nació de una plaga de moscas en su departamento y de leer La metamorfosis, de Kafka.",
+   "scene": {
+    "kind": "book"
+   }
+  },
+  {
+   "text": "Es un disco sobre perseguir la grandeza, y sobre en qué te conviertes en el camino.",
+   "scene": {
+    "kind": "shadow"
+   }
+  },
+  {
+   "text": "Pero entre tanta ambición, hay una canción que no habla de éxito.",
+   "scene": {
+    "kind": "stage"
+   }
+  },
+  {
+   "text": "Habla de su abuelo.",
+   "scene": {
+    "kind": "photo"
+   }
+  },
+  {
+   "text": "Y de la culpa de no haber llegado a tiempo para despedirse.",
+   "scene": {
+    "kind": "chair"
+   }
+  },
+  {
+   "text": "Él ha contado que lo asocia con la playa, y que se arrepiente de algo que nunca le dijo.",
+   "scene": {
+    "kind": "beach"
+   }
+  },
+  {
+   "text": "Por eso suena casi desnuda: un piano y su voz.",
+   "scene": {
+    "kind": "piano"
+   }
+  },
+  {
+   "text": "En un disco lleno de moscas y de ruido, es el momento en que todo se queda en silencio.",
+   "scene": {
+    "kind": "silence"
+   }
+  },
+  {
+   "text": "¿A quién le debes una llamada hoy?",
+   "scene": {
+    "kind": "statement",
+    "text": "¿a quién le debes\nuna llamada hoy?",
+    "highlight": [
+     "llamada"
+    ],
+    "size": 112
+   }
+  }
+ ],
+ "bed": false
+}

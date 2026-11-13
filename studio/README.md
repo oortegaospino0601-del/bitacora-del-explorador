@@ -81,3 +81,9 @@ invita a comentar (`statement`). Texto de escena corto: se lee en 2 o 3 segundos
 ## Composiciones propias
 Ids de composición: solo letras, números y guiones (NO guion bajo). Ej.: `Short-diario`
 (`src/styles/diario/`, portada de periódico). En el JSON: `"composition": "Short-diario"`.
+
+## Música de fondo (opcional)
+En el guion: `"music": "ruta/al/audio.mp3"` (relativa al JSON), `"musicStart": 12.5` (segundo
+de la canción donde empieza) y `"musicVolume": 0.22`. Se mezcla bajita y se atenúa sola
+mientras habla la voz. `"bed": false` quita el fondo sonoro sintético (útil para añadir el
+sonido oficial directamente en TikTok). No subas canciones con derechos al repositorio.
