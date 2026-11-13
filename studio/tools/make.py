@@ -52,6 +52,8 @@ def validate(spec):
     for i, s in enumerate(sents):
         assert s.get("text"), f"frase {i}: falta text"
         sc = s.get("scene") or {}
+        if spec.get("composition", "Short") != "Short":
+            continue  # composición propia: la escena es libre, la define el componente nuevo
         assert sc.get("type") in SCENE_TYPES, f"frase {i}: scene.type debe ser uno de {sorted(SCENE_TYPES)}"
         t = sc["type"]
         if t == "title":
@@ -173,11 +175,11 @@ def find_chrome():
     raise SystemExit("No encuentro Chrome/Chromium (define CHROME=/ruta)")
 
 
-def render(slug):
+def render(slug, COMPOSITION="Short"):
     OUT.mkdir(parents=True, exist_ok=True)
     mp4 = OUT / f"{slug}.mp4"
     cmd = [
-        "npx", "remotion", "render", "src/index.ts", "Short", str(mp4),
+        "npx", "remotion", "render", "src/index.ts", COMPOSITION, str(mp4),
         f"--props={WORK / 'props.json'}",
         f"--browser-executable={find_chrome()}",
         "--chrome-mode=chrome-for-testing",
@@ -236,7 +238,7 @@ def main():
     props = {"spec": spec, "timings": timings, "totalSeconds": total, "outroStart": outro_start, "audioFile": "audio.wav"}
     (WORK / "props.json").write_text(json.dumps(props, ensure_ascii=False), encoding="utf-8")
     print(f"Duración total: {total:.1f}s. Renderizando con Remotion ...", flush=True)
-    mp4 = render(spec["slug"])
+    mp4 = render(spec["slug"], spec.get("composition", "Short"))
     verify(mp4, total)
     print(f"\nMP4: {mp4}")
 

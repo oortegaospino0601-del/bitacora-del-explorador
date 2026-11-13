@@ -11,7 +11,7 @@ FILE="videos/${STAMP}-${SLUG}.mp4"
 mkdir -p videos specs
 cp "studio/out/${SLUG}.mp4" "$FILE"
 [ -f "studio/specs/${SLUG}.json" ] && cp "studio/specs/${SLUG}.json" "specs/${STAMP}-${SLUG}.json" || true
-git add "$FILE" specs studio/specs 2>/dev/null || git add "$FILE"
+git add "$FILE" specs studio/specs studio/src studio/tools studio/README.md studio/LEDGER.md 2>/dev/null || git add "$FILE"
 git commit -q -m "Short: ${SLUG}"
 for i in 1 2 3; do
   git pull -q --rebase origin shorts-videos 2>/dev/null || true
