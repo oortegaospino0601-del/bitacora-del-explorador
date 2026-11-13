@@ -1,0 +1,29 @@
+{
+  "slug": "pelea-sin-respuesta",
+  "title": "La pelea sin respuesta que creó el libro de los récords",
+  "composition": "Short-diario",
+  "edition": "Nº 5 · 13 NOV 2026",
+  "sentences": [
+    {"text": "Una discusión sin respuesta creó el libro más famoso de récords.",
+     "tts": "Una discusión sin respuesta creó el libro más famoso de récords.",
+     "scene": {"type": "headline", "kicker": "¡Extra! ¡Extra!", "big": "UNA PELEA\nSIN\nRESPUESTA", "sub": "El origen del libro de récords"}},
+    {"text": "En 1951, en Irlanda, unos cazadores discuten cuál es el ave de caza más rápida.",
+     "scene": {"type": "dateline", "year": "1951", "place": "Condado de Wexford · Irlanda"}},
+    {"text": "Entre ellos, Hugh Beaver, director de la cervecería Guinness. Y piensa: estas peleas ocurren cada noche en los bares… y ningún libro las resuelve.",
+     "tts": "Entre ellos, Hiu Bíver, director de la cervecería Guines. Y piensa: estas peleas ocurren cada noche en los bares, y ningún libro las resuelve.",
+     "scene": {"type": "portrait", "kicker": "El hombre del problema", "name": "Hugh Beaver", "role": "Director de la cervecería Guinness"}},
+    {"text": "Contrata a los gemelos Norris y Ross McWhirter, especialistas en datos.",
+     "tts": "Contrata a los gemelos Norris y Ros Mac Güérter, especialistas en datos.",
+     "scene": {"type": "twins", "kicker": "Los gemelos", "names": ["NORRIS", "ROSS"], "sub": "McWHIRTER"}},
+    {"text": "En 1955 sale la primera edición: 198 páginas, pensadas para regalarse en los bares.",
+     "scene": {"type": "book", "year": "1955", "pages": 198}},
+    {"text": "Antes de Navidad ya encabezaba las ventas del Reino Unido.",
+     "scene": {"type": "headline", "kicker": "Última hora", "big": "ÉXITO\nEN NAVIDAD", "sub": "Número uno en ventas del Reino Unido"}},
+    {"text": "Este miércoles 18 es el Día Mundial de los Récords Guinness.",
+     "tts": "Este miércoles dieciocho es el Día Mundial de los Récords Guines.",
+     "scene": {"type": "calendar", "kicker": "Anótalo", "mon": "NOVIEMBRE", "value": "18", "weekday": "MIÉRCOLES", "sub": "Día Mundial de los Récords Guinness"}},
+    {"text": "¿Y tú? ¿Cuál es la discusión que nunca has podido resolver?",
+     "scene": {"type": "question", "sub": "¿Cuál es tu discusión eterna?"}}
+  ],
+  "outro": {"line1": "Una pelea\nsin respuesta", "line2": "Sígueme · mañana, otra portada"}
+}

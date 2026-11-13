@@ -12,3 +12,4 @@ resume lo que ya se contó y cómo se vio.
 
 Los 4 anteriores se parecían demasiado: mismo gancho "¿Sabías que…?", mismas escenas con
 fondo de partículas y subtítulos amarillos. A partir del #5, cada video estrena diseño y forma de contar.
+| 5 | pelea-sin-respuesta | Origen del libro Guinness: cacería en Irlanda (Wexford) nov 1951, Hugh Beaver (dir. cervecería Guinness), gemelos Norris y Ross McWhirter, 1ª edición 1955 de 198 páginas para regalar en bares, nº1 de ventas en UK en Navidad, Día Mundial de los Récords Guinness miér 18 nov | mini cronología con giro ("una pelea sin respuesta"), narración en presente, cierra con pregunta y vuelve a la portada | Short-diario: portada de periódico impreso (papel crema, Playfair Display + Special Elite, kickers rojos, subtítulo de máquina de escribir con resaltador, sellos y calendario) |

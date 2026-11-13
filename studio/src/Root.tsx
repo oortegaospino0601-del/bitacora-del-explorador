@@ -1,6 +1,7 @@
 import React from 'react';
 import {Composition} from 'remotion';
 import {Short} from './Short';
+import {ShortDiario} from './styles/diario/ShortDiario';
 import {Props} from './types';
 
 const FPS = 30;
@@ -19,6 +20,7 @@ const defaultProps: Props = {
 };
 
 export const Root: React.FC = () => (
+  <>
   <Composition
     id="Short"
     component={Short}
@@ -31,4 +33,17 @@ export const Root: React.FC = () => (
       durationInFrames: Math.max(30, Math.ceil(props.totalSeconds * FPS)),
     })}
   />
+  <Composition
+    id="Short-diario"
+    component={ShortDiario}
+    width={1080}
+    height={1920}
+    fps={FPS}
+    durationInFrames={150}
+    defaultProps={defaultProps}
+    calculateMetadata={({props}) => ({
+      durationInFrames: Math.max(30, Math.ceil(props.totalSeconds * FPS)),
+    })}
+  />
+  </>
 );

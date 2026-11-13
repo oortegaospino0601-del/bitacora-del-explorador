@@ -77,3 +77,7 @@ invita a comentar (`statement`). Texto de escena corto: se lee en 2 o 3 segundos
 - `tools/make.py`: voz + mezcla + render + verificación. `tools/run.sh`: instala y ejecuta.
 - `tools/publish.sh`: sube a `videos/` y devuelve la URL pública.
 - `specs/ejemplo-venus.json`: guion de ejemplo con todos los tipos de escena.
+
+## Composiciones propias
+Ids de composición: solo letras, números y guiones (NO guion bajo). Ej.: `Short-diario`
+(`src/styles/diario/`, portada de periódico). En el JSON: `"composition": "Short-diario"`.
