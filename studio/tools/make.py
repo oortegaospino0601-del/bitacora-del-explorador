@@ -116,6 +116,7 @@ def word_timings(text, start, end):
 
 
 def build_voice(spec):
+    outro_seconds = float(spec.get("outroSeconds", OUTRO_SECONDS))
     from kokoro_onnx import Kokoro
 
     ensure_models()
@@ -143,7 +144,7 @@ def build_voice(spec):
         t["sceneEnd"] = round(max(timings[i + 1]["start"] - 0.12, t["end"]), 3) if i < n - 1 else round(t["end"] + 0.5, 3)
     narration = np.concatenate(pieces)
     outro_start = timings[-1]["sceneEnd"]
-    total = round(outro_start + OUTRO_SECONDS, 3)
+    total = round(outro_start + outro_seconds, 3)
     return narration, timings, outro_start, total
 
 
