@@ -1,0 +1,29 @@
+{
+  "slug": "margot-nsqk",
+  "title": "La historia detrás de MARGOT, de Nsqk",
+  "composition": "Short-margot",
+  "meta": {"album": "mosca", "tag": "DETRÁS DE\nLA CANCIÓN"},
+  "outroSeconds": 4.2,
+  "outroScene": {"text": "hasta el monstruo\nnecesita que\nlo cuiden.", "highlight": ["cuiden."], "sub": "MARGOT · NSQK · MOSCA", "size": 118, "fly": true},
+  "sentences": [
+    {"text": "Llegó cansado a un hotel de Buenos Aires, y el jabón del cuarto olía a su abuelo.",
+     "scene": {"kind": "hotel"}},
+    {"text": "Esa noche nació Margot, la canción que cierra mosca, el nuevo álbum de Nsqk.",
+     "tts": "Esa noche nació Margot, la canción que cierra mosca, el nuevo álbum de Nesquik.",
+     "scene": {"kind": "title", "big": "MARGOT", "sub": "NSQK", "sub2": "track 17 · mosca · 2026"}},
+    {"text": "Mosca abre con Samsa: un artista seguro, con hambre de éxito.",
+     "scene": {"kind": "samsa", "big": "SAMSA", "num": "01"}},
+    {"text": "Y cierra con su opuesto.",
+     "scene": {"kind": "tracklist"}},
+    {"text": "En La metamorfosis de Kafka, cuando Gregor despierta convertido en insecto, su hermana Grete es la única que al principio lo cuida.",
+     "scene": {"kind": "kafka"}},
+    {"text": "Y Grete y Margot son casi el mismo nombre: los dos vienen de Margarita.",
+     "scene": {"kind": "names"}},
+    {"text": "Por eso Margot no habla de ganar. Habla del cansancio, de las dudas, y de lo que se pierde en el camino.",
+     "scene": {"kind": "loss"}},
+    {"text": "Es un recordatorio: cuídate, para no perderte persiguiendo la grandeza.",
+     "scene": {"kind": "care"}},
+    {"text": "¿Quién es tu Margot? ¿Quién te cuida aunque te vuelvas mosca?",
+     "scene": {"kind": "statement", "text": "¿quién es\ntu margot?", "highlight": ["margot?"], "size": 150}}
+  ]
+}

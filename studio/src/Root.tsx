@@ -7,6 +7,7 @@ import {ShortChat} from './styles/chat/ShortChat';
 import {ShortCrt} from './styles/crt/ShortCrt';
 import {ShortComic} from './styles/comic/ShortComic';
 import {ShortMosca} from './styles/mosca/ShortMosca';
+import {ShortMargot} from './styles/margot/ShortMargot';
 import {Props} from './types';
 
 const FPS = 30;
@@ -101,6 +102,18 @@ export const Root: React.FC = () => (
   <Composition
     id="Short-mosca"
     component={ShortMosca}
+    width={1080}
+    height={1920}
+    fps={FPS}
+    durationInFrames={150}
+    defaultProps={defaultProps}
+    calculateMetadata={({props}) => ({
+      durationInFrames: Math.max(30, Math.ceil(props.totalSeconds * FPS)),
+    })}
+  />
+  <Composition
+    id="Short-margot"
+    component={ShortMargot}
     width={1080}
     height={1920}
     fps={FPS}
