@@ -1,0 +1,826 @@
+{
+ "slug": "historia-dtmf",
+ "hook": "3.214 FOTOS…\nY NI UNA\nCON SU ABUELA.",
+ "durations": [
+  4.551,
+  3.823,
+  4.281,
+  4.581,
+  2.912,
+  3.576,
+  3.418,
+  3.026,
+  4.176,
+  3.464,
+  4.473,
+  4.123,
+  5.824
+ ],
+ "lines": [
+  {
+   "start": 0.25,
+   "end": 4.151,
+   "text": "Tenía más de tres mil fotos en el celular… y ni una con su abuela.",
+   "scene": "galeria:scroll",
+   "words": [
+    {
+     "w": "Tenía",
+     "start": 0.25,
+     "end": 0.573
+    },
+    {
+     "w": "más",
+     "start": 0.573,
+     "end": 0.797
+    },
+    {
+     "w": "de",
+     "start": 0.797,
+     "end": 0.971
+    },
+    {
+     "w": "tres",
+     "start": 0.971,
+     "end": 1.244
+    },
+    {
+     "w": "mil",
+     "start": 1.244,
+     "end": 1.467
+    },
+    {
+     "w": "fotos",
+     "start": 1.467,
+     "end": 1.791
+    },
+    {
+     "w": "en",
+     "start": 1.791,
+     "end": 1.964
+    },
+    {
+     "w": "el",
+     "start": 1.964,
+     "end": 2.138
+    },
+    {
+     "w": "celular…",
+     "start": 2.138,
+     "end": 2.71
+    },
+    {
+     "w": "y",
+     "start": 2.71,
+     "end": 2.834
+    },
+    {
+     "w": "ni",
+     "start": 2.834,
+     "end": 3.008
+    },
+    {
+     "w": "una",
+     "start": 3.008,
+     "end": 3.232
+    },
+    {
+     "w": "con",
+     "start": 3.232,
+     "end": 3.455
+    },
+    {
+     "w": "su",
+     "start": 3.455,
+     "end": 3.629
+    },
+    {
+     "w": "abuela.",
+     "start": 3.629,
+     "end": 4.151
+    }
+   ]
+  },
+  {
+   "start": 4.851,
+   "end": 7.974,
+   "text": "Esta es la historia de DtMF, de Bad Bunny.",
+   "scene": "barrio:casa",
+   "words": [
+    {
+     "w": "Esta",
+     "start": 4.851,
+     "end": 5.191
+    },
+    {
+     "w": "es",
+     "start": 5.191,
+     "end": 5.408
+    },
+    {
+     "w": "la",
+     "start": 5.408,
+     "end": 5.624
+    },
+    {
+     "w": "historia",
+     "start": 5.624,
+     "end": 6.211
+    },
+    {
+     "w": "de",
+     "start": 6.211,
+     "end": 6.428
+    },
+    {
+     "w": "DtMF,",
+     "start": 6.428,
+     "end": 6.892
+    },
+    {
+     "w": "de",
+     "start": 6.892,
+     "end": 7.108
+    },
+    {
+     "w": "Bad",
+     "start": 7.108,
+     "end": 7.386
+    },
+    {
+     "w": "Bunny.",
+     "start": 7.386,
+     "end": 7.974
+    }
+   ]
+  },
+  {
+   "start": 8.674,
+   "end": 12.255,
+   "text": "Cada domingo ella le cocinaba… y él no soltaba el celular.",
+   "scene": "familia:cocina",
+   "words": [
+    {
+     "w": "Cada",
+     "start": 8.674,
+     "end": 8.962
+    },
+    {
+     "w": "domingo",
+     "start": 8.962,
+     "end": 9.406
+    },
+    {
+     "w": "ella",
+     "start": 9.406,
+     "end": 9.693
+    },
+    {
+     "w": "le",
+     "start": 9.693,
+     "end": 9.876
+    },
+    {
+     "w": "cocinaba…",
+     "start": 9.876,
+     "end": 10.53
+    },
+    {
+     "w": "y",
+     "start": 10.53,
+     "end": 10.661
+    },
+    {
+     "w": "él",
+     "start": 10.661,
+     "end": 10.844
+    },
+    {
+     "w": "no",
+     "start": 10.844,
+     "end": 11.027
+    },
+    {
+     "w": "soltaba",
+     "start": 11.027,
+     "end": 11.471
+    },
+    {
+     "w": "el",
+     "start": 11.471,
+     "end": 11.654
+    },
+    {
+     "w": "celular.",
+     "start": 11.654,
+     "end": 12.255
+    }
+   ]
+  },
+  {
+   "start": 12.955,
+   "end": 16.836,
+   "text": "Ella siempre le pedía una foto juntos. Él siempre decía: otro día.",
+   "scene": "familia:pide",
+   "words": [
+    {
+     "w": "Ella",
+     "start": 12.955,
+     "end": 13.229
+    },
+    {
+     "w": "siempre",
+     "start": 13.229,
+     "end": 13.652
+    },
+    {
+     "w": "le",
+     "start": 13.652,
+     "end": 13.826
+    },
+    {
+     "w": "pedía",
+     "start": 13.826,
+     "end": 14.149
+    },
+    {
+     "w": "una",
+     "start": 14.149,
+     "end": 14.373
+    },
+    {
+     "w": "foto",
+     "start": 14.373,
+     "end": 14.647
+    },
+    {
+     "w": "juntos.",
+     "start": 14.647,
+     "end": 15.169
+    },
+    {
+     "w": "Él",
+     "start": 15.169,
+     "end": 15.344
+    },
+    {
+     "w": "siempre",
+     "start": 15.344,
+     "end": 15.767
+    },
+    {
+     "w": "decía:",
+     "start": 15.767,
+     "end": 16.19
+    },
+    {
+     "w": "otro",
+     "start": 16.19,
+     "end": 16.463
+    },
+    {
+     "w": "día.",
+     "start": 16.463,
+     "end": 16.836
+    }
+   ]
+  },
+  {
+   "start": 17.536,
+   "end": 19.748,
+   "text": "Un martes, ella lo llamó tres veces.",
+   "scene": "movil:llamadas:Abuela",
+   "words": [
+    {
+     "w": "Un",
+     "start": 17.536,
+     "end": 17.714
+    },
+    {
+     "w": "martes,",
+     "start": 17.714,
+     "end": 18.197
+    },
+    {
+     "w": "ella",
+     "start": 18.197,
+     "end": 18.477
+    },
+    {
+     "w": "lo",
+     "start": 18.477,
+     "end": 18.655
+    },
+    {
+     "w": "llamó",
+     "start": 18.655,
+     "end": 18.985
+    },
+    {
+     "w": "tres",
+     "start": 18.985,
+     "end": 19.265
+    },
+    {
+     "w": "veces.",
+     "start": 19.265,
+     "end": 19.748
+    }
+   ]
+  },
+  {
+   "start": 20.448,
+   "end": 23.324,
+   "text": "Él estaba ocupado. Pensó que la llamaría mañana.",
+   "scene": "ventana-noche",
+   "words": [
+    {
+     "w": "Él",
+     "start": 20.448,
+     "end": 20.625
+    },
+    {
+     "w": "estaba",
+     "start": 20.625,
+     "end": 21.003
+    },
+    {
+     "w": "ocupado.",
+     "start": 21.003,
+     "end": 21.583
+    },
+    {
+     "w": "Pensó",
+     "start": 21.583,
+     "end": 21.911
+    },
+    {
+     "w": "que",
+     "start": 21.911,
+     "end": 22.138
+    },
+    {
+     "w": "la",
+     "start": 22.138,
+     "end": 22.315
+    },
+    {
+     "w": "llamaría",
+     "start": 22.315,
+     "end": 22.794
+    },
+    {
+     "w": "mañana.",
+     "start": 22.794,
+     "end": 23.324
+    }
+   ]
+  },
+  {
+   "start": 24.024,
+   "end": 26.742,
+   "text": "Pero al día siguiente, la que llamó fue su mamá.",
+   "scene": "movil:llamada:Mamá",
+   "words": [
+    {
+     "w": "Pero",
+     "start": 24.024,
+     "end": 24.286
+    },
+    {
+     "w": "al",
+     "start": 24.286,
+     "end": 24.453
+    },
+    {
+     "w": "día",
+     "start": 24.453,
+     "end": 24.668
+    },
+    {
+     "w": "siguiente,",
+     "start": 24.668,
+     "end": 25.264
+    },
+    {
+     "w": "la",
+     "start": 25.264,
+     "end": 25.431
+    },
+    {
+     "w": "que",
+     "start": 25.431,
+     "end": 25.646
+    },
+    {
+     "w": "llamó",
+     "start": 25.646,
+     "end": 25.956
+    },
+    {
+     "w": "fue",
+     "start": 25.956,
+     "end": 26.17
+    },
+    {
+     "w": "su",
+     "start": 26.17,
+     "end": 26.337
+    },
+    {
+     "w": "mamá.",
+     "start": 26.337,
+     "end": 26.742
+    }
+   ]
+  },
+  {
+   "start": 27.442,
+   "end": 29.768,
+   "text": "Y entendió que ya no habría otro día.",
+   "scene": "lluvia",
+   "words": [
+    {
+     "w": "Y",
+     "start": 27.442,
+     "end": 27.575
+    },
+    {
+     "w": "entendió",
+     "start": 27.575,
+     "end": 28.077
+    },
+    {
+     "w": "que",
+     "start": 28.077,
+     "end": 28.315
+    },
+    {
+     "w": "ya",
+     "start": 28.315,
+     "end": 28.5
+    },
+    {
+     "w": "no",
+     "start": 28.5,
+     "end": 28.685
+    },
+    {
+     "w": "habría",
+     "start": 28.685,
+     "end": 29.081
+    },
+    {
+     "w": "otro",
+     "start": 29.081,
+     "end": 29.372
+    },
+    {
+     "w": "día.",
+     "start": 29.372,
+     "end": 29.768
+    }
+   ]
+  },
+  {
+   "start": 30.468,
+   "end": 33.944,
+   "text": "Buscó entre sus tres mil fotos… y no la encontró en ninguna.",
+   "scene": "galeria:busca:abuela",
+   "words": [
+    {
+     "w": "Buscó",
+     "start": 30.468,
+     "end": 30.787
+    },
+    {
+     "w": "entre",
+     "start": 30.787,
+     "end": 31.105
+    },
+    {
+     "w": "sus",
+     "start": 31.105,
+     "end": 31.325
+    },
+    {
+     "w": "tres",
+     "start": 31.325,
+     "end": 31.594
+    },
+    {
+     "w": "mil",
+     "start": 31.594,
+     "end": 31.815
+    },
+    {
+     "w": "fotos…",
+     "start": 31.815,
+     "end": 32.28
+    },
+    {
+     "w": "y",
+     "start": 32.28,
+     "end": 32.402
+    },
+    {
+     "w": "no",
+     "start": 32.402,
+     "end": 32.574
+    },
+    {
+     "w": "la",
+     "start": 32.574,
+     "end": 32.745
+    },
+    {
+     "w": "encontró",
+     "start": 32.745,
+     "end": 33.21
+    },
+    {
+     "w": "en",
+     "start": 33.21,
+     "end": 33.381
+    },
+    {
+     "w": "ninguna.",
+     "start": 33.381,
+     "end": 33.944
+    }
+   ]
+  },
+  {
+   "start": 34.644,
+   "end": 37.408,
+   "text": "Solo tenía una, borrosa, de cuando era niño.",
+   "scene": "foto:abuela:3",
+   "words": [
+    {
+     "w": "Solo",
+     "start": 34.644,
+     "end": 34.931
+    },
+    {
+     "w": "tenía",
+     "start": 34.931,
+     "end": 35.27
+    },
+    {
+     "w": "una,",
+     "start": 35.27,
+     "end": 35.609
+    },
+    {
+     "w": "borrosa,",
+     "start": 35.609,
+     "end": 36.157
+    },
+    {
+     "w": "de",
+     "start": 36.157,
+     "end": 36.339
+    },
+    {
+     "w": "cuando",
+     "start": 36.339,
+     "end": 36.73
+    },
+    {
+     "w": "era",
+     "start": 36.73,
+     "end": 36.965
+    },
+    {
+     "w": "niño.",
+     "start": 36.965,
+     "end": 37.408
+    }
+   ]
+  },
+  {
+   "start": 38.108,
+   "end": 41.881,
+   "text": "Daría todo por un domingo más. Aunque fuera para una sola foto.",
+   "scene": "ojo",
+   "words": [
+    {
+     "w": "Daría",
+     "start": 38.108,
+     "end": 38.44
+    },
+    {
+     "w": "todo",
+     "start": 38.44,
+     "end": 38.72
+    },
+    {
+     "w": "por",
+     "start": 38.72,
+     "end": 38.95
+    },
+    {
+     "w": "un",
+     "start": 38.95,
+     "end": 39.128
+    },
+    {
+     "w": "domingo",
+     "start": 39.128,
+     "end": 39.561
+    },
+    {
+     "w": "más.",
+     "start": 39.561,
+     "end": 39.944
+    },
+    {
+     "w": "Aunque",
+     "start": 39.944,
+     "end": 40.326
+    },
+    {
+     "w": "fuera",
+     "start": 40.326,
+     "end": 40.658
+    },
+    {
+     "w": "para",
+     "start": 40.658,
+     "end": 40.938
+    },
+    {
+     "w": "una",
+     "start": 40.938,
+     "end": 41.167
+    },
+    {
+     "w": "sola",
+     "start": 41.167,
+     "end": 41.448
+    },
+    {
+     "w": "foto.",
+     "start": 41.448,
+     "end": 41.881
+    }
+   ]
+  },
+  {
+   "start": 42.581,
+   "end": 46.004,
+   "text": "Desde ese día, a su mamá le toma todas las fotos que puede.",
+   "scene": "familia:foto",
+   "words": [
+    {
+     "w": "Desde",
+     "start": 42.581,
+     "end": 42.901
+    },
+    {
+     "w": "ese",
+     "start": 42.901,
+     "end": 43.123
+    },
+    {
+     "w": "día,",
+     "start": 43.123,
+     "end": 43.443
+    },
+    {
+     "w": "a",
+     "start": 43.443,
+     "end": 43.566
+    },
+    {
+     "w": "su",
+     "start": 43.566,
+     "end": 43.739
+    },
+    {
+     "w": "mamá",
+     "start": 43.739,
+     "end": 44.01
+    },
+    {
+     "w": "le",
+     "start": 44.01,
+     "end": 44.182
+    },
+    {
+     "w": "toma",
+     "start": 44.182,
+     "end": 44.453
+    },
+    {
+     "w": "todas",
+     "start": 44.453,
+     "end": 44.773
+    },
+    {
+     "w": "las",
+     "start": 44.773,
+     "end": 44.995
+    },
+    {
+     "w": "fotos",
+     "start": 44.995,
+     "end": 45.315
+    },
+    {
+     "w": "que",
+     "start": 45.315,
+     "end": 45.536
+    },
+    {
+     "w": "puede.",
+     "start": 45.536,
+     "end": 46.004
+    }
+   ]
+  },
+  {
+   "start": 46.704,
+   "end": 50.329,
+   "text": "Tómale fotos a quien quieres. Nunca sabes cuál será la última.",
+   "scene": "amanecer",
+   "words": [
+    {
+     "w": "Tómale",
+     "start": 46.704,
+     "end": 47.079
+    },
+    {
+     "w": "fotos",
+     "start": 47.079,
+     "end": 47.404
+    },
+    {
+     "w": "a",
+     "start": 47.404,
+     "end": 47.529
+    },
+    {
+     "w": "quien",
+     "start": 47.529,
+     "end": 47.854
+    },
+    {
+     "w": "quieres.",
+     "start": 47.854,
+     "end": 48.429
+    },
+    {
+     "w": "Nunca",
+     "start": 48.429,
+     "end": 48.754
+    },
+    {
+     "w": "sabes",
+     "start": 48.754,
+     "end": 49.079
+    },
+    {
+     "w": "cuál",
+     "start": 49.079,
+     "end": 49.354
+    },
+    {
+     "w": "será",
+     "start": 49.354,
+     "end": 49.629
+    },
+    {
+     "w": "la",
+     "start": 49.629,
+     "end": 49.804
+    },
+    {
+     "w": "última.",
+     "start": 49.804,
+     "end": 50.329
+    }
+   ]
+  }
+ ],
+ "total": 52.229,
+ "audio": "historia/audio-historia-dtmf.wav",
+ "song": {
+  "title": "DtMF",
+  "artists": "Bad Bunny",
+  "cardLine": 1
+ },
+ "flash": [
+  "movil:llamada:Mamá"
+ ],
+ "estilo": "pelicula",
+ "cast": {
+  "him": {
+   "hair": "curly",
+   "skin": "#c98e66",
+   "hairC": "#1a1412",
+   "coat": "#6d5a44",
+   "shirt": "#efe6d6"
+  }
+ },
+ "fecha": "'09 05 17"
+}

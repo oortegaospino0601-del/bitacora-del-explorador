@@ -1,7 +1,7 @@
 // Escenas de la historia "Ya me enteré" (Reik). Ilustración plana, sin texto.
 import React from 'react';
 import {AbsoluteFill} from 'remotion';
-import {Birds, Bokeh, Cam, Glow, Grad, H, HER, HIM, Hand, Memory, OTHER, Person, Rain, Skyline, Svg, Vignette, W, ease, lin, mix, mixC, rng, useT} from './kit';
+import {ABUELA, Birds, Bokeh, Cam, Glow, Grad, H, HER, HIM, Hand, Memory, OTHER, Person, Rain, Skyline, Svg, Vignette, W, ease, lin, mix, mixC, rng, useCast, useT} from './kit';
 
 type S = {dur: number};
 
@@ -116,7 +116,7 @@ const Heart: React.FC<{x: number; y: number; s: number; c?: string}> = ({x, y, s
   <path transform={`translate(${x} ${y}) scale(${s})`} d="M 0 8 C -14 -6 -10 -18 0 -10 C 10 -18 14 -6 0 8 Z" fill={c} />
 );
 
-export const Movil: React.FC<S & {mode?: 'foto' | 'ella' | 'espera'}> = ({dur, mode = 'foto'}) => {
+export const Movil: React.FC<S & {mode?: 'foto' | 'ella' | 'espera' | 'llamadas' | 'llamada'; name?: string}> = ({dur, mode = 'foto', name = 'Mamá'}) => {
   const t = useT();
   const float = Math.sin(t * 1.4) * 8;
   const typing = mode === 'foto' ? t > 3.0 && t < 3.9 : mode === 'ella' ? t > 0.15 && t < 0.6 : t > 2.6 && t < 3.3;
@@ -168,6 +168,37 @@ export const Movil: React.FC<S & {mode?: 'foto' | 'ella' | 'espera'}> = ({dur, m
               ))}
             </g>
           )}
+          {mode === 'llamadas' && (
+            <g fontFamily="Montserrat, Arial">
+              {[0, 1, 2].map((i) => {
+                const p = ease(t, 0.3 + i * 0.7, 0.55 + i * 0.7);
+                return (
+                  <g key={i} opacity={p} transform={`translate(${(1 - p) * 60} 0)`}>
+                    <rect x={-236} y={-370 + i * 150} width={472} height={124} rx={24} fill="#252c55" />
+                    <circle cx={-170} cy={-308 + i * 150} r={38} fill="#3a2a40" />
+                    <path d={`M -186 ${-322 + i * 150} q 6 30 32 32 l 6 -10 l -12 -8 l -6 6 q -10 -6 -14 -14 l 6 -6 l -8 -12 Z`} fill="#ff5a6a" />
+                    <text x={-110} y={-318 + i * 150} fontWeight={800} fontSize={34} fill="#ff6b7a">{name}</text>
+                    <text x={-110} y={-280 + i * 150} fontWeight={600} fontSize={24} fill="#8a95cc">{['Llamada perdida · 18:02', 'Llamada perdida · 18:09', 'Llamada perdida · 18:31'][i]}</text>
+                  </g>
+                );
+              })}
+            </g>
+          )}
+          {mode === 'llamada' && (
+            <g fontFamily="Montserrat, Arial">
+              {[0, 1, 2].map((i) => {
+                const k = ((t * 0.9 + i / 3) % 1);
+                return <circle key={i} cx={0} cy={-200} r={110 + k * 170} fill="none" stroke="#7fe3a0" strokeWidth={6} opacity={(1 - k) * 0.5} />;
+              })}
+              <circle cx={0} cy={-200} r={110} fill="#3a4372" />
+              <circle cx={0} cy={-232} r={40} fill="#aab4e6" />
+              <path d="M -66 -130 Q 0 -200 66 -130 Z" fill="#aab4e6" />
+              <text x={0} y={-10} textAnchor="middle" fontWeight={800} fontSize={56} fill="#ffffff">{name}</text>
+              <text x={0} y={36} textAnchor="middle" fontWeight={600} fontSize={26} fill="#8a95cc">llamando…</text>
+              <circle cx={-130} cy={300} r={58} fill="#ff4a5a" />
+              <circle cx={130} cy={300 + Math.sin(t * 10) * 6} r={58} fill="#2fc46a" />
+            </g>
+          )}
           {mode === 'foto' && <Bubble t={t} t0={0.3} x={-232} y={-380} w={300} h={72} />}
           {mode === 'foto' && <Bubble t={t} t0={0.9} x={-232} y={-292} w={220} h={72} />}
           {mode === 'foto' && <Bubble t={t} t0={1.6} x={-232} y={-200} w={330} h={406}>
@@ -196,7 +227,7 @@ export const Movil: React.FC<S & {mode?: 'foto' | 'ella' | 'espera'}> = ({dur, m
               ))}
             </g>
           )}
-          <g fill="#262d55">
+          <g fill="#262d55" opacity={mode === 'llamada' || mode === 'llamadas' ? 0 : 1}>
             {Array.from({length: 3}).map((_, r) =>
               Array.from({length: 9}).map((__, c) => <rect key={`${r}-${c}`} x={-236 + c * 53 + (r === 2 ? 26 : 0)} y={410 + r * 40} width={42} height={30} rx={7} />),
             )}
@@ -270,6 +301,7 @@ export const Ojo: React.FC<S> = ({dur}) => {
 // ---------- 4: recuerdo del café ----------
 export const Cafe: React.FC<S> = ({dur}) => {
   const t = useT();
+  const cast = useCast();
   const reach = ease(t, 0.9, 2.6) * 50;
   const laugh = Math.sin(t * 3.2) * 4;
   return (
@@ -304,8 +336,8 @@ export const Cafe: React.FC<S> = ({dur}) => {
         <ellipse cx={540} cy={1730} rx={110} ry={20} fill="#24120c" />
         {[268, 322, 758, 812].map((x, i) => (
           <g key={i}>
-            <rect x={x - 15} y={1410} width={30} height={300} rx={12} fill={i < 2 ? HIM.pants : HER.pants} />
-            <ellipse cx={x} cy={1712} rx={26} ry={12} fill={i < 2 ? HIM.shoes : HER.shoes} />
+            <rect x={x - 15} y={1410} width={30} height={300} rx={12} fill={i < 2 ? cast.him.pants : cast.her.pants} />
+            <ellipse cx={x} cy={1712} rx={26} ry={12} fill={i < 2 ? cast.him.shoes : cast.her.shoes} />
           </g>
         ))}
         {[420, 660].map((x, i) => (
@@ -364,12 +396,37 @@ export const Atardecer: React.FC<S> = ({dur}) => {
 };
 
 // Foto "Polaroid" con un recuerdo dentro.
-const Polaroid: React.FC<{x: number; y: number; rot: number; s?: number; kind: 'sunset' | 'cafe'; id: string}> = ({x, y, rot, s = 1, kind, id}) => (
+export const Polaroid: React.FC<{x: number; y: number; rot: number; s?: number; kind: 'sunset' | 'cafe' | 'abuela' | 'playa'; id: string; blur?: number}> = ({x, y, rot, s = 1, kind, id, blur = 0}) => (
   <g transform={`translate(${x} ${y}) rotate(${rot}) scale(${s})`}>
+    {blur > 0 && (
+      <defs>
+        <filter id={`${id}bl`}>
+          <feGaussianBlur stdDeviation={blur} />
+        </filter>
+      </defs>
+    )}
     <rect x={-262} y={-312} width={540} height={650} rx={6} fill="#000000" opacity={0.3} />
     <rect x={-270} y={-320} width={540} height={650} rx={6} fill="#f3efe7" />
     <svg x={-240} y={-290} width={480} height={480} viewBox="0 0 1080 1080" preserveAspectRatio="xMidYMid slice">
-      {kind === 'sunset' ? (
+      <g filter={blur > 0 ? `url(#${id}bl)` : undefined}>
+      {kind === 'abuela' ? (
+        <>
+          <rect width={1080} height={1080} fill="#c98f5a" />
+          <rect x={0} y={700} width={1080} height={380} fill="#8a5a3a" />
+          <rect x={620} y={160} width={300} height={360} fill="#e8c890" />
+          <Person look={ABUELA} x={420} y={1250} s={1.25} armR={40} smile={1} eyes="closed" />
+          <Person look={{...HIM, hair: 'curly'}} x={720} y={1180} s={0.75} armL={40} smile={1} />
+        </>
+      ) : kind === 'playa' ? (
+        <>
+          <rect width={1080} height={1080} fill="#ffcf9a" />
+          <rect y={600} width={1080} height={200} fill="#3fa7b5" />
+          <rect y={800} width={1080} height={300} fill="#f1d3a0" />
+          <circle cx={540} cy={560} r={120} fill="#fff1c8" />
+          <Person look={HIM} x={400} y={1080} s={1.05} armR={22} smile={0.9} />
+          <Person look={HER} x={700} y={1080} s={1.05} armL={22} smile={1} eyes="closed" tilt={-4} />
+        </>
+      ) : kind === 'sunset' ? (
         <>
           <defs>
             <Grad id={`${id}s`} stops={[[0, '#d8746c'], [0.5, '#f4a46e'], [1, '#ffd89c']]} />
@@ -389,6 +446,7 @@ const Polaroid: React.FC<{x: number; y: number; rot: number; s?: number; kind: '
           <Person look={HER} x={750} y={1250} s={1.2} armL={40} smile={1} eyes="closed" />
         </>
       )}
+      </g>
     </svg>
   </g>
 );
@@ -407,7 +465,7 @@ const Desk: React.FC<{id: string; warm?: number}> = ({id, warm = 0}) => (
   </>
 );
 
-export const Foto: React.FC<S> = ({dur}) => {
+export const Foto: React.FC<S & {kind?: 'sunset' | 'abuela' | 'playa'; blur?: number}> = ({dur, kind = 'sunset', blur = 0}) => {
   const t = useT();
   const p = ease(t, 0, dur);
   const y = mix(1180, 960, p);
@@ -420,7 +478,7 @@ export const Foto: React.FC<S> = ({dur}) => {
         <Polaroid x={250} y={1420} rot={14} s={0.7} kind="cafe" id="f6b" />
         <g transform={`translate(540 ${y}) rotate(${r})`}>
           <Hand x={60} y={430} s={1.5} part="back" sleeve="#1c2742" />
-          <Polaroid x={0} y={0} rot={0} kind="sunset" id="f6a" />
+          <Polaroid x={0} y={0} rot={0} kind={kind} id={`f6a${kind}`} blur={blur} />
           <Hand x={60} y={430} s={1.5} part="thumb" />
         </g>
         {Array.from({length: 26}).map((_, i) => (
@@ -545,7 +603,8 @@ export const Cara: React.FC<S> = ({dur}) => {
   const t = useT();
   const sm = ease(t, 1.0, 2.4);
   const tear = lin(t, 2.2, dur + 0.3);
-  const skin = mixC(HIM.skin, '#9fb0e0', 0.22);
+  const him = useCast().him;
+  const skin = mixC(him.skin, '#9fb0e0', 0.22);
   const lid = t > 0.8 && t < 1.1 ? Math.sin(((t - 0.8) / 0.3) * Math.PI) : 0;
   return (
     <Cam dur={dur} z={[1.0, 1.12]} y={[0, 40]}>
@@ -555,13 +614,13 @@ export const Cara: React.FC<S> = ({dur}) => {
         </defs>
         <rect width={W} height={H} fill="url(#k9bg)" />
         <Bokeh seed={91} n={18} colors={['#ffd58a', '#7f95ff', '#c8b7ff']} rMin={40} rMax={130} opacity={0.25} />
-        <path d="M 0 1920 L 0 1640 Q 120 1470 400 1440 L 680 1440 Q 960 1470 1080 1640 L 1080 1920 Z" fill="#26395a" />
+        <path d="M 0 1920 L 0 1640 Q 120 1470 400 1440 L 680 1440 Q 960 1470 1080 1640 L 1080 1920 Z" fill={mixC(him.coat, '#0c0f22', 0.25)} />
         <path d="M 440 1440 L 540 1620 L 640 1440 Z" fill="#dcd8d0" />
         <rect x={430} y={1180} width={220} height={280} fill={mixC(skin, '#000000', 0.12)} />
         <ellipse cx={212} cy={930} rx={42} ry={74} fill={skin} />
         <ellipse cx={868} cy={930} rx={42} ry={74} fill={skin} />
         <ellipse cx={540} cy={900} rx={330} ry={392} fill={skin} stroke="#8ea4ff" strokeWidth={6} strokeOpacity={0.35} />
-        <g fill={HIM.hairC}>
+        <g fill={him.hairC}>
           <ellipse cx={540} cy={530} rx={372} ry={225} />
           <polygon points="160,540 172,700 232,630 282,715 350,620 420,705 482,615 545,700 610,615 672,708 738,622 800,712 860,632 910,700 920,540" />
           <rect x={172} y={540} width={58} height={330} rx={24} />

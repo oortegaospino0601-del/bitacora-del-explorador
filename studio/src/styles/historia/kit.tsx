@@ -167,7 +167,7 @@ export const Bokeh: React.FC<{seed?: number; n?: number; colors: string[]; rMin?
 
 // Personaje plano. Origen en los pies (centro). Altura ~560 a escala 1.
 export type Look = {
-  hair: 'm' | 'f' | 'm2';
+  hair: 'm' | 'f' | 'm2' | 'curly' | 'bun' | 'bob';
   skin: string;
   hairC: string;
   coat: string;
@@ -180,6 +180,13 @@ export type Look = {
 export const HIM: Look = {hair: 'm', skin: '#f0c4a1', hairC: '#16171d', coat: '#2f4a6e', pants: '#1b2032', shoes: '#e8e4dc', shirt: '#ebe7df'};
 export const HER: Look = {hair: 'f', skin: '#f3cdb0', hairC: '#5b3020', coat: '#d9b78c', pants: '#3b2b2b', shoes: '#2a1d1d', long: true};
 export const OTHER: Look = {hair: 'm2', skin: '#e2b08c', hairC: '#2b1d15', coat: '#7a3a3c', pants: '#23232d', shoes: '#1d1d24', shirt: '#d9d2c4'};
+export const ABUELA: Look = {hair: 'bun', skin: '#e8b994', hairC: '#c9c6c2', coat: '#8a5a7a', pants: '#4a3a4a', shoes: '#2a1d1d', long: true};
+
+// Reparto: cada historia puede cambiar cómo se ven "él", "ella" y "el otro" sin tocar las escenas.
+export type Cast = {him: Look; her: Look; other: Look; abuela: Look};
+export const CastCtx = React.createContext<Cast>({him: HIM, her: HER, other: OTHER, abuela: ABUELA});
+export const useCast = () => React.useContext(CastCtx);
+const resolve = (l: Look, c: Cast) => (l === HIM ? c.him : l === HER ? c.her : l === OTHER ? c.other : l === ABUELA ? c.abuela : l);
 
 export const Person: React.FC<{
   look: Look;
@@ -196,7 +203,9 @@ export const Person: React.FC<{
   noLegs?: boolean;
   shade?: number; // 0..1 oscurece (contraluz)
   opacity?: number;
-}> = ({look, x, y, s = 1, view = 'front', walk = null, armL = 4, armR = 4, tilt = 0, smile = 0, eyes = 'open', noLegs = false, shade = 0, opacity = 1}) => {
+  rot?: number;
+}> = ({look: look0, x, y, s = 1, view = 'front', walk = null, armL = 4, armR = 4, tilt = 0, smile = 0, eyes = 'open', noLegs = false, shade = 0, opacity = 1, rot = 0}) => {
+  const look = resolve(look0, useCast());
   const dk = (c: string) => (shade ? mixC(c, '#0c0f22', shade) : c);
   const liftL = walk === null ? 0 : Math.max(0, Math.sin(walk)) * 24;
   const liftR = walk === null ? 0 : Math.max(0, -Math.sin(walk)) * 24;
@@ -224,7 +233,14 @@ export const Person: React.FC<{
         {look.hair === 'f' && <rect x={-64} y={-560} width={128} height={front ? 190 : 200} rx={52} fill={hc} />}
         <rect x={-14} y={-450} width={28} height={44} fill={sk} />
         <ellipse cx={0} cy={-490} rx={50} ry={58} fill={sk} />
-        {!front && look.hair !== 'f' && (
+        {!front && (look.hair === 'curly' || look.hair === 'bun' || look.hair === 'bob') && (
+          <g fill={hc}>
+            <ellipse cx={0} cy={-505} rx={look.hair === 'bob' ? 62 : 56} ry={look.hair === 'bob' ? 66 : 60} />
+            {look.hair === 'curly' && [-44, -22, 0, 22, 44].map((cx) => <circle key={cx} cx={cx} cy={-552} r={20} />)}
+            {look.hair === 'bun' && <circle cx={0} cy={-566} r={26} />}
+          </g>
+        )}
+        {!front && (look.hair === 'm' || look.hair === 'm2') && (
           <g>
             <ellipse cx={0} cy={-500} rx={54} ry={58} fill={hc} />
             <polygon points="-50,-480 -40,-452 -26,-468 -12,-448 0,-466 12,-448 26,-468 40,-452 50,-480" fill={hc} />
@@ -245,6 +261,29 @@ export const Person: React.FC<{
             <path d="M -54 -520 Q -10 -540 52 -500 Q 30 -530 -20 -528 Z" />
             <rect x={-54} y={-524} width={10} height={36} rx={4} />
             <rect x={44} y={-524} width={10} height={36} rx={4} />
+          </g>
+        )}
+        {front && look.hair === 'curly' && (
+          <g fill={hc}>
+            <ellipse cx={0} cy={-524} rx={56} ry={40} />
+            {[-48, -30, -12, 6, 24, 42].map((cx, i) => <circle key={cx} cx={cx} cy={-548 + (i % 2) * 8} r={19} />)}
+            {[-52, 52].map((cx) => <circle key={cx} cx={cx} cy={-508} r={14} />)}
+          </g>
+        )}
+        {front && look.hair === 'bun' && (
+          <g fill={hc}>
+            <ellipse cx={0} cy={-526} rx={54} ry={36} />
+            <circle cx={0} cy={-570} r={26} />
+            <path d="M -54 -522 Q -56 -490 -48 -470 L -42 -500 Z" />
+            <path d="M 54 -522 Q 56 -490 48 -470 L 42 -500 Z" />
+          </g>
+        )}
+        {front && look.hair === 'bob' && (
+          <g fill={hc}>
+            <path d="M -62 -520 Q -66 -462 -58 -440 L -44 -440 L -46 -500 Z" />
+            <path d="M 62 -520 Q 66 -462 58 -440 L 44 -440 L 46 -500 Z" />
+            <ellipse cx={0} cy={-524} rx={60} ry={42} />
+            <rect x={-54} y={-528} width={108} height={22} rx={10} />
           </g>
         )}
         {front && look.hair === 'f' && (
@@ -284,7 +323,7 @@ export const Person: React.FC<{
     );
   };
   return (
-    <g transform={`translate(${x} ${y}) scale(${s})`} opacity={opacity}>
+    <g transform={`translate(${x} ${y}) scale(${s}) rotate(${rot} 0 -280)`} opacity={opacity}>
       {!noLegs && leg(-24, liftL)}
       {!noLegs && leg(24, liftR)}
       <g transform={`translate(0 ${bob})`}>

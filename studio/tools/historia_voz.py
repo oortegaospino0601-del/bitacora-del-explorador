@@ -24,6 +24,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 spec = json.loads(Path(sys.argv[1]).read_text())
 os.environ.setdefault("SPEED", str(spec.get("speed", 0.96)))
+os.environ.setdefault("VOICE", spec.get("voice", "em_alex"))
 import make  # noqa: E402  (reutiliza voz, números a palabras y tiempos de palabras)
 
 ROOT = HERE.parent
@@ -92,7 +93,7 @@ def main():
                  [L(m["drumsFromLine"]), L(m["dropAtLine"]), "piano,pad,drums,bass"],
                  [L(m["dropAtLine"]), L(m["backAtLine"]), "piano,pad"],
                  [L(m["backAtLine"]), total + 2, "piano,pad,drums,bass"]]
-        cfg = {"bpm": m.get("bpm", 84), "parts": parts, "impacts": [0.05, L(m["dropAtLine"])], "risers": [L(m["drumsFromLine"]), L(m["backAtLine"])]}
+        cfg = {"bpm": m.get("bpm", 84), "style": m.get("style", "trap"), "prog": m.get("prog", "triste"), "transpose": m.get("transpose", 0), "parts": parts, "impacts": [0.05, L(m["dropAtLine"])], "risers": [L(m["drumsFromLine"]), L(m["backAtLine"])]}
         subprocess.run([sys.executable, "-I", str(HERE / "musica_beat.py"), str(work / "musica.wav"), f"{total + 0.5:.2f}", json.dumps(cfg)], check=True)
         inputs += ["-i", str(work / "musica.wav")]
         fc = (
@@ -116,9 +117,18 @@ def main():
           "audio": f"historia/audio-{slug}.wav"}
     if spec.get("song"):
         tl["song"] = spec["song"]
-    if spec.get("flash"):
-        tl["flash"] = spec["flash"]
+    for key in ("flash", "estilo", "cast", "fecha"):
+        if spec.get(key):
+            tl[key] = spec[key]
     (ROOT / "src" / "styles" / "historia" / f"timeline-{slug}.json").write_text(json.dumps(tl, ensure_ascii=False, indent=1))
+    # índice de historias para la composición
+    hdir = ROOT / "src" / "styles" / "historia"
+    slugs = sorted(p.stem[len("timeline-"):] for p in hdir.glob("timeline-*.json"))
+    ident = lambda x: "t_" + x.replace("-", "_")  # noqa: E731
+    idx = ["// Índice de historias (lo regenera tools/historia_voz.py)."]
+    idx += [f"import {ident(x)} from './timeline-{x}.json';" for x in slugs]
+    idx += ["", "export const ALL = {"] + [f"  '{x}': {ident(x)}," for x in slugs] + ["};", ""]
+    (hdir / "timelines.ts").write_text("\n".join(idx))
     print("ok", out)
 
 

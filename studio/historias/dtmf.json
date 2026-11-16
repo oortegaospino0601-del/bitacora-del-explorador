@@ -1,0 +1,28 @@
+{
+  "slug": "historia-dtmf",
+  "hook": "3.214 FOTOS…\nY NI UNA\nCON SU ABUELA.",
+  "song": {"title": "DtMF", "artists": "Bad Bunny", "cardLine": 1},
+  "estilo": "pelicula",
+  "fecha": "'09 05 17",
+  "cast": {"him": {"hair": "curly", "skin": "#c98e66", "hairC": "#1a1412", "coat": "#6d5a44", "shirt": "#efe6d6"}},
+  "flash": ["movil:llamada:Mamá"],
+  "speed": 1.0,
+  "tail": 0.4,
+  "minScene": 2.8,
+  "music": {"bpm": 88, "prog": "nostalgia", "style": "trap", "drumsFromLine": 2, "dropAtLine": 6, "backAtLine": 11, "gain": 0.3},
+  "lines": [
+    {"scene": "galeria:scroll", "rain": 0.0, "text": "Tenía más de tres mil fotos en el celular… y ni una con su abuela."},
+    {"scene": "barrio:casa", "rain": 0.0, "text": "Esta es la historia de DtMF, de Bad Bunny.", "tts": "Esta es la historia de Debí Tirar Más Fotos, de Bad Bani."},
+    {"scene": "familia:cocina", "rain": 0.0, "text": "Cada domingo ella le cocinaba… y él no soltaba el celular."},
+    {"scene": "familia:pide", "rain": 0.0, "text": "Ella siempre le pedía una foto juntos. Él siempre decía: otro día."},
+    {"scene": "movil:llamadas:Abuela", "rain": 0.1, "text": "Un martes, ella lo llamó tres veces."},
+    {"scene": "ventana-noche", "rain": 0.4, "text": "Él estaba ocupado. Pensó que la llamaría mañana."},
+    {"scene": "movil:llamada:Mamá", "rain": 0.2, "text": "Pero al día siguiente, la que llamó fue su mamá."},
+    {"scene": "lluvia", "rain": 1.0, "text": "Y entendió que ya no habría otro día."},
+    {"scene": "galeria:busca:abuela", "rain": 0.2, "text": "Buscó entre sus tres mil fotos… y no la encontró en ninguna."},
+    {"scene": "foto:abuela:3", "rain": 0.1, "text": "Solo tenía una, borrosa, de cuando era niño."},
+    {"scene": "ojo", "rain": 0.1, "text": "Daría todo por un domingo más. Aunque fuera para una sola foto."},
+    {"scene": "familia:foto", "rain": 0.0, "text": "Desde ese día, a su mamá le toma todas las fotos que puede."},
+    {"scene": "amanecer", "rain": 0.0, "text": "Tómale fotos a quien quieres. Nunca sabes cuál será la última."}
+  ]
+}

@@ -20,9 +20,13 @@ def note(n):  # n: semitonos desde A4
     return 440.0 * 2 ** (n / 12)
 
 
-# Am - F - C - G (un compás cada acorde). Notas relativas a A4.
-CHORDS = [[-12, -9, -5], [-16, -12, -9], [-9, -5, -2], [-14, -10, -7]]
-ROOTS = [-36, -40, -33, -38]
+# Progresiones (un compás cada acorde). Notas relativas a A4.
+PROGS = {
+    "triste": ([[-12, -9, -5], [-16, -12, -9], [-9, -5, -2], [-14, -10, -7]], [-36, -40, -33, -38]),     # Am F C G
+    "nostalgia": ([[-9, -5, -2], [-14, -10, -7], [-12, -9, -5], [-16, -12, -9]], [-33, -38, -36, -40]),  # C G Am F
+    "oscura": ([[-12, -9, -5], [-17, -14, -10], [-16, -12, -9], [-17, -13, -10]], [-36, -41, -40, -41]), # Am Em F E
+    "verano": ([[-16, -12, -9], [-9, -5, -2], [-14, -10, -7], [-12, -9, -5]], [-40, -33, -38, -36]),     # F C G Am
+}
 
 
 def env(n, a, d):
@@ -57,6 +61,11 @@ def place(buf, x, at, g=1.0):
 
 def main(out, dur, cfg):
     bpm = cfg.get("bpm", 84)
+    style = cfg.get("style", "trap")
+    tr = cfg.get("transpose", 0)
+    CH, RT = PROGS[cfg.get("prog", "triste")]
+    CHORDS = [[x + tr for x in c] for c in CH]
+    ROOTS = [x + tr for x in RT]
     beat = 60 / bpm
     step = beat / 4
     bar = beat * 4
@@ -90,6 +99,20 @@ def main(out, dur, cfg):
         for s in range(16):
             tt = t0 + s * step
             if not on(tt, "drums"):
+                continue
+            if style == "dembow":
+                if s in (0, 4, 8, 12):
+                    place(drums, kick, tt, 0.9)
+                if s in (3, 6, 11, 14):
+                    place(drums, clap, tt, 0.5)
+                if s % 2 == 1:
+                    place(drums, hat, tt, 0.2)
+                continue
+            if style == "balada":
+                if s in (0, 8):
+                    place(drums, kick, tt, 0.6)
+                if s in (4, 12):
+                    place(drums, clap, tt, 0.3)
                 continue
             if s in (0, 6, 10):
                 place(drums, kick, tt, 0.9)
