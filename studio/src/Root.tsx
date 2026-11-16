@@ -105,7 +105,7 @@ export const Root: React.FC = () => (
     height={1920}
     fps={FPS}
     durationInFrames={Math.round(TOTAL * FPS)}
-    defaultProps={{ambiente: 'historia/ambiente-lluvia.wav'}}
+    defaultProps={{subtitulos: true}}
   />
   </>
 );

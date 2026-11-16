@@ -1,0 +1,19 @@
+{
+  "slug": "historia-ya-me-entere",
+  "hook": "NADIE SE LO DIJO.\nSE ENTERÓ\nPOR UNA FOTO.",
+  "lines": [
+    {"scene": "ventana-noche", "text": "Nadie se lo dijo a la cara. Se enteró por una foto."},
+    {"scene": "movil", "text": "Un amigo se la mandó sin pensar: ella, sonriendo… con otro."},
+    {"scene": "ojo", "text": "Y en ese segundo, algo dentro de él se rompió."},
+    {"scene": "cafe", "text": "Recordó el café donde ella se reía de sus chistes malos."},
+    {"scene": "atardecer", "text": "Las tardes en que caminaban sin prisa, de la mano."},
+    {"scene": "foto", "text": "Todavía guardaba esa foto. A ella, ya no."},
+    {"scene": "lluvia", "text": "Salió a caminar bajo la lluvia, para no pensar en ella."},
+    {"scene": "con-otro", "text": "Y entonces la vio. Con él. Feliz, como antes lo era a su lado."},
+    {"scene": "cara", "text": "Ella no lo vio. Él sonrió… aunque le doliera."},
+    {"scene": "se-alejan", "text": "Porque a veces, querer bien también es dejar ir."},
+    {"scene": "caja", "text": "Esa noche guardó todos sus recuerdos en una caja."},
+    {"scene": "ventana-amanecer", "text": "Y por primera vez en meses, dejó de llover."},
+    {"scene": "amanecer", "text": "Dolió, pero siguió adelante. ¿Y tú, también te enteraste así?"}
+  ]
+}

@@ -83,11 +83,14 @@ Ids de composición: solo letras, números y guiones (NO guion bajo). Ej.: `Shor
 (`src/styles/diario/`, portada de periódico). En el JSON: `"composition": "Short-diario"`.
 
 ## Historias de canciones (sin voz)
-Formato distinto: una historia animada solo con imágenes para ponerla encima de una canción conocida.
+Formato distinto: una historia animada narrada en tercera persona (sin diálogos), con gancho
+obligatorio al inicio (voz + texto en pantalla), para ponerla encima de una canción conocida.
 La canción NO va en el MP4 (copyright): se añade al subir el Short desde la app de YouTube ("Sonido").
 - Composición: `Historia-ya-me-entere` (`src/styles/historia/`): `kit.tsx` (personajes, ciudad,
   lluvia, bokeh, manos), `escenas.tsx` (13 escenas) y `Historia.tsx` (línea de tiempo y fundidos).
 - Guion y pasos de subida: `historias/<slug>.md`.
-- Ambiente de lluvia: `python3 -I tools/ambiente_lluvia.py public/historia/ambiente-lluvia.wav 58 "<t:nivel,...>"`.
+- Narración: frases en `historias/<slug>.json` (una por escena, la primera es el gancho y `hook` es el
+  texto en pantalla). `python3 -I tools/historia_voz.py historias/<slug>.json` genera la voz y la lluvia,
+  ajusta cada escena a su frase y escribe `src/styles/historia/timeline.json` (máx. 59,5 s).
 - Revisar escenas: `CHROME=/opt/pw-browsers/chromium node tools/stills.mjs <dir> Historia-ya-me-entere 30 200 ...`.
 - Render: `npx remotion render src/index.ts Historia-ya-me-entere out/historia-ya-me-entere.mp4 --browser-executable=/opt/pw-browsers/chromium --chrome-mode=chrome-for-testing --crf=20`.
