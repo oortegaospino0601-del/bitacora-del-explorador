@@ -1,72 +1,100 @@
-// Historia animada para canción, narrada en tercera persona (voz Alex), con gancho inicial.
-// La canción se añade después en la app de YouTube ("Sonido") por debajo de la voz.
+// Historias animadas de canciones: narrador en tercera persona, gancho inicial, la canción
+// siempre visible (píldora arriba + tarjeta grande cuando se presenta) y subtítulos.
 import React from 'react';
 import {AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame} from 'remotion';
 import {FPS} from './kit';
-import {Amanecer, Atardecer, Cafe, Caja, Cara, ConOtro, Foto, Lluvia, Movil, Ojo, SeAlejan, Ventana} from './escenas';
-import timeline from './timeline.json';
+import {Amanecer, Atardecer, Cafe, Caja, Cara, ConOtro, Foto, Lluvia, Movil, Ojo, Parada, SeAlejan, Ventana} from './escenas';
+import yaMeEntere from './timeline-historia-ya-me-entere.json';
+import raraVez from './timeline-historia-rara-vez.json';
 
-const XF = 0.6; // fundido cruzado entre escenas (s)
+const XF = 0.45; // fundido cruzado entre escenas (s)
 const FONT = "'Montserrat', 'Helvetica Neue', Arial, sans-serif";
 
 type Word = {w: string; start: number; end: number};
-type Line = {start: number; end: number; text: string; words: Word[]};
-const TL = timeline as {hook: string; durations: number[]; lines: Line[]; total: number; audio: string};
+type Line = {start: number; end: number; text: string; scene: string; words: Word[]};
+export type Timeline = {
+  slug: string;
+  hook: string;
+  durations: number[];
+  lines: Line[];
+  total: number;
+  audio: string;
+  song?: {title: string; artists: string; cardLine?: number};
+  flash?: string[];
+};
 
-const COMPS: React.FC<{dur: number}>[] = [
-  ({dur}) => <Ventana dur={dur} />,
-  Movil,
-  Ojo,
-  Cafe,
-  Atardecer,
-  Foto,
-  Lluvia,
-  ConOtro,
-  Cara,
-  SeAlejan,
-  Caja,
-  ({dur}) => <Ventana dur={dur} dawn />,
-  Amanecer,
-];
+export const TIMELINES: Record<string, Timeline> = {
+  'historia-ya-me-entere': yaMeEntere as Timeline,
+  'historia-rara-vez': raraVez as Timeline,
+};
 
-export const TOTAL = TL.total;
-
-const Fade: React.FC<{first: boolean; children: React.ReactNode}> = ({first, children}) => {
-  const f = useCurrentFrame();
-  const o = first ? 1 : interpolate(f, [0, XF * FPS], [0, 1], {extrapolateRight: 'clamp'});
-  return <AbsoluteFill style={{opacity: o}}>{children}</AbsoluteFill>;
+type SC = React.FC<{dur: number}>;
+const SCENES: Record<string, SC> = {
+  'ventana-noche': ({dur}) => <Ventana dur={dur} />,
+  'ventana-hook': ({dur}) => <Ventana dur={dur} hook />,
+  'ventana-amanecer': ({dur}) => <Ventana dur={dur} dawn />,
+  movil: ({dur}) => <Movil dur={dur} />,
+  'movil-ella': ({dur}) => <Movil dur={dur} mode="ella" />,
+  'movil-espera': ({dur}) => <Movil dur={dur} mode="espera" />,
+  parada: ({dur}) => <Parada dur={dur} />,
+  'parada-ella': ({dur}) => <Parada dur={dur} ella />,
+  ojo: Ojo,
+  cafe: Cafe,
+  atardecer: Atardecer,
+  foto: Foto,
+  lluvia: Lluvia,
+  'con-otro': ConOtro,
+  cara: Cara,
+  'se-alejan': SeAlejan,
+  caja: Caja,
+  amanecer: Amanecer,
 };
 
 const shadow = '0 4px 18px rgba(0,0,0,0.85), 0 0 3px rgba(0,0,0,0.9)';
+const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
-// Gancho: aparece con la primera frase de la voz.
-const Hook: React.FC = () => {
-  const t = useCurrentFrame() / FPS;
-  const l0 = TL.lines[0];
-  const second = l0.words.find((w, i) => i > 0 && /^[A-ZÁÉÍÓÚÑ¿¡]/.test(w.w))?.start ?? l0.start + 1.5;
-  const rows = TL.hook.split('\n');
-  const out = interpolate(t, [TL.durations[0] - 0.2, TL.durations[0] + 0.3], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+const Fade: React.FC<{first: boolean; flash: boolean; children: React.ReactNode}> = ({first, flash, children}) => {
+  const f = useCurrentFrame();
+  const o = first ? 1 : interpolate(f, [0, XF * FPS], [0, 1], clamp);
+  const fl = flash ? interpolate(f, [0, 2, 9], [0, 0.85, 0], clamp) : 0;
   return (
-    <AbsoluteFill style={{alignItems: 'center', paddingTop: 300, opacity: out}}>
+    <AbsoluteFill style={{opacity: o}}>
+      {children}
+      {fl > 0 && <AbsoluteFill style={{background: '#ffffff', opacity: fl}} />}
+    </AbsoluteFill>
+  );
+};
+
+// Gancho: la primera fila entra con la voz y el resto con la segunda parte de la frase.
+const Hook: React.FC<{tl: Timeline}> = ({tl}) => {
+  const t = useCurrentFrame() / FPS;
+  const l0 = tl.lines[0];
+  const brk = l0.words.findIndex((w, i) => i > 0 && /[….]$/.test(l0.words[i - 1].w));
+  const second = brk > 0 ? l0.words[brk].start : l0.start + 1.2;
+  const rows = tl.hook.split('\n');
+  const out = interpolate(t, [tl.durations[0] - 0.25, tl.durations[0] + 0.2], [1, 0], clamp);
+  return (
+    <AbsoluteFill style={{alignItems: 'center', paddingTop: 330, opacity: out}}>
       {rows.map((r, i) => {
-        const at = i === 0 ? l0.start - 0.1 : second - 0.1 + (i - 1) * 0.22;
-        const p = interpolate(t, [at, at + 0.35], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+        const at = i === 0 ? Math.max(0.05, l0.start - 0.15) : second - 0.1 + (i - 1) * 0.18;
+        const p = interpolate(t, [at, at + 0.22], [0, 1], clamp);
         const last = i === rows.length - 1;
+        const size = i === 0 ? Math.min(64, 940 / (r.length * 0.66)) : Math.min(118, 980 / (r.length * 0.7));
         return (
           <div
             key={i}
             style={{
               fontFamily: FONT,
               fontWeight: 900,
-              fontSize: i === 0 ? 70 : 112,
-              lineHeight: 1.05,
-              letterSpacing: 1,
+              fontSize: size,
+              lineHeight: 1.06,
               color: last ? '#ffcf7a' : '#ffffff',
               textShadow: shadow,
               opacity: p,
-              transform: `translateY(${(1 - p) * 30}px) scale(${0.92 + 0.08 * p})`,
-              marginBottom: i === 0 ? 22 : 0,
+              transform: `scale(${1.25 - 0.25 * p})`,
+              marginBottom: i === 0 ? 18 : 0,
               textAlign: 'center',
+              whiteSpace: 'nowrap',
             }}
           >
             {r}
@@ -77,7 +105,75 @@ const Hook: React.FC = () => {
   );
 };
 
-// Subtítulos discretos: grupos cortos de palabras con la palabra activa en dorado.
+const Eq: React.FC<{t: number; h?: number}> = ({t, h = 30}) => (
+  <div style={{display: 'flex', alignItems: 'flex-end', gap: 4, height: h, marginRight: 14}}>
+    {[0, 1, 2, 3].map((i) => (
+      <div key={i} style={{width: 6, borderRadius: 3, background: '#ffcf7a', height: h * (0.3 + 0.7 * Math.abs(Math.sin(t * (5 + i * 1.7) + i)))}} />
+    ))}
+  </div>
+);
+
+// La canción, siempre visible arriba.
+const SongPill: React.FC<{tl: Timeline}> = ({tl}) => {
+  const t = useCurrentFrame() / FPS;
+  if (!tl.song) return null;
+  const p = interpolate(t, [0.15, 0.5], [0, 1], clamp);
+  return (
+    <AbsoluteFill style={{alignItems: 'center', paddingTop: 165}}>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          padding: '14px 30px',
+          borderRadius: 50,
+          background: 'rgba(8,10,24,0.55)',
+          border: '2px solid rgba(255,207,122,0.55)',
+          opacity: p,
+          transform: `translateY(${(1 - p) * -20}px)`,
+        }}
+      >
+        <Eq t={t} />
+        <span style={{fontFamily: FONT, fontWeight: 800, fontSize: 38, color: '#fff'}}>{tl.song.title}</span>
+        <span style={{fontFamily: FONT, fontWeight: 600, fontSize: 34, color: '#ffcf7a', marginLeft: 14}}>· {tl.song.artists}</span>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// Tarjeta grande cuando el narrador nombra la canción.
+const SongCard: React.FC<{tl: Timeline}> = ({tl}) => {
+  const t = useCurrentFrame() / FPS;
+  if (!tl.song || tl.song.cardLine === undefined) return null;
+  const l = tl.lines[tl.song.cardLine];
+  const p = interpolate(t, [l.start - 0.15, l.start + 0.2], [0, 1], clamp) * interpolate(t, [l.end + 0.15, l.end + 0.5], [1, 0], clamp);
+  if (p <= 0) return null;
+  return (
+    <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', paddingBottom: 260}}>
+      <div
+        style={{
+          width: 760,
+          padding: '46px 40px',
+          borderRadius: 40,
+          background: 'linear-gradient(160deg, rgba(40,26,70,0.92), rgba(14,18,48,0.92))',
+          border: '3px solid rgba(255,207,122,0.7)',
+          boxShadow: '0 30px 80px rgba(0,0,0,0.6)',
+          textAlign: 'center',
+          opacity: p,
+          transform: `scale(${0.85 + 0.15 * p})`,
+        }}
+      >
+        <div style={{display: 'flex', justifyContent: 'center', marginBottom: 18}}>
+          <Eq t={t} h={56} />
+        </div>
+        <div style={{fontFamily: FONT, fontWeight: 600, fontSize: 34, letterSpacing: 6, color: '#ffcf7a'}}>LA CANCIÓN</div>
+        <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 124, color: '#fff', lineHeight: 1.05, margin: '10px 0'}}>{tl.song.title.toUpperCase()}</div>
+        <div style={{fontFamily: FONT, fontWeight: 700, fontSize: 54, color: '#ffffff', opacity: 0.85}}>{tl.song.artists}</div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// Subtítulos: grupos cortos con la palabra activa en dorado.
 const chunk = (ws: Word[]) => {
   const out: Word[][] = [];
   let cur: Word[] = [];
@@ -100,24 +196,22 @@ const chunk = (ws: Word[]) => {
   return out;
 };
 
-const Captions: React.FC = () => {
+const Captions: React.FC<{tl: Timeline}> = ({tl}) => {
   const t = useCurrentFrame() / FPS;
-  const line = TL.lines.find((l, i) => i > 0 && t >= l.start - 0.05 && t <= l.end + 0.45);
+  const card = tl.song?.cardLine;
+  const line = tl.lines.find((l, i) => i > 0 && i !== card && t >= l.start - 0.05 && t <= l.end + 0.4);
   if (!line) return null;
   const groups = chunk(line.words);
   const g = groups.find((gr, i) => t < (groups[i + 1]?.[0].start ?? Infinity)) ?? groups[groups.length - 1];
-  const gIn = interpolate(t, [g[0].start - 0.05, g[0].start + 0.12], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-  const lOut = interpolate(t, [line.end + 0.2, line.end + 0.45], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const gIn = interpolate(t, [g[0].start - 0.05, g[0].start + 0.1], [0, 1], clamp);
+  const lOut = interpolate(t, [line.end + 0.15, line.end + 0.4], [1, 0], clamp);
   return (
-    <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: 'center', paddingTop: 1250}}>
-      <div style={{maxWidth: 900, textAlign: 'center', opacity: gIn * lOut, transform: `translateY(${(1 - gIn) * 12}px)`}}>
+    <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: 'center', paddingTop: 1240}}>
+      <div style={{maxWidth: 920, textAlign: 'center', opacity: gIn * lOut, transform: `scale(${0.9 + 0.1 * gIn})`}}>
         {g.map((w, i) => {
           const on = t >= w.start && t < w.end + 0.05;
           return (
-            <span
-              key={i}
-              style={{fontFamily: FONT, fontWeight: 800, fontSize: 66, color: on ? '#ffd58a' : '#ffffff', textShadow: shadow, marginRight: 16, display: 'inline-block'}}
-            >
+            <span key={i} style={{fontFamily: FONT, fontWeight: 900, fontSize: 74, color: on ? '#ffcf7a' : '#ffffff', textShadow: shadow, marginRight: 18, display: 'inline-block'}}>
               {w.w}
             </span>
           );
@@ -127,31 +221,34 @@ const Captions: React.FC = () => {
   );
 };
 
-export const Historia: React.FC<{ambiente?: string; subtitulos?: boolean}> = ({ambiente, subtitulos = true}) => {
+export const Historia: React.FC<{slug: string; subtitulos?: boolean}> = ({slug, subtitulos = true}) => {
+  const tl = TIMELINES[slug];
   const f = useCurrentFrame();
   let start = 0;
-  const total = TOTAL * FPS;
-  const fin = interpolate(f, [total - 1.3 * FPS, total - 0.2 * FPS], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-  const ini = interpolate(f, [0, 0.4 * FPS], [1, 0], {extrapolateRight: 'clamp'});
+  const total = tl.total * FPS;
+  const fin = interpolate(f, [total - 1.2 * FPS, total - 0.15 * FPS], [0, 1], clamp);
   return (
     <AbsoluteFill style={{background: '#000'}}>
-      {COMPS.map((C, i) => {
-        const d = TL.durations[i];
+      {tl.lines.map((ln, i) => {
+        const d = tl.durations[i];
+        const C = SCENES[ln.scene];
         const from = Math.round(start * FPS);
         start += d;
-        const len = Math.round((d + (i < COMPS.length - 1 ? XF : 0)) * FPS);
+        const len = Math.round((d + (i < tl.lines.length - 1 ? XF : 0)) * FPS);
         return (
           <Sequence key={i} from={from} durationInFrames={len}>
-            <Fade first={i === 0}>
+            <Fade first={i === 0} flash={(tl.flash ?? []).includes(ln.scene)}>
               <C dur={d + XF} />
             </Fade>
           </Sequence>
         );
       })}
-      <Hook />
-      {subtitulos && <Captions />}
-      <AbsoluteFill style={{background: '#000', opacity: Math.max(fin, ini)}} />
-      <Audio src={staticFile(ambiente ?? TL.audio)} />
+      <Hook tl={tl} />
+      <SongCard tl={tl} />
+      {subtitulos && <Captions tl={tl} />}
+      <SongPill tl={tl} />
+      <AbsoluteFill style={{background: '#000', opacity: fin}} />
+      <Audio src={staticFile(tl.audio)} />
     </AbsoluteFill>
   );
 };

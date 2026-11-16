@@ -22,14 +22,14 @@ const Umbrella: React.FC<{x: number; y: number; rx: number; color: string; opaci
 };
 
 // ---------- 1 y 12: ventana (noche / amanecer) ----------
-export const Ventana: React.FC<S & {dawn?: boolean}> = ({dur, dawn = false}) => {
+export const Ventana: React.FC<S & {dawn?: boolean; hook?: boolean}> = ({dur, dawn = false, hook = false}) => {
   const t = useT();
   const p = dawn ? ease(t, 0.2, dur - 0.4) : 0;
   const id = dawn ? 'v12' : 'v1';
   const breath = Math.sin(t * 1.6) * 5 - (dawn ? ease(t, 2.2, dur) * 16 : 0);
   const wall = mixC('#0d1126', '#3b2c44', p);
   return (
-    <Cam dur={dur} z={dawn ? [1.08, 1.0] : [1, 1.07]} y={dawn ? [20, 0] : [0, 25]}>
+    <Cam dur={dur} z={dawn ? [1.08, 1.0] : hook ? [1.22, 1.02] : [1, 1.07]} y={dawn ? [20, 0] : hook ? [80, 0] : [0, 25]}>
       <Svg>
         <defs>
           <Grad id={`${id}sky`} stops={[[0, mixC('#0e1330', '#3d4a88', p)], [0.55, mixC('#1d2550', '#e0897e', p)], [1, mixC('#2c3666', '#f8c98f', p)]]} />
@@ -101,10 +101,25 @@ const MiniPhoto: React.FC<{id: string}> = ({id}) => (
   </>
 );
 
-export const Movil: React.FC<S> = ({dur}) => {
+const Chip: React.FC<{t: number; t0: number; y: number; label: string}> = ({t, t0, y, label}) => {
+  const p = ease(t, t0, t0 + 0.2);
+  if (p <= 0) return null;
+  return (
+    <g opacity={p}>
+      <rect x={-70} y={y} width={140} height={34} rx={17} fill="#2a3160" />
+      <text x={0} y={y + 24} textAnchor="middle" fontFamily="Montserrat, Arial" fontWeight={700} fontSize={18} fill="#aab4e6">{label}</text>
+    </g>
+  );
+};
+
+const Heart: React.FC<{x: number; y: number; s: number; c?: string}> = ({x, y, s, c = '#ff6b8a'}) => (
+  <path transform={`translate(${x} ${y}) scale(${s})`} d="M 0 8 C -14 -6 -10 -18 0 -10 C 10 -18 14 -6 0 8 Z" fill={c} />
+);
+
+export const Movil: React.FC<S & {mode?: 'foto' | 'ella' | 'espera'}> = ({dur, mode = 'foto'}) => {
   const t = useT();
   const float = Math.sin(t * 1.4) * 8;
-  const typing = t > 3.0 && t < 3.9;
+  const typing = mode === 'foto' ? t > 3.0 && t < 3.9 : mode === 'ella' ? t > 0.15 && t < 0.6 : t > 2.6 && t < 3.3;
   return (
     <Cam dur={dur} z={[1.02, 1.1]} y={[0, -40]}>
       <Svg>
@@ -121,13 +136,41 @@ export const Movil: React.FC<S> = ({dur}) => {
         <g transform={`translate(540 ${880 + float}) rotate(${-3 + Math.sin(t * 0.9) * 1.2})`}>
           <rect x={-290} y={-560} width={580} height={1120} rx={72} fill="#0d1020" stroke="#2c3256" strokeWidth={10} />
           <rect x={-262} y={-524} width={524} height={1048} rx={48} fill="#191f40" />
-          <circle cx={-196} cy={-458} r={30} fill="#e9a67c" />
+          <circle cx={-196} cy={-458} r={30} fill={mode === 'foto' ? '#e9a67c' : '#c96a5a'} />
           <rect x={-150} y={-472} width={180} height={24} rx={12} fill="#4a5488" />
           <path d="M -236 -470 L -250 -458 L -236 -446" stroke="#8a95cc" strokeWidth={6} fill="none" strokeLinecap="round" />
           <rect x={-262} y={-410} width={524} height={2} fill="#2c3462" />
-          <Bubble t={t} t0={0.3} x={-232} y={-380} w={300} h={72} />
-          <Bubble t={t} t0={0.9} x={-232} y={-292} w={220} h={72} />
-          <Bubble t={t} t0={1.6} x={-232} y={-200} w={330} h={406}>
+          {mode === 'ella' && (
+            <g>
+              <Bubble t={t} t0={0.55} x={-232} y={-380} w={260} h={72} />
+              <Bubble t={t} t0={1.05} x={-232} y={-292} w={150} h={72}>
+                <Heart x={-157} y={-252} s={2.1} />
+              </Bubble>
+              <Bubble t={t} t0={1.6} x={-30} y={-196} w={262} h={72} me />
+              <Bubble t={t} t0={2.1} x={70} y={-108} w={162} h={72} me>
+                <Heart x={151} y={-68} s={2.1} c="#ffd0dc" />
+              </Bubble>
+              <Bubble t={t} t0={2.7} x={-232} y={-20} w={300} h={72} />
+              <Bubble t={t} t0={3.2} x={-232} y={68} w={120} h={72}>
+                <Heart x={-188} y={108} s={1.6} />
+                <Heart x={-140} y={108} s={1.6} />
+              </Bubble>
+            </g>
+          )}
+          {mode === 'espera' && (
+            <g>
+              {['LUNES', 'JUEVES', 'DOMINGO', 'HACE 3 SEMANAS'].map((d, i) => (
+                <g key={i}>
+                  <Chip t={t} t0={0.25 + i * 0.6} y={-392 + i * 190} label={d} />
+                  <Bubble t={t} t0={0.35 + i * 0.6} x={232 - [250, 200, 290, 160][i]} y={-340 + i * 190} w={[250, 200, 290, 160][i]} h={72} me />
+                  {t > 0.6 + i * 0.6 && <path d={`M ${190} ${-254 + i * 190} l 8 8 l 14 -16 M ${206} ${-254 + i * 190} l 8 8 l 14 -16`} stroke="#8a95cc" strokeWidth={4} fill="none" />}
+                </g>
+              ))}
+            </g>
+          )}
+          {mode === 'foto' && <Bubble t={t} t0={0.3} x={-232} y={-380} w={300} h={72} />}
+          {mode === 'foto' && <Bubble t={t} t0={0.9} x={-232} y={-292} w={220} h={72} />}
+          {mode === 'foto' && <Bubble t={t} t0={1.6} x={-232} y={-200} w={330} h={406}>
             <g transform="translate(-50 3)">
               <g clipPath="url(#m2photo)">
                 <svg x={-214} y={-186} width={298} height={372} viewBox="0 0 1080 1300" preserveAspectRatio="xMidYMid slice">
@@ -135,9 +178,17 @@ export const Movil: React.FC<S> = ({dur}) => {
                 </svg>
               </g>
             </g>
-          </Bubble>
-          <Bubble t={t} t0={2.5} x={-232} y={226} w={250} h={72} />
-          {typing && (
+          </Bubble>}
+          {mode === 'foto' && <Bubble t={t} t0={2.5} x={-232} y={226} w={250} h={72} />}
+          {typing && mode !== 'foto' && (
+            <g>
+              <rect x={mode === 'ella' ? -232 : -232} y={mode === 'ella' ? -380 : 380 - 40} width={150} height={64} rx={32} fill="#353e6c" />
+              {[0, 1, 2].map((i) => (
+                <circle key={i} cx={-192 + i * 36} cy={mode === 'ella' ? -348 : 372} r={9} fill="#dfe5ff" opacity={0.35 + 0.65 * Math.max(0, Math.sin(t * 8 - i))} />
+              ))}
+            </g>
+          )}
+          {typing && mode === 'foto' && (
             <g>
               <rect x={90} y={318} width={150} height={64} rx={32} fill="#4d68d8" />
               {[0, 1, 2].map((i) => (
@@ -702,6 +753,53 @@ export const Amanecer: React.FC<S> = ({dur}) => {
       </Svg>
       <AbsoluteFill style={{background: 'rgba(255,190,140,0.08)', mixBlendMode: 'screen'}} />
       <Vignette id="d13vig" strength={0.45} color="#2a1430" />
+    </Cam>
+  );
+};
+
+// ---------- parada de bus bajo la lluvia (se conocen) ----------
+export const Parada: React.FC<S & {ella?: boolean}> = ({dur, ella = false}) => {
+  const t = useT();
+  const arrive = ease(t, 0.1, 1.9);
+  const hx = mix(1250, 680, arrive);
+  const look = ease(t, 1.9, 2.5);
+  return (
+    <Cam dur={dur} z={ella ? [1.0, 1.1] : [1.12, 1.0]} x={ella ? [0, -40] : [0, 0]}>
+      <Svg>
+        <defs>
+          <Grad id={`p${ella ? 2 : 1}sky`} stops={[[0, '#0e1330'], [1, '#283163']]} />
+          <Grad id={`p${ella ? 2 : 1}ad`} stops={[[0, '#ffe2a6'], [1, '#f2a25e']]} />
+          <Glow id={`p${ella ? 2 : 1}glow`} color="#ffd59a" inner={0.45} />
+          <Grad id={`p${ella ? 2 : 1}ref`} stops={[[0, '#ffd59a', 0.4], [1, '#ffd59a', 0]]} />
+        </defs>
+        <rect width={W} height={H} fill={`url(#p${ella ? 2 : 1}sky)`} />
+        <Skyline seed={ella ? 131 : 131} base={1560} minH={400} maxH={950} color="#1d2550" win="#e9c98a" lit={0.3} />
+        <Skyline seed={132} base={1560} minH={150} maxH={480} color="#141a39" win="#e9c98a" lit={0.3} />
+        <Bokeh seed={133} n={12} colors={['#ffd59a', '#8ea4ff']} rMin={20} rMax={60} opacity={0.2} area={[0, 300, 1080, 1000]} />
+        <rect x={0} y={1556} width={W} height={364} fill="#11152c" />
+        <circle cx={830} cy={1300} r={460} fill={`url(#p${ella ? 2 : 1}glow)`} />
+        <rect x={120} y={1060} width={840} height={500} fill="#8fa6ff" opacity={0.08} />
+        <rect x={760} y={1080} width={170} height={440} rx={8} fill={`url(#p${ella ? 2 : 1}ad)`} />
+        <rect x={775} y={1100} width={140} height={150} rx={6} fill="#ffffff" opacity={0.25} />
+        <rect x={760} y={1560} width={170} height={300} fill={`url(#p${ella ? 2 : 1}ref)`} />
+        <rect x={100} y={1020} width={880} height={44} rx={6} fill="#0b0e20" />
+        <rect x={120} y={1060} width={12} height={500} fill="#0b0e20" />
+        <rect x={948} y={1060} width={12} height={500} fill="#0b0e20" />
+        <rect x={200} y={1420} width={480} height={22} rx={6} fill="#0b0e20" />
+        <rect x={60} y={900} width={10} height={660} fill="#0b0e20" />
+        <circle cx={65} cy={900} r={42} fill="#2f6bd8" />
+        <rect x={45} y={890} width={40} height={20} rx={4} fill="#ffffff" opacity={0.85} />
+        <Person look={HIM} x={400} y={1640} s={1.05} smile={ella ? 0.3 + look * 0.8 : 0} eyes={ella ? 'open' : 'down'} armR={ella ? 4 : 30} shade={0.1} />
+        {!ella && <rect x={474} y={1222} width={28} height={46} rx={6} fill="#0d1020" stroke="#8ea4ff" strokeWidth={3} />}
+        {ella && (
+          <g>
+            <Person look={HER} x={hx} y={1640} s={1.0} walk={arrive < 1 ? t * 7 : null} smile={look} eyes={look > 0.6 ? 'closed' : 'open'} tilt={-6 * look} armL={4} />
+            <Umbrella x={hx + 20} y={1640 - 600} rx={150} color="#b8463f" opacity={1 - ease(t, 1.6, 2.1)} />
+          </g>
+        )}
+        <Rain seed={134} n={140} speed={2200} len={55} w={2.4} opacity={0.32} />
+      </Svg>
+      <Vignette id={`p${ella ? 2 : 1}vig`} strength={0.55} />
     </Cam>
   );
 };

@@ -7,7 +7,7 @@ import {ShortChat} from './styles/chat/ShortChat';
 import {ShortCrt} from './styles/crt/ShortCrt';
 import {ShortComic} from './styles/comic/ShortComic';
 import {Props} from './types';
-import {Historia, TOTAL} from './styles/historia/Historia';
+import {Historia, TIMELINES} from './styles/historia/Historia';
 
 const FPS = 30;
 
@@ -98,14 +98,17 @@ export const Root: React.FC = () => (
       durationInFrames: Math.max(30, Math.ceil(props.totalSeconds * FPS)),
     })}
   />
-  <Composition
-    id="Historia-ya-me-entere"
-    component={Historia}
-    width={1080}
-    height={1920}
-    fps={FPS}
-    durationInFrames={Math.round(TOTAL * FPS)}
-    defaultProps={{subtitulos: true}}
-  />
+  {Object.values(TIMELINES).map((tl) => (
+    <Composition
+      key={tl.slug}
+      id={tl.slug.replace(/^historia-/, 'Historia-')}
+      component={Historia}
+      width={1080}
+      height={1920}
+      fps={FPS}
+      durationInFrames={Math.round(tl.total * FPS)}
+      defaultProps={{slug: tl.slug, subtitulos: true}}
+    />
+  ))}
   </>
 );

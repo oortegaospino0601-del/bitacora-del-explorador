@@ -1,0 +1,711 @@
+{
+ "slug": "historia-rara-vez",
+ "hook": "ELLA SOLO VOLVÍA RARA VEZ…\nY ÉL LA ESPERÓ\nCADA NOCHE.",
+ "durations": [
+  3.737,
+  3.511,
+  3.812,
+  3.438,
+  4.038,
+  4.131,
+  3.473,
+  2.8,
+  4.256,
+  3.314,
+  2.837,
+  2.8,
+  5.037
+ ],
+ "lines": [
+  {
+   "start": 0.25,
+   "end": 3.337,
+   "text": "Ella solo volvía rara vez… y él la esperó cada noche.",
+   "scene": "ventana-hook",
+   "words": [
+    {
+     "w": "Ella",
+     "start": 0.25,
+     "end": 0.517
+    },
+    {
+     "w": "solo",
+     "start": 0.517,
+     "end": 0.785
+    },
+    {
+     "w": "volvía",
+     "start": 0.785,
+     "end": 1.149
+    },
+    {
+     "w": "rara",
+     "start": 1.149,
+     "end": 1.417
+    },
+    {
+     "w": "vez…",
+     "start": 1.417,
+     "end": 1.781
+    },
+    {
+     "w": "y",
+     "start": 1.781,
+     "end": 1.903
+    },
+    {
+     "w": "él",
+     "start": 1.903,
+     "end": 2.073
+    },
+    {
+     "w": "la",
+     "start": 2.073,
+     "end": 2.243
+    },
+    {
+     "w": "esperó",
+     "start": 2.243,
+     "end": 2.608
+    },
+    {
+     "w": "cada",
+     "start": 2.608,
+     "end": 2.875
+    },
+    {
+     "w": "noche.",
+     "start": 2.875,
+     "end": 3.337
+    }
+   ]
+  },
+  {
+   "start": 4.037,
+   "end": 6.848,
+   "text": "Esta es la historia de Rara Vez, de Taiu y Milo J.",
+   "scene": "parada",
+   "words": [
+    {
+     "w": "Esta",
+     "start": 4.037,
+     "end": 4.294
+    },
+    {
+     "w": "es",
+     "start": 4.294,
+     "end": 4.458
+    },
+    {
+     "w": "la",
+     "start": 4.458,
+     "end": 4.622
+    },
+    {
+     "w": "historia",
+     "start": 4.622,
+     "end": 5.068
+    },
+    {
+     "w": "de",
+     "start": 5.068,
+     "end": 5.232
+    },
+    {
+     "w": "Rara",
+     "start": 5.232,
+     "end": 5.489
+    },
+    {
+     "w": "Vez,",
+     "start": 5.489,
+     "end": 5.794
+    },
+    {
+     "w": "de",
+     "start": 5.794,
+     "end": 5.958
+    },
+    {
+     "w": "Taiu",
+     "start": 5.958,
+     "end": 6.215
+    },
+    {
+     "w": "y",
+     "start": 6.215,
+     "end": 6.333
+    },
+    {
+     "w": "Milo",
+     "start": 6.333,
+     "end": 6.59
+    },
+    {
+     "w": "J.",
+     "start": 6.59,
+     "end": 6.848
+    }
+   ]
+  },
+  {
+   "start": 7.548,
+   "end": 10.66,
+   "text": "Se conocieron bajo la lluvia, esperando el mismo bus.",
+   "scene": "parada-ella",
+   "words": [
+    {
+     "w": "Se",
+     "start": 7.548,
+     "end": 7.725
+    },
+    {
+     "w": "conocieron",
+     "start": 7.725,
+     "end": 8.307
+    },
+    {
+     "w": "bajo",
+     "start": 8.307,
+     "end": 8.585
+    },
+    {
+     "w": "la",
+     "start": 8.585,
+     "end": 8.762
+    },
+    {
+     "w": "lluvia,",
+     "start": 8.762,
+     "end": 9.243
+    },
+    {
+     "w": "esperando",
+     "start": 9.243,
+     "end": 9.774
+    },
+    {
+     "w": "el",
+     "start": 9.774,
+     "end": 9.951
+    },
+    {
+     "w": "mismo",
+     "start": 9.951,
+     "end": 10.28
+    },
+    {
+     "w": "bus.",
+     "start": 10.28,
+     "end": 10.66
+    }
+   ]
+  },
+  {
+   "start": 11.36,
+   "end": 14.098,
+   "text": "Esa noche ella le escribió… y él no pudo dormir.",
+   "scene": "movil-ella",
+   "words": [
+    {
+     "w": "Esa",
+     "start": 11.36,
+     "end": 11.572
+    },
+    {
+     "w": "noche",
+     "start": 11.572,
+     "end": 11.879
+    },
+    {
+     "w": "ella",
+     "start": 11.879,
+     "end": 12.139
+    },
+    {
+     "w": "le",
+     "start": 12.139,
+     "end": 12.304
+    },
+    {
+     "w": "escribió…",
+     "start": 12.304,
+     "end": 12.894
+    },
+    {
+     "w": "y",
+     "start": 12.894,
+     "end": 13.012
+    },
+    {
+     "w": "él",
+     "start": 13.012,
+     "end": 13.177
+    },
+    {
+     "w": "no",
+     "start": 13.177,
+     "end": 13.342
+    },
+    {
+     "w": "pudo",
+     "start": 13.342,
+     "end": 13.602
+    },
+    {
+     "w": "dormir.",
+     "start": 13.602,
+     "end": 14.098
+    }
+   ]
+  },
+  {
+   "start": 14.798,
+   "end": 18.135,
+   "text": "Se veían poco, pero cada vez se sentía como la primera.",
+   "scene": "cafe",
+   "words": [
+    {
+     "w": "Se",
+     "start": 14.798,
+     "end": 14.979
+    },
+    {
+     "w": "veían",
+     "start": 14.979,
+     "end": 15.315
+    },
+    {
+     "w": "poco,",
+     "start": 15.315,
+     "end": 15.703
+    },
+    {
+     "w": "pero",
+     "start": 15.703,
+     "end": 15.988
+    },
+    {
+     "w": "cada",
+     "start": 15.988,
+     "end": 16.272
+    },
+    {
+     "w": "vez",
+     "start": 16.272,
+     "end": 16.505
+    },
+    {
+     "w": "se",
+     "start": 16.505,
+     "end": 16.686
+    },
+    {
+     "w": "sentía",
+     "start": 16.686,
+     "end": 17.074
+    },
+    {
+     "w": "como",
+     "start": 17.074,
+     "end": 17.359
+    },
+    {
+     "w": "la",
+     "start": 17.359,
+     "end": 17.54
+    },
+    {
+     "w": "primera.",
+     "start": 17.54,
+     "end": 18.135
+    }
+   ]
+  },
+  {
+   "start": 18.835,
+   "end": 22.266,
+   "text": "Después, ella desaparecía. Semanas sin un solo mensaje.",
+   "scene": "movil-espera",
+   "words": [
+    {
+     "w": "Después,",
+     "start": 18.835,
+     "end": 19.39
+    },
+    {
+     "w": "ella",
+     "start": 19.39,
+     "end": 19.68
+    },
+    {
+     "w": "desaparecía.",
+     "start": 19.68,
+     "end": 20.498
+    },
+    {
+     "w": "Semanas",
+     "start": 20.498,
+     "end": 20.947
+    },
+    {
+     "w": "sin",
+     "start": 20.947,
+     "end": 21.184
+    },
+    {
+     "w": "un",
+     "start": 21.184,
+     "end": 21.369
+    },
+    {
+     "w": "solo",
+     "start": 21.369,
+     "end": 21.659
+    },
+    {
+     "w": "mensaje.",
+     "start": 21.659,
+     "end": 22.266
+    }
+   ]
+  },
+  {
+   "start": 22.966,
+   "end": 25.74,
+   "text": "Y cuando él ya se rendía… volvía, como si nada.",
+   "scene": "atardecer",
+   "words": [
+    {
+     "w": "Y",
+     "start": 22.966,
+     "end": 23.086
+    },
+    {
+     "w": "cuando",
+     "start": 23.086,
+     "end": 23.444
+    },
+    {
+     "w": "él",
+     "start": 23.444,
+     "end": 23.612
+    },
+    {
+     "w": "ya",
+     "start": 23.612,
+     "end": 23.779
+    },
+    {
+     "w": "se",
+     "start": 23.779,
+     "end": 23.946
+    },
+    {
+     "w": "rendía…",
+     "start": 23.946,
+     "end": 24.449
+    },
+    {
+     "w": "volvía,",
+     "start": 24.449,
+     "end": 24.903
+    },
+    {
+     "w": "como",
+     "start": 24.903,
+     "end": 25.166
+    },
+    {
+     "w": "si",
+     "start": 25.166,
+     "end": 25.333
+    },
+    {
+     "w": "nada.",
+     "start": 25.333,
+     "end": 25.74
+    }
+   ]
+  },
+  {
+   "start": 26.44,
+   "end": 28.123,
+   "text": "Y él la perdonaba. Siempre.",
+   "scene": "foto",
+   "words": [
+    {
+     "w": "Y",
+     "start": 26.44,
+     "end": 26.562
+    },
+    {
+     "w": "él",
+     "start": 26.562,
+     "end": 26.732
+    },
+    {
+     "w": "la",
+     "start": 26.732,
+     "end": 26.903
+    },
+    {
+     "w": "perdonaba.",
+     "start": 26.903,
+     "end": 27.562
+    },
+    {
+     "w": "Siempre.",
+     "start": 27.562,
+     "end": 28.123
+    }
+   ]
+  },
+  {
+   "start": 29.24,
+   "end": 32.795,
+   "text": "Hasta que una noche, esperándola bajo la lluvia, entendió algo.",
+   "scene": "lluvia",
+   "words": [
+    {
+     "w": "Hasta",
+     "start": 29.24,
+     "end": 29.556
+    },
+    {
+     "w": "que",
+     "start": 29.556,
+     "end": 29.775
+    },
+    {
+     "w": "una",
+     "start": 29.775,
+     "end": 29.995
+    },
+    {
+     "w": "noche,",
+     "start": 29.995,
+     "end": 30.409
+    },
+    {
+     "w": "esperándola",
+     "start": 30.409,
+     "end": 31.018
+    },
+    {
+     "w": "bajo",
+     "start": 31.018,
+     "end": 31.285
+    },
+    {
+     "w": "la",
+     "start": 31.285,
+     "end": 31.456
+    },
+    {
+     "w": "lluvia,",
+     "start": 31.456,
+     "end": 31.919
+    },
+    {
+     "w": "entendió",
+     "start": 31.919,
+     "end": 32.381
+    },
+    {
+     "w": "algo.",
+     "start": 32.381,
+     "end": 32.795
+    }
+   ]
+  },
+  {
+   "start": 33.495,
+   "end": 36.109,
+   "text": "Quien te quiere de verdad… no aparece rara vez.",
+   "scene": "ojo",
+   "words": [
+    {
+     "w": "Quien",
+     "start": 33.495,
+     "end": 33.796
+    },
+    {
+     "w": "te",
+     "start": 33.796,
+     "end": 33.958
+    },
+    {
+     "w": "quiere",
+     "start": 33.958,
+     "end": 34.305
+    },
+    {
+     "w": "de",
+     "start": 34.305,
+     "end": 34.467
+    },
+    {
+     "w": "verdad…",
+     "start": 34.467,
+     "end": 34.953
+    },
+    {
+     "w": "no",
+     "start": 34.953,
+     "end": 35.115
+    },
+    {
+     "w": "aparece",
+     "start": 35.115,
+     "end": 35.508
+    },
+    {
+     "w": "rara",
+     "start": 35.508,
+     "end": 35.762
+    },
+    {
+     "w": "vez.",
+     "start": 35.762,
+     "end": 36.109
+    }
+   ]
+  },
+  {
+   "start": 36.809,
+   "end": 38.946,
+   "text": "Guardó cada foto. Cada recuerdo.",
+   "scene": "caja",
+   "words": [
+    {
+     "w": "Guardó",
+     "start": 36.809,
+     "end": 37.215
+    },
+    {
+     "w": "cada",
+     "start": 37.215,
+     "end": 37.512
+    },
+    {
+     "w": "foto.",
+     "start": 37.512,
+     "end": 37.972
+    },
+    {
+     "w": "Cada",
+     "start": 37.972,
+     "end": 38.27
+    },
+    {
+     "w": "recuerdo.",
+     "start": 38.27,
+     "end": 38.946
+    }
+   ]
+  },
+  {
+   "start": 39.646,
+   "end": 41.478,
+   "text": "Y esta vez, cuando ella volvió…",
+   "scene": "ventana-amanecer",
+   "words": [
+    {
+     "w": "Y",
+     "start": 39.646,
+     "end": 39.766
+    },
+    {
+     "w": "esta",
+     "start": 39.766,
+     "end": 40.032
+    },
+    {
+     "w": "vez,",
+     "start": 40.032,
+     "end": 40.345
+    },
+    {
+     "w": "cuando",
+     "start": 40.345,
+     "end": 40.707
+    },
+    {
+     "w": "ella",
+     "start": 40.707,
+     "end": 40.972
+    },
+    {
+     "w": "volvió…",
+     "start": 40.972,
+     "end": 41.478
+    }
+   ]
+  },
+  {
+   "start": 42.446,
+   "end": 45.283,
+   "text": "Él ya no estaba esperando. ¿Te pasó alguna vez?",
+   "scene": "amanecer",
+   "words": [
+    {
+     "w": "Él",
+     "start": 42.446,
+     "end": 42.625
+    },
+    {
+     "w": "ya",
+     "start": 42.625,
+     "end": 42.804
+    },
+    {
+     "w": "no",
+     "start": 42.804,
+     "end": 42.983
+    },
+    {
+     "w": "estaba",
+     "start": 42.983,
+     "end": 43.366
+    },
+    {
+     "w": "esperando.",
+     "start": 43.366,
+     "end": 44.056
+    },
+    {
+     "w": "¿Te",
+     "start": 44.056,
+     "end": 44.235
+    },
+    {
+     "w": "pasó",
+     "start": 44.235,
+     "end": 44.516
+    },
+    {
+     "w": "alguna",
+     "start": 44.516,
+     "end": 44.899
+    },
+    {
+     "w": "vez?",
+     "start": 44.899,
+     "end": 45.283
+    }
+   ]
+  }
+ ],
+ "total": 47.183,
+ "audio": "historia/audio-historia-rara-vez.wav",
+ "song": {
+  "title": "Rara Vez",
+  "artists": "Taiu, Milo J",
+  "cardLine": 1
+ },
+ "flash": [
+  "ojo",
+  "amanecer"
+ ]
+}

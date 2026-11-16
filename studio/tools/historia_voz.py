@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
-"""Narración para las historias animadas de canciones.
+"""Narración, música y línea de tiempo para las historias animadas de canciones.
 
 Uso: python3 -I studio/tools/historia_voz.py studio/historias/<slug>.json
 
-Genera la voz (Kokoro, em_alex) de cada frase, ajusta la duración de cada escena a su
-frase y escribe:
-  - studio/public/historia/audio-<slug>.wav  (voz + lluvia suave de fondo)
-  - studio/src/styles/historia/timeline.json (duraciones de escena y tiempos de palabras)
+Genera la voz (Kokoro, em_alex) de cada frase, ajusta la duración de cada escena a su frase,
+crea la base musical original y la lluvia, y escribe:
+  - studio/public/historia/audio-<slug>.wav              (voz + música con ducking + lluvia)
+  - studio/src/styles/historia/timeline-<slug>.json      (escenas, tiempos de palabras, canción)
+
+Campos del JSON: slug, hook, song{title,artists,cardLine}, flash[escenas], speed, tail, minScene,
+lines[{scene,text,tts?,rain?}], music{bpm, drumsFromLine, dropAtLine, backAtLine} (opcional).
 """
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -18,31 +22,27 @@ import soundfile as sf
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-import os  # noqa: E402
-os.environ.setdefault("SPEED", "0.96")
+spec = json.loads(Path(sys.argv[1]).read_text())
+os.environ.setdefault("SPEED", str(spec.get("speed", 0.96)))
 import make  # noqa: E402  (reutiliza voz, números a palabras y tiempos de palabras)
 
 ROOT = HERE.parent
 SR = make.SR
-MIN_SCENE = 3.4   # s mínimos por escena (para que la animación respire)
-LEAD = 0.35       # la voz entra un poco después de que empieza el fundido de la escena
-TAIL = 0.75        # silencio tras la frase antes de la siguiente escena
-END_TAIL = 1.9    # cola final para el fundido a negro
-MAX_TOTAL = 59.5  # el tramo de canción con licencia en Shorts es de 60 s como máximo
-# Nivel de lluvia por escena (0 = nada, 1 = máximo), en el orden de las escenas.
-RAIN = [0.55, 0.3, 0.25, 0.04, 0.04, 0.2, 1.0, 1.0, 0.8, 1.0, 0.25, 0.15, 0.0]
+MIN_SCENE = spec.get("minScene", 3.4)
+LEAD = 0.3
+TAIL = spec.get("tail", 0.75)
+END_TAIL = 1.9
+MAX_TOTAL = 59.5  # Shorts con canción con licencia: 60 s
 
 
-def main(spec_path):
+def main():
     from kokoro_onnx import Kokoro
 
-    spec = json.loads(Path(spec_path).read_text())
     slug = spec["slug"]
     make.ensure_models()
     k = Kokoro(str(make.KOKORO / "kokoro-v1.0.onnx"), str(make.KOKORO / "voices-v1.0.bin"))
-
     clips = []
-    for i, ln in enumerate(spec["lines"]):
+    for ln in spec["lines"]:
         spoken = ln.get("tts") or make.expand_numbers(ln["text"])
         x, sr = k.create(spoken, voice=make.VOICE, speed=make.SPEED, lang="es")
         assert sr == SR
@@ -52,48 +52,75 @@ def main(spec_path):
     durs, lines, start = [], [], 0.0
     for i, c in enumerate(clips):
         vd = len(c) / SR
-        lead = 0.45 if i == 0 else LEAD
+        lead = 0.25 if i == 0 else LEAD
         d = max(MIN_SCENE, lead + vd + (END_TAIL if i == n - 1 else TAIL))
         vs = start + lead
-        text = spec["lines"][i]["text"]
-        lines.append({"start": round(vs, 3), "end": round(vs + vd, 3), "text": text, "words": make.word_timings(text, vs, vs + vd)})
-        print(f"  escena {i + 1:2d}: voz {vd:4.2f}s  escena {d:4.2f}s  «{text}»", flush=True)
+        ln = spec["lines"][i]
+        lines.append({"start": round(vs, 3), "end": round(vs + vd, 3), "text": ln["text"], "scene": ln["scene"],
+                      "words": make.word_timings(ln["text"], vs, vs + vd)})
+        print(f"  escena {i + 1:2d} {ln['scene']:<16} voz {vd:4.2f}s  escena {d:4.2f}s  «{ln['text']}»", flush=True)
         durs.append(round(d, 3))
         start += d
     total = round(start, 3)
     print(f"  TOTAL {total:.2f}s")
     if total > MAX_TOTAL:
-        raise SystemExit(f"Dura {total:.1f}s (>{MAX_TOTAL}s). Acorta frases o sube SPEED.")
+        raise SystemExit(f"Dura {total:.1f}s (>{MAX_TOTAL}s). Acorta frases o sube speed.")
 
-    voice = np.zeros(int(total * SR) + SR, dtype=np.float32)
+    work = ROOT / "work"
+    work.mkdir(exist_ok=True)
+    voice = np.zeros(int((total + 1) * SR), dtype=np.float32)
     for ln, c in zip(lines, clips):
         a = int(ln["start"] * SR)
         voice[a:a + len(c)] += c
-    work = ROOT / "work"
-    work.mkdir(exist_ok=True)
     sf.write(str(work / "voz.wav"), voice, SR)
 
-    starts = np.cumsum([0] + durs[:-1])
-    pts = []
-    for s, d, lv in zip(starts, durs, RAIN + [0] * (n - len(RAIN))):
+    starts = [0.0]
+    for d in durs[:-1]:
+        starts.append(starts[-1] + d)
+    pts = [f"0:{spec['lines'][0].get('rain', 0.3)}"]
+    for s, d, ln in zip(starts, durs, spec["lines"]):
+        lv = ln.get("rain", 0.3)
         pts += [f"{s + 0.3:.2f}:{lv}", f"{s + d:.2f}:{lv}"]
-    pts = ["0:" + str(RAIN[0])] + pts + [f"{total + 1:.2f}:0"]
+    pts.append(f"{total + 1:.2f}:0")
     subprocess.run([sys.executable, "-I", str(HERE / "ambiente_lluvia.py"), str(work / "lluvia.wav"), f"{total + 1:.2f}", ",".join(pts)], check=True)
 
+    inputs = ["-i", str(work / "voz.wav"), "-i", str(work / "lluvia.wav")]
+    m = spec.get("music")
+    if m:
+        L = lambda i: starts[i] if i < len(starts) else total  # noqa: E731
+        parts = [[0, L(m["drumsFromLine"]), "piano,pad"],
+                 [L(m["drumsFromLine"]), L(m["dropAtLine"]), "piano,pad,drums,bass"],
+                 [L(m["dropAtLine"]), L(m["backAtLine"]), "piano,pad"],
+                 [L(m["backAtLine"]), total + 2, "piano,pad,drums,bass"]]
+        cfg = {"bpm": m.get("bpm", 84), "parts": parts, "impacts": [0.05, L(m["dropAtLine"])], "risers": [L(m["drumsFromLine"]), L(m["backAtLine"])]}
+        subprocess.run([sys.executable, "-I", str(HERE / "musica_beat.py"), str(work / "musica.wav"), f"{total + 0.5:.2f}", json.dumps(cfg)], check=True)
+        inputs += ["-i", str(work / "musica.wav")]
+        fc = (
+            "[0]aresample=44100,loudnorm=I=-14:TP=-1.5:LRA=9,aresample=44100,pan=stereo|c0=c0|c1=c0,asplit=2[v][sc];"
+            f"[2]volume={m.get('gain', 0.32)}[mu];"
+            "[mu][sc]sidechaincompress=threshold=0.03:ratio=5:attack=20:release=350[duck];"
+            "[1]volume=0.35[r];"
+            f"[v][duck][r]amix=inputs=3:normalize=0:duration=longest,alimiter=limit=0.95,atrim=0:{total:.3f}[m]"
+        )
+    else:
+        fc = (
+            "[0]aresample=44100,loudnorm=I=-15:TP=-1.5:LRA=11,aresample=44100,pan=stereo|c0=c0|c1=c0[v];"
+            "[1]volume=0.55[r];"
+            f"[v][r]amix=inputs=2:normalize=0:duration=longest,atrim=0:{total:.3f}[m]"
+        )
     out = ROOT / "public" / "historia" / f"audio-{slug}.wav"
     out.parent.mkdir(parents=True, exist_ok=True)
-    fc = (
-        "[0]aresample=44100,loudnorm=I=-15:TP=-1.5:LRA=11,aresample=44100,pan=stereo|c0=c0|c1=c0[v];"
-        "[1]volume=0.55[r];"
-        f"[v][r]amix=inputs=2:normalize=0:duration=longest,atrim=0:{total:.3f}[m]"
-    )
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(work / "voz.wav"), "-i", str(work / "lluvia.wav"),
-                    "-filter_complex", fc, "-map", "[m]", "-ar", "44100", "-ac", "2", str(out)], check=True)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", fc, "-map", "[m]", "-ar", "44100", "-ac", "2", str(out)], check=True)
 
-    tl = {"slug": slug, "hook": spec.get("hook", ""), "durations": durs, "lines": lines, "total": total, "audio": f"historia/audio-{slug}.wav"}
-    (ROOT / "src" / "styles" / "historia" / "timeline.json").write_text(json.dumps(tl, ensure_ascii=False, indent=1))
+    tl = {"slug": slug, "hook": spec.get("hook", ""), "durations": durs, "lines": lines, "total": total,
+          "audio": f"historia/audio-{slug}.wav"}
+    if spec.get("song"):
+        tl["song"] = spec["song"]
+    if spec.get("flash"):
+        tl["flash"] = spec["flash"]
+    (ROOT / "src" / "styles" / "historia" / f"timeline-{slug}.json").write_text(json.dumps(tl, ensure_ascii=False, indent=1))
     print("ok", out)
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main()

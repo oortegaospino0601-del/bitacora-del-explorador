@@ -1,0 +1,25 @@
+{
+  "slug": "historia-rara-vez",
+  "hook": "ELLA SOLO VOLVÍA RARA VEZ…\nY ÉL LA ESPERÓ\nCADA NOCHE.",
+  "song": {"title": "Rara Vez", "artists": "Taiu, Milo J", "cardLine": 1},
+  "flash": ["ojo", "amanecer"],
+  "speed": 1.0,
+  "tail": 0.4,
+  "minScene": 2.8,
+  "music": {"bpm": 84, "drumsFromLine": 2, "dropAtLine": 9, "backAtLine": 12, "gain": 0.32},
+  "lines": [
+    {"scene": "ventana-hook", "rain": 0.5, "text": "Ella solo volvía rara vez… y él la esperó cada noche."},
+    {"scene": "parada", "rain": 0.8, "text": "Esta es la historia de Rara Vez, de Taiu y Milo J.", "tts": "Esta es la historia de Rara Vez, de Taiu y Milo Yei."},
+    {"scene": "parada-ella", "rain": 0.8, "text": "Se conocieron bajo la lluvia, esperando el mismo bus."},
+    {"scene": "movil-ella", "rain": 0.15, "text": "Esa noche ella le escribió… y él no pudo dormir."},
+    {"scene": "cafe", "rain": 0.0, "text": "Se veían poco, pero cada vez se sentía como la primera."},
+    {"scene": "movil-espera", "rain": 0.15, "text": "Después, ella desaparecía. Semanas sin un solo mensaje."},
+    {"scene": "atardecer", "rain": 0.0, "text": "Y cuando él ya se rendía… volvía, como si nada."},
+    {"scene": "foto", "rain": 0.15, "text": "Y él la perdonaba. Siempre."},
+    {"scene": "lluvia", "rain": 1.0, "text": "Hasta que una noche, esperándola bajo la lluvia, entendió algo."},
+    {"scene": "ojo", "rain": 0.3, "text": "Quien te quiere de verdad… no aparece rara vez."},
+    {"scene": "caja", "rain": 0.1, "text": "Guardó cada foto. Cada recuerdo."},
+    {"scene": "ventana-amanecer", "rain": 0.1, "text": "Y esta vez, cuando ella volvió…"},
+    {"scene": "amanecer", "rain": 0.0, "text": "Él ya no estaba esperando. ¿Te pasó alguna vez?"}
+  ]
+}
