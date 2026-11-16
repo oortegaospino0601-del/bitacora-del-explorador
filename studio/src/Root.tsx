@@ -7,6 +7,7 @@ import {ShortChat} from './styles/chat/ShortChat';
 import {ShortCrt} from './styles/crt/ShortCrt';
 import {ShortComic} from './styles/comic/ShortComic';
 import {Props} from './types';
+import {Historia, TOTAL} from './styles/historia/Historia';
 
 const FPS = 30;
 
@@ -96,6 +97,15 @@ export const Root: React.FC = () => (
     calculateMetadata={({props}) => ({
       durationInFrames: Math.max(30, Math.ceil(props.totalSeconds * FPS)),
     })}
+  />
+  <Composition
+    id="Historia-ya-me-entere"
+    component={Historia}
+    width={1080}
+    height={1920}
+    fps={FPS}
+    durationInFrames={Math.round(TOTAL * FPS)}
+    defaultProps={{ambiente: 'historia/ambiente-lluvia.wav'}}
   />
   </>
 );
