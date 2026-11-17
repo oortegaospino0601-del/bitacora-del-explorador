@@ -82,6 +82,20 @@ export const ESTILOS: Record<string, Estilo> = {
     pillBg: 'rgba(241,233,216,0.9)',
     pillBorder: '#1d2a6a',
   },
+  // Igual que boceto pero sin el filtro SVG (lento): el trazo a lápiz y el papel se aplican
+  // después con ffmpeg (tools/boceto_post.sh).
+  'boceto-base': {
+    filter: 'grayscale(1) contrast(1.05) brightness(1.05)',
+    font: "'Special Elite', 'Courier New', monospace",
+    hookWeight: 400,
+    capWeight: 400,
+    capSize: 72,
+    text: '#1d2a6a',
+    accent: '#c0392b',
+    shadow: 'none',
+    pillBg: 'rgba(241,233,216,0.9)',
+    pillBorder: '#1d2a6a',
+  },
   noir: {
     filter: 'grayscale(1) contrast(1.4) brightness(0.95)',
     grain: 0.3,

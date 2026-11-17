@@ -1,29 +1,107 @@
 {
   "slug": "historia-fuentes-de-ortiz",
   "hook": "47 CARTAS…\nY NINGUNA\nENVIADA.",
-  "song": {"title": "Fuentes de Ortiz", "artists": "Ed Maverick", "cardLine": 1},
-  "estilo": "boceto",
+  "song": {
+    "title": "Fuentes de Ortiz",
+    "artists": "Ed Maverick",
+    "cardLine": 1
+  },
+  "estilo": "boceto-base",
   "cast": {
-    "him": {"hair": "curly", "skin": "#e8c0a0", "hairC": "#2a1c14", "coat": "#6a7a8a", "shirt": "#f1f1f1"},
-    "her": {"hair": "f", "skin": "#f0cdb0", "hairC": "#6a4028", "coat": "#c7a080", "long": true}
+    "him": {
+      "hair": "curly",
+      "skin": "#e8c0a0",
+      "hairC": "#2a1c14",
+      "coat": "#6a7a8a",
+      "shirt": "#f1f1f1"
+    },
+    "her": {
+      "hair": "f",
+      "skin": "#f0cdb0",
+      "hairC": "#6a4028",
+      "coat": "#c7a080",
+      "long": true
+    }
   },
   "speed": 0.98,
   "tail": 0.45,
   "minScene": 2.9,
-  "music": {"bpm": 76, "prog": "nostalgia", "style": "balada", "transpose": 3, "drumsFromLine": 2, "dropAtLine": 10, "backAtLine": 12, "gain": 0.34},
+  "music": {
+    "bpm": 76,
+    "prog": "nostalgia",
+    "style": "balada",
+    "transpose": 3,
+    "drumsFromLine": 2,
+    "dropAtLine": 10,
+    "backAtLine": 12,
+    "gain": 0.34
+  },
   "lines": [
-    {"scene": "escritorio:pila", "rain": 0.0, "text": "Le escribió cuarenta y siete cartas… y no le mandó ninguna."},
-    {"scene": "ventana-noche", "rain": 0.4, "text": "Esta es la historia de Fuentes de Ortiz, de Ed Maverick.", "tts": "Esta es la historia de Fuentes de Ortiz, de Ed Maverik."},
-    {"scene": "atardecer", "rain": 0.0, "text": "Ella se fue un verano, sin explicar mucho."},
-    {"scene": "escritorio:escribe", "rain": 0.0, "text": "Y él, que nunca supo hablar de lo que sentía, empezó a escribir."},
-    {"scene": "cafe", "rain": 0.0, "text": "Le contaba de los lugares a los que iban juntos."},
-    {"scene": "lluvia", "rain": 0.9, "text": "De las canciones que ya no se atrevía a escuchar."},
-    {"scene": "foto", "rain": 0.1, "text": "Y de lo mucho que la seguía queriendo."},
-    {"scene": "caja", "rain": 0.0, "text": "Las guardaba todas en una caja, debajo de la cama."},
-    {"scene": "escritorio:toma", "rain": 0.0, "text": "Un día, su hermana encontró la caja."},
-    {"scene": "buzon", "rain": 0.0, "text": "Y sin decirle nada… mandó la última carta."},
-    {"scene": "movil-ella", "rain": 0.0, "text": "Tres semanas después, le llegó un mensaje."},
-    {"scene": "ojo", "rain": 0.0, "text": "Era ella. Ella también le había escrito cartas… y nunca se atrevió a mandarlas."},
-    {"scene": "amanecer", "rain": 0.0, "text": "Cuarenta y siete cartas, y ninguno se animó. ¿Qué no te atreviste a decir tú?"}
+    {
+      "scene": "escritorio:pila",
+      "rain": 0.0,
+      "text": "Le escribió cuarenta y siete cartas… y no le mandó ninguna."
+    },
+    {
+      "scene": "ventana-noche",
+      "rain": 0.4,
+      "text": "Esta es la historia de Fuentes de Ortiz, de Ed Maverick.",
+      "tts": "Esta es la historia de Fuentes de Ortiz, de Ed Maverik."
+    },
+    {
+      "scene": "atardecer",
+      "rain": 0.0,
+      "text": "Ella se fue un verano, sin explicar mucho."
+    },
+    {
+      "scene": "escritorio:escribe",
+      "rain": 0.0,
+      "text": "Y él, que nunca supo hablar de lo que sentía, empezó a escribir."
+    },
+    {
+      "scene": "cafe",
+      "rain": 0.0,
+      "text": "Le contaba de los lugares a los que iban juntos."
+    },
+    {
+      "scene": "lluvia",
+      "rain": 0.9,
+      "text": "De las canciones que ya no se atrevía a escuchar."
+    },
+    {
+      "scene": "foto",
+      "rain": 0.1,
+      "text": "Y de lo mucho que la seguía queriendo."
+    },
+    {
+      "scene": "caja",
+      "rain": 0.0,
+      "text": "Las guardaba todas en una caja, debajo de la cama."
+    },
+    {
+      "scene": "escritorio:toma",
+      "rain": 0.0,
+      "text": "Un día, su hermana encontró la caja."
+    },
+    {
+      "scene": "buzon",
+      "rain": 0.0,
+      "text": "Y sin decirle nada… mandó la última carta."
+    },
+    {
+      "scene": "movil-ella",
+      "rain": 0.0,
+      "text": "Tres semanas después, le llegó un mensaje."
+    },
+    {
+      "scene": "ojo",
+      "rain": 0.0,
+      "text": "Era ella. Ella también le había escrito cartas… y nunca se atrevió a mandarlas."
+    },
+    {
+      "scene": "amanecer",
+      "rain": 0.0,
+      "text": "Cuarenta y siete cartas, y ninguno se animó. ¿Qué no te atreviste a decir tú?"
+    }
   ]
 }
