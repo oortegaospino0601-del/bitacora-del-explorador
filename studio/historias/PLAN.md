@@ -10,16 +10,16 @@ recodifica siempre (GitHub rechaza archivos de más de 100 MB):
 
 | Hora | Estado | Canción | Estética | Gancho (idea) |
 |---|---|---|---|---|
-| 18:24 | publicado | Rara Vez — Taiu, Milo J | plano | Ella solo volvía rara vez… y él la esperó cada noche |
-| 20:24 | programado (Metricool) | DtMF — Bad Bunny | pelicula | Más de 3.000 fotos… y ni una con su abuela |
-| 22:24 | programado (Metricool) | Ella baila sola — Eslabon Armado, Peso Pluma | neon | Toda la fiesta la miraba… y nadie se atrevía |
-| 00:24 | programado (Metricool) | un x100to — Grupo Frontera, Bad Bunny | noir | Les dijo a todos que ya la había olvidado… mentía al 100 % |
-| 02:24 | programado (Metricool) | Fuentes de Ortiz — Ed Maverick | boceto | Le escribió 47 cartas… y no le mandó ninguna |
-| 04:24 | programado (Metricool) | San Lucas — Kevin Kaarl | acuarela | Se prometieron "para siempre" frente al mar… y lo cumplieron 60 años |
-| 06:24 | programado (Metricool) | Me rehúso — Danny Ocean | vhs | Ella tenía un pasaje solo de ida |
-| 08:24 | programado (Metricool) | Mamichula — Trueno, Nicki Nicole, Bizarrap | comic | 3 intentos para conquistarla… y 3 fracasos |
-| 10:24 | programado (Metricool) | Si antes te hubiera conocido — Karol G | tropical | Lo conoció el último día de sus vacaciones |
-| 12:24 | pendiente | Adán y Eva — Paulo Londra | nueva estética | Todo el colegio sabía que le gustaba… menos ella |
+| 18:24 | publicado https://www.youtube.com/shorts/v-OC9Z5fEjY | Rara Vez — Taiu, Milo J | plano | Ella solo volvía rara vez… y él la esperó cada noche |
+| 20:24 | publicado https://www.youtube.com/shorts/RNUtG1K3Itk | DtMF — Bad Bunny | pelicula | Más de 3.000 fotos… y ni una con su abuela |
+| 22:24 | publicado https://www.youtube.com/shorts/RV05TrAsac8 | Ella baila sola — Eslabon Armado, Peso Pluma | neon | Toda la fiesta la miraba… y nadie se atrevía |
+| 00:24 | ERROR Metricool (límite de la cuenta) — video listo en videos/ | un x100to — Grupo Frontera, Bad Bunny | noir | Les dijo a todos que ya la había olvidado… mentía al 100 % |
+| 02:24 | ERROR Metricool (límite de la cuenta) — video listo en videos/ | Fuentes de Ortiz — Ed Maverick | boceto | Le escribió 47 cartas… y no le mandó ninguna |
+| 04:24 | ERROR Metricool (límite de la cuenta) — video listo en videos/ | San Lucas — Kevin Kaarl | acuarela | Se prometieron "para siempre" frente al mar… y lo cumplieron 60 años |
+| 06:24 | ERROR Metricool (límite de la cuenta) — video listo en videos/ | Me rehúso — Danny Ocean | vhs | Ella tenía un pasaje solo de ida |
+| 08:24 | ERROR Metricool (límite de la cuenta) — video listo en videos/ | Mamichula — Trueno, Nicki Nicole, Bizarrap | comic | 3 intentos para conquistarla… y 3 fracasos |
+| 10:24 | ERROR Metricool (límite de la cuenta) — video listo en videos/ | Si antes te hubiera conocido — Karol G | tropical | Lo conoció el último día de sus vacaciones |
+| 12:24 | video listo, NO programado (límite de Metricool) | Adán y Eva — Paulo Londra | nueva estética | Todo el colegio sabía que le gustaba… menos ella |
 
 ## Historias (13 frases, 3.ª persona, sin diálogos; frase 2 presenta la canción con tarjeta)
 

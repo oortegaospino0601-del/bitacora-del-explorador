@@ -1,0 +1,755 @@
+{
+ "slug": "historia-adan-y-eva",
+ "hook": "TODO EL COLEGIO LO SABÍA…\nMENOS\nELLA.",
+ "durations": [
+  3.411,
+  3.393,
+  3.455,
+  3.442,
+  3.861,
+  2.761,
+  3.088,
+  3.492,
+  2.7,
+  3.393,
+  4.361,
+  2.7,
+  6.473
+ ],
+ "lines": [
+  {
+   "start": 0.25,
+   "end": 3.031,
+   "text": "Todo el colegio sabía que le gustaba… menos ella.",
+   "scene": "escuela:aula",
+   "words": [
+    {
+     "w": "Todo",
+     "start": 0.25,
+     "end": 0.512
+    },
+    {
+     "w": "el",
+     "start": 0.512,
+     "end": 0.678
+    },
+    {
+     "w": "colegio",
+     "start": 0.678,
+     "end": 1.082
+    },
+    {
+     "w": "sabía",
+     "start": 1.082,
+     "end": 1.391
+    },
+    {
+     "w": "que",
+     "start": 1.391,
+     "end": 1.605
+    },
+    {
+     "w": "le",
+     "start": 1.605,
+     "end": 1.771
+    },
+    {
+     "w": "gustaba…",
+     "start": 1.771,
+     "end": 2.318
+    },
+    {
+     "w": "menos",
+     "start": 2.318,
+     "end": 2.627
+    },
+    {
+     "w": "ella.",
+     "start": 2.627,
+     "end": 3.031
+    }
+   ]
+  },
+  {
+   "start": 3.711,
+   "end": 6.424,
+   "text": "Esta es la historia de Adán y Eva, de Paulo Londra.",
+   "scene": "escuela:aula:3",
+   "words": [
+    {
+     "w": "Esta",
+     "start": 3.711,
+     "end": 3.958
+    },
+    {
+     "w": "es",
+     "start": 3.958,
+     "end": 4.115
+    },
+    {
+     "w": "la",
+     "start": 4.115,
+     "end": 4.272
+    },
+    {
+     "w": "historia",
+     "start": 4.272,
+     "end": 4.698
+    },
+    {
+     "w": "de",
+     "start": 4.698,
+     "end": 4.855
+    },
+    {
+     "w": "Adán",
+     "start": 4.855,
+     "end": 5.101
+    },
+    {
+     "w": "y",
+     "start": 5.101,
+     "end": 5.213
+    },
+    {
+     "w": "Eva,",
+     "start": 5.213,
+     "end": 5.505
+    },
+    {
+     "w": "de",
+     "start": 5.505,
+     "end": 5.662
+    },
+    {
+     "w": "Paulo",
+     "start": 5.662,
+     "end": 5.953
+    },
+    {
+     "w": "Londra.",
+     "start": 5.953,
+     "end": 6.424
+    }
+   ]
+  },
+  {
+   "start": 7.104,
+   "end": 9.879,
+   "text": "Se sentaba detrás de ella desde primer año.",
+   "scene": "escuela:aula:2",
+   "words": [
+    {
+     "w": "Se",
+     "start": 7.104,
+     "end": 7.298
+    },
+    {
+     "w": "sentaba",
+     "start": 7.298,
+     "end": 7.77
+    },
+    {
+     "w": "detrás",
+     "start": 7.77,
+     "end": 8.186
+    },
+    {
+     "w": "de",
+     "start": 8.186,
+     "end": 8.381
+    },
+    {
+     "w": "ella",
+     "start": 8.381,
+     "end": 8.686
+    },
+    {
+     "w": "desde",
+     "start": 8.686,
+     "end": 9.047
+    },
+    {
+     "w": "primer",
+     "start": 9.047,
+     "end": 9.463
+    },
+    {
+     "w": "año.",
+     "start": 9.463,
+     "end": 9.879
+    }
+   ]
+  },
+  {
+   "start": 10.559,
+   "end": 13.321,
+   "text": "Le escribía notas que nunca se animaba a pasarle.",
+   "scene": "escuela:nota",
+   "words": [
+    {
+     "w": "Le",
+     "start": 10.559,
+     "end": 10.73
+    },
+    {
+     "w": "escribía",
+     "start": 10.73,
+     "end": 11.194
+    },
+    {
+     "w": "notas",
+     "start": 11.194,
+     "end": 11.512
+    },
+    {
+     "w": "que",
+     "start": 11.512,
+     "end": 11.732
+    },
+    {
+     "w": "nunca",
+     "start": 11.732,
+     "end": 12.05
+    },
+    {
+     "w": "se",
+     "start": 12.05,
+     "end": 12.221
+    },
+    {
+     "w": "animaba",
+     "start": 12.221,
+     "end": 12.636
+    },
+    {
+     "w": "a",
+     "start": 12.636,
+     "end": 12.759
+    },
+    {
+     "w": "pasarle.",
+     "start": 12.759,
+     "end": 13.321
+    }
+   ]
+  },
+  {
+   "start": 14.001,
+   "end": 17.182,
+   "text": "Hasta que un día, ella le pidió los apuntes por mensaje.",
+   "scene": "movil-ella",
+   "words": [
+    {
+     "w": "Hasta",
+     "start": 14.001,
+     "end": 14.316
+    },
+    {
+     "w": "que",
+     "start": 14.316,
+     "end": 14.535
+    },
+    {
+     "w": "un",
+     "start": 14.535,
+     "end": 14.705
+    },
+    {
+     "w": "día,",
+     "start": 14.705,
+     "end": 15.021
+    },
+    {
+     "w": "ella",
+     "start": 15.021,
+     "end": 15.288
+    },
+    {
+     "w": "le",
+     "start": 15.288,
+     "end": 15.458
+    },
+    {
+     "w": "pidió",
+     "start": 15.458,
+     "end": 15.773
+    },
+    {
+     "w": "los",
+     "start": 15.773,
+     "end": 15.992
+    },
+    {
+     "w": "apuntes",
+     "start": 15.992,
+     "end": 16.405
+    },
+    {
+     "w": "por",
+     "start": 16.405,
+     "end": 16.623
+    },
+    {
+     "w": "mensaje.",
+     "start": 16.623,
+     "end": 17.182
+    }
+   ]
+  },
+  {
+   "start": 17.862,
+   "end": 19.943,
+   "text": "Estudiaron juntos toda la semana.",
+   "scene": "cafe",
+   "words": [
+    {
+     "w": "Estudiaron",
+     "start": 17.862,
+     "end": 18.483
+    },
+    {
+     "w": "juntos",
+     "start": 18.483,
+     "end": 18.889
+    },
+    {
+     "w": "toda",
+     "start": 18.889,
+     "end": 19.186
+    },
+    {
+     "w": "la",
+     "start": 19.186,
+     "end": 19.375
+    },
+    {
+     "w": "semana.",
+     "start": 19.375,
+     "end": 19.943
+    }
+   ]
+  },
+  {
+   "start": 20.623,
+   "end": 23.03,
+   "text": "Y en el camino a casa, se reían de todo.",
+   "scene": "barrio:juntos:tarde",
+   "words": [
+    {
+     "w": "Y",
+     "start": 20.623,
+     "end": 20.746
+    },
+    {
+     "w": "en",
+     "start": 20.746,
+     "end": 20.918
+    },
+    {
+     "w": "el",
+     "start": 20.918,
+     "end": 21.09
+    },
+    {
+     "w": "camino",
+     "start": 21.09,
+     "end": 21.458
+    },
+    {
+     "w": "a",
+     "start": 21.458,
+     "end": 21.581
+    },
+    {
+     "w": "casa,",
+     "start": 21.581,
+     "end": 21.95
+    },
+    {
+     "w": "se",
+     "start": 21.95,
+     "end": 22.122
+    },
+    {
+     "w": "reían",
+     "start": 22.122,
+     "end": 22.441
+    },
+    {
+     "w": "de",
+     "start": 22.441,
+     "end": 22.613
+    },
+    {
+     "w": "todo.",
+     "start": 22.613,
+     "end": 23.03
+    }
+   ]
+  },
+  {
+   "start": 23.71,
+   "end": 26.522,
+   "text": "En la fiesta de graduación, él la buscó entre todos.",
+   "scene": "fiesta:amigos",
+   "words": [
+    {
+     "w": "En",
+     "start": 23.71,
+     "end": 23.872
+    },
+    {
+     "w": "la",
+     "start": 23.872,
+     "end": 24.033
+    },
+    {
+     "w": "fiesta",
+     "start": 24.033,
+     "end": 24.379
+    },
+    {
+     "w": "de",
+     "start": 24.379,
+     "end": 24.54
+    },
+    {
+     "w": "graduación,",
+     "start": 24.54,
+     "end": 25.163
+    },
+    {
+     "w": "él",
+     "start": 25.163,
+     "end": 25.324
+    },
+    {
+     "w": "la",
+     "start": 25.324,
+     "end": 25.485
+    },
+    {
+     "w": "buscó",
+     "start": 25.485,
+     "end": 25.785
+    },
+    {
+     "w": "entre",
+     "start": 25.785,
+     "end": 26.084
+    },
+    {
+     "w": "todos.",
+     "start": 26.084,
+     "end": 26.522
+    }
+   ]
+  },
+  {
+   "start": 27.202,
+   "end": 28.56,
+   "text": "Pero ella no estaba.",
+   "scene": "lluvia",
+   "words": [
+    {
+     "w": "Pero",
+     "start": 27.202,
+     "end": 27.501
+    },
+    {
+     "w": "ella",
+     "start": 27.501,
+     "end": 27.8
+    },
+    {
+     "w": "no",
+     "start": 27.8,
+     "end": 27.99
+    },
+    {
+     "w": "estaba.",
+     "start": 27.99,
+     "end": 28.56
+    }
+   ]
+  },
+  {
+   "start": 29.902,
+   "end": 32.616,
+   "text": "La encontró afuera, sola, en la parada del bus.",
+   "scene": "parada-ella",
+   "words": [
+    {
+     "w": "La",
+     "start": 29.902,
+     "end": 30.07
+    },
+    {
+     "w": "encontró",
+     "start": 30.07,
+     "end": 30.527
+    },
+    {
+     "w": "afuera,",
+     "start": 30.527,
+     "end": 30.983
+    },
+    {
+     "w": "sola,",
+     "start": 30.983,
+     "end": 31.343
+    },
+    {
+     "w": "en",
+     "start": 31.343,
+     "end": 31.511
+    },
+    {
+     "w": "la",
+     "start": 31.511,
+     "end": 31.679
+    },
+    {
+     "w": "parada",
+     "start": 31.679,
+     "end": 32.039
+    },
+    {
+     "w": "del",
+     "start": 32.039,
+     "end": 32.256
+    },
+    {
+     "w": "bus.",
+     "start": 32.256,
+     "end": 32.616
+    }
+   ]
+  },
+  {
+   "start": 33.296,
+   "end": 36.977,
+   "text": "Y ella le confesó que también lo había esperado… desde primer año.",
+   "scene": "ojo",
+   "words": [
+    {
+     "w": "Y",
+     "start": 33.296,
+     "end": 33.415
+    },
+    {
+     "w": "ella",
+     "start": 33.415,
+     "end": 33.678
+    },
+    {
+     "w": "le",
+     "start": 33.678,
+     "end": 33.845
+    },
+    {
+     "w": "confesó",
+     "start": 33.845,
+     "end": 34.252
+    },
+    {
+     "w": "que",
+     "start": 34.252,
+     "end": 34.467
+    },
+    {
+     "w": "también",
+     "start": 34.467,
+     "end": 34.873
+    },
+    {
+     "w": "lo",
+     "start": 34.873,
+     "end": 35.041
+    },
+    {
+     "w": "había",
+     "start": 35.041,
+     "end": 35.351
+    },
+    {
+     "w": "esperado…",
+     "start": 35.351,
+     "end": 35.949
+    },
+    {
+     "w": "desde",
+     "start": 35.949,
+     "end": 36.26
+    },
+    {
+     "w": "primer",
+     "start": 36.26,
+     "end": 36.618
+    },
+    {
+     "w": "año.",
+     "start": 36.618,
+     "end": 36.977
+    }
+   ]
+  },
+  {
+   "start": 37.657,
+   "end": 39.662,
+   "text": "Ese año, se graduaron de la mano.",
+   "scene": "barrio:juntos",
+   "words": [
+    {
+     "w": "Ese",
+     "start": 37.657,
+     "end": 37.879
+    },
+    {
+     "w": "año,",
+     "start": 37.879,
+     "end": 38.201
+    },
+    {
+     "w": "se",
+     "start": 38.201,
+     "end": 38.374
+    },
+    {
+     "w": "graduaron",
+     "start": 38.374,
+     "end": 38.894
+    },
+    {
+     "w": "de",
+     "start": 38.894,
+     "end": 39.068
+    },
+    {
+     "w": "la",
+     "start": 39.068,
+     "end": 39.241
+    },
+    {
+     "w": "mano.",
+     "start": 39.241,
+     "end": 39.662
+    }
+   ]
+  },
+  {
+   "start": 40.357,
+   "end": 44.63,
+   "text": "A veces, la persona que buscas está sentada justo delante de ti. ¿Te pasó?",
+   "scene": "atardecer",
+   "words": [
+    {
+     "w": "A",
+     "start": 40.357,
+     "end": 40.481
+    },
+    {
+     "w": "veces,",
+     "start": 40.481,
+     "end": 40.903
+    },
+    {
+     "w": "la",
+     "start": 40.903,
+     "end": 41.077
+    },
+    {
+     "w": "persona",
+     "start": 41.077,
+     "end": 41.499
+    },
+    {
+     "w": "que",
+     "start": 41.499,
+     "end": 41.723
+    },
+    {
+     "w": "buscas",
+     "start": 41.723,
+     "end": 42.096
+    },
+    {
+     "w": "está",
+     "start": 42.096,
+     "end": 42.369
+    },
+    {
+     "w": "sentada",
+     "start": 42.369,
+     "end": 42.791
+    },
+    {
+     "w": "justo",
+     "start": 42.791,
+     "end": 43.114
+    },
+    {
+     "w": "delante",
+     "start": 43.114,
+     "end": 43.537
+    },
+    {
+     "w": "de",
+     "start": 43.537,
+     "end": 43.71
+    },
+    {
+     "w": "ti.",
+     "start": 43.71,
+     "end": 44.033
+    },
+    {
+     "w": "¿Te",
+     "start": 44.033,
+     "end": 44.207
+    },
+    {
+     "w": "pasó?",
+     "start": 44.207,
+     "end": 44.63
+    }
+   ]
+  }
+ ],
+ "total": 46.53,
+ "audio": "historia/audio-historia-adan-y-eva.wav",
+ "song": {
+  "title": "Adán y Eva",
+  "artists": "Paulo Londra",
+  "cardLine": 1
+ },
+ "flash": [
+  "ojo"
+ ],
+ "estilo": "cuaderno",
+ "cast": {
+  "him": {
+   "hair": "m",
+   "skin": "#efc4a0",
+   "hairC": "#2a1a10",
+   "coat": "#2f4a8e",
+   "shirt": "#ffffff",
+   "pants": "#3a3a4a"
+  },
+  "her": {
+   "hair": "f",
+   "skin": "#f3cdb0",
+   "hairC": "#1a1010",
+   "coat": "#e05a6a",
+   "pants": "#2a2a3a",
+   "long": true
+  },
+  "other": {
+   "skin": "#d9a37e",
+   "hairC": "#2a1a10",
+   "coat": "#7aa6d6",
+   "shirt": "#ffffff"
+  }
+ }
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "historia-adan-y-eva",
+  "hook": "TODO EL COLEGIO LO SABÍA…\nMENOS\nELLA.",
+  "song": {"title": "Adán y Eva", "artists": "Paulo Londra", "cardLine": 1},
+  "estilo": "cuaderno",
+  "cast": {
+    "him": {"hair": "m", "skin": "#efc4a0", "hairC": "#2a1a10", "coat": "#2f4a8e", "shirt": "#ffffff", "pants": "#3a3a4a"},
+    "her": {"hair": "f", "skin": "#f3cdb0", "hairC": "#1a1010", "coat": "#e05a6a", "pants": "#2a2a3a", "long": true},
+    "other": {"skin": "#d9a37e", "hairC": "#2a1a10", "coat": "#7aa6d6", "shirt": "#ffffff"}
+  },
+  "flash": ["ojo"],
+  "speed": 1.02,
+  "tail": 0.38,
+  "minScene": 2.7,
+  "music": {"bpm": 90, "prog": "verano", "style": "trap", "transpose": 1, "drumsFromLine": 2, "dropAtLine": 9, "backAtLine": 11, "gain": 0.3},
+  "lines": [
+    {"scene": "escuela:aula", "rain": 0.0, "text": "Todo el colegio sabía que le gustaba… menos ella."},
+    {"scene": "escuela:aula:3", "rain": 0.0, "text": "Esta es la historia de Adán y Eva, de Paulo Londra."},
+    {"scene": "escuela:aula:2", "rain": 0.0, "text": "Se sentaba detrás de ella desde primer año."},
+    {"scene": "escuela:nota", "rain": 0.0, "text": "Le escribía notas que nunca se animaba a pasarle."},
+    {"scene": "movil-ella", "rain": 0.0, "text": "Hasta que un día, ella le pidió los apuntes por mensaje."},
+    {"scene": "cafe", "rain": 0.0, "text": "Estudiaron juntos toda la semana."},
+    {"scene": "barrio:juntos:tarde", "rain": 0.0, "text": "Y en el camino a casa, se reían de todo."},
+    {"scene": "fiesta:amigos", "rain": 0.0, "text": "En la fiesta de graduación, él la buscó entre todos."},
+    {"scene": "lluvia", "rain": 0.8, "text": "Pero ella no estaba."},
+    {"scene": "parada-ella", "rain": 0.5, "text": "La encontró afuera, sola, en la parada del bus."},
+    {"scene": "ojo", "rain": 0.0, "text": "Y ella le confesó que también lo había esperado… desde primer año."},
+    {"scene": "barrio:juntos", "rain": 0.0, "text": "Ese año, se graduaron de la mano."},
+    {"scene": "atardecer", "rain": 0.0, "text": "A veces, la persona que buscas está sentada justo delante de ti. ¿Te pasó?"}
+  ]
+}

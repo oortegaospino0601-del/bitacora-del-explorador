@@ -576,3 +576,84 @@ export const camas: React.FC<P> = ({dur}) => {
     </Cam>
   );
 };
+
+// ---------- escuela (aula | nota) ----------
+export const escuela: React.FC<P> = ({dur, a = 'aula', b = ''}) => {
+  const t = useT();
+  const cast = useCast();
+  if (a === 'nota') {
+    const fold = ease(t, dur * 0.55, dur * 0.85);
+    const draw = ease(t, 0.2, dur * 0.5);
+    return (
+      <Cam dur={dur} z={[1.0, 1.08]}>
+        <Svg>
+          <rect width={W} height={H} fill="#c8a070" />
+          {Array.from({length: 10}).map((_, i) => <rect key={i} x={0} y={i * 200} width={W} height={4} fill="#a8804f" />)}
+          <g transform={`translate(540 900) rotate(${-4 + fold * 30}) scale(${1 - fold * 0.75})`}>
+            <rect x={-340} y={-460} width={680} height={900} fill="#fdfcf6" />
+            {Array.from({length: 15}).map((_, i) => <rect key={i} x={-340} y={-400 + i * 58} width={680} height={3} fill="#9ab8ec" />)}
+            <rect x={-260} y={-460} width={4} height={900} fill="#ec8a98" />
+            <path
+              d="M 0 60 C -120 -40 -170 -160 -60 -190 C -20 -200 0 -170 0 -140 C 0 -170 20 -200 60 -190 C 170 -160 120 -40 0 60 Z"
+              fill="none"
+              stroke="#e0304a"
+              strokeWidth={14}
+              pathLength={1}
+              strokeDasharray={`${draw} 1`}
+              strokeLinecap="round"
+            />
+            <text x={0} y={240} textAnchor="middle" fontFamily="'Comic Neue', cursive" fontWeight={700} fontSize={110} fill="#1d3a8a" opacity={ease(t, dur * 0.3, dur * 0.5)}>
+              ¿Y si...?
+            </text>
+          </g>
+          <Hand x={760 - fold * 120} y={1500} rot={-20} s={1.4} skin={cast.him.skin} sleeve={cast.him.coat} curl={fold} />
+        </Svg>
+        <Vignette id="esnvig" strength={0.4} color="#3a2010" />
+      </Cam>
+    );
+  }
+  // aula vista desde la pizarra: ella en primera fila, él justo detrás mirándola
+  const look = b === '2' ? ease(t, 0.5, 2.0) : 0;
+  const students = [
+    {x: 160, y: 1180, s: 0.7},
+    {x: 920, y: 1180, s: 0.7},
+    {x: 170, y: 1560, s: 0.95},
+    {x: 910, y: 1560, s: 0.95},
+  ];
+  return (
+    <Cam dur={dur} z={b === '3' ? [1.1, 1.22] : [1.0, 1.08]} y={b === '3' ? [0, 80] : [0, 0]}>
+      <Svg>
+        <rect width={W} height={H} fill="#e8eef0" />
+        <rect x={0} y={1000} width={W} height={920} fill="#c9a77e" />
+        {[130, 460, 790].map((x) => (
+          <g key={x}>
+            <rect x={x} y={300} width={200} height={300} fill="#a8d8f0" />
+            <rect x={x + 96} y={300} width={8} height={300} fill="#ffffff" />
+            <rect x={x} y={446} width={200} height={8} fill="#ffffff" />
+          </g>
+        ))}
+        <circle cx={540} cy={180} r={60} fill="#ffffff" stroke="#3a3a4a" strokeWidth={8} />
+        <line x1={540} y1={180} x2={540 + Math.cos(t) * 40} y2={180 + Math.sin(t) * 40} stroke="#3a3a4a" strokeWidth={6} />
+        {students.map((st, i) => (
+          <g key={i}>
+            <Person look={{...cast.other, hair: i % 2 ? 'bob' : 'curly', coat: ['#7aa6d6', '#e8a0a8', '#9fd1a8', '#f2cf63'][i], long: i % 2 === 1}} x={st.x} y={st.y} s={st.s} noLegs eyes="down" />
+            <rect x={st.x - 150 * st.s} y={st.y - 250 * st.s} width={300 * st.s} height={30 * st.s} fill="#8a5a34" />
+            <rect x={st.x - 140 * st.s} y={st.y - 220 * st.s} width={280 * st.s} height={160 * st.s} fill="#b07a4a" />
+          </g>
+        ))}
+        <Person look={HIM} x={540} y={1280} s={0.82} noLegs smile={0.4 + look * 0.5} eyes={b === '2' ? 'open' : 'down'} tilt={Math.sin(t * 1.2) * 3} />
+        <rect x={540 - 130} y={1280 - 205} width={260} height={26} fill="#8a5a34" />
+        <rect x={540 - 120} y={1280 - 180} width={240} height={130} fill="#b07a4a" />
+        <Person look={HER} x={540} y={1760} s={1.2} noLegs smile={0.3} eyes="down" />
+        <rect x={540 - 200} y={1760 - 290} width={400} height={36} fill="#8a5a34" />
+        <rect x={540 - 185} y={1760 - 254} width={370} height={240} fill="#b07a4a" />
+        {b === '2' && (
+          <g opacity={ease(t, 1.0, 1.6)}>
+            <path d="M 600 860 c 10 -30 50 -30 50 0 c 0 -30 40 -30 50 0 c 0 30 -50 50 -50 70 c 0 -20 -50 -40 -50 -70 Z" fill="#ff5a7a" transform={`translate(0 ${-Math.sin(t * 3) * 10})`} />
+          </g>
+        )}
+      </Svg>
+      <Vignette id={`esa${b}vig`} strength={0.3} />
+    </Cam>
+  );
+};

@@ -7,6 +7,7 @@ import '@fontsource/playfair-display/latin-900.css';
 import '@fontsource/vt323/latin-400.css';
 import '@fontsource/bangers/latin-400.css';
 import '@fontsource/nunito/latin-800.css';
+import '@fontsource/comic-neue/latin-700.css';
 import '@fontsource/nunito/latin-900.css';
 import '@fontsource/barlow-condensed/latin-700.css';
 import '@fontsource/barlow-condensed/latin-800.css';
@@ -21,6 +22,7 @@ export type Estilo = {
   halftone?: number;
   letterbox?: number;
   stamp?: 'pelicula' | 'vhs';
+  ruled?: boolean; // hoja de cuaderno
   font: string;
   hookWeight: number;
   capWeight: number;
@@ -95,6 +97,20 @@ export const ESTILOS: Record<string, Estilo> = {
     shadow: 'none',
     pillBg: 'rgba(241,233,216,0.9)',
     pillBorder: '#1d2a6a',
+  },
+  cuaderno: {
+    filter: 'saturate(0.95) brightness(1.06)',
+    paper: 0.35,
+    ruled: true,
+    font: "'Comic Neue', 'Comic Sans MS', sans-serif",
+    hookWeight: 700,
+    capWeight: 700,
+    capSize: 80,
+    text: '#ffffff',
+    accent: '#ffe066',
+    shadow: '4px 4px 0 #1d3a8a, -2px -2px 0 #1d3a8a, 2px -2px 0 #1d3a8a, -2px 2px 0 #1d3a8a',
+    pillBg: 'rgba(29,58,138,0.88)',
+    pillBorder: '#ff5a6a',
   },
   noir: {
     filter: 'grayscale(1) contrast(1.4) brightness(0.95)',
@@ -213,6 +229,12 @@ export const Capas: React.FC<{e: Estilo; fecha?: string}> = ({e, fecha}) => {
   return (
     <>
       {e.paper ? <AbsoluteFill style={{backgroundImage: `url(${staticFile('historia/tex/papel.jpg')})`, backgroundSize: 'cover', mixBlendMode: 'multiply', opacity: e.paper}} /> : null}
+      {e.ruled ? (
+        <>
+          <AbsoluteFill style={{background: 'repeating-linear-gradient(180deg, transparent 0 58px, rgba(70,120,220,0.28) 58px 61px)', mixBlendMode: 'multiply'}} />
+          <div style={{position: 'absolute', top: 0, bottom: 0, left: 110, width: 4, background: 'rgba(230,70,90,0.55)'}} />
+        </>
+      ) : null}
       {e.halftone ? (
         <AbsoluteFill style={{backgroundImage: 'radial-gradient(rgba(20,17,31,0.9) 28%, transparent 30%)', backgroundSize: '14px 14px', mixBlendMode: 'multiply', opacity: e.halftone}} />
       ) : null}
