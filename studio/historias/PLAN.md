@@ -18,7 +18,7 @@ recodifica siempre (GitHub rechaza archivos de más de 100 MB):
 | 04:24 | programado (Metricool) | San Lucas — Kevin Kaarl | acuarela | Se prometieron "para siempre" frente al mar… y lo cumplieron 60 años |
 | 06:24 | programado (Metricool) | Me rehúso — Danny Ocean | vhs | Ella tenía un pasaje solo de ida |
 | 08:24 | programado (Metricool) | Mamichula — Trueno, Nicki Nicole, Bizarrap | comic | 3 intentos para conquistarla… y 3 fracasos |
-| 10:24 | pendiente | Si antes te hubiera conocido — Karol G | tropical | Lo conoció el último día de sus vacaciones |
+| 10:24 | programado (Metricool) | Si antes te hubiera conocido — Karol G | tropical | Lo conoció el último día de sus vacaciones |
 | 12:24 | pendiente | Adán y Eva — Paulo Londra | nueva estética | Todo el colegio sabía que le gustaba… menos ella |
 
 ## Historias (13 frases, 3.ª persona, sin diálogos; frase 2 presenta la canción con tarjeta)
