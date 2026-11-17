@@ -377,3 +377,201 @@ export const manos: React.FC<P> = ({dur, a = 'anillo'}) => {
     </Cam>
   );
 };
+
+// ---------- aeropuerto (ventana | abrazo | puerta) ----------
+const Avion: React.FC<{x: number; y: number; s: number; rot?: number; c?: string}> = ({x, y, s, rot = 0, c = '#f4f4f8'}) => (
+  <g transform={`translate(${x} ${y}) rotate(${rot}) scale(${s})`}>
+    <ellipse cx={0} cy={0} rx={200} ry={34} fill={c} />
+    <path d="M -40 0 L 40 0 L -30 120 L -80 120 Z" fill="#c9cfe0" />
+    <path d="M -40 0 L 40 0 L -30 -110 L -80 -110 Z" fill="#dfe3ee" />
+    <path d="M -160 -10 L -200 -90 L -170 -90 L -130 -10 Z" fill="#c0392b" />
+    {Array.from({length: 8}).map((_, i) => <circle key={i} cx={-100 + i * 26} cy={-6} r={6} fill="#5a6a8a" />)}
+  </g>
+);
+
+const Maleta: React.FC<{x: number; y: number; s?: number; c?: string}> = ({x, y, s = 1, c = '#c0392b'}) => (
+  <g transform={`translate(${x} ${y}) scale(${s})`}>
+    <rect x={-60} y={-150} width={120} height={150} rx={16} fill={c} />
+    <rect x={-20} y={-200} width={40} height={54} rx={10} fill="none" stroke="#1d1d24" strokeWidth={8} />
+    <circle cx={-34} cy={6} r={10} fill="#1d1d24" />
+    <circle cx={34} cy={6} r={10} fill="#1d1d24" />
+  </g>
+);
+
+export const aeropuerto: React.FC<P> = ({dur, a = 'ventana'}) => {
+  const t = useT();
+  const id = `ae${a}`;
+  if (a === 'ventana') {
+    const p = ease(t, 0.3, dur);
+    return (
+      <Cam dur={dur} z={[1.0, 1.08]}>
+        <Svg>
+          <defs>
+            <Grad id={`${id}sky`} stops={[[0, '#6a8ac8'], [1, '#f2c49a']]} />
+          </defs>
+          <rect width={W} height={H} fill="#1d2238" />
+          <rect x={40} y={200} width={1000} height={1200} fill={`url(#${id}sky)`} />
+          <rect x={40} y={1150} width={1000} height={250} fill="#5a5f6e" />
+          <rect x={40} y={1260} width={1000} height={10} fill="#f1e6a0" opacity={0.7} />
+          <Avion x={mix(150, 1300, p)} y={mix(1180, 600, Math.max(0, p - 0.25) * 1.3)} s={mix(0.9, 0.6, p)} rot={-mix(0, 14, Math.min(1, Math.max(0, p - 0.2) * 3))} />
+          {[290, 540, 790].map((x) => <rect key={x} x={x - 9} y={200} width={18} height={1200} fill="#141828" />)}
+          <rect x={40} y={760} width={1000} height={14} fill="#141828" />
+          <rect x={0} y={1400} width={W} height={520} fill="#262b42" />
+          <Person look={HIM} x={540} y={2050} s={1.9} view="back" shade={0.3} />
+        </Svg>
+        <Vignette id={`${id}vig`} strength={0.5} />
+      </Cam>
+    );
+  }
+  if (a === 'abrazo') {
+    return (
+      <Cam dur={dur} z={[1.0, 1.1]}>
+        <Svg>
+          <rect width={W} height={H} fill="#d9dce6" />
+          <rect x={0} y={0} width={W} height={260} fill="#f4f5f8" />
+          <rect x={140} y={330} width={800} height={300} rx={14} fill="#1d1d24" />
+          {Array.from({length: 5}).map((_, i) => (
+            <g key={i}>
+              <rect x={170} y={360 + i * 52} width={300} height={30} fill="#f2c44a" opacity={0.8} />
+              <rect x={500} y={360 + i * 52} width={200} height={30} fill="#f2c44a" opacity={0.5} />
+              <rect x={730} y={360 + i * 52} width={180} height={30} fill={i === 1 ? '#ff5a4a' : '#4ad87a'} opacity={0.7} />
+            </g>
+          ))}
+          <rect x={0} y={1500} width={W} height={420} fill="#b9bcc8" />
+          <Maleta x={830} y={1660} s={1.2} />
+          <Person look={HIM} x={470} y={1700} s={1.3} armR={70} tilt={6} eyes="closed" smile={-0.2} />
+          <Person look={HER} x={600} y={1700} s={1.25} armL={70} tilt={-10} eyes="closed" smile={-0.3} />
+        </Svg>
+        <Vignette id={`${id}vig`} strength={0.35} />
+      </Cam>
+    );
+  }
+  // puerta: ella abre la puerta y él está ahí con una maleta
+  const op = ease(t, 0.2, 1.2);
+  return (
+    <Cam dur={dur} z={[1.0, 1.08]}>
+      <Svg>
+        <rect width={W} height={H} fill="#e6d3b8" />
+        <rect x={0} y={1560} width={W} height={360} fill="#9a7a5a" />
+        <rect x={360} y={560} width={560} height={1010} fill="#3a2e3a" />
+        <rect x={380} y={580} width={520} height={990} fill="#f6e2b0" />
+        <Person look={HIM} x={650} y={1560} s={1.25} smile={ease(t, 1.0, 1.8)} armR={10} armL={30} />
+        <Maleta x={830} y={1560} s={1.1} c="#2f6bd8" />
+        <g transform={`translate(380 580) scale(${1 - op * 0.85} 1)`}>
+          <rect width={520} height={990} fill="#8a5a3a" />
+          <circle cx={470} cy={520} r={16} fill="#e8c24a" />
+        </g>
+        <Person look={HER} x={200} y={1900} s={1.6} view="back" armR={40} />
+      </Svg>
+      <Vignette id={`${id}vig`} strength={0.35} />
+    </Cam>
+  );
+};
+
+// ---------- avión sobre las nubes ----------
+export const avion: React.FC<P> = ({dur, b = ''}) => {
+  const t = useT();
+  const p = t / dur;
+  const r = rng(801);
+  const clouds = Array.from({length: 9}).map(() => ({x: r() * 1400, y: 300 + r() * 1300, s: 0.6 + r() * 0.9, v: 40 + r() * 80}));
+  return (
+    <Cam dur={dur} z={b === '2' ? [1.1, 1.0] : [1.0, 1.06]}>
+      <Svg>
+        <defs>
+          <Grad id={`av${b}sky`} stops={[[0, '#4a7ac8'], [1, '#b8d8f2']]} />
+        </defs>
+        <rect width={W} height={H} fill={`url(#av${b}sky)`} />
+        {clouds.map((c, i) => {
+          const x = ((c.x - t * c.v) % 1500 + 1500) % 1500 - 200;
+          return (
+            <g key={i} opacity={0.9} transform={`translate(${x} ${c.y}) scale(${c.s})`}>
+              <ellipse cx={0} cy={0} rx={160} ry={50} fill="#ffffff" />
+              <ellipse cx={-60} cy={-30} rx={80} ry={50} fill="#ffffff" />
+              <ellipse cx={50} cy={-40} rx={90} ry={60} fill="#ffffff" />
+            </g>
+          );
+        })}
+        <path d={`M -100 1500 Q 540 ${900} ${mix(200, 1180, p)} ${mix(1250, 700, p)}`} stroke="#ffffff" strokeWidth={6} strokeDasharray="20 18" fill="none" opacity={0.7} />
+        <Avion x={mix(200, 1180, p)} y={mix(1250, 700, p) + Math.sin(t * 2) * 8} s={1.3} rot={-22} />
+      </Svg>
+      <Vignette id={`av${b}vig`} strength={0.3} />
+    </Cam>
+  );
+};
+
+// ---------- videollamada (larga | corta) ----------
+export const videollamada: React.FC<P> = ({dur, a = 'larga'}) => {
+  const t = useT();
+  const corta = a === 'corta';
+  const secs = corta ? 180 + Math.floor(t * 1) : 6130 + Math.floor(t * 1);
+  const hh = Math.floor(secs / 3600);
+  const mm = Math.floor((secs % 3600) / 60);
+  const ss = secs % 60;
+  const ended = corta && t > dur - 1.3;
+  return (
+    <Cam dur={dur} z={[1.02, 1.1]}>
+      <Svg>
+        <rect width={W} height={H} fill="#0e1228" />
+        <Bokeh seed={901} n={12} colors={['#3a4aa8', '#6a5ac8']} rMin={40} rMax={140} opacity={0.3} />
+        <Hand x={560} y={1720} s={1.7} part="back" sleeve="#1a2440" />
+        <g transform="translate(540 880)">
+          <rect x={-300} y={-570} width={600} height={1140} rx={72} fill="#0d1020" stroke="#2c3256" strokeWidth={10} />
+          <svg x={-272} y={-534} width={544} height={1068} viewBox="0 0 544 1068">
+            <rect width={544} height={1068} fill={ended ? '#14182c' : '#f2c49a'} />
+            {!ended && (
+              <>
+                <rect y={700} width={544} height={368} fill="#c98a6a" />
+                <Person look={HER} x={272} y={1500} s={2.2} smile={corta ? -0.3 : 1} eyes={corta ? 'down' : t % 3 < 0.2 ? 'closed' : 'open'} tilt={corta ? 0 : Math.sin(t * 2) * 4} />
+                <rect x={364} y={40} width={150} height={220} rx={16} fill="#1d2440" />
+                <svg x={364} y={40} width={150} height={220} viewBox="0 0 150 220">
+                  <Person look={HIM} x={75} y={420} s={0.75} smile={corta ? 0 : 0.8} />
+                </svg>
+              </>
+            )}
+            <text x={272} y={ended ? 520 : 90} textAnchor="middle" fontFamily="Montserrat, Arial" fontWeight={700} fontSize={ended ? 40 : 30} fill="#ffffff">
+              {ended ? 'Llamada finalizada' : `${hh ? `${hh}:` : ''}${String(mm).padStart(2, '0')}:${String(ss).padStart(2, '0')}`}
+            </text>
+            {!ended && <circle cx={272} cy={980} r={44} fill="#ff4a5a" />}
+          </svg>
+        </g>
+        <Hand x={560} y={1720} s={1.7} part="thumb" />
+      </Svg>
+      <Vignette id={`vc${a}vig`} strength={0.55} />
+    </Cam>
+  );
+};
+
+// ---------- camas: pantalla dividida, cada uno en su cama ----------
+export const camas: React.FC<P> = ({dur}) => {
+  const t = useT();
+  const half = (side: 0 | 1) => {
+    const x0 = side * 540;
+    const him = side === 0;
+    return (
+      <g key={side}>
+        <rect x={x0} y={0} width={540} height={H} fill={him ? '#1a2240' : '#2a2038'} />
+        <rect x={x0 + 60} y={260} width={420} height={300} fill={him ? '#2a3a6a' : '#f2c49a'} opacity={him ? 1 : 0.5} />
+        {him && Array.from({length: 20}).map((_, i) => <circle key={i} cx={x0 + 80 + ((i * 47) % 380)} cy={280 + ((i * 83) % 260)} r={2} fill="#ffffff" opacity={0.7} />)}
+        <rect x={x0 + 40} y={1100} width={460} height={140} rx={60} fill="#e8e4f0" opacity={0.9} />
+        <Person look={him ? HIM : HER} x={x0 + 270} y={1690} s={1.1} noLegs eyes={him ? 'open' : 'closed'} smile={0} tilt={him ? -8 : 10} />
+        <rect x={x0 + 20} y={1300} width={500} height={620} rx={40} fill={him ? '#3a4a8a' : '#c97a7a'} />
+        {him && (
+          <g>
+            <rect x={x0 + 330} y={1180} width={70} height={120} rx={12} fill="#0d1020" />
+            <circle cx={x0 + 300} cy={1100} r={170} fill="#7f95ff" opacity={0.15 + 0.05 * Math.sin(t * 3)} />
+          </g>
+        )}
+      </g>
+    );
+  };
+  return (
+    <Cam dur={dur} z={[1.0, 1.05]}>
+      <Svg>
+        {half(0)}
+        {half(1)}
+        <rect x={536} y={0} width={8} height={H} fill="#0a0a12" />
+      </Svg>
+      <Vignette id="cmvig" strength={0.5} />
+    </Cam>
+  );
+};

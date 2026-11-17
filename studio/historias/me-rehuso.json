@@ -1,0 +1,31 @@
+{
+  "slug": "historia-me-rehuso",
+  "hook": "UN PASAJE…\nSOLO DE\nIDA.",
+  "song": {"title": "Me Rehúso", "artists": "Danny Ocean", "cardLine": 1},
+  "estilo": "vhs",
+  "fecha": "ABR. 22 2016",
+  "cast": {
+    "him": {"hair": "curly", "skin": "#b8805a", "hairC": "#120c0a", "coat": "#3a6a5a", "shirt": "#f1f1f1"},
+    "her": {"hair": "bob", "skin": "#e8b994", "hairC": "#3a2014", "coat": "#e8c24a", "pants": "#2a2a3a", "long": true}
+  },
+  "flash": ["aeropuerto:puerta"],
+  "speed": 1.0,
+  "tail": 0.4,
+  "minScene": 2.8,
+  "music": {"bpm": 90, "prog": "nostalgia", "style": "trap", "transpose": -1, "drumsFromLine": 2, "dropAtLine": 9, "backAtLine": 11, "gain": 0.32},
+  "lines": [
+    {"scene": "aeropuerto:ventana", "rain": 0.0, "text": "Ella tenía un pasaje solo de ida… y él tuvo que verla irse."},
+    {"scene": "atardecer", "rain": 0.0, "text": "Esta es la historia de Me Rehúso, de Danny Ocean.", "tts": "Esta es la historia de Me Rehúso, de Dani Ocean."},
+    {"scene": "cafe", "rain": 0.0, "text": "Llevaban dos años juntos cuando le salió el trabajo de sus sueños… en otro país."},
+    {"scene": "camas", "rain": 0.0, "text": "Esa noche, ninguno de los dos pudo dormir."},
+    {"scene": "aeropuerto:abrazo", "rain": 0.0, "text": "En el aeropuerto, él le prometió que la distancia no iba a poder con ellos."},
+    {"scene": "avion", "rain": 0.0, "text": "Y el avión se la llevó a cuatro mil kilómetros."},
+    {"scene": "videollamada:larga", "rain": 0.0, "text": "Al principio hablaban horas cada noche."},
+    {"scene": "videollamada:corta", "rain": 0.0, "text": "Pero los horarios cambiaron… y las llamadas se hicieron cortas."},
+    {"scene": "movil-espera", "rain": 0.1, "text": "Un día, ella tardó tres días en responder."},
+    {"scene": "ventana-noche", "rain": 0.5, "text": "Todos le decían que la soltara. Él se rehusaba."},
+    {"scene": "avion:x:2", "rain": 0.0, "text": "Vendió su moto… y compró un pasaje."},
+    {"scene": "aeropuerto:puerta", "rain": 0.0, "text": "Cuando ella abrió la puerta, él estaba ahí. Con una maleta."},
+    {"scene": "barrio:juntos:tarde", "rain": 0.0, "text": "Hay amores que uno simplemente se rehúsa a perder. ¿Tú lo harías?"}
+  ]
+}

@@ -1,0 +1,824 @@
+{
+ "slug": "historia-me-rehuso",
+ "hook": "UN PASAJE…\nSOLO DE\nIDA.",
+ "durations": [
+  4.106,
+  3.362,
+  5.106,
+  3.105,
+  4.91,
+  3.461,
+  3.188,
+  4.046,
+  3.436,
+  3.616,
+  2.932,
+  3.931,
+  5.861
+ ],
+ "lines": [
+  {
+   "start": 0.25,
+   "end": 3.706,
+   "text": "Ella tenía un pasaje solo de ida… y él tuvo que verla irse.",
+   "scene": "aeropuerto:ventana",
+   "words": [
+    {
+     "w": "Ella",
+     "start": 0.25,
+     "end": 0.52
+    },
+    {
+     "w": "tenía",
+     "start": 0.52,
+     "end": 0.838
+    },
+    {
+     "w": "un",
+     "start": 0.838,
+     "end": 1.01
+    },
+    {
+     "w": "pasaje",
+     "start": 1.01,
+     "end": 1.378
+    },
+    {
+     "w": "solo",
+     "start": 1.378,
+     "end": 1.647
+    },
+    {
+     "w": "de",
+     "start": 1.647,
+     "end": 1.819
+    },
+    {
+     "w": "ida…",
+     "start": 1.819,
+     "end": 2.186
+    },
+    {
+     "w": "y",
+     "start": 2.186,
+     "end": 2.309
+    },
+    {
+     "w": "él",
+     "start": 2.309,
+     "end": 2.481
+    },
+    {
+     "w": "tuvo",
+     "start": 2.481,
+     "end": 2.75
+    },
+    {
+     "w": "que",
+     "start": 2.75,
+     "end": 2.971
+    },
+    {
+     "w": "verla",
+     "start": 2.971,
+     "end": 3.29
+    },
+    {
+     "w": "irse.",
+     "start": 3.29,
+     "end": 3.706
+    }
+   ]
+  },
+  {
+   "start": 4.406,
+   "end": 7.068,
+   "text": "Esta es la historia de Me Rehúso, de Danny Ocean.",
+   "scene": "atardecer",
+   "words": [
+    {
+     "w": "Esta",
+     "start": 4.406,
+     "end": 4.659
+    },
+    {
+     "w": "es",
+     "start": 4.659,
+     "end": 4.819
+    },
+    {
+     "w": "la",
+     "start": 4.819,
+     "end": 4.98
+    },
+    {
+     "w": "historia",
+     "start": 4.98,
+     "end": 5.416
+    },
+    {
+     "w": "de",
+     "start": 5.416,
+     "end": 5.576
+    },
+    {
+     "w": "Me",
+     "start": 5.576,
+     "end": 5.737
+    },
+    {
+     "w": "Rehúso,",
+     "start": 5.737,
+     "end": 6.173
+    },
+    {
+     "w": "de",
+     "start": 6.173,
+     "end": 6.334
+    },
+    {
+     "w": "Danny",
+     "start": 6.334,
+     "end": 6.632
+    },
+    {
+     "w": "Ocean.",
+     "start": 6.632,
+     "end": 7.068
+    }
+   ]
+  },
+  {
+   "start": 7.768,
+   "end": 12.174,
+   "text": "Llevaban dos años juntos cuando le salió el trabajo de sus sueños… en otro país.",
+   "scene": "cafe",
+   "words": [
+    {
+     "w": "Llevaban",
+     "start": 7.768,
+     "end": 8.22
+    },
+    {
+     "w": "dos",
+     "start": 8.22,
+     "end": 8.435
+    },
+    {
+     "w": "años",
+     "start": 8.435,
+     "end": 8.697
+    },
+    {
+     "w": "juntos",
+     "start": 8.697,
+     "end": 9.054
+    },
+    {
+     "w": "cuando",
+     "start": 9.054,
+     "end": 9.411
+    },
+    {
+     "w": "le",
+     "start": 9.411,
+     "end": 9.578
+    },
+    {
+     "w": "salió",
+     "start": 9.578,
+     "end": 9.888
+    },
+    {
+     "w": "el",
+     "start": 9.888,
+     "end": 10.054
+    },
+    {
+     "w": "trabajo",
+     "start": 10.054,
+     "end": 10.459
+    },
+    {
+     "w": "de",
+     "start": 10.459,
+     "end": 10.626
+    },
+    {
+     "w": "sus",
+     "start": 10.626,
+     "end": 10.84
+    },
+    {
+     "w": "sueños…",
+     "start": 10.84,
+     "end": 11.34
+    },
+    {
+     "w": "en",
+     "start": 11.34,
+     "end": 11.507
+    },
+    {
+     "w": "otro",
+     "start": 11.507,
+     "end": 11.769
+    },
+    {
+     "w": "país.",
+     "start": 11.769,
+     "end": 12.174
+    }
+   ]
+  },
+  {
+   "start": 12.874,
+   "end": 15.279,
+   "text": "Esa noche, ninguno de los dos pudo dormir.",
+   "scene": "camas",
+   "words": [
+    {
+     "w": "Esa",
+     "start": 12.874,
+     "end": 13.091
+    },
+    {
+     "w": "noche,",
+     "start": 13.091,
+     "end": 13.499
+    },
+    {
+     "w": "ninguno",
+     "start": 13.499,
+     "end": 13.908
+    },
+    {
+     "w": "de",
+     "start": 13.908,
+     "end": 14.077
+    },
+    {
+     "w": "los",
+     "start": 14.077,
+     "end": 14.293
+    },
+    {
+     "w": "dos",
+     "start": 14.293,
+     "end": 14.509
+    },
+    {
+     "w": "pudo",
+     "start": 14.509,
+     "end": 14.774
+    },
+    {
+     "w": "dormir.",
+     "start": 14.774,
+     "end": 15.279
+    }
+   ]
+  },
+  {
+   "start": 15.979,
+   "end": 20.189,
+   "text": "En el aeropuerto, él le prometió que la distancia no iba a poder con ellos.",
+   "scene": "aeropuerto:abrazo",
+   "words": [
+    {
+     "w": "En",
+     "start": 15.979,
+     "end": 16.149
+    },
+    {
+     "w": "el",
+     "start": 16.149,
+     "end": 16.32
+    },
+    {
+     "w": "aeropuerto,",
+     "start": 16.32,
+     "end": 16.977
+    },
+    {
+     "w": "él",
+     "start": 16.977,
+     "end": 17.147
+    },
+    {
+     "w": "le",
+     "start": 17.147,
+     "end": 17.318
+    },
+    {
+     "w": "prometió",
+     "start": 17.318,
+     "end": 17.78
+    },
+    {
+     "w": "que",
+     "start": 17.78,
+     "end": 17.999
+    },
+    {
+     "w": "la",
+     "start": 17.999,
+     "end": 18.169
+    },
+    {
+     "w": "distancia",
+     "start": 18.169,
+     "end": 18.68
+    },
+    {
+     "w": "no",
+     "start": 18.68,
+     "end": 18.851
+    },
+    {
+     "w": "iba",
+     "start": 18.851,
+     "end": 19.07
+    },
+    {
+     "w": "a",
+     "start": 19.07,
+     "end": 19.192
+    },
+    {
+     "w": "poder",
+     "start": 19.192,
+     "end": 19.508
+    },
+    {
+     "w": "con",
+     "start": 19.508,
+     "end": 19.727
+    },
+    {
+     "w": "ellos.",
+     "start": 19.727,
+     "end": 20.189
+    }
+   ]
+  },
+  {
+   "start": 20.889,
+   "end": 23.65,
+   "text": "Y el avión se la llevó a cuatro mil kilómetros.",
+   "scene": "avion",
+   "words": [
+    {
+     "w": "Y",
+     "start": 20.889,
+     "end": 21.015
+    },
+    {
+     "w": "el",
+     "start": 21.015,
+     "end": 21.191
+    },
+    {
+     "w": "avión",
+     "start": 21.191,
+     "end": 21.517
+    },
+    {
+     "w": "se",
+     "start": 21.517,
+     "end": 21.692
+    },
+    {
+     "w": "la",
+     "start": 21.692,
+     "end": 21.868
+    },
+    {
+     "w": "llevó",
+     "start": 21.868,
+     "end": 22.194
+    },
+    {
+     "w": "a",
+     "start": 22.194,
+     "end": 22.32
+    },
+    {
+     "w": "cuatro",
+     "start": 22.32,
+     "end": 22.696
+    },
+    {
+     "w": "mil",
+     "start": 22.696,
+     "end": 22.922
+    },
+    {
+     "w": "kilómetros.",
+     "start": 22.922,
+     "end": 23.65
+    }
+   ]
+  },
+  {
+   "start": 24.35,
+   "end": 26.838,
+   "text": "Al principio hablaban horas cada noche.",
+   "scene": "videollamada:larga",
+   "words": [
+    {
+     "w": "Al",
+     "start": 24.35,
+     "end": 24.543
+    },
+    {
+     "w": "principio",
+     "start": 24.543,
+     "end": 25.124
+    },
+    {
+     "w": "hablaban",
+     "start": 25.124,
+     "end": 25.649
+    },
+    {
+     "w": "horas",
+     "start": 25.649,
+     "end": 26.009
+    },
+    {
+     "w": "cada",
+     "start": 26.009,
+     "end": 26.313
+    },
+    {
+     "w": "noche.",
+     "start": 26.313,
+     "end": 26.838
+    }
+   ]
+  },
+  {
+   "start": 27.538,
+   "end": 30.884,
+   "text": "Pero los horarios cambiaron… y las llamadas se hicieron cortas.",
+   "scene": "videollamada:corta",
+   "words": [
+    {
+     "w": "Pero",
+     "start": 27.538,
+     "end": 27.79
+    },
+    {
+     "w": "los",
+     "start": 27.79,
+     "end": 27.997
+    },
+    {
+     "w": "horarios",
+     "start": 27.997,
+     "end": 28.432
+    },
+    {
+     "w": "cambiaron…",
+     "start": 28.432,
+     "end": 29.051
+    },
+    {
+     "w": "y",
+     "start": 29.051,
+     "end": 29.165
+    },
+    {
+     "w": "las",
+     "start": 29.165,
+     "end": 29.371
+    },
+    {
+     "w": "llamadas",
+     "start": 29.371,
+     "end": 29.807
+    },
+    {
+     "w": "se",
+     "start": 29.807,
+     "end": 29.967
+    },
+    {
+     "w": "hicieron",
+     "start": 29.967,
+     "end": 30.403
+    },
+    {
+     "w": "cortas.",
+     "start": 30.403,
+     "end": 30.884
+    }
+   ]
+  },
+  {
+   "start": 31.584,
+   "end": 34.32,
+   "text": "Un día, ella tardó tres días en responder.",
+   "scene": "movil-espera",
+   "words": [
+    {
+     "w": "Un",
+     "start": 31.584,
+     "end": 31.775
+    },
+    {
+     "w": "día,",
+     "start": 31.775,
+     "end": 32.131
+    },
+    {
+     "w": "ella",
+     "start": 32.131,
+     "end": 32.432
+    },
+    {
+     "w": "tardó",
+     "start": 32.432,
+     "end": 32.788
+    },
+    {
+     "w": "tres",
+     "start": 32.788,
+     "end": 33.089
+    },
+    {
+     "w": "días",
+     "start": 33.089,
+     "end": 33.39
+    },
+    {
+     "w": "en",
+     "start": 33.39,
+     "end": 33.581
+    },
+    {
+     "w": "responder.",
+     "start": 33.581,
+     "end": 34.32
+    }
+   ]
+  },
+  {
+   "start": 35.02,
+   "end": 37.936,
+   "text": "Todos le decían que la soltara. Él se rehusaba.",
+   "scene": "ventana-noche",
+   "words": [
+    {
+     "w": "Todos",
+     "start": 35.02,
+     "end": 35.355
+    },
+    {
+     "w": "le",
+     "start": 35.355,
+     "end": 35.536
+    },
+    {
+     "w": "decían",
+     "start": 35.536,
+     "end": 35.923
+    },
+    {
+     "w": "que",
+     "start": 35.923,
+     "end": 36.155
+    },
+    {
+     "w": "la",
+     "start": 36.155,
+     "end": 36.336
+    },
+    {
+     "w": "soltara.",
+     "start": 36.336,
+     "end": 36.93
+    },
+    {
+     "w": "Él",
+     "start": 36.93,
+     "end": 37.11
+    },
+    {
+     "w": "se",
+     "start": 37.11,
+     "end": 37.291
+    },
+    {
+     "w": "rehusaba.",
+     "start": 37.291,
+     "end": 37.936
+    }
+   ]
+  },
+  {
+   "start": 38.636,
+   "end": 40.868,
+   "text": "Vendió su moto… y compró un pasaje.",
+   "scene": "avion:x:2",
+   "words": [
+    {
+     "w": "Vendió",
+     "start": 38.636,
+     "end": 39.021
+    },
+    {
+     "w": "su",
+     "start": 39.021,
+     "end": 39.2
+    },
+    {
+     "w": "moto…",
+     "start": 39.2,
+     "end": 39.636
+    },
+    {
+     "w": "y",
+     "start": 39.636,
+     "end": 39.765
+    },
+    {
+     "w": "compró",
+     "start": 39.765,
+     "end": 40.149
+    },
+    {
+     "w": "un",
+     "start": 40.149,
+     "end": 40.329
+    },
+    {
+     "w": "pasaje.",
+     "start": 40.329,
+     "end": 40.868
+    }
+   ]
+  },
+  {
+   "start": 41.568,
+   "end": 44.799,
+   "text": "Cuando ella abrió la puerta, él estaba ahí. Con una maleta.",
+   "scene": "aeropuerto:puerta",
+   "words": [
+    {
+     "w": "Cuando",
+     "start": 41.568,
+     "end": 41.911
+    },
+    {
+     "w": "ella",
+     "start": 41.911,
+     "end": 42.163
+    },
+    {
+     "w": "abrió",
+     "start": 42.163,
+     "end": 42.461
+    },
+    {
+     "w": "la",
+     "start": 42.461,
+     "end": 42.622
+    },
+    {
+     "w": "puerta,",
+     "start": 42.622,
+     "end": 43.057
+    },
+    {
+     "w": "él",
+     "start": 43.057,
+     "end": 43.218
+    },
+    {
+     "w": "estaba",
+     "start": 43.218,
+     "end": 43.561
+    },
+    {
+     "w": "ahí.",
+     "start": 43.561,
+     "end": 43.905
+    },
+    {
+     "w": "Con",
+     "start": 43.905,
+     "end": 44.111
+    },
+    {
+     "w": "una",
+     "start": 44.111,
+     "end": 44.318
+    },
+    {
+     "w": "maleta.",
+     "start": 44.318,
+     "end": 44.799
+    }
+   ]
+  },
+  {
+   "start": 45.499,
+   "end": 49.16,
+   "text": "Hay amores que uno simplemente se rehúsa a perder. ¿Tú lo harías?",
+   "scene": "barrio:juntos:tarde",
+   "words": [
+    {
+     "w": "Hay",
+     "start": 45.499,
+     "end": 45.718
+    },
+    {
+     "w": "amores",
+     "start": 45.718,
+     "end": 46.085
+    },
+    {
+     "w": "que",
+     "start": 46.085,
+     "end": 46.304
+    },
+    {
+     "w": "uno",
+     "start": 46.304,
+     "end": 46.524
+    },
+    {
+     "w": "simplemente",
+     "start": 46.524,
+     "end": 47.134
+    },
+    {
+     "w": "se",
+     "start": 47.134,
+     "end": 47.305
+    },
+    {
+     "w": "rehúsa",
+     "start": 47.305,
+     "end": 47.671
+    },
+    {
+     "w": "a",
+     "start": 47.671,
+     "end": 47.793
+    },
+    {
+     "w": "perder.",
+     "start": 47.793,
+     "end": 48.306
+    },
+    {
+     "w": "¿Tú",
+     "start": 48.306,
+     "end": 48.477
+    },
+    {
+     "w": "lo",
+     "start": 48.477,
+     "end": 48.647
+    },
+    {
+     "w": "harías?",
+     "start": 48.647,
+     "end": 49.16
+    }
+   ]
+  }
+ ],
+ "total": 51.06,
+ "audio": "historia/audio-historia-me-rehuso.wav",
+ "song": {
+  "title": "Me Rehúso",
+  "artists": "Danny Ocean",
+  "cardLine": 1
+ },
+ "flash": [
+  "aeropuerto:puerta"
+ ],
+ "estilo": "vhs",
+ "cast": {
+  "him": {
+   "hair": "curly",
+   "skin": "#b8805a",
+   "hairC": "#120c0a",
+   "coat": "#3a6a5a",
+   "shirt": "#f1f1f1"
+  },
+  "her": {
+   "hair": "bob",
+   "skin": "#e8b994",
+   "hairC": "#3a2014",
+   "coat": "#e8c24a",
+   "pants": "#2a2a3a",
+   "long": true
+  }
+ },
+ "fecha": "ABR. 22 2016"
+}
