@@ -1,0 +1,31 @@
+{
+  "slug": "historia-ella-baila-sola",
+  "hook": "TODA LA FIESTA LA MIRABA…\nY NADIE\nSE ATREVÍA.",
+  "song": {"title": "Ella Baila Sola", "artists": "Eslabon Armado, Peso Pluma", "cardLine": 1},
+  "estilo": "neon",
+  "cast": {
+    "him": {"hair": "m2", "skin": "#d9a37e", "hairC": "#141018", "coat": "#1e1e2c", "shirt": "#f1f1f1", "pants": "#141420", "shoes": "#f1f1f1"},
+    "her": {"hair": "f", "skin": "#e8b994", "hairC": "#1a1014", "coat": "#d1234f", "pants": "#2a0d18", "shoes": "#1a0a10", "long": true},
+    "other": {"hair": "curly", "skin": "#a8714f", "hairC": "#120c0a", "coat": "#2b4a8a", "shirt": "#e6e6e6"}
+  },
+  "flash": ["fiesta:cruza"],
+  "speed": 1.0,
+  "tail": 0.4,
+  "minScene": 2.8,
+  "music": {"bpm": 92, "prog": "oscura", "style": "trap", "drumsFromLine": 1, "dropAtLine": 7, "backAtLine": 8, "gain": 0.32},
+  "lines": [
+    {"scene": "fiesta:sola", "rain": 0.0, "text": "Toda la fiesta la miraba bailar sola… y nadie se atrevía a acercarse."},
+    {"scene": "fiesta:sola:2", "rain": 0.0, "text": "Esta es la historia de Ella Baila Sola, de Eslabon Armado y Peso Pluma."},
+    {"scene": "fiesta:amigos", "rain": 0.0, "text": "Él y su compa la miraban desde la esquina."},
+    {"scene": "fiesta:amigos:2", "rain": 0.0, "text": "Su compa le apostó a que no tenía ni una oportunidad."},
+    {"scene": "ojo", "rain": 0.0, "text": "Pero él notó algo: ella no dejaba de mirar la puerta."},
+    {"scene": "movil-espera", "rain": 0.0, "text": "Esperaba a alguien que le prometió llegar… y nunca llegó."},
+    {"scene": "fiesta:sola:2", "rain": 0.0, "text": "Por eso bailaba sola. Para no ponerse a llorar."},
+    {"scene": "fiesta:cruza", "rain": 0.0, "text": "Él cruzó la pista con las manos temblando."},
+    {"scene": "fiesta:baile", "rain": 0.0, "text": "No le pidió el número. Solo le preguntó si podía bailar con ella."},
+    {"scene": "fiesta:baile:2", "rain": 0.0, "text": "Y por primera vez en toda la noche, ella sonrió de verdad."},
+    {"scene": "parada-ella", "rain": 0.5, "text": "Bailaron hasta que cerraron… y él la acompañó a su bus."},
+    {"scene": "movil-ella", "rain": 0.1, "text": "Esa noche, el que le escribió primero fue él."},
+    {"scene": "ventana-amanecer", "rain": 0.0, "text": "A veces, quien baila sola solo espera a alguien que se atreva. ¿Tú te atreverías?"}
+  ]
+}
