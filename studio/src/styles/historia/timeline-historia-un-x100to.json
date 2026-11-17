@@ -1,0 +1,839 @@
+{
+ "slug": "historia-un-x100to",
+ "hook": "«YA LA OLVIDÉ»\nMENTÍA AL\n100%.",
+ "durations": [
+  4.55,
+  4.506,
+  4.024,
+  3.731,
+  3.581,
+  3.469,
+  2.8,
+  2.8,
+  3.711,
+  3.287,
+  4.386,
+  3.132,
+  6.148
+ ],
+ "lines": [
+  {
+   "start": 0.25,
+   "end": 4.15,
+   "text": "Les dijo a todos que ya la había olvidado… y mentía al cien por ciento.",
+   "scene": "cara",
+   "words": [
+    {
+     "w": "Les",
+     "start": 0.25,
+     "end": 0.46
+    },
+    {
+     "w": "dijo",
+     "start": 0.46,
+     "end": 0.717
+    },
+    {
+     "w": "a",
+     "start": 0.717,
+     "end": 0.834
+    },
+    {
+     "w": "todos",
+     "start": 0.834,
+     "end": 1.137
+    },
+    {
+     "w": "que",
+     "start": 1.137,
+     "end": 1.348
+    },
+    {
+     "w": "ya",
+     "start": 1.348,
+     "end": 1.511
+    },
+    {
+     "w": "la",
+     "start": 1.511,
+     "end": 1.674
+    },
+    {
+     "w": "había",
+     "start": 1.674,
+     "end": 1.978
+    },
+    {
+     "w": "olvidado…",
+     "start": 1.978,
+     "end": 2.562
+    },
+    {
+     "w": "y",
+     "start": 2.562,
+     "end": 2.679
+    },
+    {
+     "w": "mentía",
+     "start": 2.679,
+     "end": 3.029
+    },
+    {
+     "w": "al",
+     "start": 3.029,
+     "end": 3.192
+    },
+    {
+     "w": "cien",
+     "start": 3.192,
+     "end": 3.449
+    },
+    {
+     "w": "por",
+     "start": 3.449,
+     "end": 3.659
+    },
+    {
+     "w": "ciento.",
+     "start": 3.659,
+     "end": 4.15
+    }
+   ]
+  },
+  {
+   "start": 4.85,
+   "end": 8.656,
+   "text": "Esta es la historia de un x100to, de Grupo Frontera y Bad Bunny.",
+   "scene": "fiesta:amigos",
+   "words": [
+    {
+     "w": "Esta",
+     "start": 4.85,
+     "end": 5.131
+    },
+    {
+     "w": "es",
+     "start": 5.131,
+     "end": 5.309
+    },
+    {
+     "w": "la",
+     "start": 5.309,
+     "end": 5.488
+    },
+    {
+     "w": "historia",
+     "start": 5.488,
+     "end": 5.974
+    },
+    {
+     "w": "de",
+     "start": 5.974,
+     "end": 6.152
+    },
+    {
+     "w": "un",
+     "start": 6.152,
+     "end": 6.331
+    },
+    {
+     "w": "x100to,",
+     "start": 6.331,
+     "end": 6.817
+    },
+    {
+     "w": "de",
+     "start": 6.817,
+     "end": 6.995
+    },
+    {
+     "w": "Grupo",
+     "start": 6.995,
+     "end": 7.327
+    },
+    {
+     "w": "Frontera",
+     "start": 7.327,
+     "end": 7.813
+    },
+    {
+     "w": "y",
+     "start": 7.813,
+     "end": 7.94
+    },
+    {
+     "w": "Bad",
+     "start": 7.94,
+     "end": 8.17
+    },
+    {
+     "w": "Bunny.",
+     "start": 8.17,
+     "end": 8.656
+    }
+   ]
+  },
+  {
+   "start": 9.356,
+   "end": 12.68,
+   "text": "En el bar, sus amigos brindaban porque por fin era libre.",
+   "scene": "fiesta:amigos:2",
+   "words": [
+    {
+     "w": "En",
+     "start": 9.356,
+     "end": 9.531
+    },
+    {
+     "w": "el",
+     "start": 9.531,
+     "end": 9.706
+    },
+    {
+     "w": "bar,",
+     "start": 9.706,
+     "end": 10.03
+    },
+    {
+     "w": "sus",
+     "start": 10.03,
+     "end": 10.255
+    },
+    {
+     "w": "amigos",
+     "start": 10.255,
+     "end": 10.63
+    },
+    {
+     "w": "brindaban",
+     "start": 10.63,
+     "end": 11.155
+    },
+    {
+     "w": "porque",
+     "start": 11.155,
+     "end": 11.53
+    },
+    {
+     "w": "por",
+     "start": 11.53,
+     "end": 11.755
+    },
+    {
+     "w": "fin",
+     "start": 11.755,
+     "end": 11.98
+    },
+    {
+     "w": "era",
+     "start": 11.98,
+     "end": 12.205
+    },
+    {
+     "w": "libre.",
+     "start": 12.205,
+     "end": 12.68
+    }
+   ]
+  },
+  {
+   "start": 13.38,
+   "end": 16.411,
+   "text": "Pero en el baño, revisaba sus fotos una y otra vez.",
+   "scene": "galeria:scroll",
+   "words": [
+    {
+     "w": "Pero",
+     "start": 13.38,
+     "end": 13.655
+    },
+    {
+     "w": "en",
+     "start": 13.655,
+     "end": 13.831
+    },
+    {
+     "w": "el",
+     "start": 13.831,
+     "end": 14.006
+    },
+    {
+     "w": "baño,",
+     "start": 14.006,
+     "end": 14.382
+    },
+    {
+     "w": "revisaba",
+     "start": 14.382,
+     "end": 14.858
+    },
+    {
+     "w": "sus",
+     "start": 14.858,
+     "end": 15.083
+    },
+    {
+     "w": "fotos",
+     "start": 15.083,
+     "end": 15.409
+    },
+    {
+     "w": "una",
+     "start": 15.409,
+     "end": 15.634
+    },
+    {
+     "w": "y",
+     "start": 15.634,
+     "end": 15.76
+    },
+    {
+     "w": "otra",
+     "start": 15.76,
+     "end": 16.035
+    },
+    {
+     "w": "vez.",
+     "start": 16.035,
+     "end": 16.411
+    }
+   ]
+  },
+  {
+   "start": 17.111,
+   "end": 19.992,
+   "text": "Todavía escuchaba la playlist que hicieron juntos.",
+   "scene": "atardecer",
+   "words": [
+    {
+     "w": "Todavía",
+     "start": 17.111,
+     "end": 17.544
+    },
+    {
+     "w": "escuchaba",
+     "start": 17.544,
+     "end": 18.08
+    },
+    {
+     "w": "la",
+     "start": 18.08,
+     "end": 18.258
+    },
+    {
+     "w": "playlist",
+     "start": 18.258,
+     "end": 18.743
+    },
+    {
+     "w": "que",
+     "start": 18.743,
+     "end": 18.972
+    },
+    {
+     "w": "hicieron",
+     "start": 18.972,
+     "end": 19.457
+    },
+    {
+     "w": "juntos.",
+     "start": 19.457,
+     "end": 19.992
+    }
+   ]
+  },
+  {
+   "start": 20.692,
+   "end": 23.461,
+   "text": "Y guardaba la foto en la que ella se reía de él.",
+   "scene": "foto",
+   "words": [
+    {
+     "w": "Y",
+     "start": 20.692,
+     "end": 20.813
+    },
+    {
+     "w": "guardaba",
+     "start": 20.813,
+     "end": 21.275
+    },
+    {
+     "w": "la",
+     "start": 21.275,
+     "end": 21.445
+    },
+    {
+     "w": "foto",
+     "start": 21.445,
+     "end": 21.712
+    },
+    {
+     "w": "en",
+     "start": 21.712,
+     "end": 21.882
+    },
+    {
+     "w": "la",
+     "start": 21.882,
+     "end": 22.052
+    },
+    {
+     "w": "que",
+     "start": 22.052,
+     "end": 22.271
+    },
+    {
+     "w": "ella",
+     "start": 22.271,
+     "end": 22.538
+    },
+    {
+     "w": "se",
+     "start": 22.538,
+     "end": 22.708
+    },
+    {
+     "w": "reía",
+     "start": 22.708,
+     "end": 22.975
+    },
+    {
+     "w": "de",
+     "start": 22.975,
+     "end": 23.145
+    },
+    {
+     "w": "él.",
+     "start": 23.145,
+     "end": 23.461
+    }
+   ]
+  },
+  {
+   "start": 24.161,
+   "end": 26.143,
+   "text": "Un día, se la encontró en la calle.",
+   "scene": "lluvia",
+   "words": [
+    {
+     "w": "Un",
+     "start": 24.161,
+     "end": 24.322
+    },
+    {
+     "w": "día,",
+     "start": 24.322,
+     "end": 24.622
+    },
+    {
+     "w": "se",
+     "start": 24.622,
+     "end": 24.783
+    },
+    {
+     "w": "la",
+     "start": 24.783,
+     "end": 24.944
+    },
+    {
+     "w": "encontró",
+     "start": 24.944,
+     "end": 25.382
+    },
+    {
+     "w": "en",
+     "start": 25.382,
+     "end": 25.544
+    },
+    {
+     "w": "la",
+     "start": 25.544,
+     "end": 25.705
+    },
+    {
+     "w": "calle.",
+     "start": 25.705,
+     "end": 26.143
+    }
+   ]
+  },
+  {
+   "start": 26.961,
+   "end": 28.776,
+   "text": "Iba de la mano de alguien más.",
+   "scene": "con-otro",
+   "words": [
+    {
+     "w": "Iba",
+     "start": 26.961,
+     "end": 27.185
+    },
+    {
+     "w": "de",
+     "start": 27.185,
+     "end": 27.359
+    },
+    {
+     "w": "la",
+     "start": 27.359,
+     "end": 27.533
+    },
+    {
+     "w": "mano",
+     "start": 27.533,
+     "end": 27.806
+    },
+    {
+     "w": "de",
+     "start": 27.806,
+     "end": 27.98
+    },
+    {
+     "w": "alguien",
+     "start": 27.98,
+     "end": 28.403
+    },
+    {
+     "w": "más.",
+     "start": 28.403,
+     "end": 28.776
+    }
+   ]
+  },
+  {
+   "start": 29.761,
+   "end": 32.772,
+   "text": "Él la saludó con la mejor sonrisa que pudo fingir.",
+   "scene": "cara",
+   "words": [
+    {
+     "w": "Él",
+     "start": 29.761,
+     "end": 29.943
+    },
+    {
+     "w": "la",
+     "start": 29.943,
+     "end": 30.124
+    },
+    {
+     "w": "saludó",
+     "start": 30.124,
+     "end": 30.514
+    },
+    {
+     "w": "con",
+     "start": 30.514,
+     "end": 30.747
+    },
+    {
+     "w": "la",
+     "start": 30.747,
+     "end": 30.929
+    },
+    {
+     "w": "mejor",
+     "start": 30.929,
+     "end": 31.267
+    },
+    {
+     "w": "sonrisa",
+     "start": 31.267,
+     "end": 31.708
+    },
+    {
+     "w": "que",
+     "start": 31.708,
+     "end": 31.942
+    },
+    {
+     "w": "pudo",
+     "start": 31.942,
+     "end": 32.227
+    },
+    {
+     "w": "fingir.",
+     "start": 32.227,
+     "end": 32.772
+    }
+   ]
+  },
+  {
+   "start": 33.472,
+   "end": 36.06,
+   "text": "Y cuando ella se alejó, se le cayó la máscara.",
+   "scene": "se-alejan",
+   "words": [
+    {
+     "w": "Y",
+     "start": 33.472,
+     "end": 33.59
+    },
+    {
+     "w": "cuando",
+     "start": 33.59,
+     "end": 33.943
+    },
+    {
+     "w": "ella",
+     "start": 33.943,
+     "end": 34.201
+    },
+    {
+     "w": "se",
+     "start": 34.201,
+     "end": 34.366
+    },
+    {
+     "w": "alejó,",
+     "start": 34.366,
+     "end": 34.766
+    },
+    {
+     "w": "se",
+     "start": 34.766,
+     "end": 34.931
+    },
+    {
+     "w": "le",
+     "start": 34.931,
+     "end": 35.095
+    },
+    {
+     "w": "cayó",
+     "start": 35.095,
+     "end": 35.354
+    },
+    {
+     "w": "la",
+     "start": 35.354,
+     "end": 35.519
+    },
+    {
+     "w": "máscara.",
+     "start": 35.519,
+     "end": 36.06
+    }
+   ]
+  },
+  {
+   "start": 36.76,
+   "end": 40.446,
+   "text": "Porque olvidarla de verdad… solo lo había logrado un uno por ciento.",
+   "scene": "ventana-noche",
+   "words": [
+    {
+     "w": "Porque",
+     "start": 36.76,
+     "end": 37.11
+    },
+    {
+     "w": "olvidarla",
+     "start": 37.11,
+     "end": 37.599
+    },
+    {
+     "w": "de",
+     "start": 37.599,
+     "end": 37.763
+    },
+    {
+     "w": "verdad…",
+     "start": 37.763,
+     "end": 38.253
+    },
+    {
+     "w": "solo",
+     "start": 38.253,
+     "end": 38.509
+    },
+    {
+     "w": "lo",
+     "start": 38.509,
+     "end": 38.673
+    },
+    {
+     "w": "había",
+     "start": 38.673,
+     "end": 38.976
+    },
+    {
+     "w": "logrado",
+     "start": 38.976,
+     "end": 39.373
+    },
+    {
+     "w": "un",
+     "start": 39.373,
+     "end": 39.536
+    },
+    {
+     "w": "uno",
+     "start": 39.536,
+     "end": 39.746
+    },
+    {
+     "w": "por",
+     "start": 39.746,
+     "end": 39.956
+    },
+    {
+     "w": "ciento.",
+     "start": 39.956,
+     "end": 40.446
+    }
+   ]
+  },
+  {
+   "start": 41.146,
+   "end": 43.577,
+   "text": "Esa noche, por fin, guardó sus cosas.",
+   "scene": "caja",
+   "words": [
+    {
+     "w": "Esa",
+     "start": 41.146,
+     "end": 41.386
+    },
+    {
+     "w": "noche,",
+     "start": 41.386,
+     "end": 41.84
+    },
+    {
+     "w": "por",
+     "start": 41.84,
+     "end": 42.081
+    },
+    {
+     "w": "fin,",
+     "start": 42.081,
+     "end": 42.428
+    },
+    {
+     "w": "guardó",
+     "start": 42.428,
+     "end": 42.829
+    },
+    {
+     "w": "sus",
+     "start": 42.829,
+     "end": 43.07
+    },
+    {
+     "w": "cosas.",
+     "start": 43.07,
+     "end": 43.577
+    }
+   ]
+  },
+  {
+   "start": 44.277,
+   "end": 48.226,
+   "text": "Y empezó, despacio, el otro noventa y nueve. ¿Cuánto te falta a ti?",
+   "scene": "amanecer",
+   "words": [
+    {
+     "w": "Y",
+     "start": 44.277,
+     "end": 44.402
+    },
+    {
+     "w": "empezó,",
+     "start": 44.402,
+     "end": 44.873
+    },
+    {
+     "w": "despacio,",
+     "start": 44.873,
+     "end": 45.445
+    },
+    {
+     "w": "el",
+     "start": 45.445,
+     "end": 45.618
+    },
+    {
+     "w": "otro",
+     "start": 45.618,
+     "end": 45.892
+    },
+    {
+     "w": "noventa",
+     "start": 45.892,
+     "end": 46.314
+    },
+    {
+     "w": "y",
+     "start": 46.314,
+     "end": 46.438
+    },
+    {
+     "w": "nueve.",
+     "start": 46.438,
+     "end": 46.91
+    },
+    {
+     "w": "¿Cuánto",
+     "start": 46.91,
+     "end": 47.282
+    },
+    {
+     "w": "te",
+     "start": 47.282,
+     "end": 47.456
+    },
+    {
+     "w": "falta",
+     "start": 47.456,
+     "end": 47.779
+    },
+    {
+     "w": "a",
+     "start": 47.779,
+     "end": 47.903
+    },
+    {
+     "w": "ti?",
+     "start": 47.903,
+     "end": 48.226
+    }
+   ]
+  }
+ ],
+ "total": 50.126,
+ "audio": "historia/audio-historia-un-x100to.wav",
+ "song": {
+  "title": "un x100to",
+  "artists": "Grupo Frontera, Bad Bunny",
+  "cardLine": 1
+ },
+ "flash": [
+  "con-otro"
+ ],
+ "estilo": "noir",
+ "cast": {
+  "him": {
+   "hair": "m",
+   "skin": "#e0b08c",
+   "hairC": "#101012",
+   "coat": "#2a2a30",
+   "shirt": "#e8e8e8",
+   "pants": "#18181c"
+  },
+  "her": {
+   "hair": "bob",
+   "skin": "#efc8a8",
+   "hairC": "#2a1a14",
+   "coat": "#c0392b",
+   "pants": "#222",
+   "long": true
+  },
+  "other": {
+   "hair": "m2",
+   "coat": "#55555e",
+   "shirt": "#dddddd"
+  }
+ }
+}

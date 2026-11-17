@@ -1,0 +1,31 @@
+{
+  "slug": "historia-un-x100to",
+  "hook": "«YA LA OLVIDÉ»\nMENTÍA AL\n100%.",
+  "song": {"title": "un x100to", "artists": "Grupo Frontera, Bad Bunny", "cardLine": 1},
+  "estilo": "noir",
+  "cast": {
+    "him": {"hair": "m", "skin": "#e0b08c", "hairC": "#101012", "coat": "#2a2a30", "shirt": "#e8e8e8", "pants": "#18181c"},
+    "her": {"hair": "bob", "skin": "#efc8a8", "hairC": "#2a1a14", "coat": "#c0392b", "pants": "#222", "long": true},
+    "other": {"hair": "m2", "coat": "#55555e", "shirt": "#dddddd"}
+  },
+  "flash": ["con-otro"],
+  "speed": 1.0,
+  "tail": 0.4,
+  "minScene": 2.8,
+  "music": {"bpm": 80, "prog": "triste", "style": "balada", "transpose": -2, "drumsFromLine": 1, "dropAtLine": 9, "backAtLine": 11, "gain": 0.33},
+  "lines": [
+    {"scene": "cara", "rain": 0.3, "text": "Les dijo a todos que ya la había olvidado… y mentía al cien por ciento."},
+    {"scene": "fiesta:amigos", "rain": 0.0, "text": "Esta es la historia de un x100to, de Grupo Frontera y Bad Bunny.", "tts": "Esta es la historia de Un por ciento, de Grupo Frontera y Bad Bani."},
+    {"scene": "fiesta:amigos:2", "rain": 0.0, "text": "En el bar, sus amigos brindaban porque por fin era libre."},
+    {"scene": "galeria:scroll", "rain": 0.0, "text": "Pero en el baño, revisaba sus fotos una y otra vez."},
+    {"scene": "atardecer", "rain": 0.0, "text": "Todavía escuchaba la playlist que hicieron juntos."},
+    {"scene": "foto", "rain": 0.1, "text": "Y guardaba la foto en la que ella se reía de él."},
+    {"scene": "lluvia", "rain": 1.0, "text": "Un día, se la encontró en la calle."},
+    {"scene": "con-otro", "rain": 1.0, "text": "Iba de la mano de alguien más."},
+    {"scene": "cara", "rain": 0.8, "text": "Él la saludó con la mejor sonrisa que pudo fingir."},
+    {"scene": "se-alejan", "rain": 1.0, "text": "Y cuando ella se alejó, se le cayó la máscara."},
+    {"scene": "ventana-noche", "rain": 0.5, "text": "Porque olvidarla de verdad… solo lo había logrado un uno por ciento."},
+    {"scene": "caja", "rain": 0.2, "text": "Esa noche, por fin, guardó sus cosas."},
+    {"scene": "amanecer", "rain": 0.0, "text": "Y empezó, despacio, el otro noventa y nueve. ¿Cuánto te falta a ti?"}
+  ]
+}

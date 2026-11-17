@@ -10,7 +10,7 @@ export const Galeria: React.FC<S & {mode?: 'scroll' | 'busca'; query?: string}> 
   const t = useT();
   const r = rng(201);
   const pal = ['#f2a65a', '#6c8cd5', '#e86a6a', '#7cc6a4', '#c38bd6', '#f4d35e', '#5a6a8a', '#e8a0b4'];
-  const thumbs = Array.from({length: 66}).map((_, i) => ({c1: pal[Math.floor(r() * pal.length)], c2: pal[Math.floor(r() * pal.length)], k: Math.floor(r() * 3), i}));
+  const thumbs = Array.from({length: 180}).map((_, i) => ({c1: pal[Math.floor(r() * pal.length)], c2: pal[Math.floor(r() * pal.length)], k: Math.floor(r() * 3), i}));
   const speed = mode === 'scroll' ? 1100 : 900 * (1 - ease(t, 0.6, 2.2));
   const off = mode === 'scroll' ? t * speed : 900 * ease(t, 0, 1.8);
   const typed = mode === 'busca' ? query.slice(0, Math.max(0, Math.floor((t - 0.4) * 9))) : '';
