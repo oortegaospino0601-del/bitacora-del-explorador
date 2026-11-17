@@ -1,0 +1,809 @@
+{
+ "slug": "historia-fuentes-de-ortiz",
+ "hook": "47 CARTAS…\nY NINGUNA\nENVIADA.",
+ "durations": [
+  4.174,
+  3.742,
+  3.241,
+  4.386,
+  3.532,
+  3.607,
+  2.9,
+  3.699,
+  2.9,
+  3.381,
+  3.424,
+  5.156,
+  6.775
+ ],
+ "lines": [
+  {
+   "start": 0.25,
+   "end": 3.724,
+   "text": "Le escribió cuarenta y siete cartas… y no le mandó ninguna.",
+   "scene": "escritorio:pila",
+   "words": [
+    {
+     "w": "Le",
+     "start": 0.25,
+     "end": 0.425
+    },
+    {
+     "w": "escribió",
+     "start": 0.425,
+     "end": 0.9
+    },
+    {
+     "w": "cuarenta",
+     "start": 0.9,
+     "end": 1.375
+    },
+    {
+     "w": "y",
+     "start": 1.375,
+     "end": 1.5
+    },
+    {
+     "w": "siete",
+     "start": 1.5,
+     "end": 1.825
+    },
+    {
+     "w": "cartas…",
+     "start": 1.825,
+     "end": 2.35
+    },
+    {
+     "w": "y",
+     "start": 2.35,
+     "end": 2.475
+    },
+    {
+     "w": "no",
+     "start": 2.475,
+     "end": 2.649
+    },
+    {
+     "w": "le",
+     "start": 2.649,
+     "end": 2.824
+    },
+    {
+     "w": "mandó",
+     "start": 2.824,
+     "end": 3.149
+    },
+    {
+     "w": "ninguna.",
+     "start": 3.149,
+     "end": 3.724
+    }
+   ]
+  },
+  {
+   "start": 4.474,
+   "end": 7.466,
+   "text": "Esta es la historia de Fuentes de Ortiz, de Ed Maverick.",
+   "scene": "ventana-noche",
+   "words": [
+    {
+     "w": "Esta",
+     "start": 4.474,
+     "end": 4.726
+    },
+    {
+     "w": "es",
+     "start": 4.726,
+     "end": 4.885
+    },
+    {
+     "w": "la",
+     "start": 4.885,
+     "end": 5.045
+    },
+    {
+     "w": "historia",
+     "start": 5.045,
+     "end": 5.479
+    },
+    {
+     "w": "de",
+     "start": 5.479,
+     "end": 5.639
+    },
+    {
+     "w": "Fuentes",
+     "start": 5.639,
+     "end": 6.027
+    },
+    {
+     "w": "de",
+     "start": 6.027,
+     "end": 6.187
+    },
+    {
+     "w": "Ortiz,",
+     "start": 6.187,
+     "end": 6.576
+    },
+    {
+     "w": "de",
+     "start": 6.576,
+     "end": 6.736
+    },
+    {
+     "w": "Ed",
+     "start": 6.736,
+     "end": 6.895
+    },
+    {
+     "w": "Maverick.",
+     "start": 6.895,
+     "end": 7.466
+    }
+   ]
+  },
+  {
+   "start": 8.216,
+   "end": 10.707,
+   "text": "Ella se fue un verano, sin explicar mucho.",
+   "scene": "atardecer",
+   "words": [
+    {
+     "w": "Ella",
+     "start": 8.216,
+     "end": 8.49
+    },
+    {
+     "w": "se",
+     "start": 8.49,
+     "end": 8.665
+    },
+    {
+     "w": "fue",
+     "start": 8.665,
+     "end": 8.889
+    },
+    {
+     "w": "un",
+     "start": 8.889,
+     "end": 9.063
+    },
+    {
+     "w": "verano,",
+     "start": 9.063,
+     "end": 9.537
+    },
+    {
+     "w": "sin",
+     "start": 9.537,
+     "end": 9.761
+    },
+    {
+     "w": "explicar",
+     "start": 9.761,
+     "end": 10.234
+    },
+    {
+     "w": "mucho.",
+     "start": 10.234,
+     "end": 10.707
+    }
+   ]
+  },
+  {
+   "start": 11.457,
+   "end": 15.093,
+   "text": "Y él, que nunca supo hablar de lo que sentía, empezó a escribir.",
+   "scene": "escritorio:escribe",
+   "words": [
+    {
+     "w": "Y",
+     "start": 11.457,
+     "end": 11.578
+    },
+    {
+     "w": "él,",
+     "start": 11.578,
+     "end": 11.842
+    },
+    {
+     "w": "que",
+     "start": 11.842,
+     "end": 12.059
+    },
+    {
+     "w": "nunca",
+     "start": 12.059,
+     "end": 12.372
+    },
+    {
+     "w": "supo",
+     "start": 12.372,
+     "end": 12.637
+    },
+    {
+     "w": "hablar",
+     "start": 12.637,
+     "end": 12.998
+    },
+    {
+     "w": "de",
+     "start": 12.998,
+     "end": 13.167
+    },
+    {
+     "w": "lo",
+     "start": 13.167,
+     "end": 13.335
+    },
+    {
+     "w": "que",
+     "start": 13.335,
+     "end": 13.552
+    },
+    {
+     "w": "sentía,",
+     "start": 13.552,
+     "end": 14.009
+    },
+    {
+     "w": "empezó",
+     "start": 14.009,
+     "end": 14.371
+    },
+    {
+     "w": "a",
+     "start": 14.371,
+     "end": 14.491
+    },
+    {
+     "w": "escribir.",
+     "start": 14.491,
+     "end": 15.093
+    }
+   ]
+  },
+  {
+   "start": 15.843,
+   "end": 18.625,
+   "text": "Le contaba de los lugares a los que iban juntos.",
+   "scene": "cafe",
+   "words": [
+    {
+     "w": "Le",
+     "start": 15.843,
+     "end": 16.017
+    },
+    {
+     "w": "contaba",
+     "start": 16.017,
+     "end": 16.439
+    },
+    {
+     "w": "de",
+     "start": 16.439,
+     "end": 16.613
+    },
+    {
+     "w": "los",
+     "start": 16.613,
+     "end": 16.837
+    },
+    {
+     "w": "lugares",
+     "start": 16.837,
+     "end": 17.259
+    },
+    {
+     "w": "a",
+     "start": 17.259,
+     "end": 17.383
+    },
+    {
+     "w": "los",
+     "start": 17.383,
+     "end": 17.607
+    },
+    {
+     "w": "que",
+     "start": 17.607,
+     "end": 17.83
+    },
+    {
+     "w": "iban",
+     "start": 17.83,
+     "end": 18.104
+    },
+    {
+     "w": "juntos.",
+     "start": 18.104,
+     "end": 18.625
+    }
+   ]
+  },
+  {
+   "start": 19.375,
+   "end": 22.232,
+   "text": "De las canciones que ya no se atrevía a escuchar.",
+   "scene": "lluvia",
+   "words": [
+    {
+     "w": "De",
+     "start": 19.375,
+     "end": 19.551
+    },
+    {
+     "w": "las",
+     "start": 19.551,
+     "end": 19.776
+    },
+    {
+     "w": "canciones",
+     "start": 19.776,
+     "end": 20.302
+    },
+    {
+     "w": "que",
+     "start": 20.302,
+     "end": 20.528
+    },
+    {
+     "w": "ya",
+     "start": 20.528,
+     "end": 20.703
+    },
+    {
+     "w": "no",
+     "start": 20.703,
+     "end": 20.879
+    },
+    {
+     "w": "se",
+     "start": 20.879,
+     "end": 21.054
+    },
+    {
+     "w": "atrevía",
+     "start": 21.054,
+     "end": 21.48
+    },
+    {
+     "w": "a",
+     "start": 21.48,
+     "end": 21.605
+    },
+    {
+     "w": "escuchar.",
+     "start": 21.605,
+     "end": 22.232
+    }
+   ]
+  },
+  {
+   "start": 22.982,
+   "end": 25.088,
+   "text": "Y de lo mucho que la seguía queriendo.",
+   "scene": "foto",
+   "words": [
+    {
+     "w": "Y",
+     "start": 22.982,
+     "end": 23.099
+    },
+    {
+     "w": "de",
+     "start": 23.099,
+     "end": 23.263
+    },
+    {
+     "w": "lo",
+     "start": 23.263,
+     "end": 23.426
+    },
+    {
+     "w": "mucho",
+     "start": 23.426,
+     "end": 23.731
+    },
+    {
+     "w": "que",
+     "start": 23.731,
+     "end": 23.941
+    },
+    {
+     "w": "la",
+     "start": 23.941,
+     "end": 24.105
+    },
+    {
+     "w": "seguía",
+     "start": 24.105,
+     "end": 24.456
+    },
+    {
+     "w": "queriendo.",
+     "start": 24.456,
+     "end": 25.088
+    }
+   ]
+  },
+  {
+   "start": 25.882,
+   "end": 28.831,
+   "text": "Las guardaba todas en una caja, debajo de la cama.",
+   "scene": "caja",
+   "words": [
+    {
+     "w": "Las",
+     "start": 25.882,
+     "end": 26.107
+    },
+    {
+     "w": "guardaba",
+     "start": 26.107,
+     "end": 26.582
+    },
+    {
+     "w": "todas",
+     "start": 26.582,
+     "end": 26.906
+    },
+    {
+     "w": "en",
+     "start": 26.906,
+     "end": 27.081
+    },
+    {
+     "w": "una",
+     "start": 27.081,
+     "end": 27.306
+    },
+    {
+     "w": "caja,",
+     "start": 27.306,
+     "end": 27.681
+    },
+    {
+     "w": "debajo",
+     "start": 27.681,
+     "end": 28.056
+    },
+    {
+     "w": "de",
+     "start": 28.056,
+     "end": 28.231
+    },
+    {
+     "w": "la",
+     "start": 28.231,
+     "end": 28.406
+    },
+    {
+     "w": "cama.",
+     "start": 28.406,
+     "end": 28.831
+    }
+   ]
+  },
+  {
+   "start": 29.581,
+   "end": 31.712,
+   "text": "Un día, su hermana encontró la caja.",
+   "scene": "escritorio:toma",
+   "words": [
+    {
+     "w": "Un",
+     "start": 29.581,
+     "end": 29.752
+    },
+    {
+     "w": "día,",
+     "start": 29.752,
+     "end": 30.071
+    },
+    {
+     "w": "su",
+     "start": 30.071,
+     "end": 30.242
+    },
+    {
+     "w": "hermana",
+     "start": 30.242,
+     "end": 30.659
+    },
+    {
+     "w": "encontró",
+     "start": 30.659,
+     "end": 31.124
+    },
+    {
+     "w": "la",
+     "start": 31.124,
+     "end": 31.295
+    },
+    {
+     "w": "caja.",
+     "start": 31.295,
+     "end": 31.712
+    }
+   ]
+  },
+  {
+   "start": 32.481,
+   "end": 35.112,
+   "text": "Y sin decirle nada… mandó la última carta.",
+   "scene": "buzon",
+   "words": [
+    {
+     "w": "Y",
+     "start": 32.481,
+     "end": 32.61
+    },
+    {
+     "w": "sin",
+     "start": 32.61,
+     "end": 32.842
+    },
+    {
+     "w": "decirle",
+     "start": 32.842,
+     "end": 33.281
+    },
+    {
+     "w": "nada…",
+     "start": 33.281,
+     "end": 33.719
+    },
+    {
+     "w": "mandó",
+     "start": 33.719,
+     "end": 34.054
+    },
+    {
+     "w": "la",
+     "start": 34.054,
+     "end": 34.235
+    },
+    {
+     "w": "última",
+     "start": 34.235,
+     "end": 34.622
+    },
+    {
+     "w": "carta.",
+     "start": 34.622,
+     "end": 35.112
+    }
+   ]
+  },
+  {
+   "start": 35.862,
+   "end": 38.537,
+   "text": "Tres semanas después, le llegó un mensaje.",
+   "scene": "movil-ella",
+   "words": [
+    {
+     "w": "Tres",
+     "start": 35.862,
+     "end": 36.159
+    },
+    {
+     "w": "semanas",
+     "start": 36.159,
+     "end": 36.619
+    },
+    {
+     "w": "después,",
+     "start": 36.619,
+     "end": 37.186
+    },
+    {
+     "w": "le",
+     "start": 37.186,
+     "end": 37.375
+    },
+    {
+     "w": "llegó",
+     "start": 37.375,
+     "end": 37.726
+    },
+    {
+     "w": "un",
+     "start": 37.726,
+     "end": 37.915
+    },
+    {
+     "w": "mensaje.",
+     "start": 37.915,
+     "end": 38.537
+    }
+   ]
+  },
+  {
+   "start": 39.287,
+   "end": 43.692,
+   "text": "Era ella. Ella también le había escrito cartas… y nunca se atrevió a mandarlas.",
+   "scene": "ojo",
+   "words": [
+    {
+     "w": "Era",
+     "start": 39.287,
+     "end": 39.5
+    },
+    {
+     "w": "ella.",
+     "start": 39.5,
+     "end": 39.902
+    },
+    {
+     "w": "Ella",
+     "start": 39.902,
+     "end": 40.163
+    },
+    {
+     "w": "también",
+     "start": 40.163,
+     "end": 40.566
+    },
+    {
+     "w": "le",
+     "start": 40.566,
+     "end": 40.732
+    },
+    {
+     "w": "había",
+     "start": 40.732,
+     "end": 41.039
+    },
+    {
+     "w": "escrito",
+     "start": 41.039,
+     "end": 41.442
+    },
+    {
+     "w": "cartas…",
+     "start": 41.442,
+     "end": 41.94
+    },
+    {
+     "w": "y",
+     "start": 41.94,
+     "end": 42.058
+    },
+    {
+     "w": "nunca",
+     "start": 42.058,
+     "end": 42.366
+    },
+    {
+     "w": "se",
+     "start": 42.366,
+     "end": 42.532
+    },
+    {
+     "w": "atrevió",
+     "start": 42.532,
+     "end": 42.934
+    },
+    {
+     "w": "a",
+     "start": 42.934,
+     "end": 43.053
+    },
+    {
+     "w": "mandarlas.",
+     "start": 43.053,
+     "end": 43.693
+    }
+   ]
+  },
+  {
+   "start": 44.442,
+   "end": 49.017,
+   "text": "Cuarenta y siete cartas, y ninguno se animó. ¿Qué no te atreviste a decir tú?",
+   "scene": "amanecer",
+   "words": [
+    {
+     "w": "Cuarenta",
+     "start": 44.442,
+     "end": 44.928
+    },
+    {
+     "w": "y",
+     "start": 44.928,
+     "end": 45.056
+    },
+    {
+     "w": "siete",
+     "start": 45.056,
+     "end": 45.388
+    },
+    {
+     "w": "cartas,",
+     "start": 45.388,
+     "end": 45.874
+    },
+    {
+     "w": "y",
+     "start": 45.874,
+     "end": 46.001
+    },
+    {
+     "w": "ninguno",
+     "start": 46.001,
+     "end": 46.436
+    },
+    {
+     "w": "se",
+     "start": 46.436,
+     "end": 46.615
+    },
+    {
+     "w": "animó.",
+     "start": 46.615,
+     "end": 47.1
+    },
+    {
+     "w": "¿Qué",
+     "start": 47.1,
+     "end": 47.33
+    },
+    {
+     "w": "no",
+     "start": 47.33,
+     "end": 47.509
+    },
+    {
+     "w": "te",
+     "start": 47.509,
+     "end": 47.688
+    },
+    {
+     "w": "atreviste",
+     "start": 47.688,
+     "end": 48.225
+    },
+    {
+     "w": "a",
+     "start": 48.225,
+     "end": 48.353
+    },
+    {
+     "w": "decir",
+     "start": 48.353,
+     "end": 48.685
+    },
+    {
+     "w": "tú?",
+     "start": 48.685,
+     "end": 49.017
+    }
+   ]
+  }
+ ],
+ "total": 50.917,
+ "audio": "historia/audio-historia-fuentes-de-ortiz.wav",
+ "song": {
+  "title": "Fuentes de Ortiz",
+  "artists": "Ed Maverick",
+  "cardLine": 1
+ },
+ "estilo": "boceto",
+ "cast": {
+  "him": {
+   "hair": "curly",
+   "skin": "#e8c0a0",
+   "hairC": "#2a1c14",
+   "coat": "#6a7a8a",
+   "shirt": "#f1f1f1"
+  },
+  "her": {
+   "hair": "f",
+   "skin": "#f0cdb0",
+   "hairC": "#6a4028",
+   "coat": "#c7a080",
+   "long": true
+  }
+ }
+}

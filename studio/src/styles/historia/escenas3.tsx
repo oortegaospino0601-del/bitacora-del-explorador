@@ -138,3 +138,117 @@ export const fiesta: React.FC<P> = ({dur, a = 'sola', b = ''}) => {
     </Cam>
   );
 };
+
+// ---------- escritorio con cartas (escribe | pila | toma) ----------
+const Sobre: React.FC<{x: number; y: number; r: number; s?: number}> = ({x, y, r, s = 1}) => (
+  <g transform={`translate(${x} ${y}) rotate(${r}) scale(${s})`}>
+    <rect x={-160} y={-100} width={320} height={200} rx={6} fill="#f4ecdc" stroke="#b9a988" strokeWidth={3} />
+    <path d="M -160 -100 L 0 20 L 160 -100" fill="none" stroke="#b9a988" strokeWidth={4} />
+    <circle cx={0} cy={20} r={16} fill="#b8463f" />
+  </g>
+);
+
+export const escritorio: React.FC<P> = ({dur, a = 'escribe'}) => {
+  const t = useT();
+  const id = `es${a}`;
+  const r = rng(501);
+  const n = a === 'pila' ? Math.min(47, Math.floor(ease(t, 0.2, dur - 0.6) * 47) + 1) : 47;
+  const envs = Array.from({length: 47}).map((_, i) => ({x: 540 + (r() - 0.5) * 380, y: 1300 - i * 9 + (r() - 0.5) * 40, rot: (r() - 0.5) * 30}));
+  const take = a === 'toma' ? ease(t, 0.8, 2.4) : 0;
+  return (
+    <Cam dur={dur} z={a === 'pila' ? [1.15, 1.0] : [1.0, 1.08]}>
+      <Svg>
+        <defs>
+          <Grad id={`${id}wood`} stops={[[0, '#7a4e2e'], [1, '#4f3019']]} />
+          <Glow id={`${id}lamp`} color="#ffd890" inner={0.45} />
+        </defs>
+        <rect width={W} height={H} fill={`url(#${id}wood)`} />
+        {Array.from({length: 14}).map((_, i) => (
+          <rect key={i} x={0} y={i * 140} width={W} height={3} fill="#3f2512" opacity={0.6} />
+        ))}
+        <circle cx={760} cy={600} r={900} fill={`url(#${id}lamp)`} />
+        {a === 'escribe' ? (
+          <g>
+            <g transform="translate(540 960) rotate(-4)">
+              <rect x={-330} y={-460} width={660} height={900} fill="#fbf7ee" />
+              {Array.from({length: 13}).map((_, i) => {
+                const p = Math.max(0, Math.min(1, (t * 1.6 - i * 0.35)));
+                const w = i === 0 ? 300 : 520 - (i % 3) * 60;
+                let d = `M -280 ${-380 + i * 62}`;
+                for (let k = 0; k < 26; k++) d += ` q 10 ${k % 2 ? 12 : -12} 20 0`;
+                return (
+                  <path key={i} d={d} stroke="#1d2a6a" strokeWidth={4} fill="none" pathLength={1} strokeDasharray={`${p * (w / 520)} 2`} strokeLinecap="round" />
+                );
+              })}
+            </g>
+            {(() => {
+              const line = Math.min(12, Math.floor(t * 1.6 / 0.35 / 1));
+              const frac = (t * 1.6 - line * 0.35) % 1;
+              const px = 540 - 280 + Math.min(1, Math.max(0, frac)) * 480;
+              const py = 960 - 380 + Math.min(12, Math.floor((t * 1.6) / 0.35)) * 62 * 0.25 + Math.sin(t * 20) * 4;
+              return (
+                <g transform={`translate(${px} ${py}) rotate(30)`}>
+                  <rect x={-8} y={-10} width={16} height={260} rx={6} fill="#20202a" />
+                  <polygon points="-8,-10 8,-10 0,-34" fill="#c9a24a" />
+                  <ellipse cx={30} cy={160} rx={70} ry={90} fill="#e9bf9a" />
+                  <rect x={-20} y={220} width={150} height={400} rx={30} fill="#3a4a6a" />
+                </g>
+              );
+            })()}
+          </g>
+        ) : (
+          <g>
+            {envs.slice(0, n).map((e, i) => (
+              <Sobre key={i} x={e.x} y={e.y} r={e.rot} s={1} />
+            ))}
+            {a === 'toma' && (
+              <g transform={`translate(${mix(540, 600, take)} ${mix(900, 380, take)}) rotate(${mix(-6, 8, take)})`}>
+                <Sobre x={0} y={0} r={0} s={1.15} />
+                <ellipse cx={120} cy={110} rx={60} ry={70} fill="#e9b894" />
+                <rect x={80} y={150} width={120} height={600} rx={30} fill="#c76b8a" />
+              </g>
+            )}
+            {a === 'pila' && (
+              <text x={900} y={420} textAnchor="end" fontFamily="'Special Elite', monospace" fontSize={180} fill="#fbf7ee" opacity={0.9}>
+                {n}
+              </text>
+            )}
+          </g>
+        )}
+      </Svg>
+      <Vignette id={`${id}vig`} strength={0.55} color="#1a0e06" />
+    </Cam>
+  );
+};
+
+// ---------- buzón: una mano echa la carta ----------
+export const buzon: React.FC<P> = ({dur}) => {
+  const t = useT();
+  const p = ease(t, 0.4, 2.0);
+  return (
+    <Cam dur={dur} z={[1.0, 1.1]}>
+      <Svg>
+        <defs>
+          <Grad id="bzsky" stops={[[0, '#9cc6e8'], [1, '#e8f1f8']]} />
+        </defs>
+        <rect width={W} height={H} fill="url(#bzsky)" />
+        <rect x={0} y={1500} width={W} height={420} fill="#9a9aa4" />
+        <rect x={0} y={1480} width={W} height={30} fill="#c8c8cf" />
+        <rect x={500} y={1300} width={80} height={220} fill="#2c3e8a" />
+        <rect x={300} y={700} width={480} height={640} rx={60} fill="#2f55c2" />
+        <rect x={300} y={700} width={480} height={180} rx={60} fill="#3d68dd" />
+        <rect x={380} y={930} width={320} height={40} rx={20} fill="#16245a" />
+        <rect x={420} y={1080} width={240} height={140} rx={10} fill="#3d68dd" />
+        <g transform={`translate(${mix(820, 560, p)} ${mix(1050, 950, p)}) rotate(${mix(-20, 0, p)})`} opacity={1 - ease(t, 2.0, 2.4)}>
+          <g transform={`scale(1, ${1 - ease(t, 1.6, 2.1) * 0.9})`}>
+            <rect x={-150} y={-90} width={300} height={180} rx={6} fill="#f4ecdc" stroke="#b9a988" strokeWidth={3} />
+            <path d="M -150 -90 L 0 10 L 150 -90" fill="none" stroke="#b9a988" strokeWidth={4} />
+          </g>
+          <ellipse cx={160} cy={40} rx={60} ry={70} fill="#e9b894" />
+          <rect x={150} y={20} width={500} height={110} rx={40} fill="#c76b8a" />
+        </g>
+      </Svg>
+      <Vignette id="bzvig" strength={0.4} />
+    </Cam>
+  );
+};
