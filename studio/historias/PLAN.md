@@ -1,7 +1,8 @@
 # Plan de Shorts "historia de la canción" (16–17 nov 2026, hora de Bogotá)
 
 Uno cada 2 horas, cada uno con canción, historia y ESTÉTICA distintas. Se hace cada video cuando
-llega su hora (no todos de golpe). Receta en `studio/README.md` (sección "Historias de canciones").
+llega su hora (no todos de golpe). Boceto: renderizar con estilo `boceto-base` y aplicar `tools/boceto_post.sh` (el filtro SVG `boceto` tarda >30 min).
+Receta en `studio/README.md` (sección "Historias de canciones").
 
 **Importante:** el render de Remotion pesa cientos de MB (grano/lluvia). Antes de copiar a `videos/`
 recodifica siempre (GitHub rechaza archivos de más de 100 MB):
@@ -13,7 +14,7 @@ recodifica siempre (GitHub rechaza archivos de más de 100 MB):
 | 20:24 | programado (Metricool) | DtMF — Bad Bunny | pelicula | Más de 3.000 fotos… y ni una con su abuela |
 | 22:24 | programado (Metricool) | Ella baila sola — Eslabon Armado, Peso Pluma | neon | Toda la fiesta la miraba… y nadie se atrevía |
 | 00:24 | programado (Metricool) | un x100to — Grupo Frontera, Bad Bunny | noir | Les dijo a todos que ya la había olvidado… mentía al 100 % |
-| 02:24 | pendiente | Fuentes de Ortiz — Ed Maverick | boceto | Le escribió 47 cartas… y no le mandó ninguna |
+| 02:24 | programado (Metricool) | Fuentes de Ortiz — Ed Maverick | boceto | Le escribió 47 cartas… y no le mandó ninguna |
 | 04:24 | pendiente | San Lucas — Kevin Kaarl | acuarela | Se prometieron "para siempre" frente al mar… y lo cumplieron 60 años |
 | 06:24 | pendiente | Me rehúso — Danny Ocean | vhs | Ella tenía un pasaje solo de ida |
 | 08:24 | pendiente | Mamichula — Trueno, Nicki Nicole, Bizarrap | comic | 3 intentos para conquistarla… y 3 fracasos |
