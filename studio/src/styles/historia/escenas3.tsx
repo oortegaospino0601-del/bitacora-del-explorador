@@ -1,6 +1,6 @@
 // Escenas nuevas (tanda 3). Cada escena recibe {dur, a, b} (parámetros de "nombre:a:b").
 import React from 'react';
-import {Bokeh, Cam, Glow, Grad, H, HER, HIM, OTHER, Person, Svg, Vignette, W, ease, mix, rng, useT} from './kit';
+import {Bokeh, Cam, Glow, Grad, H, HER, HIM, Hand, OTHER, Person, Svg, Vignette, W, ease, mix, rng, useT} from './kit';
 
 type P = {dur: number; a?: string; b?: string};
 
@@ -249,6 +249,131 @@ export const buzon: React.FC<P> = ({dur}) => {
         </g>
       </Svg>
       <Vignette id="bzvig" strength={0.4} />
+    </Cam>
+  );
+};
+
+// ---------- playa (atardecer | noche | boda | viejos) ----------
+const VIEJO = {hair: 'm2' as const, skin: '#e2b08c', hairC: '#d8d4cf', coat: '#7a8a6a', pants: '#4a4a52', shoes: '#2a2a2a', shirt: '#efe8da'};
+const VIEJA = {hair: 'bun' as const, skin: '#ecc0a0', hairC: '#e6e2dc', coat: '#b07a8a', pants: '#5a4a52', shoes: '#2a1d1d', long: true};
+
+export const playa: React.FC<P> = ({dur, a = 'atardecer', b = ''}) => {
+  const t = useT();
+  const id = `pl${a}${b}`;
+  const noche = a === 'noche';
+  const sky: [number, string][] = noche
+    ? [[0, '#141a3a'], [0.6, '#2d3a6e'], [1, '#4a5a8e']]
+    : a === 'boda'
+      ? [[0, '#8fc8e8'], [1, '#fde9c8']]
+      : [[0, '#e88a8a'], [0.55, '#f6b27a'], [1, '#ffe0a8']];
+  const sea = noche ? '#1e2a58' : a === 'boda' ? '#3fa7c5' : '#c9757a';
+  const sand = noche ? '#5a5470' : '#f0d3a2';
+  return (
+    <Cam dur={dur} z={b === '2' ? [1.0, 1.15] : [1.06, 1.0]} y={b === '2' ? [0, -60] : [0, 0]}>
+      <Svg>
+        <defs>
+          <Grad id={`${id}sky`} stops={sky} />
+          <Glow id={`${id}sun`} color={noche ? '#f4f1d8' : '#fff1c8'} inner={0.9} />
+        </defs>
+        <rect width={W} height={H} fill={`url(#${id}sky)`} />
+        {noche && Array.from({length: 60}).map((_, i) => {
+          const r = rng(600 + i);
+          return <circle key={i} cx={r() * W} cy={r() * 900} r={1.5 + r() * 2.5} fill="#ffffff" opacity={0.4 + 0.6 * Math.abs(Math.sin(t * 2 + i))} />;
+        })}
+        <circle cx={noche ? 760 : 540} cy={noche ? 420 : 1040} r={noche ? 260 : 420} fill={`url(#${id}sun)`} />
+        <circle cx={noche ? 760 : 540} cy={noche ? 420 : 1040} r={noche ? 70 : 140} fill={noche ? '#f4f1d8' : '#fff4d4'} />
+        <rect x={0} y={1080} width={W} height={420} fill={sea} />
+        {Array.from({length: 7}).map((_, i) => (
+          <path
+            key={i}
+            d={`M ${-100 + ((t * 40 + i * 70) % 200)} ${1110 + i * 55} q 60 -14 120 0 t 120 0 t 120 0 t 120 0 t 120 0 t 120 0 t 120 0 t 120 0 t 120 0 t 120 0`}
+            stroke="#ffffff"
+            strokeWidth={4}
+            fill="none"
+            opacity={0.35}
+          />
+        ))}
+        {!noche && <rect x={0} y={1110} width={W} height={20} fill="#fff6dc" opacity={0.25} />}
+        <path d={`M 0 1500 Q 540 ${1440 + Math.sin(t * 1.5) * 10} 1080 1500 L 1080 1920 L 0 1920 Z`} fill={sand} />
+        <path d={`M 0 1500 Q 540 ${1440 + Math.sin(t * 1.5) * 10} 1080 1500`} stroke="#ffffff" strokeWidth={10} fill="none" opacity={0.6} />
+        <g fill={noche ? '#2a2440' : '#6a4a3a'}>
+          <rect x={700} y={1090} width={420} height={26} />
+          {[720, 800, 880, 960, 1040].map((x) => <rect key={x} x={x} y={1110} width={14} height={140} />)}
+        </g>
+        <path d="M 90 1560 Q 120 1200 70 900" stroke={noche ? '#141028' : '#5a3a2a'} strokeWidth={34} fill="none" />
+        {[0, 1, 2, 3, 4].map((k) => (
+          <path key={k} d={`M 70 900 q ${-160 + k * 80} ${-60 + Math.abs(k - 2) * 30} ${-240 + k * 120} ${80 + Math.abs(k - 2) * 50}`} stroke={noche ? '#141028' : '#3f6a3a'} strokeWidth={26} fill="none" strokeLinecap="round" />
+        ))}
+        {a === 'atardecer' && (
+          <g>
+            <Person look={HIM} x={mix(380, 470, t / dur)} y={1760} s={1.15} walk={t * 6} armR={22} smile={0.9} />
+            <Person look={HER} x={mix(720, 810, t / dur)} y={1760} s={1.15} walk={t * 6 + Math.PI} armL={22} smile={1} eyes="closed" tilt={-4} />
+          </g>
+        )}
+        {a === 'noche' && (
+          <g>
+            <Person look={HIM} x={450} y={1640} s={0.9} view="back" armR={18} />
+            <Person look={HER} x={610} y={1640} s={0.9} view="back" armL={18} tilt={-8} />
+          </g>
+        )}
+        {a === 'boda' && (
+          <g>
+            <path d="M 300 1700 L 300 1200 Q 540 980 780 1200 L 780 1700" stroke="#8a6a4a" strokeWidth={16} fill="none" />
+            {Array.from({length: 14}).map((_, i) => {
+              const q = i / 13;
+              const x = q < 0.5 ? mix(300, 540, q * 2) : mix(540, 780, (q - 0.5) * 2);
+              const y = 1200 - Math.sin(q * Math.PI) * 220;
+              return <circle key={i} cx={x} cy={y} r={22} fill={i % 2 ? '#f6a6b8' : '#ffffff'} />;
+            })}
+            <Person look={{...HIM, coat: '#efe8da', shirt: '#ffffff'} as typeof HIM} x={440} y={1720} s={1.1} armR={30} smile={1} />
+            <Person look={{...HER, coat: '#ffffff', pants: '#ffffff'} as typeof HER} x={650} y={1720} s={1.1} armL={30} smile={1} eyes="closed" tilt={-6} />
+          </g>
+        )}
+        {a === 'viejos' && (
+          <g>
+            <rect x={300} y={1560} width={480} height={26} rx={8} fill="#7a5034" />
+            <rect x={300} y={1500} width={480} height={20} rx={8} fill="#7a5034" />
+            <rect x={330} y={1586} width={18} height={130} fill="#5a3a24" />
+            <rect x={732} y={1586} width={18} height={130} fill="#5a3a24" />
+            <Person look={VIEJO} x={450} y={1640} s={0.95} view="back" armR={14} noLegs rot={-3} />
+            <Person look={VIEJA} x={620} y={1640} s={0.92} view="back" armL={14} noLegs tilt={-14 + Math.sin(t) * 2} />
+          </g>
+        )}
+      </Svg>
+      <Vignette id={`${id}vig`} strength={0.35} />
+    </Cam>
+  );
+};
+
+// ---------- manos (anillo | viejas) ----------
+export const manos: React.FC<P> = ({dur, a = 'anillo'}) => {
+  const t = useT();
+  const old = a === 'viejas';
+  const p = ease(t, 0.2, 1.8);
+  const sk1 = old ? '#d9a888' : '#e0b08c';
+  const sk2 = old ? '#e6b898' : '#f0c8aa';
+  return (
+    <Cam dur={dur} z={[1.0, 1.1]}>
+      <Svg>
+        <defs>
+          <Grad id={`mn${a}bg`} stops={[[0, old ? '#f2c89a' : '#f6b27a'], [1, old ? '#d98a7a' : '#e88a8a']]} />
+        </defs>
+        <rect width={W} height={H} fill={`url(#mn${a}bg)`} />
+        <Bokeh seed={700} n={14} colors={['#fff4d4', '#ffd0a0']} rMin={40} rMax={140} opacity={0.3} />
+        <Hand x={mix(-200, old ? 360 : 300, p)} y={old ? 1020 : 1060} rot={90} s={1.5} skin={sk1} sleeve={old ? '#7a8a6a' : '#2f4a6e'} curl={old ? 0.5 : 0.15} />
+        <Hand x={mix(1280, old ? 720 : 800, p)} y={old ? 940 : 900} rot={-90} s={1.5} skin={sk2} sleeve={old ? '#b07a8a' : '#d9b78c'} curl={old ? 0.5 : 0} />
+        {old &&
+          [0, 1, 2, 3].map((k) => (
+            <path key={k} d={`M ${mix(-200, 360, p) + 40 + k * 22} ${960 + k * 14} q 20 6 36 0`} stroke="#a8765a" strokeWidth={3} fill="none" opacity={0.7} />
+          ))}
+        {!old && (
+          <g transform={`translate(${mix(-200, 300, p) + 250} ${1010})`}>
+            <circle cx={0} cy={0} r={34} fill="none" stroke="#e8c24a" strokeWidth={12} />
+            <circle cx={0} cy={-36} r={12} fill="#ffffff" opacity={0.6 + 0.4 * Math.sin(t * 6)} />
+          </g>
+        )}
+      </Svg>
+      <Vignette id={`mn${a}vig`} strength={0.35} color="#4a2018" />
     </Cam>
   );
 };

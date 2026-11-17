@@ -111,7 +111,7 @@ export const ESTILOS: Record<string, Estilo> = {
     pillBorder: '#ff3b3b',
   },
   acuarela: {
-    filter: 'url(#hx-acuarela) saturate(0.85) brightness(1.08)',
+    filter: 'blur(1.4px) saturate(0.8) brightness(1.1) contrast(0.92)',
     paper: 0.55,
     font: "'Nunito', Arial, sans-serif",
     hookWeight: 900,

@@ -1,0 +1,29 @@
+{
+  "slug": "historia-san-lucas",
+  "hook": "SE PROMETIERON «PARA SIEMPRE»…\nY LO\nCUMPLIERON.",
+  "song": {"title": "San Lucas", "artists": "Kevin Kaarl", "cardLine": 1},
+  "estilo": "acuarela",
+  "cast": {
+    "him": {"hair": "m2", "skin": "#c98e66", "hairC": "#1d1410", "coat": "#3f6a8a", "shirt": "#f1ece0"},
+    "her": {"hair": "f", "skin": "#e0a882", "hairC": "#2a1610", "coat": "#e8a0a8", "long": true}
+  },
+  "speed": 0.97,
+  "tail": 0.45,
+  "minScene": 2.9,
+  "music": {"bpm": 78, "prog": "verano", "style": "balada", "drumsFromLine": 2, "dropAtLine": 9, "backAtLine": 10, "gain": 0.33},
+  "lines": [
+    {"scene": "playa:viejos", "rain": 0.0, "text": "Se prometieron para siempre frente al mar… y lo cumplieron sesenta años."},
+    {"scene": "playa:atardecer", "rain": 0.0, "text": "Esta es la historia de San Lucas, de Kevin Kaarl.", "tts": "Esta es la historia de San Lucas, de Kevin Karl."},
+    {"scene": "barrio:pasa", "rain": 0.0, "text": "Él era pescador. Ella vendía helados en el malecón."},
+    {"scene": "playa:noche", "rain": 0.0, "text": "Se enamoraron una noche, mirando el mar."},
+    {"scene": "cafe", "rain": 0.0, "text": "No tenían dinero… pero tenían todo el tiempo del mundo."},
+    {"scene": "atardecer", "rain": 0.0, "text": "Cada tarde caminaban juntos hasta el muelle."},
+    {"scene": "manos:anillo", "rain": 0.0, "text": "Él le pidió matrimonio con un anillo que hizo con sus manos."},
+    {"scene": "playa:boda", "rain": 0.0, "text": "Se casaron descalzos, en la arena."},
+    {"scene": "foto:playa", "rain": 0.0, "text": "Tuvieron hijos, nietos… y una casa azul frente al mar."},
+    {"scene": "ventana-amanecer", "rain": 0.0, "text": "Pasaron sesenta años."},
+    {"scene": "playa:viejos:2", "rain": 0.0, "text": "Y cada tarde, él la seguía llevando al muelle."},
+    {"scene": "manos:viejas", "rain": 0.0, "text": "Con las manos arrugadas… pero agarradas igual que la primera vez."},
+    {"scene": "playa:atardecer:2", "rain": 0.0, "text": "Hay amores que no se acaban. Solo se hacen viejos. ¿Tienes uno así?"}
+  ]
+}

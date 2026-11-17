@@ -1,0 +1,744 @@
+{
+ "slug": "historia-san-lucas",
+ "hook": "SE PROMETIERON «PARA SIEMPRE»…\nY LO\nCUMPLIERON.",
+ "durations": [
+  4.885,
+  3.361,
+  3.756,
+  3.132,
+  3.974,
+  3.55,
+  4.134,
+  2.9,
+  3.957,
+  2.9,
+  3.399,
+  4.481,
+  5.986
+ ],
+ "lines": [
+  {
+   "start": 0.25,
+   "end": 4.435,
+   "text": "Se prometieron para siempre frente al mar… y lo cumplieron sesenta años.",
+   "scene": "playa:viejos",
+   "words": [
+    {
+     "w": "Se",
+     "start": 0.25,
+     "end": 0.426
+    },
+    {
+     "w": "prometieron",
+     "start": 0.426,
+     "end": 1.057
+    },
+    {
+     "w": "para",
+     "start": 1.057,
+     "end": 1.334
+    },
+    {
+     "w": "siempre",
+     "start": 1.334,
+     "end": 1.763
+    },
+    {
+     "w": "frente",
+     "start": 1.763,
+     "end": 2.141
+    },
+    {
+     "w": "al",
+     "start": 2.141,
+     "end": 2.317
+    },
+    {
+     "w": "mar…",
+     "start": 2.317,
+     "end": 2.695
+    },
+    {
+     "w": "y",
+     "start": 2.695,
+     "end": 2.822
+    },
+    {
+     "w": "lo",
+     "start": 2.822,
+     "end": 2.998
+    },
+    {
+     "w": "cumplieron",
+     "start": 2.998,
+     "end": 3.578
+    },
+    {
+     "w": "sesenta",
+     "start": 3.578,
+     "end": 4.006
+    },
+    {
+     "w": "años.",
+     "start": 4.006,
+     "end": 4.435
+    }
+   ]
+  },
+  {
+   "start": 5.185,
+   "end": 7.796,
+   "text": "Esta es la historia de San Lucas, de Kevin Kaarl.",
+   "scene": "playa:atardecer",
+   "words": [
+    {
+     "w": "Esta",
+     "start": 5.185,
+     "end": 5.433
+    },
+    {
+     "w": "es",
+     "start": 5.433,
+     "end": 5.59
+    },
+    {
+     "w": "la",
+     "start": 5.59,
+     "end": 5.748
+    },
+    {
+     "w": "historia",
+     "start": 5.748,
+     "end": 6.175
+    },
+    {
+     "w": "de",
+     "start": 6.175,
+     "end": 6.333
+    },
+    {
+     "w": "San",
+     "start": 6.333,
+     "end": 6.536
+    },
+    {
+     "w": "Lucas,",
+     "start": 6.536,
+     "end": 6.918
+    },
+    {
+     "w": "de",
+     "start": 6.918,
+     "end": 7.076
+    },
+    {
+     "w": "Kevin",
+     "start": 7.076,
+     "end": 7.368
+    },
+    {
+     "w": "Kaarl.",
+     "start": 7.368,
+     "end": 7.796
+    }
+   ]
+  },
+  {
+   "start": 8.546,
+   "end": 11.552,
+   "text": "Él era pescador. Ella vendía helados en el malecón.",
+   "scene": "barrio:pasa",
+   "words": [
+    {
+     "w": "Él",
+     "start": 8.546,
+     "end": 8.72
+    },
+    {
+     "w": "era",
+     "start": 8.72,
+     "end": 8.944
+    },
+    {
+     "w": "pescador.",
+     "start": 8.944,
+     "end": 9.565
+    },
+    {
+     "w": "Ella",
+     "start": 9.565,
+     "end": 9.838
+    },
+    {
+     "w": "vendía",
+     "start": 9.838,
+     "end": 10.21
+    },
+    {
+     "w": "helados",
+     "start": 10.21,
+     "end": 10.633
+    },
+    {
+     "w": "en",
+     "start": 10.633,
+     "end": 10.807
+    },
+    {
+     "w": "el",
+     "start": 10.807,
+     "end": 10.981
+    },
+    {
+     "w": "malecón.",
+     "start": 10.981,
+     "end": 11.552
+    }
+   ]
+  },
+  {
+   "start": 12.302,
+   "end": 14.684,
+   "text": "Se enamoraron una noche, mirando el mar.",
+   "scene": "playa:noche",
+   "words": [
+    {
+     "w": "Se",
+     "start": 12.302,
+     "end": 12.477
+    },
+    {
+     "w": "enamoraron",
+     "start": 12.477,
+     "end": 13.054
+    },
+    {
+     "w": "una",
+     "start": 13.054,
+     "end": 13.28
+    },
+    {
+     "w": "noche,",
+     "start": 13.28,
+     "end": 13.706
+    },
+    {
+     "w": "mirando",
+     "start": 13.706,
+     "end": 14.132
+    },
+    {
+     "w": "el",
+     "start": 14.132,
+     "end": 14.308
+    },
+    {
+     "w": "mar.",
+     "start": 14.308,
+     "end": 14.684
+    }
+   ]
+  },
+  {
+   "start": 15.434,
+   "end": 18.658,
+   "text": "No tenían dinero… pero tenían todo el tiempo del mundo.",
+   "scene": "cafe",
+   "words": [
+    {
+     "w": "No",
+     "start": 15.434,
+     "end": 15.608
+    },
+    {
+     "w": "tenían",
+     "start": 15.608,
+     "end": 15.98
+    },
+    {
+     "w": "dinero…",
+     "start": 15.98,
+     "end": 16.5
+    },
+    {
+     "w": "pero",
+     "start": 16.5,
+     "end": 16.773
+    },
+    {
+     "w": "tenían",
+     "start": 16.773,
+     "end": 17.145
+    },
+    {
+     "w": "todo",
+     "start": 17.145,
+     "end": 17.418
+    },
+    {
+     "w": "el",
+     "start": 17.418,
+     "end": 17.592
+    },
+    {
+     "w": "tiempo",
+     "start": 17.592,
+     "end": 17.964
+    },
+    {
+     "w": "del",
+     "start": 17.964,
+     "end": 18.187
+    },
+    {
+     "w": "mundo.",
+     "start": 18.187,
+     "end": 18.658
+    }
+   ]
+  },
+  {
+   "start": 19.408,
+   "end": 22.208,
+   "text": "Cada tarde caminaban juntos hasta el muelle.",
+   "scene": "atardecer",
+   "words": [
+    {
+     "w": "Cada",
+     "start": 19.408,
+     "end": 19.713
+    },
+    {
+     "w": "tarde",
+     "start": 19.713,
+     "end": 20.073
+    },
+    {
+     "w": "caminaban",
+     "start": 20.073,
+     "end": 20.655
+    },
+    {
+     "w": "juntos",
+     "start": 20.655,
+     "end": 21.071
+    },
+    {
+     "w": "hasta",
+     "start": 21.071,
+     "end": 21.432
+    },
+    {
+     "w": "el",
+     "start": 21.432,
+     "end": 21.626
+    },
+    {
+     "w": "muelle.",
+     "start": 21.626,
+     "end": 22.208
+    }
+   ]
+  },
+  {
+   "start": 22.958,
+   "end": 26.342,
+   "text": "Él le pidió matrimonio con un anillo que hizo con sus manos.",
+   "scene": "manos:anillo",
+   "words": [
+    {
+     "w": "Él",
+     "start": 22.958,
+     "end": 23.129
+    },
+    {
+     "w": "le",
+     "start": 23.129,
+     "end": 23.301
+    },
+    {
+     "w": "pidió",
+     "start": 23.301,
+     "end": 23.62
+    },
+    {
+     "w": "matrimonio",
+     "start": 23.62,
+     "end": 24.184
+    },
+    {
+     "w": "con",
+     "start": 24.184,
+     "end": 24.405
+    },
+    {
+     "w": "un",
+     "start": 24.405,
+     "end": 24.576
+    },
+    {
+     "w": "anillo",
+     "start": 24.576,
+     "end": 24.944
+    },
+    {
+     "w": "que",
+     "start": 24.944,
+     "end": 25.165
+    },
+    {
+     "w": "hizo",
+     "start": 25.165,
+     "end": 25.435
+    },
+    {
+     "w": "con",
+     "start": 25.435,
+     "end": 25.655
+    },
+    {
+     "w": "sus",
+     "start": 25.655,
+     "end": 25.876
+    },
+    {
+     "w": "manos.",
+     "start": 25.876,
+     "end": 26.342
+    }
+   ]
+  },
+  {
+   "start": 27.092,
+   "end": 29.165,
+   "text": "Se casaron descalzos, en la arena.",
+   "scene": "playa:boda",
+   "words": [
+    {
+     "w": "Se",
+     "start": 27.092,
+     "end": 27.269
+    },
+    {
+     "w": "casaron",
+     "start": 27.269,
+     "end": 27.699
+    },
+    {
+     "w": "descalzos,",
+     "start": 27.699,
+     "end": 28.331
+    },
+    {
+     "w": "en",
+     "start": 28.331,
+     "end": 28.508
+    },
+    {
+     "w": "la",
+     "start": 28.508,
+     "end": 28.685
+    },
+    {
+     "w": "arena.",
+     "start": 28.685,
+     "end": 29.165
+    }
+   ]
+  },
+  {
+   "start": 29.992,
+   "end": 33.199,
+   "text": "Tuvieron hijos, nietos… y una casa azul frente al mar.",
+   "scene": "foto:playa",
+   "words": [
+    {
+     "w": "Tuvieron",
+     "start": 29.992,
+     "end": 30.461
+    },
+    {
+     "w": "hijos,",
+     "start": 30.461,
+     "end": 30.88
+    },
+    {
+     "w": "nietos…",
+     "start": 30.88,
+     "end": 31.398
+    },
+    {
+     "w": "y",
+     "start": 31.398,
+     "end": 31.522
+    },
+    {
+     "w": "una",
+     "start": 31.522,
+     "end": 31.744
+    },
+    {
+     "w": "casa",
+     "start": 31.744,
+     "end": 32.015
+    },
+    {
+     "w": "azul",
+     "start": 32.015,
+     "end": 32.287
+    },
+    {
+     "w": "frente",
+     "start": 32.287,
+     "end": 32.657
+    },
+    {
+     "w": "al",
+     "start": 32.657,
+     "end": 32.829
+    },
+    {
+     "w": "mar.",
+     "start": 32.829,
+     "end": 33.199
+    }
+   ]
+  },
+  {
+   "start": 33.949,
+   "end": 35.583,
+   "text": "Pasaron sesenta años.",
+   "scene": "ventana-amanecer",
+   "words": [
+    {
+     "w": "Pasaron",
+     "start": 33.949,
+     "end": 34.494
+    },
+    {
+     "w": "sesenta",
+     "start": 34.494,
+     "end": 35.039
+    },
+    {
+     "w": "años.",
+     "start": 35.039,
+     "end": 35.583
+    }
+   ]
+  },
+  {
+   "start": 36.849,
+   "end": 39.498,
+   "text": "Y cada tarde, él la seguía llevando al muelle.",
+   "scene": "playa:viejos:2",
+   "words": [
+    {
+     "w": "Y",
+     "start": 36.849,
+     "end": 36.971
+    },
+    {
+     "w": "cada",
+     "start": 36.971,
+     "end": 37.238
+    },
+    {
+     "w": "tarde,",
+     "start": 37.238,
+     "end": 37.651
+    },
+    {
+     "w": "él",
+     "start": 37.651,
+     "end": 37.821
+    },
+    {
+     "w": "la",
+     "start": 37.821,
+     "end": 37.992
+    },
+    {
+     "w": "seguía",
+     "start": 37.992,
+     "end": 38.356
+    },
+    {
+     "w": "llevando",
+     "start": 38.356,
+     "end": 38.818
+    },
+    {
+     "w": "al",
+     "start": 38.818,
+     "end": 38.988
+    },
+    {
+     "w": "muelle.",
+     "start": 38.988,
+     "end": 39.498
+    }
+   ]
+  },
+  {
+   "start": 40.248,
+   "end": 43.979,
+   "text": "Con las manos arrugadas… pero agarradas igual que la primera vez.",
+   "scene": "manos:viejas",
+   "words": [
+    {
+     "w": "Con",
+     "start": 40.248,
+     "end": 40.471
+    },
+    {
+     "w": "las",
+     "start": 40.471,
+     "end": 40.693
+    },
+    {
+     "w": "manos",
+     "start": 40.693,
+     "end": 41.014
+    },
+    {
+     "w": "arrugadas…",
+     "start": 41.014,
+     "end": 41.681
+    },
+    {
+     "w": "pero",
+     "start": 41.681,
+     "end": 41.953
+    },
+    {
+     "w": "agarradas",
+     "start": 41.953,
+     "end": 42.472
+    },
+    {
+     "w": "igual",
+     "start": 42.472,
+     "end": 42.793
+    },
+    {
+     "w": "que",
+     "start": 42.793,
+     "end": 43.016
+    },
+    {
+     "w": "la",
+     "start": 43.016,
+     "end": 43.189
+    },
+    {
+     "w": "primera",
+     "start": 43.189,
+     "end": 43.609
+    },
+    {
+     "w": "vez.",
+     "start": 43.609,
+     "end": 43.979
+    }
+   ]
+  },
+  {
+   "start": 44.729,
+   "end": 48.516,
+   "text": "Hay amores que no se acaban. Solo se hacen viejos. ¿Tienes uno así?",
+   "scene": "playa:atardecer:2",
+   "words": [
+    {
+     "w": "Hay",
+     "start": 44.729,
+     "end": 44.944
+    },
+    {
+     "w": "amores",
+     "start": 44.944,
+     "end": 45.301
+    },
+    {
+     "w": "que",
+     "start": 45.301,
+     "end": 45.515
+    },
+    {
+     "w": "no",
+     "start": 45.515,
+     "end": 45.682
+    },
+    {
+     "w": "se",
+     "start": 45.682,
+     "end": 45.849
+    },
+    {
+     "w": "acaban.",
+     "start": 45.849,
+     "end": 46.349
+    },
+    {
+     "w": "Solo",
+     "start": 46.349,
+     "end": 46.611
+    },
+    {
+     "w": "se",
+     "start": 46.611,
+     "end": 46.777
+    },
+    {
+     "w": "hacen",
+     "start": 46.777,
+     "end": 47.087
+    },
+    {
+     "w": "viejos.",
+     "start": 47.087,
+     "end": 47.587
+    },
+    {
+     "w": "¿Tienes",
+     "start": 47.587,
+     "end": 47.944
+    },
+    {
+     "w": "uno",
+     "start": 47.944,
+     "end": 48.158
+    },
+    {
+     "w": "así?",
+     "start": 48.158,
+     "end": 48.516
+    }
+   ]
+  }
+ ],
+ "total": 50.416,
+ "audio": "historia/audio-historia-san-lucas.wav",
+ "song": {
+  "title": "San Lucas",
+  "artists": "Kevin Kaarl",
+  "cardLine": 1
+ },
+ "estilo": "acuarela",
+ "cast": {
+  "him": {
+   "hair": "m2",
+   "skin": "#c98e66",
+   "hairC": "#1d1410",
+   "coat": "#3f6a8a",
+   "shirt": "#f1ece0"
+  },
+  "her": {
+   "hair": "f",
+   "skin": "#e0a882",
+   "hairC": "#2a1610",
+   "coat": "#e8a0a8",
+   "long": true
+  }
+ }
+}
