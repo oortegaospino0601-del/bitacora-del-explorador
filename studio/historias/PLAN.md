@@ -15,7 +15,7 @@ recodifica siempre (GitHub rechaza archivos de más de 100 MB):
 | 22:24 | programado (Metricool) | Ella baila sola — Eslabon Armado, Peso Pluma | neon | Toda la fiesta la miraba… y nadie se atrevía |
 | 00:24 | programado (Metricool) | un x100to — Grupo Frontera, Bad Bunny | noir | Les dijo a todos que ya la había olvidado… mentía al 100 % |
 | 02:24 | programado (Metricool) | Fuentes de Ortiz — Ed Maverick | boceto | Le escribió 47 cartas… y no le mandó ninguna |
-| 04:24 | pendiente | San Lucas — Kevin Kaarl | acuarela | Se prometieron "para siempre" frente al mar… y lo cumplieron 60 años |
+| 04:24 | programado (Metricool) | San Lucas — Kevin Kaarl | acuarela | Se prometieron "para siempre" frente al mar… y lo cumplieron 60 años |
 | 06:24 | pendiente | Me rehúso — Danny Ocean | vhs | Ella tenía un pasaje solo de ida |
 | 08:24 | pendiente | Mamichula — Trueno, Nicki Nicole, Bizarrap | comic | 3 intentos para conquistarla… y 3 fracasos |
 | 10:24 | pendiente | Si antes te hubiera conocido — Karol G | tropical | Lo conoció el último día de sus vacaciones |
