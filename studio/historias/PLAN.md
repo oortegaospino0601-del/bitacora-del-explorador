@@ -12,7 +12,7 @@ recodifica siempre (GitHub rechaza archivos de más de 100 MB):
 | 18:24 | publicado | Rara Vez — Taiu, Milo J | plano | Ella solo volvía rara vez… y él la esperó cada noche |
 | 20:24 | programado (Metricool) | DtMF — Bad Bunny | pelicula | Más de 3.000 fotos… y ni una con su abuela |
 | 22:24 | programado (Metricool) | Ella baila sola — Eslabon Armado, Peso Pluma | neon | Toda la fiesta la miraba… y nadie se atrevía |
-| 00:24 | pendiente | un x100to — Grupo Frontera, Bad Bunny | noir | Les dijo a todos que ya la había olvidado… mentía al 100 % |
+| 00:24 | programado (Metricool) | un x100to — Grupo Frontera, Bad Bunny | noir | Les dijo a todos que ya la había olvidado… mentía al 100 % |
 | 02:24 | pendiente | Fuentes de Ortiz — Ed Maverick | boceto | Le escribió 47 cartas… y no le mandó ninguna |
 | 04:24 | pendiente | San Lucas — Kevin Kaarl | acuarela | Se prometieron "para siempre" frente al mar… y lo cumplieron 60 años |
 | 06:24 | pendiente | Me rehúso — Danny Ocean | vhs | Ella tenía un pasaje solo de ida |
