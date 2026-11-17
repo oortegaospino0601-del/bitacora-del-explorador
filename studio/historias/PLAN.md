@@ -3,10 +3,14 @@
 Uno cada 2 horas, cada uno con canción, historia y ESTÉTICA distintas. Se hace cada video cuando
 llega su hora (no todos de golpe). Receta en `studio/README.md` (sección "Historias de canciones").
 
+**Importante:** el render de Remotion pesa cientos de MB (grano/lluvia). Antes de copiar a `videos/`
+recodifica siempre (GitHub rechaza archivos de más de 100 MB):
+`ffmpeg -i studio/out/<slug>.mp4 -c:v libx264 -preset medium -crf 23 -maxrate 7M -bufsize 14M -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart videos/<fecha>-<slug>.mp4`
+
 | Hora | Estado | Canción | Estética | Gancho (idea) |
 |---|---|---|---|---|
 | 18:24 | publicado | Rara Vez — Taiu, Milo J | plano | Ella solo volvía rara vez… y él la esperó cada noche |
-| 20:24 | programado | DtMF — Bad Bunny | pelicula | Más de 3.000 fotos… y ni una con su abuela |
+| 20:24 | programado (Metricool) | DtMF — Bad Bunny | pelicula | Más de 3.000 fotos… y ni una con su abuela |
 | 22:24 | pendiente | Ella baila sola — Eslabon Armado, Peso Pluma | neon | Toda la fiesta la miraba… y nadie se atrevía |
 | 00:24 | pendiente | un x100to — Grupo Frontera, Bad Bunny | noir | Les dijo a todos que ya la había olvidado… mentía al 100 % |
 | 02:24 | pendiente | Fuentes de Ortiz — Ed Maverick | boceto | Le escribió 47 cartas… y no le mandó ninguna |
