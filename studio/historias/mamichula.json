@@ -1,0 +1,30 @@
+{
+  "slug": "historia-mamichula",
+  "hook": "TRES INTENTOS PARA CONQUISTARLA…\nY TRES\nFRACASOS.",
+  "song": {"title": "Mamichula", "artists": "Trueno, Nicki Nicole, Bizarrap", "cardLine": 1},
+  "estilo": "comic",
+  "cast": {
+    "him": {"hair": "curly", "skin": "#c98e66", "hairC": "#1a1210", "coat": "#2f6bd8", "shirt": "#ffe23b", "pants": "#1d1d2a", "shoes": "#ffffff"},
+    "her": {"hair": "f", "skin": "#efc4a0", "hairC": "#4a1c14", "coat": "#ff2e88", "pants": "#1d1d2a", "long": true}
+  },
+  "flash": ["barrio:caida", "ojo"],
+  "speed": 1.03,
+  "tail": 0.35,
+  "minScene": 2.7,
+  "music": {"bpm": 96, "prog": "verano", "style": "dembow", "transpose": 2, "drumsFromLine": 1, "dropAtLine": 6, "backAtLine": 7, "gain": 0.3},
+  "lines": [
+    {"scene": "barrio:caida", "rain": 0.0, "text": "Intentó conquistarla tres veces… y las tres le salieron fatal."},
+    {"scene": "barrio:balcon", "rain": 0.0, "text": "Esta es la historia de Mamichula, de Trueno, Nicki Nicole y Bizarrap.", "tts": "Esta es la historia de Mamichula, de Trueno, Niki Nicol y Bizarrap."},
+    {"scene": "barrio:pasa", "rain": 0.0, "text": "Ella se acababa de mudar a su barrio."},
+    {"scene": "barrio:caida:tarde", "rain": 0.0, "text": "Primer intento: pasar en bici frente a su casa… y terminar en el piso."},
+    {"scene": "cafe", "rain": 0.0, "text": "Segundo intento: invitarla a un café… y olvidarse la billetera."},
+    {"scene": "cara", "rain": 0.0, "text": "Tercer intento: un freestyle en la plaza… y quedarse en blanco."},
+    {"scene": "lluvia", "rain": 0.5, "text": "Volvió a su casa muerto de vergüenza."},
+    {"scene": "movil-ella", "rain": 0.0, "text": "Esa noche, le escribió un número desconocido."},
+    {"scene": "ojo", "rain": 0.0, "text": "Era ella. Nunca se había reído tanto en su vida."},
+    {"scene": "atardecer", "rain": 0.0, "text": "No buscaba a alguien perfecto… sino a alguien que lo intentara."},
+    {"scene": "barrio:juntos", "rain": 0.0, "text": "Al otro día salieron. Esta vez, sin bici."},
+    {"scene": "foto", "rain": 0.0, "text": "Hoy llevan tres años juntos."},
+    {"scene": "barrio:juntos:tarde", "rain": 0.0, "text": "Y ella todavía le pide que se caiga de la bici otra vez. ¿Cuál fue tu peor intento?"}
+  ]
+}

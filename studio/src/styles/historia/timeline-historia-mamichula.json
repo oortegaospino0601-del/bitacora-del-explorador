@@ -1,0 +1,811 @@
+{
+ "slug": "historia-mamichula",
+ "hook": "TRES INTENTOS PARA CONQUISTARLA…\nY TRES\nFRACASOS.",
+ "durations": [
+  4.217,
+  4.339,
+  2.807,
+  4.636,
+  4.261,
+  4.286,
+  2.936,
+  3.175,
+  3.382,
+  3.912,
+  3.087,
+  2.7,
+  6.825
+ ],
+ "lines": [
+  {
+   "start": 0.25,
+   "end": 3.867,
+   "text": "Intentó conquistarla tres veces… y las tres le salieron fatal.",
+   "scene": "barrio:caida",
+   "words": [
+    {
+     "w": "Intentó",
+     "start": 0.25,
+     "end": 0.677
+    },
+    {
+     "w": "conquistarla",
+     "start": 0.677,
+     "end": 1.355
+    },
+    {
+     "w": "tres",
+     "start": 1.355,
+     "end": 1.631
+    },
+    {
+     "w": "veces…",
+     "start": 1.631,
+     "end": 2.109
+    },
+    {
+     "w": "y",
+     "start": 2.109,
+     "end": 2.234
+    },
+    {
+     "w": "las",
+     "start": 2.234,
+     "end": 2.46
+    },
+    {
+     "w": "tres",
+     "start": 2.46,
+     "end": 2.737
+    },
+    {
+     "w": "le",
+     "start": 2.737,
+     "end": 2.912
+    },
+    {
+     "w": "salieron",
+     "start": 2.912,
+     "end": 3.39
+    },
+    {
+     "w": "fatal.",
+     "start": 3.39,
+     "end": 3.867
+    }
+   ]
+  },
+  {
+   "start": 4.517,
+   "end": 8.205,
+   "text": "Esta es la historia de Mamichula, de Trueno, Nicki Nicole y Bizarrap.",
+   "scene": "barrio:balcon",
+   "words": [
+    {
+     "w": "Esta",
+     "start": 4.517,
+     "end": 4.77
+    },
+    {
+     "w": "es",
+     "start": 4.77,
+     "end": 4.932
+    },
+    {
+     "w": "la",
+     "start": 4.932,
+     "end": 5.093
+    },
+    {
+     "w": "historia",
+     "start": 5.093,
+     "end": 5.531
+    },
+    {
+     "w": "de",
+     "start": 5.531,
+     "end": 5.693
+    },
+    {
+     "w": "Mamichula,",
+     "start": 5.693,
+     "end": 6.269
+    },
+    {
+     "w": "de",
+     "start": 6.269,
+     "end": 6.43
+    },
+    {
+     "w": "Trueno,",
+     "start": 6.43,
+     "end": 6.868
+    },
+    {
+     "w": "Nicki",
+     "start": 6.868,
+     "end": 7.168
+    },
+    {
+     "w": "Nicole",
+     "start": 7.168,
+     "end": 7.514
+    },
+    {
+     "w": "y",
+     "start": 7.514,
+     "end": 7.629
+    },
+    {
+     "w": "Bizarrap.",
+     "start": 7.629,
+     "end": 8.205
+    }
+   ]
+  },
+  {
+   "start": 8.855,
+   "end": 11.013,
+   "text": "Ella se acababa de mudar a su barrio.",
+   "scene": "barrio:pasa",
+   "words": [
+    {
+     "w": "Ella",
+     "start": 8.855,
+     "end": 9.125
+    },
+    {
+     "w": "se",
+     "start": 9.125,
+     "end": 9.297
+    },
+    {
+     "w": "acababa",
+     "start": 9.297,
+     "end": 9.713
+    },
+    {
+     "w": "de",
+     "start": 9.713,
+     "end": 9.885
+    },
+    {
+     "w": "mudar",
+     "start": 9.885,
+     "end": 10.204
+    },
+    {
+     "w": "a",
+     "start": 10.204,
+     "end": 10.326
+    },
+    {
+     "w": "su",
+     "start": 10.326,
+     "end": 10.498
+    },
+    {
+     "w": "barrio.",
+     "start": 10.498,
+     "end": 11.013
+    }
+   ]
+  },
+  {
+   "start": 11.663,
+   "end": 15.649,
+   "text": "Primer intento: pasar en bici frente a su casa… y terminar en el piso.",
+   "scene": "barrio:caida:tarde",
+   "words": [
+    {
+     "w": "Primer",
+     "start": 11.663,
+     "end": 12.023
+    },
+    {
+     "w": "intento:",
+     "start": 12.023,
+     "end": 12.527
+    },
+    {
+     "w": "pasar",
+     "start": 12.527,
+     "end": 12.839
+    },
+    {
+     "w": "en",
+     "start": 12.839,
+     "end": 13.008
+    },
+    {
+     "w": "bici",
+     "start": 13.008,
+     "end": 13.272
+    },
+    {
+     "w": "frente",
+     "start": 13.272,
+     "end": 13.632
+    },
+    {
+     "w": "a",
+     "start": 13.632,
+     "end": 13.752
+    },
+    {
+     "w": "su",
+     "start": 13.752,
+     "end": 13.92
+    },
+    {
+     "w": "casa…",
+     "start": 13.92,
+     "end": 14.328
+    },
+    {
+     "w": "y",
+     "start": 14.328,
+     "end": 14.448
+    },
+    {
+     "w": "terminar",
+     "start": 14.448,
+     "end": 14.905
+    },
+    {
+     "w": "en",
+     "start": 14.905,
+     "end": 15.073
+    },
+    {
+     "w": "el",
+     "start": 15.073,
+     "end": 15.241
+    },
+    {
+     "w": "piso.",
+     "start": 15.241,
+     "end": 15.649
+    }
+   ]
+  },
+  {
+   "start": 16.299,
+   "end": 19.91,
+   "text": "Segundo intento: invitarla a un café… y olvidarse la billetera.",
+   "scene": "cafe",
+   "words": [
+    {
+     "w": "Segundo",
+     "start": 16.299,
+     "end": 16.714
+    },
+    {
+     "w": "intento:",
+     "start": 16.714,
+     "end": 17.226
+    },
+    {
+     "w": "invitarla",
+     "start": 17.226,
+     "end": 17.738
+    },
+    {
+     "w": "a",
+     "start": 17.738,
+     "end": 17.86
+    },
+    {
+     "w": "un",
+     "start": 17.86,
+     "end": 18.031
+    },
+    {
+     "w": "café…",
+     "start": 18.031,
+     "end": 18.446
+    },
+    {
+     "w": "y",
+     "start": 18.446,
+     "end": 18.568
+    },
+    {
+     "w": "olvidarse",
+     "start": 18.568,
+     "end": 19.08
+    },
+    {
+     "w": "la",
+     "start": 19.08,
+     "end": 19.251
+    },
+    {
+     "w": "billetera.",
+     "start": 19.251,
+     "end": 19.91
+    }
+   ]
+  },
+  {
+   "start": 20.56,
+   "end": 24.196,
+   "text": "Tercer intento: un freestyle en la plaza… y quedarse en blanco.",
+   "scene": "cara",
+   "words": [
+    {
+     "w": "Tercer",
+     "start": 20.56,
+     "end": 20.926
+    },
+    {
+     "w": "intento:",
+     "start": 20.926,
+     "end": 21.438
+    },
+    {
+     "w": "un",
+     "start": 21.438,
+     "end": 21.609
+    },
+    {
+     "w": "freestyle",
+     "start": 21.609,
+     "end": 22.122
+    },
+    {
+     "w": "en",
+     "start": 22.122,
+     "end": 22.293
+    },
+    {
+     "w": "la",
+     "start": 22.293,
+     "end": 22.463
+    },
+    {
+     "w": "plaza…",
+     "start": 22.463,
+     "end": 22.927
+    },
+    {
+     "w": "y",
+     "start": 22.927,
+     "end": 23.049
+    },
+    {
+     "w": "quedarse",
+     "start": 23.049,
+     "end": 23.513
+    },
+    {
+     "w": "en",
+     "start": 23.513,
+     "end": 23.684
+    },
+    {
+     "w": "blanco.",
+     "start": 23.684,
+     "end": 24.196
+    }
+   ]
+  },
+  {
+   "start": 24.846,
+   "end": 27.132,
+   "text": "Volvió a su casa muerto de vergüenza.",
+   "scene": "lluvia",
+   "words": [
+    {
+     "w": "Volvió",
+     "start": 24.846,
+     "end": 25.24
+    },
+    {
+     "w": "a",
+     "start": 25.24,
+     "end": 25.372
+    },
+    {
+     "w": "su",
+     "start": 25.372,
+     "end": 25.555
+    },
+    {
+     "w": "casa",
+     "start": 25.555,
+     "end": 25.844
+    },
+    {
+     "w": "muerto",
+     "start": 25.844,
+     "end": 26.239
+    },
+    {
+     "w": "de",
+     "start": 26.239,
+     "end": 26.422
+    },
+    {
+     "w": "vergüenza.",
+     "start": 26.422,
+     "end": 27.132
+    }
+   ]
+  },
+  {
+   "start": 27.782,
+   "end": 30.307,
+   "text": "Esa noche, le escribió un número desconocido.",
+   "scene": "movil-ella",
+   "words": [
+    {
+     "w": "Esa",
+     "start": 27.782,
+     "end": 27.998
+    },
+    {
+     "w": "noche,",
+     "start": 27.998,
+     "end": 28.407
+    },
+    {
+     "w": "le",
+     "start": 28.407,
+     "end": 28.575
+    },
+    {
+     "w": "escribió",
+     "start": 28.575,
+     "end": 29.032
+    },
+    {
+     "w": "un",
+     "start": 29.032,
+     "end": 29.201
+    },
+    {
+     "w": "número",
+     "start": 29.201,
+     "end": 29.561
+    },
+    {
+     "w": "desconocido.",
+     "start": 29.561,
+     "end": 30.307
+    }
+   ]
+  },
+  {
+   "start": 30.957,
+   "end": 33.689,
+   "text": "Era ella. Nunca se había reído tanto en su vida.",
+   "scene": "ojo",
+   "words": [
+    {
+     "w": "Era",
+     "start": 30.957,
+     "end": 31.169
+    },
+    {
+     "w": "ella.",
+     "start": 31.169,
+     "end": 31.569
+    },
+    {
+     "w": "Nunca",
+     "start": 31.569,
+     "end": 31.875
+    },
+    {
+     "w": "se",
+     "start": 31.875,
+     "end": 32.04
+    },
+    {
+     "w": "había",
+     "start": 32.04,
+     "end": 32.346
+    },
+    {
+     "w": "reído",
+     "start": 32.346,
+     "end": 32.652
+    },
+    {
+     "w": "tanto",
+     "start": 32.652,
+     "end": 32.959
+    },
+    {
+     "w": "en",
+     "start": 32.959,
+     "end": 33.123
+    },
+    {
+     "w": "su",
+     "start": 33.123,
+     "end": 33.288
+    },
+    {
+     "w": "vida.",
+     "start": 33.288,
+     "end": 33.689
+    }
+   ]
+  },
+  {
+   "start": 34.339,
+   "end": 37.601,
+   "text": "No buscaba a alguien perfecto… sino a alguien que lo intentara.",
+   "scene": "atardecer",
+   "words": [
+    {
+     "w": "No",
+     "start": 34.339,
+     "end": 34.494
+    },
+    {
+     "w": "buscaba",
+     "start": 34.494,
+     "end": 34.871
+    },
+    {
+     "w": "a",
+     "start": 34.871,
+     "end": 34.982
+    },
+    {
+     "w": "alguien",
+     "start": 34.982,
+     "end": 35.36
+    },
+    {
+     "w": "perfecto…",
+     "start": 35.36,
+     "end": 35.914
+    },
+    {
+     "w": "sino",
+     "start": 35.914,
+     "end": 36.158
+    },
+    {
+     "w": "a",
+     "start": 36.158,
+     "end": 36.269
+    },
+    {
+     "w": "alguien",
+     "start": 36.269,
+     "end": 36.647
+    },
+    {
+     "w": "que",
+     "start": 36.647,
+     "end": 36.846
+    },
+    {
+     "w": "lo",
+     "start": 36.846,
+     "end": 37.002
+    },
+    {
+     "w": "intentara.",
+     "start": 37.002,
+     "end": 37.601
+    }
+   ]
+  },
+  {
+   "start": 38.251,
+   "end": 40.688,
+   "text": "Al otro día salieron. Esta vez, sin bici.",
+   "scene": "barrio:juntos",
+   "words": [
+    {
+     "w": "Al",
+     "start": 38.251,
+     "end": 38.418
+    },
+    {
+     "w": "otro",
+     "start": 38.418,
+     "end": 38.681
+    },
+    {
+     "w": "día",
+     "start": 38.681,
+     "end": 38.896
+    },
+    {
+     "w": "salieron.",
+     "start": 38.896,
+     "end": 39.493
+    },
+    {
+     "w": "Esta",
+     "start": 39.493,
+     "end": 39.756
+    },
+    {
+     "w": "vez,",
+     "start": 39.756,
+     "end": 40.067
+    },
+    {
+     "w": "sin",
+     "start": 40.067,
+     "end": 40.282
+    },
+    {
+     "w": "bici.",
+     "start": 40.282,
+     "end": 40.688
+    }
+   ]
+  },
+  {
+   "start": 41.338,
+   "end": 43.172,
+   "text": "Hoy llevan tres años juntos.",
+   "scene": "foto",
+   "words": [
+    {
+     "w": "Hoy",
+     "start": 41.338,
+     "end": 41.584
+    },
+    {
+     "w": "llevan",
+     "start": 41.584,
+     "end": 41.995
+    },
+    {
+     "w": "tres",
+     "start": 41.995,
+     "end": 42.296
+    },
+    {
+     "w": "años",
+     "start": 42.296,
+     "end": 42.597
+    },
+    {
+     "w": "juntos.",
+     "start": 42.597,
+     "end": 43.172
+    }
+   ]
+  },
+  {
+   "start": 44.038,
+   "end": 48.663,
+   "text": "Y ella todavía le pide que se caiga de la bici otra vez. ¿Cuál fue tu peor intento?",
+   "scene": "barrio:juntos:tarde",
+   "words": [
+    {
+     "w": "Y",
+     "start": 44.038,
+     "end": 44.158
+    },
+    {
+     "w": "ella",
+     "start": 44.158,
+     "end": 44.423
+    },
+    {
+     "w": "todavía",
+     "start": 44.423,
+     "end": 44.833
+    },
+    {
+     "w": "le",
+     "start": 44.833,
+     "end": 45.001
+    },
+    {
+     "w": "pide",
+     "start": 45.001,
+     "end": 45.266
+    },
+    {
+     "w": "que",
+     "start": 45.266,
+     "end": 45.483
+    },
+    {
+     "w": "se",
+     "start": 45.483,
+     "end": 45.652
+    },
+    {
+     "w": "caiga",
+     "start": 45.652,
+     "end": 45.965
+    },
+    {
+     "w": "de",
+     "start": 45.965,
+     "end": 46.133
+    },
+    {
+     "w": "la",
+     "start": 46.133,
+     "end": 46.302
+    },
+    {
+     "w": "bici",
+     "start": 46.302,
+     "end": 46.567
+    },
+    {
+     "w": "otra",
+     "start": 46.567,
+     "end": 46.832
+    },
+    {
+     "w": "vez.",
+     "start": 46.832,
+     "end": 47.193
+    },
+    {
+     "w": "¿Cuál",
+     "start": 47.193,
+     "end": 47.458
+    },
+    {
+     "w": "fue",
+     "start": 47.458,
+     "end": 47.675
+    },
+    {
+     "w": "tu",
+     "start": 47.675,
+     "end": 47.844
+    },
+    {
+     "w": "peor",
+     "start": 47.844,
+     "end": 48.109
+    },
+    {
+     "w": "intento?",
+     "start": 48.109,
+     "end": 48.663
+    }
+   ]
+  }
+ ],
+ "total": 50.563,
+ "audio": "historia/audio-historia-mamichula.wav",
+ "song": {
+  "title": "Mamichula",
+  "artists": "Trueno, Nicki Nicole, Bizarrap",
+  "cardLine": 1
+ },
+ "flash": [
+  "barrio:caida",
+  "ojo"
+ ],
+ "estilo": "comic",
+ "cast": {
+  "him": {
+   "hair": "curly",
+   "skin": "#c98e66",
+   "hairC": "#1a1210",
+   "coat": "#2f6bd8",
+   "shirt": "#ffe23b",
+   "pants": "#1d1d2a",
+   "shoes": "#ffffff"
+  },
+  "her": {
+   "hair": "f",
+   "skin": "#efc4a0",
+   "hairC": "#4a1c14",
+   "coat": "#ff2e88",
+   "pants": "#1d1d2a",
+   "long": true
+  }
+ }
+}

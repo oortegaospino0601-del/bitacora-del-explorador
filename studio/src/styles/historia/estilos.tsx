@@ -124,7 +124,7 @@ export const ESTILOS: Record<string, Estilo> = {
     pillBorder: 'rgba(255,209,224,0.8)',
   },
   comic: {
-    filter: 'url(#hx-poster) saturate(1.5) contrast(1.1)',
+    filter: 'saturate(1.65) contrast(1.25) brightness(1.04)',
     halftone: 0.22,
     font: "'Bangers', Impact, sans-serif",
     hookWeight: 400,
