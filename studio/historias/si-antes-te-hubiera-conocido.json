@@ -1,0 +1,31 @@
+{
+  "slug": "historia-si-antes-te-hubiera-conocido",
+  "hook": "LO CONOCIÓ…\nEL ÚLTIMO DÍA\nDE VACACIONES.",
+  "song": {"title": "Si Antes Te Hubiera Conocido", "artists": "Karol G", "cardLine": 1},
+  "estilo": "tropical",
+  "voice": "ef_dora",
+  "cast": {
+    "him": {"hair": "m2", "skin": "#b8805a", "hairC": "#140e0a", "coat": "#f4f1ea", "shirt": "#3fb5c5", "pants": "#2a3a5a"},
+    "her": {"hair": "f", "skin": "#e8b48c", "hairC": "#2a8a9a", "coat": "#ff5a7a", "pants": "#3a2a3a", "long": true}
+  },
+  "flash": ["aeropuerto:abrazo"],
+  "speed": 1.02,
+  "tail": 0.38,
+  "minScene": 2.7,
+  "music": {"bpm": 94, "prog": "verano", "style": "dembow", "drumsFromLine": 1, "dropAtLine": 6, "backAtLine": 10, "gain": 0.3},
+  "lines": [
+    {"scene": "playa:atardecer", "rain": 0.0, "text": "Lo conoció el último día de sus vacaciones… y le cambió la vida."},
+    {"scene": "playa:atardecer:2", "rain": 0.0, "text": "Esta es la historia de Si Antes Te Hubiera Conocido, de Karol G.", "tts": "Esta es la historia de Si Antes Te Hubiera Conocido, de Karol Yi."},
+    {"scene": "fiesta:sola", "rain": 0.0, "text": "La última noche fue a una fiesta en la playa, sin muchas ganas."},
+    {"scene": "fiesta:baile", "rain": 0.0, "text": "Y ahí, un chico la sacó a bailar."},
+    {"scene": "playa:noche", "rain": 0.0, "text": "Hablaron hasta el amanecer, como si se conocieran de siempre."},
+    {"scene": "atardecer", "rain": 0.0, "text": "Y ella pensó: si lo hubiera conocido antes…"},
+    {"scene": "aeropuerto:ventana", "rain": 0.0, "text": "Pero a la mañana siguiente salía su vuelo."},
+    {"scene": "avion", "rain": 0.0, "text": "Se fue con el corazón todavía en la playa."},
+    {"scene": "videollamada:larga", "rain": 0.0, "text": "Durante un año hablaron todos los días."},
+    {"scene": "camas", "rain": 0.0, "text": "Contando los días para el próximo verano."},
+    {"scene": "aeropuerto:abrazo", "rain": 0.0, "text": "Y cuando por fin volvió… él la estaba esperando."},
+    {"scene": "playa:boda", "rain": 0.0, "text": "Esta vez no fue el último día. Fue el primero de todos."},
+    {"scene": "playa:atardecer:2", "rain": 0.0, "text": "¿A quién te hubiera gustado conocer antes?"}
+  ]
+}

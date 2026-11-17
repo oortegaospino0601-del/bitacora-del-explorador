@@ -1,6 +1,6 @@
 // Escenas nuevas (tanda 3). Cada escena recibe {dur, a, b} (parámetros de "nombre:a:b").
 import React from 'react';
-import {Bokeh, Cam, Glow, Grad, H, HER, HIM, Hand, OTHER, Person, Svg, Vignette, W, ease, mix, rng, useT} from './kit';
+import {Bokeh, Cam, Glow, Grad, H, HER, HIM, Hand, OTHER, Person, Svg, Vignette, W, ease, mix, rng, useCast, useT} from './kit';
 
 type P = {dur: number; a?: string; b?: string};
 
@@ -259,6 +259,7 @@ const VIEJA = {hair: 'bun' as const, skin: '#ecc0a0', hairC: '#e6e2dc', coat: '#
 
 export const playa: React.FC<P> = ({dur, a = 'atardecer', b = ''}) => {
   const t = useT();
+  const cast = useCast();
   const id = `pl${a}${b}`;
   const noche = a === 'noche';
   const sky: [number, string][] = noche
@@ -325,8 +326,8 @@ export const playa: React.FC<P> = ({dur, a = 'atardecer', b = ''}) => {
               const y = 1200 - Math.sin(q * Math.PI) * 220;
               return <circle key={i} cx={x} cy={y} r={22} fill={i % 2 ? '#f6a6b8' : '#ffffff'} />;
             })}
-            <Person look={{...HIM, coat: '#efe8da', shirt: '#ffffff'} as typeof HIM} x={440} y={1720} s={1.1} armR={30} smile={1} />
-            <Person look={{...HER, coat: '#ffffff', pants: '#ffffff'} as typeof HER} x={650} y={1720} s={1.1} armL={30} smile={1} eyes="closed" tilt={-6} />
+            <Person look={{...cast.him, coat: '#efe8da', shirt: '#ffffff'}} x={440} y={1720} s={1.1} armR={30} smile={1} />
+            <Person look={{...cast.her, coat: '#ffffff', pants: '#ffffff'}} x={650} y={1720} s={1.1} armL={30} smile={1} eyes="closed" tilt={-6} />
           </g>
         )}
         {a === 'viejos' && (

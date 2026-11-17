@@ -1,0 +1,774 @@
+{
+ "slug": "historia-si-antes-te-hubiera-conocido",
+ "hook": "LO CONOCIÓ…\nEL ÚLTIMO DÍA\nDE VACACIONES.",
+ "durations": [
+  3.917,
+  4.01,
+  4.208,
+  2.7,
+  3.817,
+  3.139,
+  3.109,
+  3.188,
+  3.216,
+  2.967,
+  3.246,
+  3.817,
+  4.556
+ ],
+ "lines": [
+  {
+   "start": 0.25,
+   "end": 3.537,
+   "text": "Lo conoció el último día de sus vacaciones… y le cambió la vida.",
+   "scene": "playa:atardecer",
+   "words": [
+    {
+     "w": "Lo",
+     "start": 0.25,
+     "end": 0.402
+    },
+    {
+     "w": "conoció",
+     "start": 0.402,
+     "end": 0.772
+    },
+    {
+     "w": "el",
+     "start": 0.772,
+     "end": 0.925
+    },
+    {
+     "w": "último",
+     "start": 0.925,
+     "end": 1.251
+    },
+    {
+     "w": "día",
+     "start": 1.251,
+     "end": 1.447
+    },
+    {
+     "w": "de",
+     "start": 1.447,
+     "end": 1.6
+    },
+    {
+     "w": "sus",
+     "start": 1.6,
+     "end": 1.796
+    },
+    {
+     "w": "vacaciones…",
+     "start": 1.796,
+     "end": 2.427
+    },
+    {
+     "w": "y",
+     "start": 2.427,
+     "end": 2.536
+    },
+    {
+     "w": "le",
+     "start": 2.536,
+     "end": 2.688
+    },
+    {
+     "w": "cambió",
+     "start": 2.688,
+     "end": 3.015
+    },
+    {
+     "w": "la",
+     "start": 3.015,
+     "end": 3.167
+    },
+    {
+     "w": "vida.",
+     "start": 3.167,
+     "end": 3.537
+    }
+   ]
+  },
+  {
+   "start": 4.217,
+   "end": 7.546,
+   "text": "Esta es la historia de Si Antes Te Hubiera Conocido, de Karol G.",
+   "scene": "playa:atardecer:2",
+   "words": [
+    {
+     "w": "Esta",
+     "start": 4.217,
+     "end": 4.463
+    },
+    {
+     "w": "es",
+     "start": 4.463,
+     "end": 4.619
+    },
+    {
+     "w": "la",
+     "start": 4.619,
+     "end": 4.776
+    },
+    {
+     "w": "historia",
+     "start": 4.776,
+     "end": 5.2
+    },
+    {
+     "w": "de",
+     "start": 5.2,
+     "end": 5.357
+    },
+    {
+     "w": "Si",
+     "start": 5.357,
+     "end": 5.513
+    },
+    {
+     "w": "Antes",
+     "start": 5.513,
+     "end": 5.804
+    },
+    {
+     "w": "Te",
+     "start": 5.804,
+     "end": 5.96
+    },
+    {
+     "w": "Hubiera",
+     "start": 5.96,
+     "end": 6.34
+    },
+    {
+     "w": "Conocido,",
+     "start": 6.34,
+     "end": 6.854
+    },
+    {
+     "w": "de",
+     "start": 6.854,
+     "end": 7.01
+    },
+    {
+     "w": "Karol",
+     "start": 7.01,
+     "end": 7.301
+    },
+    {
+     "w": "G.",
+     "start": 7.301,
+     "end": 7.547
+    }
+   ]
+  },
+  {
+   "start": 8.226,
+   "end": 11.754,
+   "text": "La última noche fue a una fiesta en la playa, sin muchas ganas.",
+   "scene": "fiesta:sola",
+   "words": [
+    {
+     "w": "La",
+     "start": 8.226,
+     "end": 8.394
+    },
+    {
+     "w": "última",
+     "start": 8.394,
+     "end": 8.754
+    },
+    {
+     "w": "noche",
+     "start": 8.754,
+     "end": 9.066
+    },
+    {
+     "w": "fue",
+     "start": 9.066,
+     "end": 9.282
+    },
+    {
+     "w": "a",
+     "start": 9.282,
+     "end": 9.402
+    },
+    {
+     "w": "una",
+     "start": 9.402,
+     "end": 9.618
+    },
+    {
+     "w": "fiesta",
+     "start": 9.618,
+     "end": 9.978
+    },
+    {
+     "w": "en",
+     "start": 9.978,
+     "end": 10.146
+    },
+    {
+     "w": "la",
+     "start": 10.146,
+     "end": 10.314
+    },
+    {
+     "w": "playa,",
+     "start": 10.314,
+     "end": 10.722
+    },
+    {
+     "w": "sin",
+     "start": 10.722,
+     "end": 10.938
+    },
+    {
+     "w": "muchas",
+     "start": 10.938,
+     "end": 11.298
+    },
+    {
+     "w": "ganas.",
+     "start": 11.298,
+     "end": 11.754
+    }
+   ]
+  },
+  {
+   "start": 12.434,
+   "end": 14.246,
+   "text": "Y ahí, un chico la sacó a bailar.",
+   "scene": "fiesta:baile",
+   "words": [
+    {
+     "w": "Y",
+     "start": 12.434,
+     "end": 12.545
+    },
+    {
+     "w": "ahí,",
+     "start": 12.545,
+     "end": 12.832
+    },
+    {
+     "w": "un",
+     "start": 12.832,
+     "end": 12.986
+    },
+    {
+     "w": "chico",
+     "start": 12.986,
+     "end": 13.274
+    },
+    {
+     "w": "la",
+     "start": 13.274,
+     "end": 13.428
+    },
+    {
+     "w": "sacó",
+     "start": 13.428,
+     "end": 13.671
+    },
+    {
+     "w": "a",
+     "start": 13.671,
+     "end": 13.782
+    },
+    {
+     "w": "bailar.",
+     "start": 13.782,
+     "end": 14.246
+    }
+   ]
+  },
+  {
+   "start": 15.134,
+   "end": 18.271,
+   "text": "Hablaron hasta el amanecer, como si se conocieran de siempre.",
+   "scene": "playa:noche",
+   "words": [
+    {
+     "w": "Hablaron",
+     "start": 15.134,
+     "end": 15.56
+    },
+    {
+     "w": "hasta",
+     "start": 15.56,
+     "end": 15.851
+    },
+    {
+     "w": "el",
+     "start": 15.851,
+     "end": 16.008
+    },
+    {
+     "w": "amanecer,",
+     "start": 16.008,
+     "end": 16.523
+    },
+    {
+     "w": "como",
+     "start": 16.523,
+     "end": 16.77
+    },
+    {
+     "w": "si",
+     "start": 16.77,
+     "end": 16.927
+    },
+    {
+     "w": "se",
+     "start": 16.927,
+     "end": 17.084
+    },
+    {
+     "w": "conocieran",
+     "start": 17.084,
+     "end": 17.599
+    },
+    {
+     "w": "de",
+     "start": 17.599,
+     "end": 17.756
+    },
+    {
+     "w": "siempre.",
+     "start": 17.756,
+     "end": 18.271
+    }
+   ]
+  },
+  {
+   "start": 18.951,
+   "end": 21.41,
+   "text": "Y ella pensó: si lo hubiera conocido antes…",
+   "scene": "atardecer",
+   "words": [
+    {
+     "w": "Y",
+     "start": 18.951,
+     "end": 19.072
+    },
+    {
+     "w": "ella",
+     "start": 19.072,
+     "end": 19.337
+    },
+    {
+     "w": "pensó:",
+     "start": 19.337,
+     "end": 19.747
+    },
+    {
+     "w": "si",
+     "start": 19.747,
+     "end": 19.916
+    },
+    {
+     "w": "lo",
+     "start": 19.916,
+     "end": 20.084
+    },
+    {
+     "w": "hubiera",
+     "start": 20.084,
+     "end": 20.494
+    },
+    {
+     "w": "conocido",
+     "start": 20.494,
+     "end": 20.952
+    },
+    {
+     "w": "antes…",
+     "start": 20.952,
+     "end": 21.41
+    }
+   ]
+  },
+  {
+   "start": 22.09,
+   "end": 24.519,
+   "text": "Pero a la mañana siguiente salía su vuelo.",
+   "scene": "aeropuerto:ventana",
+   "words": [
+    {
+     "w": "Pero",
+     "start": 22.09,
+     "end": 22.363
+    },
+    {
+     "w": "a",
+     "start": 22.363,
+     "end": 22.487
+    },
+    {
+     "w": "la",
+     "start": 22.487,
+     "end": 22.66
+    },
+    {
+     "w": "mañana",
+     "start": 22.66,
+     "end": 23.032
+    },
+    {
+     "w": "siguiente",
+     "start": 23.032,
+     "end": 23.552
+    },
+    {
+     "w": "salía",
+     "start": 23.552,
+     "end": 23.875
+    },
+    {
+     "w": "su",
+     "start": 23.875,
+     "end": 24.048
+    },
+    {
+     "w": "vuelo.",
+     "start": 24.048,
+     "end": 24.519
+    }
+   ]
+  },
+  {
+   "start": 25.199,
+   "end": 27.707,
+   "text": "Se fue con el corazón todavía en la playa.",
+   "scene": "avion",
+   "words": [
+    {
+     "w": "Se",
+     "start": 25.199,
+     "end": 25.376
+    },
+    {
+     "w": "fue",
+     "start": 25.376,
+     "end": 25.604
+    },
+    {
+     "w": "con",
+     "start": 25.604,
+     "end": 25.832
+    },
+    {
+     "w": "el",
+     "start": 25.832,
+     "end": 26.01
+    },
+    {
+     "w": "corazón",
+     "start": 26.01,
+     "end": 26.44
+    },
+    {
+     "w": "todavía",
+     "start": 26.44,
+     "end": 26.871
+    },
+    {
+     "w": "en",
+     "start": 26.871,
+     "end": 27.048
+    },
+    {
+     "w": "la",
+     "start": 27.048,
+     "end": 27.226
+    },
+    {
+     "w": "playa.",
+     "start": 27.226,
+     "end": 27.707
+    }
+   ]
+  },
+  {
+   "start": 28.387,
+   "end": 30.924,
+   "text": "Durante un año hablaron todos los días.",
+   "scene": "videollamada:larga",
+   "words": [
+    {
+     "w": "Durante",
+     "start": 28.387,
+     "end": 28.861
+    },
+    {
+     "w": "un",
+     "start": 28.861,
+     "end": 29.056
+    },
+    {
+     "w": "año",
+     "start": 29.056,
+     "end": 29.307
+    },
+    {
+     "w": "hablaron",
+     "start": 29.307,
+     "end": 29.837
+    },
+    {
+     "w": "todos",
+     "start": 29.837,
+     "end": 30.199
+    },
+    {
+     "w": "los",
+     "start": 30.199,
+     "end": 30.45
+    },
+    {
+     "w": "días.",
+     "start": 30.45,
+     "end": 30.924
+    }
+   ]
+  },
+  {
+   "start": 31.604,
+   "end": 33.89,
+   "text": "Contando los días para el próximo verano.",
+   "scene": "camas",
+   "words": [
+    {
+     "w": "Contando",
+     "start": 31.604,
+     "end": 32.061
+    },
+    {
+     "w": "los",
+     "start": 32.061,
+     "end": 32.278
+    },
+    {
+     "w": "días",
+     "start": 32.278,
+     "end": 32.542
+    },
+    {
+     "w": "para",
+     "start": 32.542,
+     "end": 32.807
+    },
+    {
+     "w": "el",
+     "start": 32.807,
+     "end": 32.976
+    },
+    {
+     "w": "próximo",
+     "start": 32.976,
+     "end": 33.385
+    },
+    {
+     "w": "verano.",
+     "start": 33.385,
+     "end": 33.89
+    }
+   ]
+  },
+  {
+   "start": 34.57,
+   "end": 37.136,
+   "text": "Y cuando por fin volvió… él la estaba esperando.",
+   "scene": "aeropuerto:abrazo",
+   "words": [
+    {
+     "w": "Y",
+     "start": 34.57,
+     "end": 34.682
+    },
+    {
+     "w": "cuando",
+     "start": 34.682,
+     "end": 35.017
+    },
+    {
+     "w": "por",
+     "start": 35.017,
+     "end": 35.217
+    },
+    {
+     "w": "fin",
+     "start": 35.217,
+     "end": 35.418
+    },
+    {
+     "w": "volvió…",
+     "start": 35.418,
+     "end": 35.887
+    },
+    {
+     "w": "él",
+     "start": 35.887,
+     "end": 36.043
+    },
+    {
+     "w": "la",
+     "start": 36.043,
+     "end": 36.199
+    },
+    {
+     "w": "estaba",
+     "start": 36.199,
+     "end": 36.534
+    },
+    {
+     "w": "esperando.",
+     "start": 36.534,
+     "end": 37.136
+    }
+   ]
+  },
+  {
+   "start": 37.816,
+   "end": 40.953,
+   "text": "Esta vez no fue el último día. Fue el primero de todos.",
+   "scene": "playa:boda",
+   "words": [
+    {
+     "w": "Esta",
+     "start": 37.816,
+     "end": 38.078
+    },
+    {
+     "w": "vez",
+     "start": 38.078,
+     "end": 38.292
+    },
+    {
+     "w": "no",
+     "start": 38.292,
+     "end": 38.458
+    },
+    {
+     "w": "fue",
+     "start": 38.458,
+     "end": 38.672
+    },
+    {
+     "w": "el",
+     "start": 38.672,
+     "end": 38.838
+    },
+    {
+     "w": "último",
+     "start": 38.838,
+     "end": 39.195
+    },
+    {
+     "w": "día.",
+     "start": 39.195,
+     "end": 39.551
+    },
+    {
+     "w": "Fue",
+     "start": 39.551,
+     "end": 39.765
+    },
+    {
+     "w": "el",
+     "start": 39.765,
+     "end": 39.931
+    },
+    {
+     "w": "primero",
+     "start": 39.931,
+     "end": 40.335
+    },
+    {
+     "w": "de",
+     "start": 40.335,
+     "end": 40.501
+    },
+    {
+     "w": "todos.",
+     "start": 40.501,
+     "end": 40.953
+    }
+   ]
+  },
+  {
+   "start": 41.633,
+   "end": 43.989,
+   "text": "¿A quién te hubiera gustado conocer antes?",
+   "scene": "playa:atardecer:2",
+   "words": [
+    {
+     "w": "¿A",
+     "start": 41.633,
+     "end": 41.757
+    },
+    {
+     "w": "quién",
+     "start": 41.757,
+     "end": 42.079
+    },
+    {
+     "w": "te",
+     "start": 42.079,
+     "end": 42.253
+    },
+    {
+     "w": "hubiera",
+     "start": 42.253,
+     "end": 42.675
+    },
+    {
+     "w": "gustado",
+     "start": 42.675,
+     "end": 43.096
+    },
+    {
+     "w": "conocer",
+     "start": 43.096,
+     "end": 43.518
+    },
+    {
+     "w": "antes?",
+     "start": 43.518,
+     "end": 43.989
+    }
+   ]
+  }
+ ],
+ "total": 45.889,
+ "audio": "historia/audio-historia-si-antes-te-hubiera-conocido.wav",
+ "song": {
+  "title": "Si Antes Te Hubiera Conocido",
+  "artists": "Karol G",
+  "cardLine": 1
+ },
+ "flash": [
+  "aeropuerto:abrazo"
+ ],
+ "estilo": "tropical",
+ "cast": {
+  "him": {
+   "hair": "m2",
+   "skin": "#b8805a",
+   "hairC": "#140e0a",
+   "coat": "#f4f1ea",
+   "shirt": "#3fb5c5",
+   "pants": "#2a3a5a"
+  },
+  "her": {
+   "hair": "f",
+   "skin": "#e8b48c",
+   "hairC": "#2a8a9a",
+   "coat": "#ff5a7a",
+   "pants": "#3a2a3a",
+   "long": true
+  }
+ }
+}
