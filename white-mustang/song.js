@@ -43,8 +43,8 @@ const parts = SEGS.map((s, i) => {
   return `[0:a]atrim=${s.a}:${s.b},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.012,afade=t=out:st=${(d - 0.03).toFixed(3)}:d=0.03,adelay=${Math.round(s.t * 1000)}:all=1[p${i}]`;
 });
 const fc = parts.join(';') + ';' + SEGS.map((_, i) => `[p${i}]`).join('') +
-  `amix=inputs=${SEGS.length}:normalize=0:duration=longest,apad=whole_dur=${DURATION},atrim=0:${DURATION},` +
-  'highpass=f=70,loudnorm=I=-15:TP=-1.5:LRA=9,aresample=48000[out]';
+  `amix=inputs=${SEGS.length}:normalize=0:duration=longest,highpass=f=70,loudnorm=I=-15:TP=-1.5:LRA=9,aresample=48000,` +
+  `apad=whole_dur=${DURATION},atrim=0:${DURATION}[out]`; // pad AFTER loudnorm (it drops trailing silence)
 const wav = path.join(OUT, 'music.wav');
 execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', SRC, '-filter_complex', fc, '-map', '[out]', '-ac', '2', '-ar', '48000', '-c:a', 'pcm_s16le', wav]);
 
