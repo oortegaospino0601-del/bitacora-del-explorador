@@ -1,0 +1,30 @@
+{
+  "slug": "historia-khe",
+  "hook": "SE FUE UN MARTES…\nY ÉL SIGUE SIN\nENTENDER QUÉ PASÓ.",
+  "song": {"title": "Khé?", "artists": "Rauw Alejandro, Romeo Santos", "cardLine": 1},
+  "estilo": "duotono",
+  "cast": {
+    "him": {"hair": "curly", "skin": "#d9a37e", "hairC": "#d9b45a", "coat": "#1d1d2a", "shirt": "#f1f1f1"},
+    "her": {"hair": "f", "skin": "#e8b48c", "hairC": "#2a1410", "coat": "#c22a6a", "long": true}
+  },
+  "flash": ["galeria:scroll"],
+  "speed": 1.0,
+  "tail": 0.4,
+  "minScene": 2.8,
+  "music": {"bpm": 126, "prog": "oscura", "style": "bachata", "drumsFromLine": 1, "dropAtLine": 9, "backAtLine": 11, "gain": 0.3},
+  "lines": [
+    {"scene": "ventana-hook", "rain": 0.5, "text": "Ella se fue un martes cualquiera… y él todavía no entiende qué pasó."},
+    {"scene": "barrio:juntos:tarde", "rain": 0.0, "text": "Esta es la historia de Khé, de Rauw Alejandro y Romeo Santos.", "tts": "Esta es la historia de Qué, de Rau Alejandro y Romeo Santos."},
+    {"scene": "fiesta:baile", "rain": 0.0, "text": "Se conocieron bailando bachata en una fiesta del barrio."},
+    {"scene": "cafe", "rain": 0.0, "text": "Dos años de cafés, de bailes, de planes."},
+    {"scene": "camas", "rain": 0.0, "text": "Pero últimamente, cada uno se dormía mirando su celular."},
+    {"scene": "caja", "rain": 0.1, "text": "Un martes volvió a casa… y solo encontró una caja con sus regalos."},
+    {"scene": "ojo", "rain": 0.0, "text": "Ni una nota. Ni un mensaje. Nada."},
+    {"scene": "movil-espera", "rain": 0.1, "text": "Le escribió cada día. Nunca contestó."},
+    {"scene": "lluvia", "rain": 1.0, "text": "Preguntó a sus amigas, a su mamá… nadie le decía nada."},
+    {"scene": "galeria:scroll", "rain": 0.0, "text": "Hasta que, mirando sus fotos, por fin lo vio: en todas, él estaba pegado al celular."},
+    {"scene": "cara", "rain": 0.3, "text": "Ella se había ido mucho antes de irse."},
+    {"scene": "ventana-amanecer", "rain": 0.0, "text": "Ahora, cuando alguien le habla, guarda el celular."},
+    {"scene": "amanecer", "rain": 0.0, "text": "Porque a veces, el qué pasó se responde solo. ¿Te ha pasado?"}
+  ]
+}

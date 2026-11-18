@@ -108,6 +108,16 @@ def main(out, dur, cfg):
                 if s % 2 == 1:
                     place(drums, hat, tt, 0.2)
                 continue
+            if style == "bachata":
+                if s in (0, 8):
+                    place(drums, kick, tt, 0.55)
+                if s in (2, 6, 10, 14) or s in (3, 11):
+                    m = int(0.12 * SR)
+                    f0 = 420 if s % 4 == 2 else 330
+                    bongo = (np.sin(2 * np.pi * f0 * np.arange(m) / SR) * env(m, 0.001, 0.035)).astype(np.float32)
+                    place(drums, bongo, tt, 0.45 if s in (6, 14) else 0.3)
+                place(drums, hat, tt, 0.12 if s % 2 else 0.2)  # güira
+                continue
             if style == "balada":
                 if s in (0, 8):
                     place(drums, kick, tt, 0.6)

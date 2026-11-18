@@ -3,6 +3,7 @@ import t_historia_adan_y_eva from './timeline-historia-adan-y-eva.json';
 import t_historia_dtmf from './timeline-historia-dtmf.json';
 import t_historia_ella_baila_sola from './timeline-historia-ella-baila-sola.json';
 import t_historia_fuentes_de_ortiz from './timeline-historia-fuentes-de-ortiz.json';
+import t_historia_khe from './timeline-historia-khe.json';
 import t_historia_mamichula from './timeline-historia-mamichula.json';
 import t_historia_me_rehuso from './timeline-historia-me-rehuso.json';
 import t_historia_rara_vez from './timeline-historia-rara-vez.json';
@@ -16,6 +17,7 @@ export const ALL = {
   'historia-dtmf': t_historia_dtmf,
   'historia-ella-baila-sola': t_historia_ella_baila_sola,
   'historia-fuentes-de-ortiz': t_historia_fuentes_de_ortiz,
+  'historia-khe': t_historia_khe,
   'historia-mamichula': t_historia_mamichula,
   'historia-me-rehuso': t_historia_me_rehuso,
   'historia-rara-vez': t_historia_rara_vez,

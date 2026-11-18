@@ -23,6 +23,7 @@ export type Estilo = {
   letterbox?: number;
   stamp?: 'pelicula' | 'vhs';
   ruled?: boolean; // hoja de cuaderno
+  tint?: [string, string]; // duotono: degradado aplicado como color sobre la imagen en gris
   font: string;
   hookWeight: number;
   capWeight: number;
@@ -97,6 +98,21 @@ export const ESTILOS: Record<string, Estilo> = {
     shadow: 'none',
     pillBg: 'rgba(241,233,216,0.9)',
     pillBorder: '#1d2a6a',
+  },
+  duotono: {
+    filter: 'grayscale(1) contrast(1.25) sepia(1) hue-rotate(275deg) saturate(2.8) brightness(1.02)',
+    tint: ['#2e5bff', '#1a2acc'],
+    grain: 0.12,
+    font: "'Montserrat', Arial, sans-serif",
+    hookWeight: 900,
+    capWeight: 900,
+    capSize: 78,
+    upper: true,
+    text: '#ffffff',
+    accent: '#7df9ff',
+    shadow: '0 0 18px rgba(255,46,154,0.8), 0 4px 10px rgba(0,0,0,0.9)',
+    pillBg: 'rgba(20,10,40,0.6)',
+    pillBorder: '#7df9ff',
   },
   cuaderno: {
     filter: 'saturate(0.95) brightness(1.06)',

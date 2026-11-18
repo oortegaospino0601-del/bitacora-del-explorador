@@ -1,0 +1,812 @@
+{
+ "slug": "historia-khe",
+ "hook": "SE FUE UN MARTES…\nY ÉL SIGUE SIN\nENTENDER QUÉ PASÓ.",
+ "durations": [
+  4.431,
+  3.983,
+  3.956,
+  3.136,
+  4.1,
+  4.58,
+  2.8,
+  3.081,
+  3.969,
+  5.331,
+  3.007,
+  3.431,
+  5.45
+ ],
+ "lines": [
+  {
+   "start": 0.25,
+   "end": 4.031,
+   "text": "Ella se fue un martes cualquiera… y él todavía no entiende qué pasó.",
+   "scene": "ventana-hook",
+   "words": [
+    {
+     "w": "Ella",
+     "start": 0.25,
+     "end": 0.512
+    },
+    {
+     "w": "se",
+     "start": 0.512,
+     "end": 0.678
+    },
+    {
+     "w": "fue",
+     "start": 0.678,
+     "end": 0.892
+    },
+    {
+     "w": "un",
+     "start": 0.892,
+     "end": 1.059
+    },
+    {
+     "w": "martes",
+     "start": 1.059,
+     "end": 1.415
+    },
+    {
+     "w": "cualquiera…",
+     "start": 1.415,
+     "end": 2.105
+    },
+    {
+     "w": "y",
+     "start": 2.105,
+     "end": 2.224
+    },
+    {
+     "w": "él",
+     "start": 2.224,
+     "end": 2.39
+    },
+    {
+     "w": "todavía",
+     "start": 2.39,
+     "end": 2.795
+    },
+    {
+     "w": "no",
+     "start": 2.795,
+     "end": 2.961
+    },
+    {
+     "w": "entiende",
+     "start": 2.961,
+     "end": 3.413
+    },
+    {
+     "w": "qué",
+     "start": 3.413,
+     "end": 3.627
+    },
+    {
+     "w": "pasó.",
+     "start": 3.627,
+     "end": 4.031
+    }
+   ]
+  },
+  {
+   "start": 4.731,
+   "end": 8.014,
+   "text": "Esta es la historia de Khé, de Rauw Alejandro y Romeo Santos.",
+   "scene": "barrio:juntos:tarde",
+   "words": [
+    {
+     "w": "Esta",
+     "start": 4.731,
+     "end": 4.986
+    },
+    {
+     "w": "es",
+     "start": 4.986,
+     "end": 5.148
+    },
+    {
+     "w": "la",
+     "start": 5.148,
+     "end": 5.309
+    },
+    {
+     "w": "historia",
+     "start": 5.309,
+     "end": 5.749
+    },
+    {
+     "w": "de",
+     "start": 5.749,
+     "end": 5.91
+    },
+    {
+     "w": "Khé,",
+     "start": 5.91,
+     "end": 6.211
+    },
+    {
+     "w": "de",
+     "start": 6.211,
+     "end": 6.373
+    },
+    {
+     "w": "Rauw",
+     "start": 6.373,
+     "end": 6.627
+    },
+    {
+     "w": "Alejandro",
+     "start": 6.627,
+     "end": 7.113
+    },
+    {
+     "w": "y",
+     "start": 7.113,
+     "end": 7.228
+    },
+    {
+     "w": "Romeo",
+     "start": 7.228,
+     "end": 7.529
+    },
+    {
+     "w": "Santos.",
+     "start": 7.529,
+     "end": 8.014
+    }
+   ]
+  },
+  {
+   "start": 8.714,
+   "end": 11.97,
+   "text": "Se conocieron bailando bachata en una fiesta del barrio.",
+   "scene": "fiesta:baile",
+   "words": [
+    {
+     "w": "Se",
+     "start": 8.714,
+     "end": 8.894
+    },
+    {
+     "w": "conocieron",
+     "start": 8.894,
+     "end": 9.483
+    },
+    {
+     "w": "bailando",
+     "start": 9.483,
+     "end": 9.97
+    },
+    {
+     "w": "bachata",
+     "start": 9.97,
+     "end": 10.406
+    },
+    {
+     "w": "en",
+     "start": 10.406,
+     "end": 10.586
+    },
+    {
+     "w": "una",
+     "start": 10.586,
+     "end": 10.816
+    },
+    {
+     "w": "fiesta",
+     "start": 10.816,
+     "end": 11.201
+    },
+    {
+     "w": "del",
+     "start": 11.201,
+     "end": 11.432
+    },
+    {
+     "w": "barrio.",
+     "start": 11.432,
+     "end": 11.97
+    }
+   ]
+  },
+  {
+   "start": 12.67,
+   "end": 15.106,
+   "text": "Dos años de cafés, de bailes, de planes.",
+   "scene": "cafe",
+   "words": [
+    {
+     "w": "Dos",
+     "start": 12.67,
+     "end": 12.894
+    },
+    {
+     "w": "años",
+     "start": 12.894,
+     "end": 13.167
+    },
+    {
+     "w": "de",
+     "start": 13.167,
+     "end": 13.341
+    },
+    {
+     "w": "cafés,",
+     "start": 13.341,
+     "end": 13.764
+    },
+    {
+     "w": "de",
+     "start": 13.764,
+     "end": 13.938
+    },
+    {
+     "w": "bailes,",
+     "start": 13.938,
+     "end": 14.41
+    },
+    {
+     "w": "de",
+     "start": 14.41,
+     "end": 14.584
+    },
+    {
+     "w": "planes.",
+     "start": 14.584,
+     "end": 15.106
+    }
+   ]
+  },
+  {
+   "start": 15.806,
+   "end": 19.205,
+   "text": "Pero últimamente, cada uno se dormía mirando su celular.",
+   "scene": "camas",
+   "words": [
+    {
+     "w": "Pero",
+     "start": 15.806,
+     "end": 16.096
+    },
+    {
+     "w": "últimamente,",
+     "start": 16.096,
+     "end": 16.86
+    },
+    {
+     "w": "cada",
+     "start": 16.86,
+     "end": 17.15
+    },
+    {
+     "w": "uno",
+     "start": 17.15,
+     "end": 17.387
+    },
+    {
+     "w": "se",
+     "start": 17.387,
+     "end": 17.571
+    },
+    {
+     "w": "dormía",
+     "start": 17.571,
+     "end": 17.967
+    },
+    {
+     "w": "mirando",
+     "start": 17.967,
+     "end": 18.415
+    },
+    {
+     "w": "su",
+     "start": 18.415,
+     "end": 18.599
+    },
+    {
+     "w": "celular.",
+     "start": 18.599,
+     "end": 19.205
+    }
+   ]
+  },
+  {
+   "start": 19.905,
+   "end": 23.786,
+   "text": "Un martes volvió a casa… y solo encontró una caja con sus regalos.",
+   "scene": "caja",
+   "words": [
+    {
+     "w": "Un",
+     "start": 19.905,
+     "end": 20.081
+    },
+    {
+     "w": "martes",
+     "start": 20.081,
+     "end": 20.456
+    },
+    {
+     "w": "volvió",
+     "start": 20.456,
+     "end": 20.832
+    },
+    {
+     "w": "a",
+     "start": 20.832,
+     "end": 20.957
+    },
+    {
+     "w": "casa…",
+     "start": 20.957,
+     "end": 21.382
+    },
+    {
+     "w": "y",
+     "start": 21.382,
+     "end": 21.508
+    },
+    {
+     "w": "solo",
+     "start": 21.508,
+     "end": 21.783
+    },
+    {
+     "w": "encontró",
+     "start": 21.783,
+     "end": 22.259
+    },
+    {
+     "w": "una",
+     "start": 22.259,
+     "end": 22.484
+    },
+    {
+     "w": "caja",
+     "start": 22.484,
+     "end": 22.759
+    },
+    {
+     "w": "con",
+     "start": 22.759,
+     "end": 22.985
+    },
+    {
+     "w": "sus",
+     "start": 22.985,
+     "end": 23.21
+    },
+    {
+     "w": "regalos.",
+     "start": 23.21,
+     "end": 23.786
+    }
+   ]
+  },
+  {
+   "start": 24.486,
+   "end": 26.492,
+   "text": "Ni una nota. Ni un mensaje. Nada.",
+   "scene": "ojo",
+   "words": [
+    {
+     "w": "Ni",
+     "start": 24.486,
+     "end": 24.647
+    },
+    {
+     "w": "una",
+     "start": 24.647,
+     "end": 24.855
+    },
+    {
+     "w": "nota.",
+     "start": 24.855,
+     "end": 25.247
+    },
+    {
+     "w": "Ni",
+     "start": 25.247,
+     "end": 25.408
+    },
+    {
+     "w": "un",
+     "start": 25.408,
+     "end": 25.57
+    },
+    {
+     "w": "mensaje.",
+     "start": 25.57,
+     "end": 26.1
+    },
+    {
+     "w": "Nada.",
+     "start": 26.1,
+     "end": 26.492
+    }
+   ]
+  },
+  {
+   "start": 27.286,
+   "end": 29.667,
+   "text": "Le escribió cada día. Nunca contestó.",
+   "scene": "movil-espera",
+   "words": [
+    {
+     "w": "Le",
+     "start": 27.286,
+     "end": 27.471
+    },
+    {
+     "w": "escribió",
+     "start": 27.471,
+     "end": 27.973
+    },
+    {
+     "w": "cada",
+     "start": 27.973,
+     "end": 28.264
+    },
+    {
+     "w": "día.",
+     "start": 28.264,
+     "end": 28.661
+    },
+    {
+     "w": "Nunca",
+     "start": 28.661,
+     "end": 29.005
+    },
+    {
+     "w": "contestó.",
+     "start": 29.005,
+     "end": 29.667
+    }
+   ]
+  },
+  {
+   "start": 30.367,
+   "end": 33.636,
+   "text": "Preguntó a sus amigas, a su mamá… nadie le decía nada.",
+   "scene": "lluvia",
+   "words": [
+    {
+     "w": "Preguntó",
+     "start": 30.367,
+     "end": 30.841
+    },
+    {
+     "w": "a",
+     "start": 30.841,
+     "end": 30.965
+    },
+    {
+     "w": "sus",
+     "start": 30.965,
+     "end": 31.19
+    },
+    {
+     "w": "amigas,",
+     "start": 31.19,
+     "end": 31.664
+    },
+    {
+     "w": "a",
+     "start": 31.664,
+     "end": 31.789
+    },
+    {
+     "w": "su",
+     "start": 31.789,
+     "end": 31.964
+    },
+    {
+     "w": "mamá…",
+     "start": 31.964,
+     "end": 32.388
+    },
+    {
+     "w": "nadie",
+     "start": 32.388,
+     "end": 32.712
+    },
+    {
+     "w": "le",
+     "start": 32.712,
+     "end": 32.887
+    },
+    {
+     "w": "decía",
+     "start": 32.887,
+     "end": 33.212
+    },
+    {
+     "w": "nada.",
+     "start": 33.212,
+     "end": 33.636
+    }
+   ]
+  },
+  {
+   "start": 34.336,
+   "end": 38.967,
+   "text": "Hasta que, mirando sus fotos, por fin lo vio: en todas, él estaba pegado al celular.",
+   "scene": "galeria:scroll",
+   "words": [
+    {
+     "w": "Hasta",
+     "start": 34.336,
+     "end": 34.64
+    },
+    {
+     "w": "que,",
+     "start": 34.64,
+     "end": 34.944
+    },
+    {
+     "w": "mirando",
+     "start": 34.944,
+     "end": 35.342
+    },
+    {
+     "w": "sus",
+     "start": 35.342,
+     "end": 35.552
+    },
+    {
+     "w": "fotos,",
+     "start": 35.552,
+     "end": 35.95
+    },
+    {
+     "w": "por",
+     "start": 35.95,
+     "end": 36.16
+    },
+    {
+     "w": "fin",
+     "start": 36.16,
+     "end": 36.371
+    },
+    {
+     "w": "lo",
+     "start": 36.371,
+     "end": 36.534
+    },
+    {
+     "w": "vio:",
+     "start": 36.534,
+     "end": 36.839
+    },
+    {
+     "w": "en",
+     "start": 36.839,
+     "end": 37.002
+    },
+    {
+     "w": "todas,",
+     "start": 37.002,
+     "end": 37.4
+    },
+    {
+     "w": "él",
+     "start": 37.4,
+     "end": 37.564
+    },
+    {
+     "w": "estaba",
+     "start": 37.564,
+     "end": 37.914
+    },
+    {
+     "w": "pegado",
+     "start": 37.914,
+     "end": 38.265
+    },
+    {
+     "w": "al",
+     "start": 38.265,
+     "end": 38.429
+    },
+    {
+     "w": "celular.",
+     "start": 38.429,
+     "end": 38.967
+    }
+   ]
+  },
+  {
+   "start": 39.667,
+   "end": 41.974,
+   "text": "Ella se había ido mucho antes de irse.",
+   "scene": "cara",
+   "words": [
+    {
+     "w": "Ella",
+     "start": 39.667,
+     "end": 39.949
+    },
+    {
+     "w": "se",
+     "start": 39.949,
+     "end": 40.128
+    },
+    {
+     "w": "había",
+     "start": 40.128,
+     "end": 40.462
+    },
+    {
+     "w": "ido",
+     "start": 40.462,
+     "end": 40.692
+    },
+    {
+     "w": "mucho",
+     "start": 40.692,
+     "end": 41.026
+    },
+    {
+     "w": "antes",
+     "start": 41.026,
+     "end": 41.359
+    },
+    {
+     "w": "de",
+     "start": 41.359,
+     "end": 41.538
+    },
+    {
+     "w": "irse.",
+     "start": 41.538,
+     "end": 41.974
+    }
+   ]
+  },
+  {
+   "start": 42.674,
+   "end": 45.405,
+   "text": "Ahora, cuando alguien le habla, guarda el celular.",
+   "scene": "ventana-amanecer",
+   "words": [
+    {
+     "w": "Ahora,",
+     "start": 42.674,
+     "end": 43.067
+    },
+    {
+     "w": "cuando",
+     "start": 43.067,
+     "end": 43.415
+    },
+    {
+     "w": "alguien",
+     "start": 43.415,
+     "end": 43.808
+    },
+    {
+     "w": "le",
+     "start": 43.808,
+     "end": 43.97
+    },
+    {
+     "w": "habla,",
+     "start": 43.97,
+     "end": 44.364
+    },
+    {
+     "w": "guarda",
+     "start": 44.364,
+     "end": 44.711
+    },
+    {
+     "w": "el",
+     "start": 44.711,
+     "end": 44.873
+    },
+    {
+     "w": "celular.",
+     "start": 44.873,
+     "end": 45.405
+    }
+   ]
+  },
+  {
+   "start": 46.105,
+   "end": 49.355,
+   "text": "Porque a veces, el qué pasó se responde solo. ¿Te ha pasado?",
+   "scene": "amanecer",
+   "words": [
+    {
+     "w": "Porque",
+     "start": 46.105,
+     "end": 46.448
+    },
+    {
+     "w": "a",
+     "start": 46.448,
+     "end": 46.563
+    },
+    {
+     "w": "veces,",
+     "start": 46.563,
+     "end": 46.952
+    },
+    {
+     "w": "el",
+     "start": 46.952,
+     "end": 47.112
+    },
+    {
+     "w": "qué",
+     "start": 47.112,
+     "end": 47.318
+    },
+    {
+     "w": "pasó",
+     "start": 47.318,
+     "end": 47.57
+    },
+    {
+     "w": "se",
+     "start": 47.57,
+     "end": 47.73
+    },
+    {
+     "w": "responde",
+     "start": 47.73,
+     "end": 48.165
+    },
+    {
+     "w": "solo.",
+     "start": 48.165,
+     "end": 48.554
+    },
+    {
+     "w": "¿Te",
+     "start": 48.554,
+     "end": 48.714
+    },
+    {
+     "w": "ha",
+     "start": 48.714,
+     "end": 48.874
+    },
+    {
+     "w": "pasado?",
+     "start": 48.874,
+     "end": 49.355
+    }
+   ]
+  }
+ ],
+ "total": 51.255,
+ "audio": "historia/audio-historia-khe.wav",
+ "song": {
+  "title": "Khé?",
+  "artists": "Rauw Alejandro, Romeo Santos",
+  "cardLine": 1
+ },
+ "flash": [
+  "galeria:scroll"
+ ],
+ "estilo": "duotono",
+ "cast": {
+  "him": {
+   "hair": "curly",
+   "skin": "#d9a37e",
+   "hairC": "#d9b45a",
+   "coat": "#1d1d2a",
+   "shirt": "#f1f1f1"
+  },
+  "her": {
+   "hair": "f",
+   "skin": "#e8b48c",
+   "hairC": "#2a1410",
+   "coat": "#c22a6a",
+   "long": true
+  }
+ }
+}
