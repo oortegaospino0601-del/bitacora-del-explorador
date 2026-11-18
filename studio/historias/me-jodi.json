@@ -1,0 +1,102 @@
+{
+  "slug": "historia-me-jodi",
+  "hook": "ESTA CANCIÓN DE ARCÁNGEL…\nESCONDE UN SECRETO\nDE 1974.",
+  "song": {
+    "title": "Me Jodí…",
+    "artists": "Tainy, Arcángel",
+    "cardLine": 1
+  },
+  "estilo": "archivo",
+  "flash": [
+    "doc:break",
+    "doc:pads"
+  ],
+  "speed": 1.06,
+  "tail": 0.3,
+  "minScene": 2.8,
+  "music": {
+    "bpm": 92,
+    "prog": "oscura",
+    "style": "boombap",
+    "drumsFromLine": 3,
+    "dropAtLine": 9,
+    "backAtLine": 10,
+    "gain": 0.32
+  },
+  "lines": [
+    {
+      "scene": "doc:vinilo",
+      "rain": 0.0,
+      "text": "Esta canción de Arcángel esconde un secreto de hace casi cincuenta años."
+    },
+    {
+      "scene": "doc:cajas",
+      "rain": 0.0,
+      "text": "Esta es la historia real de Me Jodí, de Tainy y Arcángel.",
+      "tts": "Esta es la historia real de Me Jodí, de Téini y Arcángel."
+    },
+    {
+      "scene": "doc:escenario",
+      "rain": 0.0,
+      "text": "Washington, 1974. The Soul Searchers graban Ashley's Roachclip.",
+      "tts": "Washington, mil novecientos setenta y cuatro. The Soul Sérchers graban Áshlis Róuchclip."
+    },
+    {
+      "scene": "doc:lider",
+      "rain": 0.0,
+      "text": "La lideraba Chuck Brown, el padrino del go-go.",
+      "tts": "La lideraba Chak Braun, el padrino del gogó."
+    },
+    {
+      "scene": "doc:break",
+      "rain": 0.0,
+      "text": "En el minuto tres y medio, el baterista toca un break de veinte segundos.",
+      "tts": "En el minuto tres y medio, el baterista toca un breik de veinte segundos."
+    },
+    {
+      "scene": "doc:copias",
+      "rain": 0.0,
+      "text": "Ese pedacito se volvió de los más sampleados de la historia."
+    },
+    {
+      "scene": "doc:clasicos",
+      "rain": 0.0,
+      "text": "Lo usaron Eric B. y Rakim, Run-DMC… y miles más.",
+      "tts": "Lo usaron Érik Bi y Rákim, Ran Di Em Si… y miles más."
+    },
+    {
+      "scene": "doc:mapa",
+      "rain": 0.0,
+      "text": "2008. Arcángel lanza Química Sustancia con Don Omar.",
+      "tts": "Dos mil ocho. Arcángel lanza Química Sustancia con Don Omar."
+    },
+    {
+      "scene": "doc:quimica",
+      "rain": 0.0,
+      "text": "Un clásico de El Fenómeno."
+    },
+    {
+      "scene": "doc:estudio",
+      "rain": 0.0,
+      "text": "Quince años después, Tainy prepara su primer disco solista: DATA.",
+      "tts": "Quince años después, Téini prepara su primer disco solista: Data."
+    },
+    {
+      "scene": "doc:pads",
+      "rain": 0.0,
+      "text": "Según cuentan, le pidió a Arcángel esa misma vibra… y debajo puso la batería del 74.",
+      "tts": "Según cuentan, le pidió a Arcángel esa misma vibra… y debajo puso la batería del setenta y cuatro."
+    },
+    {
+      "scene": "doc:lista",
+      "rain": 0.0,
+      "text": "Así nació Me Jodí, en 2023.",
+      "tts": "Así nació Me Jodí, en el dos mil veintitrés."
+    },
+    {
+      "scene": "doc:linea",
+      "rain": 0.0,
+      "text": "Casi cincuenta años después, esa batería sigue sonando. ¿La notaste?"
+    }
+  ]
+}

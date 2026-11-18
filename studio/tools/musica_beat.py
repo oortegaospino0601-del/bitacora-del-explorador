@@ -108,6 +108,17 @@ def main(out, dur, cfg):
                 if s % 2 == 1:
                     place(drums, hat, tt, 0.2)
                 continue
+            if style == "boombap":
+                swing = step * 0.18 if s % 2 else 0
+                if s in (0, 7, 10):
+                    place(drums, kick, tt, 0.95)
+                if s in (4, 12):
+                    place(drums, clap, tt, 0.7)
+                if s % 2 == 0:
+                    place(drums, hat, tt + swing, 0.26)
+                else:
+                    place(drums, hat, tt + swing, 0.12)
+                continue
             if style == "bachata":
                 if s in (0, 8):
                     place(drums, kick, tt, 0.55)

@@ -8,6 +8,8 @@ import '@fontsource/vt323/latin-400.css';
 import '@fontsource/bangers/latin-400.css';
 import '@fontsource/nunito/latin-800.css';
 import '@fontsource/comic-neue/latin-700.css';
+import '@fontsource/ibm-plex-mono/latin-500.css';
+import '@fontsource/ibm-plex-mono/latin-700.css';
 import '@fontsource/nunito/latin-900.css';
 import '@fontsource/barlow-condensed/latin-700.css';
 import '@fontsource/barlow-condensed/latin-800.css';
@@ -98,6 +100,20 @@ export const ESTILOS: Record<string, Estilo> = {
     shadow: 'none',
     pillBg: 'rgba(241,233,216,0.9)',
     pillBorder: '#1d2a6a',
+  },
+  archivo: {
+    filter: 'sepia(0.18) contrast(1.06) brightness(1.02)',
+    grain: 0.22,
+    font: "'IBM Plex Mono', 'Courier New', monospace",
+    hookWeight: 700,
+    capWeight: 700,
+    capSize: 66,
+    upper: true,
+    text: '#f3ead7',
+    accent: '#f2b84b',
+    shadow: '0 3px 14px rgba(0,0,0,0.95)',
+    pillBg: 'rgba(12,10,9,0.75)',
+    pillBorder: '#f2b84b',
   },
   duotono: {
     filter: 'grayscale(1) contrast(1.25) sepia(1) hue-rotate(275deg) saturate(2.8) brightness(1.02)',
