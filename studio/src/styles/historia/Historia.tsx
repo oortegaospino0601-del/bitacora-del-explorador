@@ -7,6 +7,7 @@ import {Amanecer, Atardecer, Cafe, Caja, Cara, ConOtro, Foto, Lluvia, Movil, Ojo
 import {Barrio, Familia, Galeria} from './escenas2';
 import * as E3 from './escenas3';
 import * as E4 from './escenas4';
+import * as E5 from './escenas5';
 import {Capas, ESTILOS, FiltrosSvg} from './estilos';
 import {ALL} from './timelines';
 
@@ -77,7 +78,7 @@ const scene = (spec: string, dur: number): React.ReactNode => {
     case 'familia':
       return <Familia dur={dur} mode={(a || 'cocina') as 'cocina'} />;
     default: {
-      const C = ({...E3, ...E4} as unknown as Record<string, React.FC<{dur: number; a?: string; b?: string}>>)[n];
+      const C = ({...E3, ...E4, ...E5} as unknown as Record<string, React.FC<{dur: number; a?: string; b?: string}>>)[n];
       if (!C) throw new Error(`Escena desconocida: ${spec}`);
       return <C dur={dur} a={a} b={b} />;
     }

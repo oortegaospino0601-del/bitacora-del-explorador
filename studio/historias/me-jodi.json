@@ -1,102 +1,30 @@
 {
   "slug": "historia-me-jodi",
-  "hook": "ESTA CANCIÓN DE ARCÁNGEL…\nESCONDE UN SECRETO\nDE 1974.",
-  "song": {
-    "title": "Me Jodí…",
-    "artists": "Tainy, Arcángel",
-    "cardLine": 1
+  "hook": "SE JURÓ NO VOLVER…\nLE DURÓ\nTRES DÍAS.",
+  "song": {"title": "Me Jodí…", "artists": "Tainy, Arcángel", "cardLine": 1},
+  "estilo": "rojo",
+  "cast": {
+    "him": {"hair": "m2", "skin": "#c98e66", "hairC": "#120c0a", "coat": "#1d1d26", "shirt": "#f1f1f1", "pants": "#141418"},
+    "her": {"hair": "f", "skin": "#e8b48c", "hairC": "#1a0a0a", "coat": "#b0122a", "pants": "#1a0a10", "long": true}
   },
-  "estilo": "archivo",
-  "flash": [
-    "doc:break",
-    "doc:pads"
-  ],
-  "speed": 1.06,
-  "tail": 0.3,
+  "flash": ["notif", "puertaroja"],
+  "speed": 1.04,
+  "tail": 0.35,
   "minScene": 2.8,
-  "music": {
-    "bpm": 92,
-    "prog": "oscura",
-    "style": "boombap",
-    "drumsFromLine": 3,
-    "dropAtLine": 9,
-    "backAtLine": 10,
-    "gain": 0.32
-  },
+  "music": {"bpm": 94, "prog": "oscura", "style": "trap", "transpose": -2, "drumsFromLine": 1, "dropAtLine": 6, "backAtLine": 8, "gain": 0.32},
   "lines": [
-    {
-      "scene": "doc:vinilo",
-      "rain": 0.0,
-      "text": "Esta canción de Arcángel esconde un secreto de hace casi cincuenta años."
-    },
-    {
-      "scene": "doc:cajas",
-      "rain": 0.0,
-      "text": "Esta es la historia real de Me Jodí, de Tainy y Arcángel.",
-      "tts": "Esta es la historia real de Me Jodí, de Téini y Arcángel."
-    },
-    {
-      "scene": "doc:escenario",
-      "rain": 0.0,
-      "text": "Washington, 1974. The Soul Searchers graban Ashley's Roachclip.",
-      "tts": "Washington, mil novecientos setenta y cuatro. The Soul Sérchers graban Áshlis Róuchclip."
-    },
-    {
-      "scene": "doc:lider",
-      "rain": 0.0,
-      "text": "La lideraba Chuck Brown, el padrino del go-go.",
-      "tts": "La lideraba Chak Braun, el padrino del gogó."
-    },
-    {
-      "scene": "doc:break",
-      "rain": 0.0,
-      "text": "En el minuto tres y medio, el baterista toca un break de veinte segundos.",
-      "tts": "En el minuto tres y medio, el baterista toca un breik de veinte segundos."
-    },
-    {
-      "scene": "doc:copias",
-      "rain": 0.0,
-      "text": "Ese pedacito se volvió de los más sampleados de la historia."
-    },
-    {
-      "scene": "doc:clasicos",
-      "rain": 0.0,
-      "text": "Lo usaron Eric B. y Rakim, Run-DMC… y miles más.",
-      "tts": "Lo usaron Érik Bi y Rákim, Ran Di Em Si… y miles más."
-    },
-    {
-      "scene": "doc:mapa",
-      "rain": 0.0,
-      "text": "2008. Arcángel lanza Química Sustancia con Don Omar.",
-      "tts": "Dos mil ocho. Arcángel lanza Química Sustancia con Don Omar."
-    },
-    {
-      "scene": "doc:quimica",
-      "rain": 0.0,
-      "text": "Un clásico de El Fenómeno."
-    },
-    {
-      "scene": "doc:estudio",
-      "rain": 0.0,
-      "text": "Quince años después, Tainy prepara su primer disco solista: DATA.",
-      "tts": "Quince años después, Téini prepara su primer disco solista: Data."
-    },
-    {
-      "scene": "doc:pads",
-      "rain": 0.0,
-      "text": "Según cuentan, le pidió a Arcángel esa misma vibra… y debajo puso la batería del 74.",
-      "tts": "Según cuentan, le pidió a Arcángel esa misma vibra… y debajo puso la batería del setenta y cuatro."
-    },
-    {
-      "scene": "doc:lista",
-      "rain": 0.0,
-      "text": "Así nació Me Jodí, en 2023.",
-      "tts": "Así nació Me Jodí, en el dos mil veintitrés."
-    },
-    {
-      "scene": "doc:linea",
-      "rain": 0.0,
-      "text": "Casi cincuenta años después, esa batería sigue sonando. ¿La notaste?"
-    }
+    {"scene": "contador:hook", "rain": 0.0, "text": "Se juró que no le iba a volver a escribir… le duró tres días."},
+    {"scene": "cuarto", "rain": 0.0, "text": "Esta es la historia de Me Jodí, de Tainy y Arcángel.", "tts": "Esta es la historia de Me Jodí, de Téini y Arcángel."},
+    {"scene": "retrato", "rain": 0.0, "text": "Ella era de esas personas que te desordenan la vida… y aun así te encanta."},
+    {"scene": "grupo", "rain": 0.0, "text": "Sus amigos se lo decían todo el tiempo: esa no te conviene."},
+    {"scene": "borrar", "rain": 0.0, "text": "Así que esta vez, la borró de sus contactos."},
+    {"scene": "contador:sube", "rain": 0.0, "text": "Día uno. Día dos. Día tres. Iba ganando."},
+    {"scene": "notif", "rain": 0.0, "text": "Hasta que un sábado, a las dos de la mañana… llegó un hola."},
+    {"scene": "cara", "rain": 0.0, "text": "Número desconocido. Pero ese número se lo sabía de memoria."},
+    {"scene": "taxi", "rain": 0.3, "text": "Se dijo que solo iba a responder… y terminó pidiendo un taxi."},
+    {"scene": "puertaroja", "rain": 0.0, "text": "Otra vez frente a su puerta. Otra vez el mismo error."},
+    {"scene": "ventana-amanecer", "rain": 0.0, "text": "Y al salir el sol, la misma promesa: es la última vez."},
+    {"scene": "contador:cero", "rain": 0.0, "text": "El letrero, otra vez, en cero."},
+    {"scene": "cuarto", "rain": 0.0, "text": "Ya se jodió. ¿Tú también tienes a alguien a quien siempre vuelves?"}
   ]
 }
