@@ -1,0 +1,781 @@
+{
+ "slug": "historia-tu-con-el",
+ "hook": "LA ESPERÓ UN AÑO…\n¿PERO CÓMO\nVOLVERÍA?",
+ "durations": [
+  4.186,
+  3.575,
+  3.207,
+  3.511,
+  4.378,
+  3.511,
+  3.938,
+  3.736,
+  3.506,
+  3.637,
+  3.862,
+  3.681,
+  5.482
+ ],
+ "lines": [
+  {
+   "start": 0.25,
+   "end": 3.636,
+   "text": "La esperó un año en la terminal… sin imaginar cómo volvería.",
+   "scene": "tcbanca:hook",
+   "words": [
+    {
+     "w": "La",
+     "start": 0.25,
+     "end": 0.418
+    },
+    {
+     "w": "esperó",
+     "start": 0.418,
+     "end": 0.778
+    },
+    {
+     "w": "un",
+     "start": 0.778,
+     "end": 0.946
+    },
+    {
+     "w": "año",
+     "start": 0.946,
+     "end": 1.163
+    },
+    {
+     "w": "en",
+     "start": 1.163,
+     "end": 1.331
+    },
+    {
+     "w": "la",
+     "start": 1.331,
+     "end": 1.499
+    },
+    {
+     "w": "terminal…",
+     "start": 1.499,
+     "end": 2.099
+    },
+    {
+     "w": "sin",
+     "start": 2.099,
+     "end": 2.315
+    },
+    {
+     "w": "imaginar",
+     "start": 2.315,
+     "end": 2.771
+    },
+    {
+     "w": "cómo",
+     "start": 2.771,
+     "end": 3.036
+    },
+    {
+     "w": "volvería.",
+     "start": 3.036,
+     "end": 3.636
+    }
+   ]
+  },
+  {
+   "start": 4.486,
+   "end": 7.211,
+   "text": "Esta es la historia de Tú con él, de Rauw Alejandro.",
+   "scene": "tcpueblo",
+   "words": [
+    {
+     "w": "Esta",
+     "start": 4.486,
+     "end": 4.73
+    },
+    {
+     "w": "es",
+     "start": 4.73,
+     "end": 4.885
+    },
+    {
+     "w": "la",
+     "start": 4.885,
+     "end": 5.04
+    },
+    {
+     "w": "historia",
+     "start": 5.04,
+     "end": 5.461
+    },
+    {
+     "w": "de",
+     "start": 5.461,
+     "end": 5.616
+    },
+    {
+     "w": "Tú",
+     "start": 5.616,
+     "end": 5.771
+    },
+    {
+     "w": "con",
+     "start": 5.771,
+     "end": 5.97
+    },
+    {
+     "w": "él,",
+     "start": 5.97,
+     "end": 6.214
+    },
+    {
+     "w": "de",
+     "start": 6.214,
+     "end": 6.369
+    },
+    {
+     "w": "Rauw",
+     "start": 6.369,
+     "end": 6.613
+    },
+    {
+     "w": "Alejandro.",
+     "start": 6.613,
+     "end": 7.211
+    }
+   ]
+  },
+  {
+   "start": 8.061,
+   "end": 10.417,
+   "text": "Ella llegó al pueblo un verano, de paso.",
+   "scene": "tcbus:llega",
+   "words": [
+    {
+     "w": "Ella",
+     "start": 8.061,
+     "end": 8.331
+    },
+    {
+     "w": "llegó",
+     "start": 8.331,
+     "end": 8.65
+    },
+    {
+     "w": "al",
+     "start": 8.65,
+     "end": 8.822
+    },
+    {
+     "w": "pueblo",
+     "start": 8.822,
+     "end": 9.19
+    },
+    {
+     "w": "un",
+     "start": 9.19,
+     "end": 9.362
+    },
+    {
+     "w": "verano,",
+     "start": 9.362,
+     "end": 9.828
+    },
+    {
+     "w": "de",
+     "start": 9.828,
+     "end": 10.0
+    },
+    {
+     "w": "paso.",
+     "start": 10.0,
+     "end": 10.417
+    }
+   ]
+  },
+  {
+   "start": 11.267,
+   "end": 13.928,
+   "text": "Él vendía café en la terminal, frente al mar.",
+   "scene": "tckiosko",
+   "words": [
+    {
+     "w": "Él",
+     "start": 11.267,
+     "end": 11.441
+    },
+    {
+     "w": "vendía",
+     "start": 11.441,
+     "end": 11.815
+    },
+    {
+     "w": "café",
+     "start": 11.815,
+     "end": 12.088
+    },
+    {
+     "w": "en",
+     "start": 12.088,
+     "end": 12.262
+    },
+    {
+     "w": "la",
+     "start": 12.262,
+     "end": 12.436
+    },
+    {
+     "w": "terminal,",
+     "start": 12.436,
+     "end": 13.008
+    },
+    {
+     "w": "frente",
+     "start": 13.008,
+     "end": 13.381
+    },
+    {
+     "w": "al",
+     "start": 13.381,
+     "end": 13.555
+    },
+    {
+     "w": "mar.",
+     "start": 13.555,
+     "end": 13.928
+    }
+   ]
+  },
+  {
+   "start": 14.778,
+   "end": 18.306,
+   "text": "Bastó una semana: el muelle, los atardeceres, las promesas.",
+   "scene": "tcmuelle:juntos",
+   "words": [
+    {
+     "w": "Bastó",
+     "start": 14.778,
+     "end": 15.108
+    },
+    {
+     "w": "una",
+     "start": 15.108,
+     "end": 15.337
+    },
+    {
+     "w": "semana:",
+     "start": 15.337,
+     "end": 15.819
+    },
+    {
+     "w": "el",
+     "start": 15.819,
+     "end": 15.997
+    },
+    {
+     "w": "muelle,",
+     "start": 15.997,
+     "end": 16.479
+    },
+    {
+     "w": "los",
+     "start": 16.479,
+     "end": 16.707
+    },
+    {
+     "w": "atardeceres,",
+     "start": 16.707,
+     "end": 17.443
+    },
+    {
+     "w": "las",
+     "start": 17.443,
+     "end": 17.672
+    },
+    {
+     "w": "promesas.",
+     "start": 17.672,
+     "end": 18.306
+    }
+   ]
+  },
+  {
+   "start": 19.156,
+   "end": 21.817,
+   "text": "Antes de irse, juró que volvería en invierno.",
+   "scene": "tcbus:adios",
+   "words": [
+    {
+     "w": "Antes",
+     "start": 19.156,
+     "end": 19.482
+    },
+    {
+     "w": "de",
+     "start": 19.482,
+     "end": 19.658
+    },
+    {
+     "w": "irse,",
+     "start": 19.658,
+     "end": 20.035
+    },
+    {
+     "w": "juró",
+     "start": 20.035,
+     "end": 20.311
+    },
+    {
+     "w": "que",
+     "start": 20.311,
+     "end": 20.537
+    },
+    {
+     "w": "volvería",
+     "start": 20.537,
+     "end": 21.014
+    },
+    {
+     "w": "en",
+     "start": 21.014,
+     "end": 21.19
+    },
+    {
+     "w": "invierno.",
+     "start": 21.19,
+     "end": 21.817
+    }
+   ]
+  },
+  {
+   "start": 22.667,
+   "end": 25.755,
+   "text": "Cada viernes miraba bajar a todos del último bus.",
+   "scene": "tccalendario",
+   "words": [
+    {
+     "w": "Cada",
+     "start": 22.667,
+     "end": 22.968
+    },
+    {
+     "w": "viernes",
+     "start": 22.968,
+     "end": 23.432
+    },
+    {
+     "w": "miraba",
+     "start": 23.432,
+     "end": 23.842
+    },
+    {
+     "w": "bajar",
+     "start": 23.842,
+     "end": 24.198
+    },
+    {
+     "w": "a",
+     "start": 24.198,
+     "end": 24.334
+    },
+    {
+     "w": "todos",
+     "start": 24.334,
+     "end": 24.69
+    },
+    {
+     "w": "del",
+     "start": 24.69,
+     "end": 24.936
+    },
+    {
+     "w": "último",
+     "start": 24.936,
+     "end": 25.346
+    },
+    {
+     "w": "bus.",
+     "start": 25.346,
+     "end": 25.755
+    }
+   ]
+  },
+  {
+   "start": 26.605,
+   "end": 29.492,
+   "text": "Los mensajes se acortaron. Después, solo un visto.",
+   "scene": "tcmovil",
+   "words": [
+    {
+     "w": "Los",
+     "start": 26.605,
+     "end": 26.822
+    },
+    {
+     "w": "mensajes",
+     "start": 26.822,
+     "end": 27.279
+    },
+    {
+     "w": "se",
+     "start": 27.279,
+     "end": 27.447
+    },
+    {
+     "w": "acortaron.",
+     "start": 27.447,
+     "end": 28.097
+    },
+    {
+     "w": "Después,",
+     "start": 28.097,
+     "end": 28.602
+    },
+    {
+     "w": "solo",
+     "start": 28.602,
+     "end": 28.866
+    },
+    {
+     "w": "un",
+     "start": 28.866,
+     "end": 29.035
+    },
+    {
+     "w": "visto.",
+     "start": 29.035,
+     "end": 29.492
+    }
+   ]
+  },
+  {
+   "start": 30.342,
+   "end": 32.998,
+   "text": "Igual la esperó. Un invierno. Una primavera.",
+   "scene": "tcestaciones",
+   "words": [
+    {
+     "w": "Igual",
+     "start": 30.342,
+     "end": 30.658
+    },
+    {
+     "w": "la",
+     "start": 30.658,
+     "end": 30.829
+    },
+    {
+     "w": "esperó.",
+     "start": 30.829,
+     "end": 31.341
+    },
+    {
+     "w": "Un",
+     "start": 31.341,
+     "end": 31.511
+    },
+    {
+     "w": "invierno.",
+     "start": 31.511,
+     "end": 32.121
+    },
+    {
+     "w": "Una",
+     "start": 32.121,
+     "end": 32.34
+    },
+    {
+     "w": "primavera.",
+     "start": 32.34,
+     "end": 32.998
+    }
+   ]
+  },
+  {
+   "start": 33.848,
+   "end": 36.635,
+   "text": "Una tarde, ella bajó del bus… de la mano de otro.",
+   "scene": "tcbus:otro",
+   "words": [
+    {
+     "w": "Una",
+     "start": 33.848,
+     "end": 34.055
+    },
+    {
+     "w": "tarde,",
+     "start": 34.055,
+     "end": 34.447
+    },
+    {
+     "w": "ella",
+     "start": 34.447,
+     "end": 34.7
+    },
+    {
+     "w": "bajó",
+     "start": 34.7,
+     "end": 34.953
+    },
+    {
+     "w": "del",
+     "start": 34.953,
+     "end": 35.161
+    },
+    {
+     "w": "bus…",
+     "start": 35.161,
+     "end": 35.506
+    },
+    {
+     "w": "de",
+     "start": 35.506,
+     "end": 35.667
+    },
+    {
+     "w": "la",
+     "start": 35.667,
+     "end": 35.829
+    },
+    {
+     "w": "mano",
+     "start": 35.829,
+     "end": 36.082
+    },
+    {
+     "w": "de",
+     "start": 36.082,
+     "end": 36.243
+    },
+    {
+     "w": "otro.",
+     "start": 36.243,
+     "end": 36.635
+    }
+   ]
+  },
+  {
+   "start": 37.485,
+   "end": 40.496,
+   "text": "Lo saludó amable, como a un lugar que visitó una vez.",
+   "scene": "tcsaludo",
+   "words": [
+    {
+     "w": "Lo",
+     "start": 37.485,
+     "end": 37.653
+    },
+    {
+     "w": "saludó",
+     "start": 37.653,
+     "end": 38.015
+    },
+    {
+     "w": "amable,",
+     "start": 38.015,
+     "end": 38.473
+    },
+    {
+     "w": "como",
+     "start": 38.473,
+     "end": 38.738
+    },
+    {
+     "w": "a",
+     "start": 38.738,
+     "end": 38.858
+    },
+    {
+     "w": "un",
+     "start": 38.858,
+     "end": 39.027
+    },
+    {
+     "w": "lugar",
+     "start": 39.027,
+     "end": 39.34
+    },
+    {
+     "w": "que",
+     "start": 39.34,
+     "end": 39.557
+    },
+    {
+     "w": "visitó",
+     "start": 39.557,
+     "end": 39.918
+    },
+    {
+     "w": "una",
+     "start": 39.918,
+     "end": 40.135
+    },
+    {
+     "w": "vez.",
+     "start": 40.135,
+     "end": 40.496
+    }
+   ]
+  },
+  {
+   "start": 41.346,
+   "end": 44.177,
+   "text": "Para ella fue una parada. Para él, el viaje entero.",
+   "scene": "tcmapa",
+   "words": [
+    {
+     "w": "Para",
+     "start": 41.346,
+     "end": 41.598
+    },
+    {
+     "w": "ella",
+     "start": 41.598,
+     "end": 41.849
+    },
+    {
+     "w": "fue",
+     "start": 41.849,
+     "end": 42.054
+    },
+    {
+     "w": "una",
+     "start": 42.054,
+     "end": 42.26
+    },
+    {
+     "w": "parada.",
+     "start": 42.26,
+     "end": 42.739
+    },
+    {
+     "w": "Para",
+     "start": 42.739,
+     "end": 42.99
+    },
+    {
+     "w": "él,",
+     "start": 42.99,
+     "end": 43.241
+    },
+    {
+     "w": "el",
+     "start": 43.241,
+     "end": 43.401
+    },
+    {
+     "w": "viaje",
+     "start": 43.401,
+     "end": 43.698
+    },
+    {
+     "w": "entero.",
+     "start": 43.698,
+     "end": 44.177
+    }
+   ]
+  },
+  {
+   "start": 45.027,
+   "end": 48.309,
+   "text": "Hay amores que solo están de paso. ¿Te tocó esperar así?",
+   "scene": "tcmuelle:solo",
+   "words": [
+    {
+     "w": "Hay",
+     "start": 45.027,
+     "end": 45.253
+    },
+    {
+     "w": "amores",
+     "start": 45.253,
+     "end": 45.629
+    },
+    {
+     "w": "que",
+     "start": 45.629,
+     "end": 45.854
+    },
+    {
+     "w": "solo",
+     "start": 45.854,
+     "end": 46.13
+    },
+    {
+     "w": "están",
+     "start": 46.13,
+     "end": 46.455
+    },
+    {
+     "w": "de",
+     "start": 46.455,
+     "end": 46.631
+    },
+    {
+     "w": "paso.",
+     "start": 46.631,
+     "end": 47.056
+    },
+    {
+     "w": "¿Te",
+     "start": 47.056,
+     "end": 47.232
+    },
+    {
+     "w": "tocó",
+     "start": 47.232,
+     "end": 47.507
+    },
+    {
+     "w": "esperar",
+     "start": 47.507,
+     "end": 47.933
+    },
+    {
+     "w": "así?",
+     "start": 47.933,
+     "end": 48.309
+    }
+   ]
+  }
+ ],
+ "total": 50.209,
+ "audio": "historia/audio-historia-tu-con-el.wav",
+ "song": {
+  "title": "Tú con él",
+  "artists": "Rauw Alejandro",
+  "cardLine": 1
+ },
+ "estilo": "malecon",
+ "cast": {
+  "him": {
+   "hair": "m",
+   "skin": "#c68b62",
+   "hairC": "#2a1a12",
+   "coat": "#e8dcc4",
+   "pants": "#3a5a6a",
+   "shoes": "#5a3a2a",
+   "shirt": "#2fa89a",
+   "noFace": true
+  },
+  "her": {
+   "hair": "f",
+   "skin": "#f0c9a8",
+   "hairC": "#b5652e",
+   "coat": "#e2543a",
+   "pants": "#f3e6cf",
+   "shoes": "#7a3a2a",
+   "long": true,
+   "noFace": true
+  },
+  "other": {
+   "hair": "m2",
+   "skin": "#e5b896",
+   "hairC": "#1e1a1a",
+   "coat": "#2c3e5c",
+   "pants": "#1e2433",
+   "shoes": "#151515",
+   "shirt": "#f2efe6",
+   "noFace": true
+  }
+ },
+ "safe": true
+}

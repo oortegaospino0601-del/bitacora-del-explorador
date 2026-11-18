@@ -8,6 +8,8 @@ import {Barrio, Familia, Galeria} from './escenas2';
 import * as E3 from './escenas3';
 import * as E4 from './escenas4';
 import * as E5 from './escenas5';
+import * as E6 from './escenas6';
+import * as E7 from './escenas7';
 import {Capas, ESTILOS, FiltrosSvg} from './estilos';
 import {ALL} from './timelines';
 
@@ -26,6 +28,7 @@ export type Timeline = {
   flash?: string[];
   estilo?: string;
   fecha?: string;
+  safe?: boolean; // zona segura de TikTok: nada en el lateral derecho ni en la franja baja
   cast?: {him?: Partial<Look>; her?: Partial<Look>; other?: Partial<Look>; abuela?: Partial<Look>};
 };
 
@@ -78,7 +81,7 @@ const scene = (spec: string, dur: number): React.ReactNode => {
     case 'familia':
       return <Familia dur={dur} mode={(a || 'cocina') as 'cocina'} />;
     default: {
-      const C = ({...E3, ...E4, ...E5} as unknown as Record<string, React.FC<{dur: number; a?: string; b?: string}>>)[n];
+      const C = ({...E3, ...E4, ...E5, ...E6, ...E7} as unknown as Record<string, React.FC<{dur: number; a?: string; b?: string}>>)[n];
       if (!C) throw new Error(`Escena desconocida: ${spec}`);
       return <C dur={dur} a={a} b={b} />;
     }
@@ -119,11 +122,11 @@ const Hook: React.FC<{tl: Timeline}> = ({tl}) => {
   const second = brk > 0 ? l0.words[brk].start : l0.start + 1.2;
   const rows = tl.hook.split('\n');
   const out = interpolate(t, [tl.durations[0] - 0.25, tl.durations[0] + 0.2], [1, 0], clamp);
-  const k = e.font.includes('Montserrat') ? 0.7 : e.font.includes('Special') || e.font.includes('VT323') ? 0.62 : e.font.includes('Barlow') || e.font.includes('Bangers') ? 0.5 : 0.66;
+  const k = e.font.includes('Montserrat') || e.font.includes('Nunito') ? 0.72 : e.font.includes('Special') || e.font.includes('VT323') ? 0.62 : e.font.includes('Barlow') || e.font.includes('Bangers') ? 0.5 : 0.66;
   const back = interpolate(t, [0, 0.3], [0, 1], clamp);
   const light = e.text === '#1d2a6a';
   return (
-    <AbsoluteFill style={{alignItems: 'center', paddingTop: 330, opacity: out}}>
+    <AbsoluteFill style={{alignItems: 'center', paddingTop: tl.safe ? 400 : 330, opacity: out}}>
       <AbsoluteFill
         style={{
           background: light
@@ -136,7 +139,7 @@ const Hook: React.FC<{tl: Timeline}> = ({tl}) => {
         const at = i === 0 ? Math.max(0.05, l0.start - 0.15) : second - 0.1 + (i - 1) * 0.18;
         const p = interpolate(t, [at, at + 0.22], [0, 1], clamp);
         const last = i === rows.length - 1;
-        const size = i === 0 ? Math.min(66, 940 / (r.length * k)) : Math.min(124, 980 / (r.length * k));
+        const size = i === 0 ? Math.min(66, (tl.safe ? 900 : 940) / (r.length * k)) : Math.min(124, (tl.safe ? 900 : 980) / (r.length * k));
         return (
           <div
             key={i}
@@ -175,7 +178,7 @@ const SongPill: React.FC<{tl: Timeline}> = ({tl}) => {
   if (!tl.song) return null;
   const p = interpolate(t, [0.15, 0.5], [0, 1], clamp);
   return (
-    <AbsoluteFill style={{alignItems: 'center', paddingTop: 165}}>
+    <AbsoluteFill style={{alignItems: 'center', paddingTop: tl.safe ? 240 : 165}}>
       <div
         style={{
           display: 'flex',
@@ -207,10 +210,10 @@ const SongCard: React.FC<{tl: Timeline}> = ({tl}) => {
   const title = tl.song.title.toUpperCase();
   const light = e.text === '#1d2a6a';
   return (
-    <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', paddingBottom: 260}}>
+    <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', paddingBottom: 260, paddingRight: tl.safe ? 130 : 0}}>
       <div
         style={{
-          width: 800,
+          width: tl.safe ? 760 : 800,
           padding: '46px 40px',
           borderRadius: e.font.includes('Bangers') ? 8 : 40,
           background: light ? 'rgba(241,233,216,0.95)' : 'linear-gradient(160deg, rgba(20,14,36,0.9), rgba(10,12,30,0.9))',
@@ -266,8 +269,8 @@ const Captions: React.FC<{tl: Timeline}> = ({tl}) => {
   const gIn = interpolate(t, [g[0].start - 0.05, g[0].start + 0.1], [0, 1], clamp);
   const lOut = interpolate(t, [line.end + 0.15, line.end + 0.4], [1, 0], clamp);
   return (
-    <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: 'center', paddingTop: 1240}}>
-      <div style={{maxWidth: 940, textAlign: 'center', opacity: gIn * lOut, transform: `scale(${0.9 + 0.1 * gIn})`}}>
+    <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: 'center', paddingTop: tl.safe ? 1130 : 1240, paddingRight: tl.safe ? 140 : 0}}>
+      <div style={{maxWidth: tl.safe ? 820 : 940, textAlign: 'center', opacity: gIn * lOut, transform: `scale(${0.9 + 0.1 * gIn})`, ...(e.capBox ? {background: e.capBox, borderRadius: 28, padding: '14px 10px 14px 28px'} : {})}}>
         {g.map((w, i) => {
           const on = t >= w.start && t < w.end + 0.05;
           return (

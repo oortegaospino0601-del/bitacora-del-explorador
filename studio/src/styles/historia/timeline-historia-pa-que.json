@@ -1,0 +1,779 @@
+{
+ "slug": "historia-pa-que",
+ "hook": "LLENÓ LA CIUDAD DE CANCIONES…\nPARA QUE ELLA\nNO LO OLVIDARA.",
+ "durations": [
+  3.956,
+  4.011,
+  4.899,
+  3.156,
+  2.929,
+  4.25,
+  2.9,
+  3.256,
+  3.138,
+  3.935,
+  3.601,
+  3.562,
+  5.887
+ ],
+ "lines": [
+  {
+   "start": 0.25,
+   "end": 3.406,
+   "text": "Llenó la ciudad de canciones… para que ella no lo olvidara.",
+   "scene": "pkciudad:hook",
+   "words": [
+    {
+     "w": "Llenó",
+     "start": 0.25,
+     "end": 0.545
+    },
+    {
+     "w": "la",
+     "start": 0.545,
+     "end": 0.704
+    },
+    {
+     "w": "ciudad",
+     "start": 0.704,
+     "end": 1.045
+    },
+    {
+     "w": "de",
+     "start": 1.045,
+     "end": 1.204
+    },
+    {
+     "w": "canciones…",
+     "start": 1.204,
+     "end": 1.817
+    },
+    {
+     "w": "para",
+     "start": 1.817,
+     "end": 2.066
+    },
+    {
+     "w": "que",
+     "start": 2.066,
+     "end": 2.271
+    },
+    {
+     "w": "ella",
+     "start": 2.271,
+     "end": 2.521
+    },
+    {
+     "w": "no",
+     "start": 2.521,
+     "end": 2.68
+    },
+    {
+     "w": "lo",
+     "start": 2.68,
+     "end": 2.839
+    },
+    {
+     "w": "olvidara.",
+     "start": 2.839,
+     "end": 3.406
+    }
+   ]
+  },
+  {
+   "start": 4.256,
+   "end": 7.417,
+   "text": "Esta es la historia de PA K, de Marc Seguí y Álvaro Díaz.",
+   "scene": "pkazotea",
+   "words": [
+    {
+     "w": "Esta",
+     "start": 4.256,
+     "end": 4.514
+    },
+    {
+     "w": "es",
+     "start": 4.514,
+     "end": 4.678
+    },
+    {
+     "w": "la",
+     "start": 4.678,
+     "end": 4.842
+    },
+    {
+     "w": "historia",
+     "start": 4.842,
+     "end": 5.287
+    },
+    {
+     "w": "de",
+     "start": 5.287,
+     "end": 5.45
+    },
+    {
+     "w": "PA",
+     "start": 5.45,
+     "end": 5.614
+    },
+    {
+     "w": "K,",
+     "start": 5.614,
+     "end": 5.825
+    },
+    {
+     "w": "de",
+     "start": 5.825,
+     "end": 5.989
+    },
+    {
+     "w": "Marc",
+     "start": 5.989,
+     "end": 6.247
+    },
+    {
+     "w": "Seguí",
+     "start": 6.247,
+     "end": 6.551
+    },
+    {
+     "w": "y",
+     "start": 6.551,
+     "end": 6.668
+    },
+    {
+     "w": "Álvaro",
+     "start": 6.668,
+     "end": 7.019
+    },
+    {
+     "w": "Díaz.",
+     "start": 7.019,
+     "end": 7.417
+    }
+   ]
+  },
+  {
+   "start": 8.267,
+   "end": 12.317,
+   "text": "Él hacía música en un cuarto diminuto. Ella era su primera oyente.",
+   "scene": "pkcuarto:juntos",
+   "words": [
+    {
+     "w": "Él",
+     "start": 8.267,
+     "end": 8.452
+    },
+    {
+     "w": "hacía",
+     "start": 8.452,
+     "end": 8.793
+    },
+    {
+     "w": "música",
+     "start": 8.793,
+     "end": 9.188
+    },
+    {
+     "w": "en",
+     "start": 9.188,
+     "end": 9.372
+    },
+    {
+     "w": "un",
+     "start": 9.372,
+     "end": 9.556
+    },
+    {
+     "w": "cuarto",
+     "start": 9.556,
+     "end": 9.95
+    },
+    {
+     "w": "diminuto.",
+     "start": 9.95,
+     "end": 10.608
+    },
+    {
+     "w": "Ella",
+     "start": 10.608,
+     "end": 10.897
+    },
+    {
+     "w": "era",
+     "start": 10.897,
+     "end": 11.134
+    },
+    {
+     "w": "su",
+     "start": 11.134,
+     "end": 11.318
+    },
+    {
+     "w": "primera",
+     "start": 11.318,
+     "end": 11.765
+    },
+    {
+     "w": "oyente.",
+     "start": 11.765,
+     "end": 12.317
+    }
+   ]
+  },
+  {
+   "start": 13.167,
+   "end": 15.473,
+   "text": "Una noche cerró la puerta… y no volvió.",
+   "scene": "pkpuerta",
+   "words": [
+    {
+     "w": "Una",
+     "start": 13.167,
+     "end": 13.383
+    },
+    {
+     "w": "noche",
+     "start": 13.383,
+     "end": 13.695
+    },
+    {
+     "w": "cerró",
+     "start": 13.695,
+     "end": 14.008
+    },
+    {
+     "w": "la",
+     "start": 14.008,
+     "end": 14.176
+    },
+    {
+     "w": "puerta…",
+     "start": 14.176,
+     "end": 14.68
+    },
+    {
+     "w": "y",
+     "start": 14.68,
+     "end": 14.8
+    },
+    {
+     "w": "no",
+     "start": 14.8,
+     "end": 14.968
+    },
+    {
+     "w": "volvió.",
+     "start": 14.968,
+     "end": 15.473
+    }
+   ]
+  },
+  {
+   "start": 16.323,
+   "end": 18.401,
+   "text": "Él no lloró. Se encerró a escribir.",
+   "scene": "pkcuarto:solo",
+   "words": [
+    {
+     "w": "Él",
+     "start": 16.323,
+     "end": 16.49
+    },
+    {
+     "w": "no",
+     "start": 16.49,
+     "end": 16.657
+    },
+    {
+     "w": "lloró.",
+     "start": 16.657,
+     "end": 17.111
+    },
+    {
+     "w": "Se",
+     "start": 17.111,
+     "end": 17.278
+    },
+    {
+     "w": "encerró",
+     "start": 17.278,
+     "end": 17.685
+    },
+    {
+     "w": "a",
+     "start": 17.685,
+     "end": 17.804
+    },
+    {
+     "w": "escribir.",
+     "start": 17.804,
+     "end": 18.401
+    }
+   ]
+  },
+  {
+   "start": 19.251,
+   "end": 22.651,
+   "text": "Cada canción guardaba un recuerdo: el balcón, la lluvia.",
+   "scene": "pkrecuerdos",
+   "words": [
+    {
+     "w": "Cada",
+     "start": 19.251,
+     "end": 19.537
+    },
+    {
+     "w": "canción",
+     "start": 19.537,
+     "end": 19.978
+    },
+    {
+     "w": "guardaba",
+     "start": 19.978,
+     "end": 20.471
+    },
+    {
+     "w": "un",
+     "start": 20.471,
+     "end": 20.653
+    },
+    {
+     "w": "recuerdo:",
+     "start": 20.653,
+     "end": 21.25
+    },
+    {
+     "w": "el",
+     "start": 21.25,
+     "end": 21.431
+    },
+    {
+     "w": "balcón,",
+     "start": 21.431,
+     "end": 21.924
+    },
+    {
+     "w": "la",
+     "start": 21.924,
+     "end": 22.106
+    },
+    {
+     "w": "lluvia.",
+     "start": 22.106,
+     "end": 22.651
+    }
+   ]
+  },
+  {
+   "start": 23.501,
+   "end": 25.363,
+   "text": "Las subió… y empezaron a sonar.",
+   "scene": "pksubir",
+   "words": [
+    {
+     "w": "Las",
+     "start": 23.501,
+     "end": 23.716
+    },
+    {
+     "w": "subió…",
+     "start": 23.716,
+     "end": 24.169
+    },
+    {
+     "w": "y",
+     "start": 24.169,
+     "end": 24.289
+    },
+    {
+     "w": "empezaron",
+     "start": 24.289,
+     "end": 24.79
+    },
+    {
+     "w": "a",
+     "start": 24.79,
+     "end": 24.909
+    },
+    {
+     "w": "sonar.",
+     "start": 24.909,
+     "end": 25.363
+    }
+   ]
+  },
+  {
+   "start": 26.401,
+   "end": 28.807,
+   "text": "En taxis, en fiestas, en cada esquina.",
+   "scene": "pksonando",
+   "words": [
+    {
+     "w": "En",
+     "start": 26.401,
+     "end": 26.582
+    },
+    {
+     "w": "taxis,",
+     "start": 26.582,
+     "end": 27.022
+    },
+    {
+     "w": "en",
+     "start": 27.022,
+     "end": 27.203
+    },
+    {
+     "w": "fiestas,",
+     "start": 27.203,
+     "end": 27.747
+    },
+    {
+     "w": "en",
+     "start": 27.747,
+     "end": 27.928
+    },
+    {
+     "w": "cada",
+     "start": 27.928,
+     "end": 28.212
+    },
+    {
+     "w": "esquina.",
+     "start": 28.212,
+     "end": 28.807
+    }
+   ]
+  },
+  {
+   "start": 29.657,
+   "end": 31.945,
+   "text": "Quería que no pudiera escapar de su voz.",
+   "scene": "pkondas",
+   "words": [
+    {
+     "w": "Quería",
+     "start": 29.657,
+     "end": 30.022
+    },
+    {
+     "w": "que",
+     "start": 30.022,
+     "end": 30.242
+    },
+    {
+     "w": "no",
+     "start": 30.242,
+     "end": 30.412
+    },
+    {
+     "w": "pudiera",
+     "start": 30.412,
+     "end": 30.826
+    },
+    {
+     "w": "escapar",
+     "start": 30.826,
+     "end": 31.24
+    },
+    {
+     "w": "de",
+     "start": 31.24,
+     "end": 31.41
+    },
+    {
+     "w": "su",
+     "start": 31.41,
+     "end": 31.58
+    },
+    {
+     "w": "voz.",
+     "start": 31.58,
+     "end": 31.945
+    }
+   ]
+  },
+  {
+   "start": 32.795,
+   "end": 35.88,
+   "text": "Meses después la vio en un bus, tarareando su canción.",
+   "scene": "pkbus:entra",
+   "words": [
+    {
+     "w": "Meses",
+     "start": 32.795,
+     "end": 33.114
+    },
+    {
+     "w": "después",
+     "start": 33.114,
+     "end": 33.53
+    },
+    {
+     "w": "la",
+     "start": 33.53,
+     "end": 33.701
+    },
+    {
+     "w": "vio",
+     "start": 33.701,
+     "end": 33.922
+    },
+    {
+     "w": "en",
+     "start": 33.922,
+     "end": 34.093
+    },
+    {
+     "w": "un",
+     "start": 34.093,
+     "end": 34.264
+    },
+    {
+     "w": "bus,",
+     "start": 34.264,
+     "end": 34.583
+    },
+    {
+     "w": "tarareando",
+     "start": 34.583,
+     "end": 35.146
+    },
+    {
+     "w": "su",
+     "start": 35.146,
+     "end": 35.317
+    },
+    {
+     "w": "canción.",
+     "start": 35.317,
+     "end": 35.88
+    }
+   ]
+  },
+  {
+   "start": 36.73,
+   "end": 39.481,
+   "text": "Pero sonreía tranquila, como si ya no doliera.",
+   "scene": "pkbus:sonrie",
+   "words": [
+    {
+     "w": "Pero",
+     "start": 36.73,
+     "end": 37.01
+    },
+    {
+     "w": "sonreía",
+     "start": 37.01,
+     "end": 37.443
+    },
+    {
+     "w": "tranquila,",
+     "start": 37.443,
+     "end": 38.08
+    },
+    {
+     "w": "como",
+     "start": 38.08,
+     "end": 38.36
+    },
+    {
+     "w": "si",
+     "start": 38.36,
+     "end": 38.539
+    },
+    {
+     "w": "ya",
+     "start": 38.539,
+     "end": 38.717
+    },
+    {
+     "w": "no",
+     "start": 38.717,
+     "end": 38.895
+    },
+    {
+     "w": "doliera.",
+     "start": 38.895,
+     "end": 39.481
+    }
+   ]
+  },
+  {
+   "start": 40.331,
+   "end": 43.044,
+   "text": "Y entendió que el que no podía escapar… era él.",
+   "scene": "pkcuarto:jaula",
+   "words": [
+    {
+     "w": "Y",
+     "start": 40.331,
+     "end": 40.45
+    },
+    {
+     "w": "entendió",
+     "start": 40.45,
+     "end": 40.902
+    },
+    {
+     "w": "que",
+     "start": 40.902,
+     "end": 41.117
+    },
+    {
+     "w": "el",
+     "start": 41.117,
+     "end": 41.283
+    },
+    {
+     "w": "que",
+     "start": 41.283,
+     "end": 41.497
+    },
+    {
+     "w": "no",
+     "start": 41.497,
+     "end": 41.664
+    },
+    {
+     "w": "podía",
+     "start": 41.664,
+     "end": 41.973
+    },
+    {
+     "w": "escapar…",
+     "start": 41.973,
+     "end": 42.52
+    },
+    {
+     "w": "era",
+     "start": 42.52,
+     "end": 42.735
+    },
+    {
+     "w": "él.",
+     "start": 42.735,
+     "end": 43.044
+    }
+   ]
+  },
+  {
+   "start": 43.894,
+   "end": 47.581,
+   "text": "Escribes para que no te olviden… y el que no olvida eres tú. ¿Te pasó?",
+   "scene": "pkamanecer",
+   "words": [
+    {
+     "w": "Escribes",
+     "start": 43.894,
+     "end": 44.313
+    },
+    {
+     "w": "para",
+     "start": 44.313,
+     "end": 44.556
+    },
+    {
+     "w": "que",
+     "start": 44.556,
+     "end": 44.755
+    },
+    {
+     "w": "no",
+     "start": 44.755,
+     "end": 44.91
+    },
+    {
+     "w": "te",
+     "start": 44.91,
+     "end": 45.064
+    },
+    {
+     "w": "olviden…",
+     "start": 45.064,
+     "end": 45.572
+    },
+    {
+     "w": "y",
+     "start": 45.572,
+     "end": 45.682
+    },
+    {
+     "w": "el",
+     "start": 45.682,
+     "end": 45.837
+    },
+    {
+     "w": "que",
+     "start": 45.837,
+     "end": 46.036
+    },
+    {
+     "w": "no",
+     "start": 46.036,
+     "end": 46.19
+    },
+    {
+     "w": "olvida",
+     "start": 46.19,
+     "end": 46.521
+    },
+    {
+     "w": "eres",
+     "start": 46.521,
+     "end": 46.764
+    },
+    {
+     "w": "tú.",
+     "start": 46.764,
+     "end": 47.051
+    },
+    {
+     "w": "¿Te",
+     "start": 47.051,
+     "end": 47.206
+    },
+    {
+     "w": "pasó?",
+     "start": 47.206,
+     "end": 47.581
+    }
+   ]
+  }
+ ],
+ "total": 49.481,
+ "audio": "historia/audio-historia-pa-que.wav",
+ "song": {
+  "title": "PA K",
+  "artists": "Marc Seguí, Álvaro Díaz",
+  "cardLine": 1
+ },
+ "estilo": "estudio",
+ "cast": {
+  "him": {
+   "hair": "curly",
+   "skin": "#b98262",
+   "hairC": "#141022",
+   "coat": "#2b2f6e",
+   "pants": "#121433",
+   "shoes": "#e9e6f5",
+   "shirt": "#5ff2ff",
+   "noFace": true
+  },
+  "her": {
+   "hair": "bob",
+   "skin": "#eac0a2",
+   "hairC": "#3a1530",
+   "coat": "#ff5fd2",
+   "pants": "#2a1440",
+   "shoes": "#f3e9ff",
+   "long": true,
+   "noFace": true
+  },
+  "other": {
+   "noFace": true
+  }
+ },
+ "safe": true
+}

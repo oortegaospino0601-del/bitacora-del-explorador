@@ -1,0 +1,95 @@
+{
+ "slug": "historia-pa-que",
+ "hook": "LLENÓ LA CIUDAD DE CANCIONES…\nPARA QUE ELLA\nNO LO OLVIDARA.",
+ "song": {
+  "title": "PA K",
+  "artists": "Marc Seguí, Álvaro Díaz",
+  "cardLine": 1
+ },
+ "estilo": "estudio",
+ "safe": true,
+ "ambient": false,
+ "cast": {
+  "him": {
+   "hair": "curly",
+   "skin": "#b98262",
+   "hairC": "#141022",
+   "coat": "#2b2f6e",
+   "pants": "#121433",
+   "shoes": "#e9e6f5",
+   "shirt": "#5ff2ff",
+   "noFace": true
+  },
+  "her": {
+   "hair": "bob",
+   "skin": "#eac0a2",
+   "hairC": "#3a1530",
+   "coat": "#ff5fd2",
+   "pants": "#2a1440",
+   "shoes": "#f3e9ff",
+   "long": true,
+   "noFace": true
+  },
+  "other": {
+   "noFace": true
+  }
+ },
+ "speed": 1.0,
+ "tail": 0.55,
+ "minScene": 2.9,
+ "lines": [
+  {
+   "scene": "pkciudad:hook",
+   "text": "Llenó la ciudad de canciones… para que ella no lo olvidara."
+  },
+  {
+   "scene": "pkazotea",
+   "text": "Esta es la historia de PA K, de Marc Seguí y Álvaro Díaz.",
+   "tts": "Esta es la historia de Pa que, de Marc Seguí y Álvaro Días."
+  },
+  {
+   "scene": "pkcuarto:juntos",
+   "text": "Él hacía música en un cuarto diminuto. Ella era su primera oyente."
+  },
+  {
+   "scene": "pkpuerta",
+   "text": "Una noche cerró la puerta… y no volvió."
+  },
+  {
+   "scene": "pkcuarto:solo",
+   "text": "Él no lloró. Se encerró a escribir."
+  },
+  {
+   "scene": "pkrecuerdos",
+   "text": "Cada canción guardaba un recuerdo: el balcón, la lluvia."
+  },
+  {
+   "scene": "pksubir",
+   "text": "Las subió… y empezaron a sonar."
+  },
+  {
+   "scene": "pksonando",
+   "text": "En taxis, en fiestas, en cada esquina."
+  },
+  {
+   "scene": "pkondas",
+   "text": "Quería que no pudiera escapar de su voz."
+  },
+  {
+   "scene": "pkbus:entra",
+   "text": "Meses después la vio en un bus, tarareando su canción."
+  },
+  {
+   "scene": "pkbus:sonrie",
+   "text": "Pero sonreía tranquila, como si ya no doliera."
+  },
+  {
+   "scene": "pkcuarto:jaula",
+   "text": "Y entendió que el que no podía escapar… era él."
+  },
+  {
+   "scene": "pkamanecer",
+   "text": "Escribes para que no te olviden… y el que no olvida eres tú. ¿Te pasó?"
+  }
+ ]
+}

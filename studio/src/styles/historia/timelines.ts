@@ -7,9 +7,11 @@ import t_historia_khe from './timeline-historia-khe.json';
 import t_historia_mamichula from './timeline-historia-mamichula.json';
 import t_historia_me_jodi from './timeline-historia-me-jodi.json';
 import t_historia_me_rehuso from './timeline-historia-me-rehuso.json';
+import t_historia_pa_que from './timeline-historia-pa-que.json';
 import t_historia_rara_vez from './timeline-historia-rara-vez.json';
 import t_historia_san_lucas from './timeline-historia-san-lucas.json';
 import t_historia_si_antes_te_hubiera_conocido from './timeline-historia-si-antes-te-hubiera-conocido.json';
+import t_historia_tu_con_el from './timeline-historia-tu-con-el.json';
 import t_historia_un_x100to from './timeline-historia-un-x100to.json';
 import t_historia_ya_me_entere from './timeline-historia-ya-me-entere.json';
 
@@ -22,9 +24,11 @@ export const ALL = {
   'historia-mamichula': t_historia_mamichula,
   'historia-me-jodi': t_historia_me_jodi,
   'historia-me-rehuso': t_historia_me_rehuso,
+  'historia-pa-que': t_historia_pa_que,
   'historia-rara-vez': t_historia_rara_vez,
   'historia-san-lucas': t_historia_san_lucas,
   'historia-si-antes-te-hubiera-conocido': t_historia_si_antes_te_hubiera_conocido,
+  'historia-tu-con-el': t_historia_tu_con_el,
   'historia-un-x100to': t_historia_un_x100to,
   'historia-ya-me-entere': t_historia_ya_me_entere,
 };

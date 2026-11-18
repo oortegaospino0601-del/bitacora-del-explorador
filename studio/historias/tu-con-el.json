@@ -1,0 +1,102 @@
+{
+ "slug": "historia-tu-con-el",
+ "hook": "LA ESPERÓ UN AÑO…\n¿PERO CÓMO\nVOLVERÍA?",
+ "song": {
+  "title": "Tú con él",
+  "artists": "Rauw Alejandro",
+  "cardLine": 1
+ },
+ "estilo": "malecon",
+ "safe": true,
+ "ambient": false,
+ "cast": {
+  "him": {
+   "hair": "m",
+   "skin": "#c68b62",
+   "hairC": "#2a1a12",
+   "coat": "#e8dcc4",
+   "pants": "#3a5a6a",
+   "shoes": "#5a3a2a",
+   "shirt": "#2fa89a",
+   "noFace": true
+  },
+  "her": {
+   "hair": "f",
+   "skin": "#f0c9a8",
+   "hairC": "#b5652e",
+   "coat": "#e2543a",
+   "pants": "#f3e6cf",
+   "shoes": "#7a3a2a",
+   "long": true,
+   "noFace": true
+  },
+  "other": {
+   "hair": "m2",
+   "skin": "#e5b896",
+   "hairC": "#1e1a1a",
+   "coat": "#2c3e5c",
+   "pants": "#1e2433",
+   "shoes": "#151515",
+   "shirt": "#f2efe6",
+   "noFace": true
+  }
+ },
+ "speed": 1.0,
+ "tail": 0.55,
+ "minScene": 2.9,
+ "lines": [
+  {
+   "scene": "tcbanca:hook",
+   "text": "La esperó un año en la terminal… sin imaginar cómo volvería."
+  },
+  {
+   "scene": "tcpueblo",
+   "text": "Esta es la historia de Tú con él, de Rauw Alejandro.",
+   "tts": "Esta es la historia de Tú con él, de Rau Alejandro."
+  },
+  {
+   "scene": "tcbus:llega",
+   "text": "Ella llegó al pueblo un verano, de paso."
+  },
+  {
+   "scene": "tckiosko",
+   "text": "Él vendía café en la terminal, frente al mar."
+  },
+  {
+   "scene": "tcmuelle:juntos",
+   "text": "Bastó una semana: el muelle, los atardeceres, las promesas."
+  },
+  {
+   "scene": "tcbus:adios",
+   "text": "Antes de irse, juró que volvería en invierno."
+  },
+  {
+   "scene": "tccalendario",
+   "text": "Cada viernes miraba bajar a todos del último bus."
+  },
+  {
+   "scene": "tcmovil",
+   "text": "Los mensajes se acortaron. Después, solo un visto."
+  },
+  {
+   "scene": "tcestaciones",
+   "text": "Igual la esperó. Un invierno. Una primavera."
+  },
+  {
+   "scene": "tcbus:otro",
+   "text": "Una tarde, ella bajó del bus… de la mano de otro."
+  },
+  {
+   "scene": "tcsaludo",
+   "text": "Lo saludó amable, como a un lugar que visitó una vez."
+  },
+  {
+   "scene": "tcmapa",
+   "text": "Para ella fue una parada. Para él, el viaje entero."
+  },
+  {
+   "scene": "tcmuelle:solo",
+   "text": "Hay amores que solo están de paso. ¿Te tocó esperar así?"
+  }
+ ]
+}

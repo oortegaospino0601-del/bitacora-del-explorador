@@ -83,11 +83,18 @@ def main():
         lv = ln.get("rain", 0.3)
         pts += [f"{s + 0.3:.2f}:{lv}", f"{s + d:.2f}:{lv}"]
     pts.append(f"{total + 1:.2f}:0")
-    subprocess.run([sys.executable, "-I", str(HERE / "ambiente_lluvia.py"), str(work / "lluvia.wav"), f"{total + 1:.2f}", ",".join(pts)], check=True)
+    solo_voz = spec.get("ambient") is False  # solo narración: sin música ni lluvia (la canción se pone al subir)
+    if not solo_voz:
+        subprocess.run([sys.executable, "-I", str(HERE / "ambiente_lluvia.py"), str(work / "lluvia.wav"), f"{total + 1:.2f}", ",".join(pts)], check=True)
 
-    inputs = ["-i", str(work / "voz.wav"), "-i", str(work / "lluvia.wav")]
+    inputs = ["-i", str(work / "voz.wav")] + ([] if solo_voz else ["-i", str(work / "lluvia.wav")])
     m = spec.get("music")
-    if m:
+    if solo_voz:
+        fc = (
+            "[0]aresample=44100,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=44100,pan=stereo|c0=c0|c1=c0,"
+            f"apad,atrim=0:{total:.3f}[m]"
+        )
+    elif m:
         L = lambda i: starts[i] if i < len(starts) else total  # noqa: E731
         parts = [[0, L(m["drumsFromLine"]), "piano,pad"],
                  [L(m["drumsFromLine"]), L(m["dropAtLine"]), "piano,pad,drums,bass"],
@@ -117,7 +124,7 @@ def main():
           "audio": f"historia/audio-{slug}.wav"}
     if spec.get("song"):
         tl["song"] = spec["song"]
-    for key in ("flash", "estilo", "cast", "fecha"):
+    for key in ("flash", "estilo", "cast", "fecha", "safe"):
         if spec.get(key):
             tl[key] = spec[key]
     (ROOT / "src" / "styles" / "historia" / f"timeline-{slug}.json").write_text(json.dumps(tl, ensure_ascii=False, indent=1))

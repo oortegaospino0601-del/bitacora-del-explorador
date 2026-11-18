@@ -37,6 +37,7 @@ export type Estilo = {
   stroke?: string; // contorno del texto (cómic)
   pillBg: string;
   pillBorder: string;
+  capBox?: string; // caja translúcida detrás de los subtítulos (fondos claros)
 };
 
 const SH = '0 4px 18px rgba(0,0,0,0.85), 0 0 3px rgba(0,0,0,0.9)';
@@ -229,6 +230,37 @@ export const ESTILOS: Record<string, Estilo> = {
     shadow: '3px 0 0 rgba(255,0,80,0.6), -3px 0 0 rgba(0,200,255,0.6), 0 3px 10px rgba(0,0,0,0.9)',
     pillBg: 'rgba(0,0,0,0.55)',
     pillBorder: '#8dff6a',
+  },
+  // PA K: cuarto-estudio de noche, índigo con luces LED magenta y cian.
+  estudio: {
+    filter: 'saturate(1.12) contrast(1.05)',
+    grain: 0.1,
+    font: "'Barlow Condensed', 'Arial Narrow', sans-serif",
+    hookWeight: 800,
+    capWeight: 800,
+    capSize: 92,
+    upper: true,
+    text: '#ffffff',
+    accent: '#ff5fd2',
+    shadow: '0 0 22px rgba(120,60,255,0.75), 0 4px 10px rgba(0,0,0,0.95)',
+    pillBg: 'rgba(14,10,40,0.7)',
+    pillBorder: '#5ff2ff',
+  },
+  // Tú con él: pueblo costero al atardecer, terracota, crema y turquesa.
+  malecon: {
+    filter: 'saturate(1.05) contrast(1.03) sepia(0.12)',
+    grain: 0.16,
+    leak: '#ffb070',
+    font: "'Nunito', Arial, sans-serif",
+    hookWeight: 900,
+    capWeight: 900,
+    capSize: 78,
+    capBox: 'rgba(70,22,18,0.62)',
+    text: '#fffaf0',
+    accent: '#3fe3cf',
+    shadow: '0 4px 16px rgba(70,25,10,0.85), 0 0 3px rgba(40,10,0,0.9)',
+    pillBg: 'rgba(90,35,20,0.62)',
+    pillBorder: '#3fe3cf',
   },
 };
 

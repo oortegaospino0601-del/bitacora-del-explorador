@@ -175,6 +175,7 @@ export type Look = {
   shoes: string;
   shirt?: string;
   long?: boolean;
+  noFace?: boolean; // personaje sin cara (sin ojos, boca ni mejillas)
 };
 
 export const HIM: Look = {hair: 'm', skin: '#f0c4a1', hairC: '#16171d', coat: '#2f4a6e', pants: '#1b2032', shoes: '#e8e4dc', shirt: '#ebe7df'};
@@ -294,7 +295,7 @@ export const Person: React.FC<{
             <path d="M -52 -520 Q 10 -545 54 -505 Q 20 -515 -30 -488 Z" />
           </g>
         )}
-        {front && (
+        {front && !look.noFace && (
           <g>
             {eyes === 'open' && (
               <g fill="#1a1a22">
