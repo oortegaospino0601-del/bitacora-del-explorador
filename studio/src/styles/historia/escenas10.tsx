@@ -62,10 +62,19 @@ const Signs: React.FC<{seed: number; n: number; area: [number, number, number, n
         const o = on * fl;
         if (o <= 0.01) return <rect key={i} x={x} y={y} width={w} height={h} rx={h / 2} fill="none" stroke="#3a3350" strokeWidth={4} opacity={0.5} />;
         return (
-          <g key={i} opacity={o} style={{filter: `drop-shadow(0 0 10px ${c}) drop-shadow(0 0 22px ${c})`}}>
-            {kind === 0 && <rect x={x} y={y} width={w} height={h} rx={h / 2} fill="none" stroke={c} strokeWidth={6} />}
-            {kind === 1 && <circle cx={x} cy={y} r={h * 0.8} fill="none" stroke={c} strokeWidth={6} />}
-            {kind === 2 && <path d={`M ${x} ${y + h} Q ${x + w / 2} ${y - h} ${x + w} ${y + h}`} fill="none" stroke={c} strokeWidth={6} strokeLinecap="round" />}
+          <g key={i} opacity={o}>
+            {/* halo dibujado (más barato que drop-shadow): trazo ancho y tenue + trazo fino brillante */}
+            {[
+              [26, 0.12],
+              [14, 0.28],
+              [6, 1],
+            ].map(([sw, so], j) => (
+              <g key={j} fill="none" stroke={j === 2 ? mixC(c, '#ffffff', 0.25) : c} strokeWidth={sw} strokeOpacity={so} strokeLinecap="round">
+                {kind === 0 && <rect x={x} y={y} width={w} height={h} rx={h / 2} />}
+                {kind === 1 && <circle cx={x} cy={y} r={h * 0.8} />}
+                {kind === 2 && <path d={`M ${x} ${y + h} Q ${x + w / 2} ${y - h} ${x + w} ${y + h}`} />}
+              </g>
+            ))}
           </g>
         );
       })}
