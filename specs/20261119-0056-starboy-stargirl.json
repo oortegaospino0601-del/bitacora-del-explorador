@@ -1,0 +1,75 @@
+{
+  "slug": "starboy-stargirl",
+  "title": "Starboy no es una canción. Es un funeral.",
+  "composition": "Short-starboy",
+  "maxSeconds": 45,
+  "sentences": [
+    {
+      "text": "Starboy no es una canción.",
+      "tts": "Estárboi, no es una canción.",
+      "gap": 0.4,
+      "shot": "cross"
+    },
+    {
+      "text": "Es un funeral.",
+      "gap": 0.95,
+      "shot": "funeral"
+    },
+    {
+      "text": "En 2016, The Weeknd mató a su antiguo yo.",
+      "tts": "En dos mil dieciséis, de Uíkend mató a su antiguo yo.",
+      "gap": 0.45,
+      "shot": "highway"
+    },
+    {
+      "text": "De sus cenizas nació un personaje hecho de lujo… exceso… y ego.",
+      "tts": "De sus cenizas nació un personaje hecho de lujo... exceso... y ego.",
+      "gap": 1.0,
+      "shot": "ashes",
+      "punch": [
+        "LUJO",
+        "EXCESO",
+        "EGO"
+      ]
+    },
+    {
+      "text": "Pero en medio del caos aparece Lana Del Rey con «Stargirl Interlude».",
+      "tts": "Pero en medio del caos, aparece Lana del Rei, con Estárguerl Ínterlud.",
+      "gap": 0.6,
+      "shot": "stargirl"
+    },
+    {
+      "text": "No es su víctima. No es su musa.",
+      "tts": "No es su víctima. No es su musa.",
+      "gap": 0.55,
+      "shot": "notvictim"
+    },
+    {
+      "text": "Es su espejo.",
+      "gap": 1.15,
+      "shot": "mirror"
+    },
+    {
+      "text": "Él es destrucción y ego.",
+      "gap": 0.45,
+      "shot": "him"
+    },
+    {
+      "text": "Ella, seducción y nostalgia.",
+      "gap": 0.55,
+      "shot": "her"
+    },
+    {
+      "text": "Dos mitades de la misma oscuridad.",
+      "gap": 1.0,
+      "shot": "halves"
+    },
+    {
+      "text": "Y tú… ¿con cuál te quedas?",
+      "tts": "Y tú... ¿con cuál te quedas?",
+      "gap": 0.2,
+      "shot": "final"
+    }
+  ],
+  "tailSeconds": 2.6
+}
