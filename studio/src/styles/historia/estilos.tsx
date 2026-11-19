@@ -17,6 +17,8 @@ import '@fontsource/baloo-2/latin-700.css';
 import '@fontsource/baloo-2/latin-800.css';
 import '@fontsource/space-grotesk/latin-500.css';
 import '@fontsource/space-grotesk/latin-700.css';
+import '@fontsource/sora/latin-700.css';
+import '@fontsource/sora/latin-800.css';
 import {FPS, rng} from './kit';
 
 export type Estilo = {
@@ -296,6 +298,21 @@ export const ESTILOS: Record<string, Estilo> = {
     shadow: '0 0 18px rgba(46,229,157,0.45), 0 4px 10px rgba(0,0,0,0.95)',
     pillBg: 'rgba(4,20,16,0.72)',
     pillBorder: '#3dffa8',
+  },
+  // Paraíso (Daña): índigo profundo con luces ámbar, que termina en amanecer durazno y lila.
+  ambar: {
+    filter: 'contrast(1.04) saturate(1.06)',
+    grain: 0.08,
+    font: "'Sora', 'Arial', sans-serif",
+    hookWeight: 800,
+    capWeight: 800,
+    capSize: 76,
+    capBox: 'rgba(12,9,38,0.66)',
+    text: '#fff7ea',
+    accent: '#ffb347',
+    shadow: '0 0 16px rgba(255,179,71,0.35), 0 4px 10px rgba(0,0,0,0.9)',
+    pillBg: 'rgba(12,9,38,0.7)',
+    pillBorder: '#ffb347',
   },
 };
 

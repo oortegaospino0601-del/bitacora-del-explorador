@@ -12,6 +12,7 @@ import * as E6 from './escenas6';
 import * as E7 from './escenas7';
 import * as E8 from './escenas8';
 import * as E9 from './escenas9';
+import * as E10 from './escenas10';
 import {Capas, ESTILOS, FiltrosSvg} from './estilos';
 import {ALL} from './timelines';
 
@@ -30,6 +31,7 @@ export type Timeline = {
   flash?: string[];
   estilo?: string;
   fecha?: string;
+  live?: number; // frase del gancho al LIVE: muestra la flecha hacia la esquina inferior izquierda
   safe?: boolean; // zona segura de TikTok: nada en el lateral derecho ni en la franja baja
   cast?: {him?: Partial<Look>; her?: Partial<Look>; other?: Partial<Look>; abuela?: Partial<Look>};
 };
@@ -83,7 +85,7 @@ const scene = (spec: string, dur: number): React.ReactNode => {
     case 'familia':
       return <Familia dur={dur} mode={(a || 'cocina') as 'cocina'} />;
     default: {
-      const C = ({...E3, ...E4, ...E5, ...E6, ...E7, ...E8, ...E9} as unknown as Record<string, React.FC<{dur: number; a?: string; b?: string}>>)[n];
+      const C = ({...E3, ...E4, ...E5, ...E6, ...E7, ...E8, ...E9, ...E10} as unknown as Record<string, React.FC<{dur: number; a?: string; b?: string}>>)[n];
       if (!C) throw new Error(`Escena desconocida: ${spec}`);
       return <C dur={dur} a={a} b={b} />;
     }
@@ -119,6 +121,7 @@ const txt = (e: Est, extra: React.CSSProperties = {}): React.CSSProperties => ({
 const Hook: React.FC<{tl: Timeline}> = ({tl}) => {
   const e = useEst();
   const t = useCurrentFrame() / FPS;
+  if (!tl.hook) return null;
   const l0 = tl.lines[0];
   const brk = l0.words.findIndex((w, i) => i > 0 && /[….]$/.test(l0.words[i - 1].w));
   const second = brk > 0 ? l0.words[brk].start : l0.start + 1.2;
@@ -264,7 +267,7 @@ const Captions: React.FC<{tl: Timeline}> = ({tl}) => {
   const e = useEst();
   const t = useCurrentFrame() / FPS;
   const card = tl.song?.cardLine;
-  const line = tl.lines.find((l, i) => i > 0 && i !== card && t >= l.start - 0.05 && t <= l.end + 0.4);
+  const line = tl.lines.find((l, i) => (i > 0 || !tl.hook) && i !== card && t >= l.start - 0.05 && t <= l.end + 0.4);
   if (!line) return null;
   const groups = chunk(line.words);
   const g = groups.find((gr, i) => t < (groups[i + 1]?.[0].start ?? Infinity)) ?? groups[groups.length - 1];
@@ -272,7 +275,7 @@ const Captions: React.FC<{tl: Timeline}> = ({tl}) => {
   const lOut = interpolate(t, [line.end + 0.15, line.end + 0.4], [1, 0], clamp);
   return (
     <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: 'center', paddingTop: tl.safe ? 1130 : 1240, paddingRight: tl.safe ? 140 : 0}}>
-      <div style={{maxWidth: tl.safe ? 820 : 940, textAlign: 'center', opacity: gIn * lOut, transform: `scale(${0.9 + 0.1 * gIn})`, ...(e.capBox ? {background: e.capBox, borderRadius: 28, padding: '14px 10px 14px 28px'} : {})}}>
+      <div style={{maxWidth: tl.safe ? 820 : 940, textAlign: 'center', textWrap: 'balance', opacity: gIn * lOut, transform: `scale(${0.9 + 0.1 * gIn})`, ...(e.capBox ? {background: e.capBox, borderRadius: 28, padding: '14px 10px 14px 28px'} : {})}}>
         {g.map((w, i) => {
           const on = t >= w.start && t < w.end + 0.05;
           return (
@@ -289,6 +292,40 @@ const Captions: React.FC<{tl: Timeline}> = ({tl}) => {
   );
 };
 
+// Flecha animada que señala la esquina inferior izquierda (donde aparece el botón real del LIVE).
+// Solo la flecha: nada de botones, logos ni texto. Va debajo de los subtítulos, sin taparlos.
+const LiveArrow: React.FC<{tl: Timeline}> = ({tl}) => {
+  const e = useEst();
+  const t = useCurrentFrame() / FPS;
+  if (tl.live === undefined) return null;
+  const l = tl.lines[tl.live];
+  const from = l.start - 0.3;
+  if (t < from) return null;
+  const inP = interpolate(t, [from, from + 0.45], [0, 1], clamp);
+  const k = t - from;
+  const bounce = Math.abs(Math.sin(k * Math.PI * 1.6)) * 46; // rebote hacia la esquina
+  const blink = 0.62 + 0.38 * (Math.sin(k * Math.PI * 3.2) > -0.2 ? 1 : 0);
+  const pulse = 1 + 0.06 * Math.sin(k * Math.PI * 3.2);
+  const d = 1 / Math.SQRT2;
+  // la flecha apunta hacia abajo a la izquierda; su punta queda cerca de (120, 1770)
+  const tipX = 150 - bounce * d;
+  const tipY = 1740 + bounce * d;
+  return (
+    <AbsoluteFill style={{opacity: inP}}>
+      <svg width={1080} height={1920} viewBox="0 0 1080 1920" style={{position: 'absolute', inset: 0}}>
+        <g
+          transform={`translate(${tipX} ${tipY}) rotate(-135) scale(${pulse * (0.7 + 0.3 * inP)})`}
+          opacity={blink}
+          style={{filter: `drop-shadow(0 0 14px ${e.accent}) drop-shadow(0 0 30px ${e.accent}) drop-shadow(0 6px 10px rgba(0,0,0,0.6))`}}
+        >
+          {/* punta en (0,0) y cuerpo hacia +y (rotado -135° queda hacia arriba a la derecha) */}
+          <path d="M 0 0 L 92 108 L 34 108 L 34 330 L -34 330 L -34 108 L -92 108 Z" fill="#ffffff" stroke={e.accent} strokeWidth={12} strokeLinejoin="round" />
+        </g>
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
 const merge = (base: Look, p?: Partial<Look>) => (p ? {...base, ...p} : base);
 
 export const Historia: React.FC<{slug: string; subtitulos?: boolean}> = ({slug, subtitulos = true}) => {
@@ -299,7 +336,7 @@ export const Historia: React.FC<{slug: string; subtitulos?: boolean}> = ({slug, 
   const f = useCurrentFrame();
   let start = 0;
   const total = tl.total * FPS;
-  const fin = interpolate(f, [total - 1.2 * FPS, total - 0.15 * FPS], [0, 1], clamp);
+  const fin = tl.live !== undefined ? 0 : interpolate(f, [total - 1.2 * FPS, total - 0.15 * FPS], [0, 1], clamp);
   return (
     <EstCtx.Provider value={e}>
       <CastCtx.Provider value={cast}>
@@ -323,6 +360,7 @@ export const Historia: React.FC<{slug: string; subtitulos?: boolean}> = ({slug, 
           <Capas e={e} fecha={tl.fecha} />
           <Hook tl={tl} />
           <SongCard tl={tl} />
+          <LiveArrow tl={tl} />
           {subtitulos && <Captions tl={tl} />}
           <SongPill tl={tl} />
           <AbsoluteFill style={{background: '#000', opacity: fin}} />

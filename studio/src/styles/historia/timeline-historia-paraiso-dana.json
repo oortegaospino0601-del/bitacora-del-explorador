@@ -1,0 +1,788 @@
+{
+ "slug": "historia-paraiso-dana",
+ "hook": "",
+ "durations": [
+  3.498,
+  6.626,
+  4.536,
+  3.6,
+  4.6,
+  4.6,
+  5.6,
+  7.0,
+  3.2,
+  4.7,
+  8.007
+ ],
+ "lines": [
+  {
+   "start": 0.25,
+   "end": 2.798,
+   "text": "Lo tenía todo… y aun así estaba solo.",
+   "scene": "pdsolo",
+   "words": [
+    {
+     "w": "Lo",
+     "start": 0.25,
+     "end": 0.444
+    },
+    {
+     "w": "tenía",
+     "start": 0.444,
+     "end": 0.804
+    },
+    {
+     "w": "todo…",
+     "start": 0.804,
+     "end": 1.275
+    },
+    {
+     "w": "y",
+     "start": 1.275,
+     "end": 1.413
+    },
+    {
+     "w": "aun",
+     "start": 1.413,
+     "end": 1.663
+    },
+    {
+     "w": "así",
+     "start": 1.663,
+     "end": 1.912
+    },
+    {
+     "w": "estaba",
+     "start": 1.912,
+     "end": 2.327
+    },
+    {
+     "w": "solo.",
+     "start": 2.327,
+     "end": 2.798
+    }
+   ]
+  },
+  {
+   "start": 3.798,
+   "end": 9.274,
+   "text": "En su ciudad, la noche nunca se acababa y todo brillaba: luces, gente, promesas fáciles.",
+   "scene": "pdciudad",
+   "words": [
+    {
+     "w": "En",
+     "start": 3.798,
+     "end": 4.002
+    },
+    {
+     "w": "su",
+     "start": 4.002,
+     "end": 4.205
+    },
+    {
+     "w": "ciudad,",
+     "start": 4.205,
+     "end": 4.758
+    },
+    {
+     "w": "la",
+     "start": 4.758,
+     "end": 4.918
+    },
+    {
+     "w": "noche",
+     "start": 4.918,
+     "end": 5.216
+    },
+    {
+     "w": "nunca",
+     "start": 5.216,
+     "end": 5.514
+    },
+    {
+     "w": "se",
+     "start": 5.514,
+     "end": 5.675
+    },
+    {
+     "w": "acababa",
+     "start": 5.675,
+     "end": 6.064
+    },
+    {
+     "w": "y",
+     "start": 6.064,
+     "end": 6.179
+    },
+    {
+     "w": "todo",
+     "start": 6.179,
+     "end": 6.431
+    },
+    {
+     "w": "brillaba:",
+     "start": 6.431,
+     "end": 6.958
+    },
+    {
+     "w": "luces,",
+     "start": 6.958,
+     "end": 7.998
+    },
+    {
+     "w": "gente,",
+     "start": 7.998,
+     "end": 8.178
+    },
+    {
+     "w": "promesas",
+     "start": 8.178,
+     "end": 8.674
+    },
+    {
+     "w": "fáciles.",
+     "start": 8.674,
+     "end": 9.274
+    }
+   ]
+  },
+  {
+   "start": 10.424,
+   "end": 13.659,
+   "text": "Cada cosa lo calmaba un rato… y después le dolía más.",
+   "scene": "pdbrillo",
+   "words": [
+    {
+     "w": "Cada",
+     "start": 10.424,
+     "end": 10.706
+    },
+    {
+     "w": "cosa",
+     "start": 10.706,
+     "end": 10.988
+    },
+    {
+     "w": "lo",
+     "start": 10.988,
+     "end": 11.167
+    },
+    {
+     "w": "calmaba",
+     "start": 11.167,
+     "end": 11.603
+    },
+    {
+     "w": "un",
+     "start": 11.603,
+     "end": 11.783
+    },
+    {
+     "w": "rato…",
+     "start": 11.783,
+     "end": 12.219
+    },
+    {
+     "w": "y",
+     "start": 12.219,
+     "end": 12.345
+    },
+    {
+     "w": "después",
+     "start": 12.345,
+     "end": 12.775
+    },
+    {
+     "w": "le",
+     "start": 12.775,
+     "end": 12.952
+    },
+    {
+     "w": "dolía",
+     "start": 12.952,
+     "end": 13.28
+    },
+    {
+     "w": "más.",
+     "start": 13.28,
+     "end": 13.659
+    }
+   ]
+  },
+  {
+   "start": 14.959,
+   "end": 16.915,
+   "text": "Entonces empezó a buscarla.",
+   "scene": "pdbusca",
+   "words": [
+    {
+     "w": "Entonces",
+     "start": 14.959,
+     "end": 15.54
+    },
+    {
+     "w": "empezó",
+     "start": 15.54,
+     "end": 15.998
+    },
+    {
+     "w": "a",
+     "start": 15.998,
+     "end": 16.151
+    },
+    {
+     "w": "buscarla.",
+     "start": 16.151,
+     "end": 16.915
+    }
+   ]
+  },
+  {
+   "start": 18.559,
+   "end": 21.234,
+   "text": "En las azoteas, en las calles, hasta en el cielo.",
+   "scene": "pdazotea",
+   "words": [
+    {
+     "w": "En",
+     "start": 18.559,
+     "end": 18.782
+    },
+    {
+     "w": "las",
+     "start": 18.782,
+     "end": 19.067
+    },
+    {
+     "w": "azoteas,",
+     "start": 19.067,
+     "end": 19.734
+    },
+    {
+     "w": "en",
+     "start": 19.734,
+     "end": 19.837
+    },
+    {
+     "w": "las",
+     "start": 19.837,
+     "end": 19.97
+    },
+    {
+     "w": "calles,",
+     "start": 19.97,
+     "end": 20.249
+    },
+    {
+     "w": "hasta",
+     "start": 20.249,
+     "end": 20.528
+    },
+    {
+     "w": "en",
+     "start": 20.528,
+     "end": 20.677
+    },
+    {
+     "w": "el",
+     "start": 20.677,
+     "end": 20.827
+    },
+    {
+     "w": "cielo.",
+     "start": 20.827,
+     "end": 21.234
+    }
+   ]
+  },
+  {
+   "start": 23.159,
+   "end": 26.107,
+   "text": "Ella era lo único real en medio de tanto ruido.",
+   "scene": "pdruido",
+   "words": [
+    {
+     "w": "Ella",
+     "start": 23.159,
+     "end": 23.454
+    },
+    {
+     "w": "era",
+     "start": 23.454,
+     "end": 23.695
+    },
+    {
+     "w": "lo",
+     "start": 23.695,
+     "end": 23.883
+    },
+    {
+     "w": "único",
+     "start": 23.883,
+     "end": 24.231
+    },
+    {
+     "w": "real",
+     "start": 24.231,
+     "end": 24.526
+    },
+    {
+     "w": "en",
+     "start": 24.526,
+     "end": 24.714
+    },
+    {
+     "w": "medio",
+     "start": 24.714,
+     "end": 25.062
+    },
+    {
+     "w": "de",
+     "start": 25.062,
+     "end": 25.25
+    },
+    {
+     "w": "tanto",
+     "start": 25.25,
+     "end": 25.598
+    },
+    {
+     "w": "ruido.",
+     "start": 25.598,
+     "end": 26.107
+    }
+   ]
+  },
+  {
+   "start": 27.759,
+   "end": 31.711,
+   "text": "Pero mientras más corría detrás de lo que brillaba, más se alejaba de ella.",
+   "scene": "pdcorre",
+   "words": [
+    {
+     "w": "Pero",
+     "start": 27.759,
+     "end": 28.001
+    },
+    {
+     "w": "mientras",
+     "start": 28.001,
+     "end": 28.419
+    },
+    {
+     "w": "más",
+     "start": 28.419,
+     "end": 28.617
+    },
+    {
+     "w": "corría",
+     "start": 28.617,
+     "end": 28.947
+    },
+    {
+     "w": "detrás",
+     "start": 28.947,
+     "end": 29.277
+    },
+    {
+     "w": "de",
+     "start": 29.277,
+     "end": 29.431
+    },
+    {
+     "w": "lo",
+     "start": 29.431,
+     "end": 29.585
+    },
+    {
+     "w": "que",
+     "start": 29.585,
+     "end": 29.783
+    },
+    {
+     "w": "brillaba,",
+     "start": 29.783,
+     "end": 30.289
+    },
+    {
+     "w": "más",
+     "start": 30.289,
+     "end": 30.514
+    },
+    {
+     "w": "se",
+     "start": 30.514,
+     "end": 30.688
+    },
+    {
+     "w": "alejaba",
+     "start": 30.688,
+     "end": 31.112
+    },
+    {
+     "w": "de",
+     "start": 31.112,
+     "end": 31.287
+    },
+    {
+     "w": "ella.",
+     "start": 31.287,
+     "end": 31.711
+    }
+   ]
+  },
+  {
+   "start": 33.359,
+   "end": 38.81,
+   "text": "Hasta que una madrugada lo entendió: el paraíso no era ese lugar… era la persona que le faltaba.",
+   "scene": "pdamanece",
+   "words": [
+    {
+     "w": "Hasta",
+     "start": 33.359,
+     "end": 33.674
+    },
+    {
+     "w": "que",
+     "start": 33.674,
+     "end": 33.892
+    },
+    {
+     "w": "una",
+     "start": 33.892,
+     "end": 34.11
+    },
+    {
+     "w": "madrugada",
+     "start": 34.11,
+     "end": 34.618
+    },
+    {
+     "w": "lo",
+     "start": 34.618,
+     "end": 34.787
+    },
+    {
+     "w": "entendió:",
+     "start": 34.787,
+     "end": 35.344
+    },
+    {
+     "w": "el",
+     "start": 35.344,
+     "end": 35.535
+    },
+    {
+     "w": "paraíso",
+     "start": 35.535,
+     "end": 35.997
+    },
+    {
+     "w": "no",
+     "start": 35.997,
+     "end": 36.188
+    },
+    {
+     "w": "era",
+     "start": 36.188,
+     "end": 36.432
+    },
+    {
+     "w": "ese",
+     "start": 36.432,
+     "end": 36.677
+    },
+    {
+     "w": "lugar…",
+     "start": 36.677,
+     "end": 37.194
+    },
+    {
+     "w": "era",
+     "start": 37.194,
+     "end": 37.396
+    },
+    {
+     "w": "la",
+     "start": 37.396,
+     "end": 37.553
+    },
+    {
+     "w": "persona",
+     "start": 37.553,
+     "end": 37.935
+    },
+    {
+     "w": "que",
+     "start": 37.935,
+     "end": 38.137
+    },
+    {
+     "w": "le",
+     "start": 38.137,
+     "end": 38.294
+    },
+    {
+     "w": "faltaba.",
+     "start": 38.294,
+     "end": 38.81
+    }
+   ]
+  },
+  {
+   "start": 40.359,
+   "end": 41.892,
+   "text": "Y por fin, la encontró.",
+   "scene": "pdencuentro",
+   "words": [
+    {
+     "w": "Y",
+     "start": 40.359,
+     "end": 40.489
+    },
+    {
+     "w": "por",
+     "start": 40.489,
+     "end": 40.723
+    },
+    {
+     "w": "fin,",
+     "start": 40.723,
+     "end": 41.061
+    },
+    {
+     "w": "la",
+     "start": 41.061,
+     "end": 41.243
+    },
+    {
+     "w": "encontró.",
+     "start": 41.243,
+     "end": 41.892
+    }
+   ]
+  },
+  {
+   "start": 43.559,
+   "end": 46.916,
+   "text": "Hay cosas que te consuelan… y te lastiman al mismo tiempo.",
+   "scene": "pdcielo",
+   "words": [
+    {
+     "w": "Hay",
+     "start": 43.559,
+     "end": 43.772
+    },
+    {
+     "w": "cosas",
+     "start": 43.772,
+     "end": 44.079
+    },
+    {
+     "w": "que",
+     "start": 44.079,
+     "end": 44.291
+    },
+    {
+     "w": "te",
+     "start": 44.291,
+     "end": 44.457
+    },
+    {
+     "w": "consuelan…",
+     "start": 44.457,
+     "end": 45.094
+    },
+    {
+     "w": "y",
+     "start": 45.094,
+     "end": 45.221
+    },
+    {
+     "w": "te",
+     "start": 45.221,
+     "end": 45.398
+    },
+    {
+     "w": "lastiman",
+     "start": 45.398,
+     "end": 45.879
+    },
+    {
+     "w": "al",
+     "start": 45.879,
+     "end": 46.056
+    },
+    {
+     "w": "mismo",
+     "start": 46.056,
+     "end": 46.384
+    },
+    {
+     "w": "tiempo.",
+     "start": 46.384,
+     "end": 46.916
+    }
+   ]
+  },
+  {
+   "start": 48.259,
+   "end": 54.766,
+   "text": "¿Quieres la siguiente canción? Toca el botón rojo de LIVE, abajo a la izquierda, entra a mi directo y pídela en el chat.",
+   "scene": "pdlive",
+   "words": [
+    {
+     "w": "¿Quieres",
+     "start": 48.259,
+     "end": 48.659
+    },
+    {
+     "w": "la",
+     "start": 48.659,
+     "end": 48.824
+    },
+    {
+     "w": "siguiente",
+     "start": 48.824,
+     "end": 49.318
+    },
+    {
+     "w": "canción?",
+     "start": 49.318,
+     "end": 49.859
+    },
+    {
+     "w": "Toca",
+     "start": 49.859,
+     "end": 50.136
+    },
+    {
+     "w": "el",
+     "start": 50.136,
+     "end": 50.312
+    },
+    {
+     "w": "botón",
+     "start": 50.312,
+     "end": 50.639
+    },
+    {
+     "w": "rojo",
+     "start": 50.639,
+     "end": 50.916
+    },
+    {
+     "w": "de",
+     "start": 50.916,
+     "end": 51.092
+    },
+    {
+     "w": "LIVE,",
+     "start": 51.092,
+     "end": 51.469
+    },
+    {
+     "w": "abajo",
+     "start": 51.469,
+     "end": 51.776
+    },
+    {
+     "w": "a",
+     "start": 51.776,
+     "end": 51.894
+    },
+    {
+     "w": "la",
+     "start": 51.894,
+     "end": 52.059
+    },
+    {
+     "w": "izquierda,",
+     "start": 52.059,
+     "end": 52.649
+    },
+    {
+     "w": "entra",
+     "start": 52.649,
+     "end": 52.945
+    },
+    {
+     "w": "a",
+     "start": 52.945,
+     "end": 53.059
+    },
+    {
+     "w": "mi",
+     "start": 53.059,
+     "end": 53.218
+    },
+    {
+     "w": "directo",
+     "start": 53.218,
+     "end": 53.605
+    },
+    {
+     "w": "y",
+     "start": 53.605,
+     "end": 53.719
+    },
+    {
+     "w": "pídela",
+     "start": 53.719,
+     "end": 54.06
+    },
+    {
+     "w": "en",
+     "start": 54.06,
+     "end": 54.22
+    },
+    {
+     "w": "el",
+     "start": 54.22,
+     "end": 54.379
+    },
+    {
+     "w": "chat.",
+     "start": 54.379,
+     "end": 54.766
+    }
+   ]
+  }
+ ],
+ "total": 55.966,
+ "audio": "historia/audio-historia-paraiso-dana.wav",
+ "estilo": "ambar",
+ "cast": {
+  "him": {
+   "hair": "curly",
+   "skin": "#b98a6a",
+   "hairC": "#120f1c",
+   "coat": "#2c2a52",
+   "pants": "#15142b",
+   "shoes": "#d9cbb3",
+   "shirt": "#e9b25f",
+   "noFace": true
+  },
+  "her": {
+   "hair": "bob",
+   "skin": "#f1d2b6",
+   "hairC": "#2a1a14",
+   "coat": "#f4dcae",
+   "pants": "#6b5a7e",
+   "shoes": "#3a2e40",
+   "long": true,
+   "noFace": true
+  },
+  "other": {
+   "hair": "m2",
+   "skin": "#a77a5c",
+   "hairC": "#141220",
+   "coat": "#3a3566",
+   "pants": "#1a1830",
+   "shoes": "#1a1a24",
+   "noFace": true
+  }
+ },
+ "safe": true,
+ "live": 10
+}

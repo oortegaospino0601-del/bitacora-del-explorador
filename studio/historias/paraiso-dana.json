@@ -1,0 +1,102 @@
+{
+ "slug": "historia-paraiso-dana",
+ "hook": "",
+ "estilo": "ambar",
+ "safe": true,
+ "ambient": false,
+ "align": true,
+ "live": 10,
+ "cast": {
+  "him": {
+   "hair": "curly",
+   "skin": "#b98a6a",
+   "hairC": "#120f1c",
+   "coat": "#2c2a52",
+   "pants": "#15142b",
+   "shoes": "#d9cbb3",
+   "shirt": "#e9b25f",
+   "noFace": true
+  },
+  "her": {
+   "hair": "bob",
+   "skin": "#f1d2b6",
+   "hairC": "#2a1a14",
+   "coat": "#f4dcae",
+   "pants": "#6b5a7e",
+   "shoes": "#3a2e40",
+   "long": true,
+   "noFace": true
+  },
+  "other": {
+   "hair": "m2",
+   "skin": "#a77a5c",
+   "hairC": "#141220",
+   "coat": "#3a3566",
+   "pants": "#1a1830",
+   "shoes": "#1a1a24",
+   "noFace": true
+  }
+ },
+ "speed": 0.98,
+ "tail": 0.85,
+ "minScene": 2.6,
+ "lines": [
+  {
+   "scene": "pdsolo",
+   "text": "Lo tenía todo… y aun así estaba solo.",
+   "tail": 0.7
+  },
+  {
+   "scene": "pdciudad",
+   "text": "En su ciudad, la noche nunca se acababa y todo brillaba: luces, gente, promesas fáciles."
+  },
+  {
+   "scene": "pdbrillo",
+   "text": "Cada cosa lo calmaba un rato… y después le dolía más.",
+   "tail": 1.0
+  },
+  {
+   "scene": "pdbusca",
+   "text": "Entonces empezó a buscarla.",
+   "min": 3.6
+  },
+  {
+   "scene": "pdazotea",
+   "text": "En las azoteas, en las calles, hasta en el cielo.",
+   "min": 4.6
+  },
+  {
+   "scene": "pdruido",
+   "text": "Ella era lo único real en medio de tanto ruido.",
+   "min": 4.6
+  },
+  {
+   "scene": "pdcorre",
+   "text": "Pero mientras más corría detrás de lo que brillaba, más se alejaba de ella.",
+   "tail": 1.0,
+   "min": 5.6
+  },
+  {
+   "scene": "pdamanece",
+   "text": "Hasta que una madrugada lo entendió: el paraíso no era ese lugar… era la persona que le faltaba.",
+   "min": 7.0
+  },
+  {
+   "scene": "pdencuentro",
+   "text": "Y por fin, la encontró.",
+   "min": 3.2
+  },
+  {
+   "scene": "pdcielo",
+   "text": "Hay cosas que te consuelan… y te lastiman al mismo tiempo.",
+   "tail": 1.0,
+   "min": 4.7
+  },
+  {
+   "scene": "pdlive",
+   "text": "¿Quieres la siguiente canción? Toca el botón rojo de LIVE, abajo a la izquierda, entra a mi directo y pídela en el chat.",
+   "tts": "¿Quieres la siguiente canción? Toca el botón rojo de laiv, abajo a la izquierda, entra a mi directo y pídela en el chat.",
+   "tail": 1.2
+  }
+ ]
+}

@@ -9,7 +9,7 @@ crea la base musical original y la lluvia, y escribe:
   - studio/src/styles/historia/timeline-<slug>.json      (escenas, tiempos de palabras, canción)
 
 Campos del JSON: slug, hook, song{title,artists,cardLine}, flash[escenas], speed, tail, minScene,
-lines[{scene,text,tts?,rain?}], music{bpm, drumsFromLine, dropAtLine, backAtLine} (opcional).
+lines[{scene,text,tts?,rain?,min?,tail?}], live (índice de la frase del gancho al LIVE), music{bpm, drumsFromLine, dropAtLine, backAtLine} (opcional).
 """
 import json
 import os
@@ -121,7 +121,8 @@ def main():
     for i, c in enumerate(clips):
         vd = len(c) / SR
         lead = 0.25 if i == 0 else LEAD
-        d = max(MIN_SCENE, lead + vd + (END_TAIL if i == n - 1 else TAIL))
+        ln0 = spec["lines"][i]
+        d = max(ln0.get("min", MIN_SCENE), lead + vd + ln0.get("tail", END_TAIL if i == n - 1 else TAIL))
         vs = start + lead
         ln = spec["lines"][i]
         lines.append({"start": round(vs, 3), "end": round(vs + vd, 3), "text": ln["text"], "scene": ln["scene"],
@@ -191,7 +192,7 @@ def main():
           "audio": f"historia/audio-{slug}.wav"}
     if spec.get("song"):
         tl["song"] = spec["song"]
-    for key in ("flash", "estilo", "cast", "fecha", "safe"):
+    for key in ("flash", "estilo", "cast", "fecha", "safe", "live"):
         if spec.get(key):
             tl[key] = spec[key]
     (ROOT / "src" / "styles" / "historia" / f"timeline-{slug}.json").write_text(json.dumps(tl, ensure_ascii=False, indent=1))

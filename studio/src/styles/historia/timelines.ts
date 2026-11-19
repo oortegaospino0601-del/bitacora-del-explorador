@@ -10,6 +10,7 @@ import t_historia_mamichula from './timeline-historia-mamichula.json';
 import t_historia_me_jodi from './timeline-historia-me-jodi.json';
 import t_historia_me_rehuso from './timeline-historia-me-rehuso.json';
 import t_historia_pa_que from './timeline-historia-pa-que.json';
+import t_historia_paraiso_dana from './timeline-historia-paraiso-dana.json';
 import t_historia_rara_vez from './timeline-historia-rara-vez.json';
 import t_historia_san_lucas from './timeline-historia-san-lucas.json';
 import t_historia_si_antes_te_hubiera_conocido from './timeline-historia-si-antes-te-hubiera-conocido.json';
@@ -29,6 +30,7 @@ export const ALL = {
   'historia-me-jodi': t_historia_me_jodi,
   'historia-me-rehuso': t_historia_me_rehuso,
   'historia-pa-que': t_historia_pa_que,
+  'historia-paraiso-dana': t_historia_paraiso_dana,
   'historia-rara-vez': t_historia_rara_vez,
   'historia-san-lucas': t_historia_san_lucas,
   'historia-si-antes-te-hubiera-conocido': t_historia_si_antes_te_hubiera_conocido,
