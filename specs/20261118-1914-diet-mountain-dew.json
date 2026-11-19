@@ -1,0 +1,87 @@
+{
+  "slug": "diet-mountain-dew",
+  "title": "Diet Mountain Dew: el amor que sabes que te destruye",
+  "composition": "Short-borntodie",
+  "voice": {
+    "provider": "ElevenLabs",
+    "voice": "Victoria",
+    "voice_id": "2C2gucmWbh5yjGnGzcYB",
+    "model": "eleven_v4",
+    "file": "assets/diet-mountain-dew-vo.mp3"
+  },
+  "lead": 0.45,
+  "tail": 4.0,
+  "sentences": [
+    {
+      "scene": 1,
+      "text": "«Diet Mountain Dew» suena dulce y divertida."
+    },
+    {
+      "scene": 1,
+      "text": "Pero en realidad es la confesión más honesta de Lana Del Rey:"
+    },
+    {
+      "scene": 1,
+      "text": "amar a alguien que sabes que te va a destruir."
+    },
+    {
+      "scene": 2,
+      "gapBefore": 0.35,
+      "text": "Nueva York de noche,"
+    },
+    {
+      "scene": 2,
+      "text": "un chico problemático, y una Lana seducida por el caos."
+    },
+    {
+      "scene": 2,
+      "text": "Ella no está ciega:"
+    },
+    {
+      "scene": 2,
+      "text": "se lo repite todo el tiempo."
+    },
+    {
+      "scene": 2,
+      "text": "«No eres bueno para mí»."
+    },
+    {
+      "scene": 2,
+      "text": "Pero lo quiere igual."
+    },
+    {
+      "scene": 3,
+      "gapBefore": 0.4,
+      "text": "El refresco es la metáfora perfecta:"
+    },
+    {
+      "scene": 3,
+      "text": "dulce, artificial,"
+    },
+    {
+      "scene": 3,
+      "text": "adictivo."
+    },
+    {
+      "scene": 3,
+      "text": "Sabes que te hace daño, pero no puedes resistirte a la adrenalina."
+    },
+    {
+      "scene": 4,
+      "gapBefore": 0.5,
+      "text": "Al final, la canción no trata de huir de un amor tóxico, sino de abrazar la locura y quedarse…"
+    },
+    {
+      "scene": 4,
+      "text": "solo para ver hasta dónde llega."
+    },
+    {
+      "scene": 4,
+      "text": "¿Y tú?"
+    },
+    {
+      "scene": 4,
+      "text": "¿Te quedarías sabiendo el final?"
+    }
+  ]
+}

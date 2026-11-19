@@ -81,3 +81,16 @@ invita a comentar (`statement`). Texto de escena corto: se lee en 2 o 3 segundos
 ## Composiciones propias
 Ids de composición: solo letras, números y guiones (NO guion bajo). Ej.: `Short-diario`
 (`src/styles/diario/`, portada de periódico). En el JSON: `"composition": "Short-diario"`.
+
+## Voz externa (ElevenLabs u otra locución ya grabada)
+Si la voz llega en un solo archivo (p. ej. generada con ElevenLabs), guárdala en `studio/assets/`
+y pon en el guion `"voice": {"file": "assets/<archivo>.mp3"}`, `lead`, `tail` y en cada frase
+`scene` (número de escena) y opcionalmente `gapBefore` (pausa extra en segundos). Luego:
+
+```bash
+python3 -I studio/tools/external_vo.py studio/specs/<slug>.json --render
+```
+
+El script corta la locución por silencios (debe haber tantos tramos como frases), añade las
+pausas, normaliza y escribe `public/audio.wav` (solo voz) y `work/props.json`. Ejemplo:
+`specs/diet-mountain-dew.json` con la composición `Short-borntodie`.
