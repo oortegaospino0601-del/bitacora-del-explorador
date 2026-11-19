@@ -1,0 +1,739 @@
+{
+ "slug": "historia-111",
+ "hook": "A LA 1:11 PEDÍA UN DESEO…\nY SIEMPRE\nERA ELLA",
+ "durations": [
+  5.051,
+  3.874,
+  6.767,
+  4.86,
+  4.348,
+  4.701,
+  4.836,
+  5.426,
+  4.087,
+  5.711
+ ],
+ "lines": [
+  {
+   "start": 0.25,
+   "end": 4.201,
+   "text": "Cada noche, a la 1:11, pedía el mismo deseo… y siempre era ella.",
+   "scene": "emreloj:hook",
+   "words": [
+    {
+     "w": "Cada",
+     "start": 0.25,
+     "end": 0.525
+    },
+    {
+     "w": "noche,",
+     "start": 0.525,
+     "end": 0.95
+    },
+    {
+     "w": "a",
+     "start": 0.95,
+     "end": 1.089
+    },
+    {
+     "w": "la",
+     "start": 1.089,
+     "end": 1.283
+    },
+    {
+     "w": "1:11,",
+     "start": 1.283,
+     "end": 1.92
+    },
+    {
+     "w": "pedía",
+     "start": 1.92,
+     "end": 2.199
+    },
+    {
+     "w": "el",
+     "start": 2.199,
+     "end": 2.35
+    },
+    {
+     "w": "mismo",
+     "start": 2.35,
+     "end": 2.629
+    },
+    {
+     "w": "deseo…",
+     "start": 2.629,
+     "end": 3.038
+    },
+    {
+     "w": "y",
+     "start": 3.038,
+     "end": 3.159
+    },
+    {
+     "w": "siempre",
+     "start": 3.159,
+     "end": 3.571
+    },
+    {
+     "w": "era",
+     "start": 3.571,
+     "end": 3.789
+    },
+    {
+     "w": "ella.",
+     "start": 3.789,
+     "end": 4.201
+    }
+   ]
+  },
+  {
+   "start": 5.351,
+   "end": 8.075,
+   "text": "Esta es la historia de 111, de Yan Block.",
+   "scene": "emcielo",
+   "words": [
+    {
+     "w": "Esta",
+     "start": 5.351,
+     "end": 5.584
+    },
+    {
+     "w": "es",
+     "start": 5.584,
+     "end": 5.732
+    },
+    {
+     "w": "la",
+     "start": 5.732,
+     "end": 5.88
+    },
+    {
+     "w": "historia",
+     "start": 5.88,
+     "end": 6.282
+    },
+    {
+     "w": "de",
+     "start": 6.282,
+     "end": 6.43
+    },
+    {
+     "w": "111,",
+     "start": 6.43,
+     "end": 7.001
+    },
+    {
+     "w": "de",
+     "start": 7.001,
+     "end": 7.216
+    },
+    {
+     "w": "Yan",
+     "start": 7.216,
+     "end": 7.492
+    },
+    {
+     "w": "Block.",
+     "start": 7.492,
+     "end": 8.075
+    }
+   ]
+  },
+  {
+   "start": 9.225,
+   "end": 14.842,
+   "text": "La conoció a la 1:11 en una fiesta: ojos verdes, sonrisa fácil. Lo tomó como una señal.",
+   "scene": "emfiesta",
+   "words": [
+    {
+     "w": "La",
+     "start": 9.225,
+     "end": 9.396
+    },
+    {
+     "w": "conoció",
+     "start": 9.396,
+     "end": 9.812
+    },
+    {
+     "w": "a",
+     "start": 9.812,
+     "end": 9.934
+    },
+    {
+     "w": "la",
+     "start": 9.934,
+     "end": 10.105
+    },
+    {
+     "w": "1:11",
+     "start": 10.105,
+     "end": 10.57
+    },
+    {
+     "w": "en",
+     "start": 10.57,
+     "end": 10.741
+    },
+    {
+     "w": "una",
+     "start": 10.741,
+     "end": 10.961
+    },
+    {
+     "w": "fiesta:",
+     "start": 10.961,
+     "end": 11.425
+    },
+    {
+     "w": "ojos",
+     "start": 11.425,
+     "end": 11.779
+    },
+    {
+     "w": "verdes,",
+     "start": 11.779,
+     "end": 12.39
+    },
+    {
+     "w": "sonrisa",
+     "start": 12.39,
+     "end": 12.869
+    },
+    {
+     "w": "fácil.",
+     "start": 12.869,
+     "end": 13.405
+    },
+    {
+     "w": "Lo",
+     "start": 13.405,
+     "end": 13.582
+    },
+    {
+     "w": "tomó",
+     "start": 13.582,
+     "end": 13.859
+    },
+    {
+     "w": "como",
+     "start": 13.859,
+     "end": 14.136
+    },
+    {
+     "w": "una",
+     "start": 14.136,
+     "end": 14.363
+    },
+    {
+     "w": "señal.",
+     "start": 14.363,
+     "end": 14.842
+    }
+   ]
+  },
+  {
+   "start": 15.992,
+   "end": 19.702,
+   "text": "Pero ella amaba a ratos: lo hería un lunes y lo curaba un martes.",
+   "scene": "emciclo",
+   "words": [
+    {
+     "w": "Pero",
+     "start": 15.992,
+     "end": 16.284
+    },
+    {
+     "w": "ella",
+     "start": 16.284,
+     "end": 16.577
+    },
+    {
+     "w": "amaba",
+     "start": 16.577,
+     "end": 16.922
+    },
+    {
+     "w": "a",
+     "start": 16.922,
+     "end": 17.055
+    },
+    {
+     "w": "ratos:",
+     "start": 17.055,
+     "end": 17.507
+    },
+    {
+     "w": "lo",
+     "start": 17.507,
+     "end": 17.669
+    },
+    {
+     "w": "hería",
+     "start": 17.669,
+     "end": 17.969
+    },
+    {
+     "w": "un",
+     "start": 17.969,
+     "end": 18.131
+    },
+    {
+     "w": "lunes",
+     "start": 18.131,
+     "end": 18.431
+    },
+    {
+     "w": "y",
+     "start": 18.431,
+     "end": 18.547
+    },
+    {
+     "w": "lo",
+     "start": 18.547,
+     "end": 18.708
+    },
+    {
+     "w": "curaba",
+     "start": 18.708,
+     "end": 19.055
+    },
+    {
+     "w": "un",
+     "start": 19.055,
+     "end": 19.217
+    },
+    {
+     "w": "martes.",
+     "start": 19.217,
+     "end": 19.702
+    }
+   ]
+  },
+  {
+   "start": 20.852,
+   "end": 24.05,
+   "text": "Meses juntos, y a veces lo miraba como a un desconocido.",
+   "scene": "emextrana",
+   "words": [
+    {
+     "w": "Meses",
+     "start": 20.852,
+     "end": 21.232
+    },
+    {
+     "w": "juntos,",
+     "start": 21.232,
+     "end": 21.787
+    },
+    {
+     "w": "y",
+     "start": 21.787,
+     "end": 21.901
+    },
+    {
+     "w": "a",
+     "start": 21.901,
+     "end": 22.015
+    },
+    {
+     "w": "veces",
+     "start": 22.015,
+     "end": 22.312
+    },
+    {
+     "w": "lo",
+     "start": 22.312,
+     "end": 22.472
+    },
+    {
+     "w": "miraba",
+     "start": 22.472,
+     "end": 22.815
+    },
+    {
+     "w": "como",
+     "start": 22.815,
+     "end": 23.067
+    },
+    {
+     "w": "a",
+     "start": 23.067,
+     "end": 23.181
+    },
+    {
+     "w": "un",
+     "start": 23.181,
+     "end": 23.341
+    },
+    {
+     "w": "desconocido.",
+     "start": 23.341,
+     "end": 24.05
+    }
+   ]
+  },
+  {
+   "start": 25.2,
+   "end": 28.751,
+   "text": "Sus amigos veían las mentiras. Él solo veía ese verde.",
+   "scene": "emamigos",
+   "words": [
+    {
+     "w": "Sus",
+     "start": 25.2,
+     "end": 25.444
+    },
+    {
+     "w": "amigos",
+     "start": 25.444,
+     "end": 25.852
+    },
+    {
+     "w": "veían",
+     "start": 25.852,
+     "end": 26.206
+    },
+    {
+     "w": "las",
+     "start": 26.206,
+     "end": 26.45
+    },
+    {
+     "w": "mentiras.",
+     "start": 26.45,
+     "end": 27.13
+    },
+    {
+     "w": "Él",
+     "start": 27.13,
+     "end": 27.329
+    },
+    {
+     "w": "solo",
+     "start": 27.329,
+     "end": 27.642
+    },
+    {
+     "w": "veía",
+     "start": 27.642,
+     "end": 27.954
+    },
+    {
+     "w": "ese",
+     "start": 27.954,
+     "end": 28.21
+    },
+    {
+     "w": "verde.",
+     "start": 28.21,
+     "end": 28.751
+    }
+   ]
+  },
+  {
+   "start": 29.901,
+   "end": 33.587,
+   "text": "Y cada noche, a la 1:11, pedía que esta vez fuera distinto.",
+   "scene": "emdeseo",
+   "words": [
+    {
+     "w": "Y",
+     "start": 29.901,
+     "end": 29.991
+    },
+    {
+     "w": "cada",
+     "start": 29.991,
+     "end": 30.189
+    },
+    {
+     "w": "noche,",
+     "start": 30.189,
+     "end": 30.496
+    },
+    {
+     "w": "a",
+     "start": 30.496,
+     "end": 30.678
+    },
+    {
+     "w": "la",
+     "start": 30.678,
+     "end": 30.933
+    },
+    {
+     "w": "1:11,",
+     "start": 30.933,
+     "end": 31.771
+    },
+    {
+     "w": "pedía",
+     "start": 31.771,
+     "end": 32.066
+    },
+    {
+     "w": "que",
+     "start": 32.066,
+     "end": 32.27
+    },
+    {
+     "w": "esta",
+     "start": 32.27,
+     "end": 32.52
+    },
+    {
+     "w": "vez",
+     "start": 32.52,
+     "end": 32.724
+    },
+    {
+     "w": "fuera",
+     "start": 32.724,
+     "end": 33.019
+    },
+    {
+     "w": "distinto.",
+     "start": 33.019,
+     "end": 33.587
+    }
+   ]
+  },
+  {
+   "start": 34.737,
+   "end": 39.013,
+   "text": "Una noche entendió por qué el deseo nunca se cumplía: lo pedía para ella.",
+   "scene": "emgiro",
+   "words": [
+    {
+     "w": "Una",
+     "start": 34.737,
+     "end": 34.963
+    },
+    {
+     "w": "noche",
+     "start": 34.963,
+     "end": 35.29
+    },
+    {
+     "w": "entendió",
+     "start": 35.29,
+     "end": 35.767
+    },
+    {
+     "w": "por",
+     "start": 35.767,
+     "end": 35.993
+    },
+    {
+     "w": "qué",
+     "start": 35.993,
+     "end": 36.219
+    },
+    {
+     "w": "el",
+     "start": 36.219,
+     "end": 36.395
+    },
+    {
+     "w": "deseo",
+     "start": 36.395,
+     "end": 36.722
+    },
+    {
+     "w": "nunca",
+     "start": 36.722,
+     "end": 37.048
+    },
+    {
+     "w": "se",
+     "start": 37.048,
+     "end": 37.224
+    },
+    {
+     "w": "cumplía:",
+     "start": 37.224,
+     "end": 37.752
+    },
+    {
+     "w": "lo",
+     "start": 37.752,
+     "end": 37.936
+    },
+    {
+     "w": "pedía",
+     "start": 37.936,
+     "end": 38.277
+    },
+    {
+     "w": "para",
+     "start": 38.277,
+     "end": 38.566
+    },
+    {
+     "w": "ella.",
+     "start": 38.566,
+     "end": 39.013
+    }
+   ]
+  },
+  {
+   "start": 40.163,
+   "end": 43.1,
+   "text": "Así que, por primera vez, pidió algo para sí mismo.",
+   "scene": "empropio",
+   "words": [
+    {
+     "w": "Así",
+     "start": 40.163,
+     "end": 40.361
+    },
+    {
+     "w": "que,",
+     "start": 40.361,
+     "end": 40.648
+    },
+    {
+     "w": "por",
+     "start": 40.648,
+     "end": 40.87
+    },
+    {
+     "w": "primera",
+     "start": 40.87,
+     "end": 41.291
+    },
+    {
+     "w": "vez,",
+     "start": 41.291,
+     "end": 41.613
+    },
+    {
+     "w": "pidió",
+     "start": 41.613,
+     "end": 41.93
+    },
+    {
+     "w": "algo",
+     "start": 41.93,
+     "end": 42.198
+    },
+    {
+     "w": "para",
+     "start": 42.198,
+     "end": 42.466
+    },
+    {
+     "w": "sí",
+     "start": 42.466,
+     "end": 42.637
+    },
+    {
+     "w": "mismo.",
+     "start": 42.637,
+     "end": 43.1
+    }
+   ]
+  },
+  {
+   "start": 44.25,
+   "end": 47.761,
+   "text": "A la 1:12 vibró el celular. Era ella. ¿Tú contestarías?",
+   "scene": "emcelular",
+   "words": [
+    {
+     "w": "A",
+     "start": 44.25,
+     "end": 44.37
+    },
+    {
+     "w": "la",
+     "start": 44.37,
+     "end": 44.538
+    },
+    {
+     "w": "1:12",
+     "start": 44.538,
+     "end": 44.994
+    },
+    {
+     "w": "vibró",
+     "start": 44.994,
+     "end": 45.305
+    },
+    {
+     "w": "el",
+     "start": 45.305,
+     "end": 45.473
+    },
+    {
+     "w": "celular.",
+     "start": 45.473,
+     "end": 46.025
+    },
+    {
+     "w": "Era",
+     "start": 46.025,
+     "end": 46.26
+    },
+    {
+     "w": "ella.",
+     "start": 46.26,
+     "end": 46.705
+    },
+    {
+     "w": "¿Tú",
+     "start": 46.705,
+     "end": 46.89
+    },
+    {
+     "w": "contestarías?",
+     "start": 46.89,
+     "end": 47.761
+    }
+   ]
+  }
+ ],
+ "total": 49.661,
+ "audio": "historia/audio-historia-111.wav",
+ "song": {
+  "title": "111",
+  "artists": "Yan Block",
+  "cardLine": 1
+ },
+ "estilo": "esmeralda",
+ "cast": {
+  "him": {
+   "hair": "m",
+   "skin": "#c99a78",
+   "hairC": "#141414",
+   "coat": "#4a5560",
+   "pants": "#1c2228",
+   "shoes": "#d8dcd6",
+   "shirt": "#a9b4ae",
+   "noFace": true
+  },
+  "her": {
+   "hair": "f",
+   "skin": "#efc9ac",
+   "hairC": "#1d1512",
+   "coat": "#1f9e6e",
+   "pants": "#11201b",
+   "shoes": "#0d1512",
+   "long": true,
+   "noFace": true
+  },
+  "other": {
+   "hair": "curly",
+   "skin": "#a87452",
+   "hairC": "#1a1410",
+   "coat": "#3a4650",
+   "pants": "#1a2026",
+   "shoes": "#1a1a1a",
+   "shirt": "#8a9690",
+   "noFace": true
+  }
+ },
+ "safe": true
+}

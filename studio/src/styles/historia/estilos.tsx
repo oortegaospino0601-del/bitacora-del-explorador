@@ -15,6 +15,8 @@ import '@fontsource/barlow-condensed/latin-700.css';
 import '@fontsource/barlow-condensed/latin-800.css';
 import '@fontsource/baloo-2/latin-700.css';
 import '@fontsource/baloo-2/latin-800.css';
+import '@fontsource/space-grotesk/latin-500.css';
+import '@fontsource/space-grotesk/latin-700.css';
 import {FPS, rng} from './kit';
 
 export type Estilo = {
@@ -279,6 +281,21 @@ export const ESTILOS: Record<string, Estilo> = {
     shadow: '0 3px 10px rgba(16,30,20,0.55)',
     pillBg: 'rgba(34,54,40,0.74)',
     pillBorder: '#ffcf4a',
+  },
+  // 111: noche verde azulada, brillo esmeralda y reloj digital.
+  esmeralda: {
+    filter: 'contrast(1.06) saturate(1.05)',
+    grain: 0.1,
+    font: "'Space Grotesk', 'Arial', sans-serif",
+    hookWeight: 700,
+    capWeight: 700,
+    capSize: 84,
+    capBox: 'rgba(3,18,14,0.62)',
+    text: '#f2fff9',
+    accent: '#3dffa8',
+    shadow: '0 0 18px rgba(46,229,157,0.45), 0 4px 10px rgba(0,0,0,0.95)',
+    pillBg: 'rgba(4,20,16,0.72)',
+    pillBorder: '#3dffa8',
   },
 };
 

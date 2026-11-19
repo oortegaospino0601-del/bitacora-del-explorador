@@ -36,44 +36,70 @@ END_TAIL = 1.9
 MAX_TOTAL = 59.5  # Shorts con canción con licencia: 60 s
 
 
-def pauses(clip, n):
-    """Las n pausas internas más largas del clip (centro de cada silencio, en s), en orden temporal."""
+def gaps(clip):
+    """Centros (s) de las pausas internas de la voz (>= 40 ms)."""
     hop = int(0.01 * SR)
     rms = np.array([np.sqrt(np.mean(clip[i:i + hop] ** 2)) for i in range(0, len(clip) - hop, hop)])
     quiet = rms < max(0.006, 0.08 * np.percentile(rms, 90))
-    gaps, i = [], 0
+    out, i = [], 0
     while i < len(quiet):
         if quiet[i]:
             j = i
             while j < len(quiet) and quiet[j]:
                 j += 1
-            if i > 5 and j < len(quiet) - 5 and (j - i) >= 7:  # >= 70 ms, sin contar bordes
-                gaps.append(((j - i), (i + j) / 2 * 0.01))
+            if i > 5 and j < len(quiet) - 5 and (j - i) >= 4:
+                out.append((i + j) / 2 * 0.01)
             i = j
         else:
             i += 1
-    if len(gaps) < n:
-        return None
-    return sorted(c for _, c in sorted(gaps, reverse=True)[:n])
+    return out
+
+
+def spoken_weight(w):
+    """Peso de una palabra según cómo se pronuncia (las cifras pesan lo que se dicen)."""
+    import re
+    m = re.match(r"^(\d+):(\d+)", w)
+    if m:
+        from num2words import num2words
+        core = num2words(int(m.group(1)), lang="es") + " y " + num2words(int(m.group(2)), lang="es")
+    else:
+        core = make.expand_numbers(w)
+    base = len(re.sub(r"[^\w]", "", core)) + 1.5
+    if w.endswith((",", ";", ":")):
+        base += 2
+    if w.endswith((".", "?", "!", "…")):
+        base += 3
+    return base
 
 
 def aligned_timings(text, clip, vs):
-    """Tiempos de palabras anclando cada signo de puntuación interno a una pausa real de la voz."""
+    """Tiempos de palabras: reparto por pronunciación y cada signo de puntuación interno anclado a la
+    pausa real más cercana a donde se espera (si no hay ninguna a menos de 0,4 s, queda la estimación)."""
     vd = len(clip) / SR
     words = text.split()
+    wt = [spoken_weight(w) for w in words]
+    tot = sum(wt)
+    cum = np.cumsum([0] + wt) / tot * vd
     cuts = [i + 1 for i, w in enumerate(words[:-1]) if w.endswith((",", ".", ":", ";", "…", "?", "!"))]
-    if not cuts:
-        return make.word_timings(text, vs, vs + vd)
-    p = pauses(clip, len(cuts))
-    if p is None:
-        print("    (sin pausas suficientes: reparto proporcional)")
-        return make.word_timings(text, vs, vs + vd)
-    bounds = [0.0] + p + [vd]
-    idx = [0] + cuts + [len(words)]
+    g = gaps(clip)
+    anchors = {0: 0.0, len(words): vd}
+    prev = 0.0
+    for c in cuts:
+        est = cum[c]
+        near = [x for x in g if abs(x - est) < 0.4 and x > prev + 0.15]
+        t = min(near, key=lambda x: abs(x - est)) if near else est
+        anchors[c] = t
+        prev = t
+    keys = sorted(anchors)
     out = []
-    for k in range(len(idx) - 1):
-        seg = " ".join(words[idx[k]:idx[k + 1]])
-        out += make.word_timings(seg, vs + bounds[k], vs + bounds[k + 1])
+    for k0, k1 in zip(keys, keys[1:]):
+        a, b = anchors[k0], anchors[k1]
+        sw = sum(wt[k0:k1])
+        cur = a
+        for i in range(k0, k1):
+            d = (b - a) * wt[i] / sw
+            out.append({"w": words[i], "start": round(vs + cur, 3), "end": round(vs + cur + d, 3)})
+            cur += d
     return out
 
 

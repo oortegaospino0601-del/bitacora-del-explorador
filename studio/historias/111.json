@@ -1,0 +1,60 @@
+{
+ "slug": "historia-111",
+ "hook": "A LA 1:11 PEDÍA UN DESEO…\nY SIEMPRE\nERA ELLA",
+ "song": {
+  "title": "111",
+  "artists": "Yan Block",
+  "cardLine": 1
+ },
+ "estilo": "esmeralda",
+ "safe": true,
+ "ambient": false,
+ "align": true,
+ "cast": {
+  "him": {
+   "hair": "m",
+   "skin": "#c99a78",
+   "hairC": "#141414",
+   "coat": "#4a5560",
+   "pants": "#1c2228",
+   "shoes": "#d8dcd6",
+   "shirt": "#a9b4ae",
+   "noFace": true
+  },
+  "her": {
+   "hair": "f",
+   "skin": "#efc9ac",
+   "hairC": "#1d1512",
+   "coat": "#1f9e6e",
+   "pants": "#11201b",
+   "shoes": "#0d1512",
+   "long": true,
+   "noFace": true
+  },
+  "other": {
+   "hair": "curly",
+   "skin": "#a87452",
+   "hairC": "#1a1410",
+   "coat": "#3a4650",
+   "pants": "#1a2026",
+   "shoes": "#1a1a1a",
+   "shirt": "#8a9690",
+   "noFace": true
+  }
+ },
+ "speed": 1.0,
+ "tail": 0.85,
+ "minScene": 2.9,
+ "lines": [
+  {"scene": "emreloj:hook", "text": "Cada noche, a la 1:11, pedía el mismo deseo… y siempre era ella.", "tts": "Cada noche, a la una y once, pedía el mismo deseo… y siempre era ella."},
+  {"scene": "emcielo", "text": "Esta es la historia de 111, de Yan Block.", "tts": "Esta es la historia de uno, uno, uno, de Yan Blok."},
+  {"scene": "emfiesta", "text": "La conoció a la 1:11 en una fiesta: ojos verdes, sonrisa fácil. Lo tomó como una señal.", "tts": "La conoció a la una y once en una fiesta: ojos verdes, sonrisa fácil. Lo tomó como una señal."},
+  {"scene": "emciclo", "text": "Pero ella amaba a ratos: lo hería un lunes y lo curaba un martes."},
+  {"scene": "emextrana", "text": "Meses juntos, y a veces lo miraba como a un desconocido."},
+  {"scene": "emamigos", "text": "Sus amigos veían las mentiras. Él solo veía ese verde."},
+  {"scene": "emdeseo", "text": "Y cada noche, a la 1:11, pedía que esta vez fuera distinto.", "tts": "Y cada noche, a la una y once, pedía que esta vez fuera distinto."},
+  {"scene": "emgiro", "text": "Una noche entendió por qué el deseo nunca se cumplía: lo pedía para ella."},
+  {"scene": "empropio", "text": "Así que, por primera vez, pidió algo para sí mismo."},
+  {"scene": "emcelular", "text": "A la 1:12 vibró el celular. Era ella. ¿Tú contestarías?", "tts": "A la una y doce vibró el celular. Era ella. ¿Tú contestarías?"}
+ ]
+}

@@ -11,6 +11,7 @@ import * as E5 from './escenas5';
 import * as E6 from './escenas6';
 import * as E7 from './escenas7';
 import * as E8 from './escenas8';
+import * as E9 from './escenas9';
 import {Capas, ESTILOS, FiltrosSvg} from './estilos';
 import {ALL} from './timelines';
 
@@ -82,7 +83,7 @@ const scene = (spec: string, dur: number): React.ReactNode => {
     case 'familia':
       return <Familia dur={dur} mode={(a || 'cocina') as 'cocina'} />;
     default: {
-      const C = ({...E3, ...E4, ...E5, ...E6, ...E7, ...E8} as unknown as Record<string, React.FC<{dur: number; a?: string; b?: string}>>)[n];
+      const C = ({...E3, ...E4, ...E5, ...E6, ...E7, ...E8, ...E9} as unknown as Record<string, React.FC<{dur: number; a?: string; b?: string}>>)[n];
       if (!C) throw new Error(`Escena desconocida: ${spec}`);
       return <C dur={dur} a={a} b={b} />;
     }
