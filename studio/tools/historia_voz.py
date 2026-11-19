@@ -36,6 +36,47 @@ END_TAIL = 1.9
 MAX_TOTAL = 59.5  # Shorts con canción con licencia: 60 s
 
 
+def pauses(clip, n):
+    """Las n pausas internas más largas del clip (centro de cada silencio, en s), en orden temporal."""
+    hop = int(0.01 * SR)
+    rms = np.array([np.sqrt(np.mean(clip[i:i + hop] ** 2)) for i in range(0, len(clip) - hop, hop)])
+    quiet = rms < max(0.006, 0.08 * np.percentile(rms, 90))
+    gaps, i = [], 0
+    while i < len(quiet):
+        if quiet[i]:
+            j = i
+            while j < len(quiet) and quiet[j]:
+                j += 1
+            if i > 5 and j < len(quiet) - 5 and (j - i) >= 7:  # >= 70 ms, sin contar bordes
+                gaps.append(((j - i), (i + j) / 2 * 0.01))
+            i = j
+        else:
+            i += 1
+    if len(gaps) < n:
+        return None
+    return sorted(c for _, c in sorted(gaps, reverse=True)[:n])
+
+
+def aligned_timings(text, clip, vs):
+    """Tiempos de palabras anclando cada signo de puntuación interno a una pausa real de la voz."""
+    vd = len(clip) / SR
+    words = text.split()
+    cuts = [i + 1 for i, w in enumerate(words[:-1]) if w.endswith((",", ".", ":", ";", "…", "?", "!"))]
+    if not cuts:
+        return make.word_timings(text, vs, vs + vd)
+    p = pauses(clip, len(cuts))
+    if p is None:
+        print("    (sin pausas suficientes: reparto proporcional)")
+        return make.word_timings(text, vs, vs + vd)
+    bounds = [0.0] + p + [vd]
+    idx = [0] + cuts + [len(words)]
+    out = []
+    for k in range(len(idx) - 1):
+        seg = " ".join(words[idx[k]:idx[k + 1]])
+        out += make.word_timings(seg, vs + bounds[k], vs + bounds[k + 1])
+    return out
+
+
 def main():
     from kokoro_onnx import Kokoro
 
@@ -58,7 +99,7 @@ def main():
         vs = start + lead
         ln = spec["lines"][i]
         lines.append({"start": round(vs, 3), "end": round(vs + vd, 3), "text": ln["text"], "scene": ln["scene"],
-                      "words": make.word_timings(ln["text"], vs, vs + vd)})
+                      "words": aligned_timings(ln["text"], c, vs) if spec.get("align") else make.word_timings(ln["text"], vs, vs + vd)})
         print(f"  escena {i + 1:2d} {ln['scene']:<16} voz {vd:4.2f}s  escena {d:4.2f}s  «{ln['text']}»", flush=True)
         durs.append(round(d, 3))
         start += d

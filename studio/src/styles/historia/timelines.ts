@@ -1,5 +1,6 @@
 // Índice de historias (lo regenera tools/historia_voz.py).
 import t_historia_adan_y_eva from './timeline-historia-adan-y-eva.json';
+import t_historia_ameri from './timeline-historia-ameri.json';
 import t_historia_dtmf from './timeline-historia-dtmf.json';
 import t_historia_ella_baila_sola from './timeline-historia-ella-baila-sola.json';
 import t_historia_fuentes_de_ortiz from './timeline-historia-fuentes-de-ortiz.json';
@@ -17,6 +18,7 @@ import t_historia_ya_me_entere from './timeline-historia-ya-me-entere.json';
 
 export const ALL = {
   'historia-adan-y-eva': t_historia_adan_y_eva,
+  'historia-ameri': t_historia_ameri,
   'historia-dtmf': t_historia_dtmf,
   'historia-ella-baila-sola': t_historia_ella_baila_sola,
   'historia-fuentes-de-ortiz': t_historia_fuentes_de_ortiz,

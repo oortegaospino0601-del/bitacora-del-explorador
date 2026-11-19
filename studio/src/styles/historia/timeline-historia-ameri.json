@@ -1,0 +1,772 @@
+{
+ "slug": "historia-ameri",
+ "hook": "LE PROMETIÓ UN LUGAR…\n¿QUE NO SALE\nEN NINGÚN MAPA?",
+ "durations": [
+  3.631,
+  3.041,
+  4.461,
+  4.881,
+  5.136,
+  3.86,
+  4.806,
+  3.649,
+  3.558,
+  5.125,
+  4.426,
+  4.631
+ ],
+ "lines": [
+  {
+   "start": 0.25,
+   "end": 2.931,
+   "text": "Le prometió un lugar… que no sale en ningún mapa.",
+   "scene": "ammapa:hook",
+   "words": [
+    {
+     "w": "Le",
+     "start": 0.25,
+     "end": 0.395
+    },
+    {
+     "w": "prometió",
+     "start": 0.395,
+     "end": 0.787
+    },
+    {
+     "w": "un",
+     "start": 0.787,
+     "end": 0.932
+    },
+    {
+     "w": "lugar…",
+     "start": 0.932,
+     "end": 1.325
+    },
+    {
+     "w": "que",
+     "start": 1.325,
+     "end": 1.544
+    },
+    {
+     "w": "no",
+     "start": 1.544,
+     "end": 1.714
+    },
+    {
+     "w": "sale",
+     "start": 1.714,
+     "end": 1.982
+    },
+    {
+     "w": "en",
+     "start": 1.982,
+     "end": 2.152
+    },
+    {
+     "w": "ningún",
+     "start": 2.152,
+     "end": 2.518
+    },
+    {
+     "w": "mapa.",
+     "start": 2.518,
+     "end": 2.931
+    }
+   ]
+  },
+  {
+   "start": 3.931,
+   "end": 5.973,
+   "text": "Esta es la historia de Ameri, de Duki.",
+   "scene": "amcerros",
+   "words": [
+    {
+     "w": "Esta",
+     "start": 3.931,
+     "end": 4.23
+    },
+    {
+     "w": "es",
+     "start": 4.23,
+     "end": 4.42
+    },
+    {
+     "w": "la",
+     "start": 4.42,
+     "end": 4.61
+    },
+    {
+     "w": "historia",
+     "start": 4.61,
+     "end": 5.125
+    },
+    {
+     "w": "de",
+     "start": 5.125,
+     "end": 5.315
+    },
+    {
+     "w": "Ameri,",
+     "start": 5.315,
+     "end": 5.776
+    },
+    {
+     "w": "de",
+     "start": 5.776,
+     "end": 5.834
+    },
+    {
+     "w": "Duki.",
+     "start": 5.834,
+     "end": 5.973
+    }
+   ]
+  },
+  {
+   "start": 6.973,
+   "end": 10.433,
+   "text": "Él barría aserrín en un taller ajeno, soñando con uno propio.",
+   "scene": "amtaller",
+   "words": [
+    {
+     "w": "Él",
+     "start": 6.973,
+     "end": 7.141
+    },
+    {
+     "w": "barría",
+     "start": 7.141,
+     "end": 7.501
+    },
+    {
+     "w": "aserrín",
+     "start": 7.501,
+     "end": 7.909
+    },
+    {
+     "w": "en",
+     "start": 7.909,
+     "end": 8.077
+    },
+    {
+     "w": "un",
+     "start": 8.077,
+     "end": 8.245
+    },
+    {
+     "w": "taller",
+     "start": 8.245,
+     "end": 8.605
+    },
+    {
+     "w": "ajeno,",
+     "start": 8.605,
+     "end": 9.013
+    },
+    {
+     "w": "soñando",
+     "start": 9.013,
+     "end": 9.444
+    },
+    {
+     "w": "con",
+     "start": 9.444,
+     "end": 9.672
+    },
+    {
+     "w": "uno",
+     "start": 9.672,
+     "end": 9.901
+    },
+    {
+     "w": "propio.",
+     "start": 9.901,
+     "end": 10.433
+    }
+   ]
+  },
+  {
+   "start": 11.433,
+   "end": 15.314,
+   "text": "Ella vendía flores en la esquina, la única que miraba sus dibujos.",
+   "scene": "amflores",
+   "words": [
+    {
+     "w": "Ella",
+     "start": 11.433,
+     "end": 11.704
+    },
+    {
+     "w": "vendía",
+     "start": 11.704,
+     "end": 12.073
+    },
+    {
+     "w": "flores",
+     "start": 12.073,
+     "end": 12.442
+    },
+    {
+     "w": "en",
+     "start": 12.442,
+     "end": 12.615
+    },
+    {
+     "w": "la",
+     "start": 12.615,
+     "end": 12.787
+    },
+    {
+     "w": "esquina,",
+     "start": 12.787,
+     "end": 13.303
+    },
+    {
+     "w": "la",
+     "start": 13.303,
+     "end": 13.489
+    },
+    {
+     "w": "única",
+     "start": 13.489,
+     "end": 13.833
+    },
+    {
+     "w": "que",
+     "start": 13.833,
+     "end": 14.071
+    },
+    {
+     "w": "miraba",
+     "start": 14.071,
+     "end": 14.468
+    },
+    {
+     "w": "sus",
+     "start": 14.468,
+     "end": 14.706
+    },
+    {
+     "w": "dibujos.",
+     "start": 14.706,
+     "end": 15.314
+    }
+   ]
+  },
+  {
+   "start": 16.314,
+   "end": 20.45,
+   "text": "En una servilleta le dibujó su lugar soñado, Ameri, y prometió llevarla.",
+   "scene": "amservilleta",
+   "words": [
+    {
+     "w": "En",
+     "start": 16.314,
+     "end": 16.484
+    },
+    {
+     "w": "una",
+     "start": 16.484,
+     "end": 16.701
+    },
+    {
+     "w": "servilleta",
+     "start": 16.701,
+     "end": 17.256
+    },
+    {
+     "w": "le",
+     "start": 17.256,
+     "end": 17.425
+    },
+    {
+     "w": "dibujó",
+     "start": 17.425,
+     "end": 17.788
+    },
+    {
+     "w": "su",
+     "start": 17.788,
+     "end": 17.957
+    },
+    {
+     "w": "lugar",
+     "start": 17.957,
+     "end": 18.271
+    },
+    {
+     "w": "soñado,",
+     "start": 18.271,
+     "end": 18.729
+    },
+    {
+     "w": "Ameri,",
+     "start": 18.729,
+     "end": 19.294
+    },
+    {
+     "w": "y",
+     "start": 19.294,
+     "end": 19.412
+    },
+    {
+     "w": "prometió",
+     "start": 19.412,
+     "end": 19.861
+    },
+    {
+     "w": "llevarla.",
+     "start": 19.861,
+     "end": 20.45
+    }
+   ]
+  },
+  {
+   "start": 21.45,
+   "end": 24.311,
+   "text": "Trabajó doble turno, con astillas en las manos.",
+   "scene": "amturno",
+   "words": [
+    {
+     "w": "Trabajó",
+     "start": 21.45,
+     "end": 21.951
+    },
+    {
+     "w": "doble",
+     "start": 21.951,
+     "end": 22.334
+    },
+    {
+     "w": "turno,",
+     "start": 22.334,
+     "end": 22.835
+    },
+    {
+     "w": "con",
+     "start": 22.835,
+     "end": 23.046
+    },
+    {
+     "w": "astillas",
+     "start": 23.046,
+     "end": 23.491
+    },
+    {
+     "w": "en",
+     "start": 23.491,
+     "end": 23.655
+    },
+    {
+     "w": "las",
+     "start": 23.655,
+     "end": 23.866
+    },
+    {
+     "w": "manos.",
+     "start": 23.866,
+     "end": 24.311
+    }
+   ]
+  },
+  {
+   "start": 25.311,
+   "end": 29.117,
+   "text": "Dos veces le cerraron la puerta: soñaba demasiado, le dijeron.",
+   "scene": "amsellos",
+   "words": [
+    {
+     "w": "Dos",
+     "start": 25.311,
+     "end": 25.479
+    },
+    {
+     "w": "veces",
+     "start": 25.479,
+     "end": 25.722
+    },
+    {
+     "w": "le",
+     "start": 25.722,
+     "end": 25.853
+    },
+    {
+     "w": "cerraron",
+     "start": 25.853,
+     "end": 26.209
+    },
+    {
+     "w": "la",
+     "start": 26.209,
+     "end": 26.34
+    },
+    {
+     "w": "puerta:",
+     "start": 26.34,
+     "end": 26.696
+    },
+    {
+     "w": "soñaba",
+     "start": 26.696,
+     "end": 26.909
+    },
+    {
+     "w": "demasiado,",
+     "start": 26.909,
+     "end": 27.266
+    },
+    {
+     "w": "le",
+     "start": 27.266,
+     "end": 27.698
+    },
+    {
+     "w": "dijeron.",
+     "start": 27.698,
+     "end": 29.117
+    }
+   ]
+  },
+  {
+   "start": 30.117,
+   "end": 32.766,
+   "text": "Cada moneda iba a un frasco con ese nombre.",
+   "scene": "amfrasco",
+   "words": [
+    {
+     "w": "Cada",
+     "start": 30.117,
+     "end": 30.406
+    },
+    {
+     "w": "moneda",
+     "start": 30.406,
+     "end": 30.799
+    },
+    {
+     "w": "iba",
+     "start": 30.799,
+     "end": 31.035
+    },
+    {
+     "w": "a",
+     "start": 31.035,
+     "end": 31.166
+    },
+    {
+     "w": "un",
+     "start": 31.166,
+     "end": 31.35
+    },
+    {
+     "w": "frasco",
+     "start": 31.35,
+     "end": 31.743
+    },
+    {
+     "w": "con",
+     "start": 31.743,
+     "end": 31.979
+    },
+    {
+     "w": "ese",
+     "start": 31.979,
+     "end": 32.215
+    },
+    {
+     "w": "nombre.",
+     "start": 32.215,
+     "end": 32.766
+    }
+   ]
+  },
+  {
+   "start": 33.766,
+   "end": 36.324,
+   "text": "Una mañana, por fin, las llaves fueron suyas.",
+   "scene": "amllaves",
+   "words": [
+    {
+     "w": "Una",
+     "start": 33.766,
+     "end": 34.036
+    },
+    {
+     "w": "mañana,",
+     "start": 34.036,
+     "end": 34.606
+    },
+    {
+     "w": "por",
+     "start": 34.606,
+     "end": 34.986
+    },
+    {
+     "w": "fin,",
+     "start": 34.986,
+     "end": 35.536
+    },
+    {
+     "w": "las",
+     "start": 35.536,
+     "end": 35.658
+    },
+    {
+     "w": "llaves",
+     "start": 35.658,
+     "end": 35.862
+    },
+    {
+     "w": "fueron",
+     "start": 35.862,
+     "end": 36.066
+    },
+    {
+     "w": "suyas.",
+     "start": 36.066,
+     "end": 36.324
+    }
+   ]
+  },
+  {
+   "start": 37.324,
+   "end": 41.449,
+   "text": "La subió al techo a ver el amanecer, y ella preguntó si ya habían llegado.",
+   "scene": "amtecho",
+   "words": [
+    {
+     "w": "La",
+     "start": 37.324,
+     "end": 37.491
+    },
+    {
+     "w": "subió",
+     "start": 37.491,
+     "end": 37.802
+    },
+    {
+     "w": "al",
+     "start": 37.802,
+     "end": 37.97
+    },
+    {
+     "w": "techo",
+     "start": 37.97,
+     "end": 38.281
+    },
+    {
+     "w": "a",
+     "start": 38.281,
+     "end": 38.4
+    },
+    {
+     "w": "ver",
+     "start": 38.4,
+     "end": 38.616
+    },
+    {
+     "w": "el",
+     "start": 38.616,
+     "end": 38.783
+    },
+    {
+     "w": "amanecer,",
+     "start": 38.783,
+     "end": 39.334
+    },
+    {
+     "w": "y",
+     "start": 39.334,
+     "end": 39.455
+    },
+    {
+     "w": "ella",
+     "start": 39.455,
+     "end": 39.723
+    },
+    {
+     "w": "preguntó",
+     "start": 39.723,
+     "end": 40.185
+    },
+    {
+     "w": "si",
+     "start": 40.185,
+     "end": 40.355
+    },
+    {
+     "w": "ya",
+     "start": 40.355,
+     "end": 40.525
+    },
+    {
+     "w": "habían",
+     "start": 40.525,
+     "end": 40.89
+    },
+    {
+     "w": "llegado.",
+     "start": 40.89,
+     "end": 41.449
+    }
+   ]
+  },
+  {
+   "start": 42.449,
+   "end": 45.875,
+   "text": "Él entendió que Ameri nunca fue un lugar: era llegar con ella.",
+   "scene": "ammapa:giro",
+   "words": [
+    {
+     "w": "Él",
+     "start": 42.449,
+     "end": 42.608
+    },
+    {
+     "w": "entendió",
+     "start": 42.608,
+     "end": 43.042
+    },
+    {
+     "w": "que",
+     "start": 43.042,
+     "end": 43.247
+    },
+    {
+     "w": "Ameri",
+     "start": 43.247,
+     "end": 43.544
+    },
+    {
+     "w": "nunca",
+     "start": 43.544,
+     "end": 43.841
+    },
+    {
+     "w": "fue",
+     "start": 43.841,
+     "end": 44.046
+    },
+    {
+     "w": "un",
+     "start": 44.046,
+     "end": 44.206
+    },
+    {
+     "w": "lugar:",
+     "start": 44.206,
+     "end": 44.594
+    },
+    {
+     "w": "era",
+     "start": 44.594,
+     "end": 44.824
+    },
+    {
+     "w": "llegar",
+     "start": 44.824,
+     "end": 45.209
+    },
+    {
+     "w": "con",
+     "start": 45.209,
+     "end": 45.439
+    },
+    {
+     "w": "ella.",
+     "start": 45.439,
+     "end": 45.875
+    }
+   ]
+  },
+  {
+   "start": 46.875,
+   "end": 49.306,
+   "text": "Y esto apenas empieza. ¿Cuál es tu Ameri?",
+   "scene": "amcamino",
+   "words": [
+    {
+     "w": "Y",
+     "start": 46.875,
+     "end": 47.007
+    },
+    {
+     "w": "esto",
+     "start": 47.007,
+     "end": 47.297
+    },
+    {
+     "w": "apenas",
+     "start": 47.297,
+     "end": 47.693
+    },
+    {
+     "w": "empieza.",
+     "start": 47.693,
+     "end": 48.3
+    },
+    {
+     "w": "¿Cuál",
+     "start": 48.3,
+     "end": 48.551
+    },
+    {
+     "w": "es",
+     "start": 48.551,
+     "end": 48.711
+    },
+    {
+     "w": "tu",
+     "start": 48.711,
+     "end": 48.872
+    },
+    {
+     "w": "Ameri?",
+     "start": 48.872,
+     "end": 49.306
+    }
+   ]
+  }
+ ],
+ "total": 51.206,
+ "audio": "historia/audio-historia-ameri.wav",
+ "song": {
+  "title": "Ameri",
+  "artists": "Duki",
+  "cardLine": 1
+ },
+ "estilo": "papel",
+ "cast": {
+  "him": {
+   "hair": "curly",
+   "skin": "#b47a52",
+   "hairC": "#2a1d16",
+   "coat": "#5f7a52",
+   "pants": "#34465a",
+   "shoes": "#3a2a20",
+   "shirt": "#f4ead5",
+   "noFace": true
+  },
+  "her": {
+   "hair": "bob",
+   "skin": "#e8b892",
+   "hairC": "#3b2418",
+   "coat": "#d4847a",
+   "pants": "#4b3b5a",
+   "shoes": "#3a2a2a",
+   "long": true,
+   "noFace": true
+  },
+  "other": {
+   "hair": "m2",
+   "skin": "#d9a27c",
+   "hairC": "#6b6b6b",
+   "coat": "#7a6a52",
+   "pants": "#2f3a3a",
+   "shoes": "#1d1d1d",
+   "shirt": "#e9e2cf",
+   "noFace": true
+  }
+ },
+ "safe": true
+}

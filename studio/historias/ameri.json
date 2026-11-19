@@ -1,0 +1,62 @@
+{
+ "slug": "historia-ameri",
+ "hook": "LE PROMETIÓ UN LUGAR…\n¿QUE NO SALE\nEN NINGÚN MAPA?",
+ "song": {
+  "title": "Ameri",
+  "artists": "Duki",
+  "cardLine": 1
+ },
+ "estilo": "papel",
+ "safe": true,
+ "ambient": false,
+ "align": true,
+ "cast": {
+  "him": {
+   "hair": "curly",
+   "skin": "#b47a52",
+   "hairC": "#2a1d16",
+   "coat": "#5f7a52",
+   "pants": "#34465a",
+   "shoes": "#3a2a20",
+   "shirt": "#f4ead5",
+   "noFace": true
+  },
+  "her": {
+   "hair": "bob",
+   "skin": "#e8b892",
+   "hairC": "#3b2418",
+   "coat": "#d4847a",
+   "pants": "#4b3b5a",
+   "shoes": "#3a2a2a",
+   "long": true,
+   "noFace": true
+  },
+  "other": {
+   "hair": "m2",
+   "skin": "#d9a27c",
+   "hairC": "#6b6b6b",
+   "coat": "#7a6a52",
+   "pants": "#2f3a3a",
+   "shoes": "#1d1d1d",
+   "shirt": "#e9e2cf",
+   "noFace": true
+  }
+ },
+ "speed": 1.0,
+ "tail": 0.7,
+ "minScene": 2.9,
+ "lines": [
+  {"scene": "ammapa:hook", "text": "Le prometió un lugar… que no sale en ningún mapa."},
+  {"scene": "amcerros", "text": "Esta es la historia de Ameri, de Duki."},
+  {"scene": "amtaller", "text": "Él barría aserrín en un taller ajeno, soñando con uno propio."},
+  {"scene": "amflores", "text": "Ella vendía flores en la esquina, la única que miraba sus dibujos."},
+  {"scene": "amservilleta", "text": "En una servilleta le dibujó su lugar soñado, Ameri, y prometió llevarla."},
+  {"scene": "amturno", "text": "Trabajó doble turno, con astillas en las manos."},
+  {"scene": "amsellos", "text": "Dos veces le cerraron la puerta: soñaba demasiado, le dijeron."},
+  {"scene": "amfrasco", "text": "Cada moneda iba a un frasco con ese nombre."},
+  {"scene": "amllaves", "text": "Una mañana, por fin, las llaves fueron suyas."},
+  {"scene": "amtecho", "text": "La subió al techo a ver el amanecer, y ella preguntó si ya habían llegado."},
+  {"scene": "ammapa:giro", "text": "Él entendió que Ameri nunca fue un lugar: era llegar con ella."},
+  {"scene": "amcamino", "text": "Y esto apenas empieza. ¿Cuál es tu Ameri?"}
+ ]
+}

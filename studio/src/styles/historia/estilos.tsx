@@ -13,6 +13,8 @@ import '@fontsource/ibm-plex-mono/latin-700.css';
 import '@fontsource/nunito/latin-900.css';
 import '@fontsource/barlow-condensed/latin-700.css';
 import '@fontsource/barlow-condensed/latin-800.css';
+import '@fontsource/baloo-2/latin-700.css';
+import '@fontsource/baloo-2/latin-800.css';
 import {FPS, rng} from './kit';
 
 export type Estilo = {
@@ -261,6 +263,22 @@ export const ESTILOS: Record<string, Estilo> = {
     shadow: '0 4px 16px rgba(70,25,10,0.85), 0 0 3px rgba(40,10,0,0.9)',
     pillBg: 'rgba(90,35,20,0.62)',
     pillBorder: '#3fe3cf',
+  },
+  // Ameri: papel recortado por capas, verde salvia, mostaza y crema, amanecer.
+  papel: {
+    filter: 'saturate(1.03)',
+    paper: 0.22,
+    grain: 0.05,
+    font: "'Baloo 2', 'Nunito', sans-serif",
+    hookWeight: 800,
+    capWeight: 800,
+    capSize: 86,
+    capBox: 'rgba(34,54,40,0.74)',
+    text: '#fffaf0',
+    accent: '#ffcf4a',
+    shadow: '0 3px 10px rgba(16,30,20,0.55)',
+    pillBg: 'rgba(34,54,40,0.74)',
+    pillBorder: '#ffcf4a',
   },
 };
 
