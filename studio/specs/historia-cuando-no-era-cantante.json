@@ -1,0 +1,96 @@
+{
+  "slug": "historia-cuando-no-era-cantante",
+  "title": "Cuando No Era Cantante (Remix)",
+  "composition": "Historia-cancion",
+  "song": "Cuando No Era Cantante (Remix)",
+  "artist": "El Bogueto, Anuel AA, Fuerza Regida, Yung Beef",
+  "voice": "em_alex",
+  "speed": 0.96,
+  "sentences": [
+    {
+      "text": "Un estadio entero gritaba su nombre… y él solo pensaba en ella.",
+      "scene": {
+        "type": "stage"
+      }
+    },
+    {
+      "text": "Antes de la fama, solo tenían un cuarto y una radio vieja.",
+      "scene": {
+        "type": "room"
+      }
+    },
+    {
+      "text": "Ella llegaba de noche y bailaban despacio canciones antiguas.",
+      "scene": {
+        "type": "dance"
+      }
+    },
+    {
+      "text": "No había lujos, y aun así ella lo quería.",
+      "scene": {
+        "type": "street"
+      }
+    },
+    {
+      "text": "Ella siempre era la primera en escuchar sus canciones.",
+      "scene": {
+        "type": "notebook"
+      }
+    },
+    {
+      "text": "Hasta que una de ellas sonó en todas partes.",
+      "scene": {
+        "type": "viral"
+      }
+    },
+    {
+      "text": "Llegaron las giras, el dinero y las cadenas.",
+      "scene": {
+        "type": "fame"
+      }
+    },
+    {
+      "text": "Ella lo llamaba… pero él siempre estaba lejos.",
+      "scene": {
+        "type": "calls"
+      }
+    },
+    {
+      "text": "Una noche, apagó la radio y se fue sin hacer ruido.",
+      "scene": {
+        "type": "leave"
+      }
+    },
+    {
+      "text": "Ahora lo tiene todo, pero cuando acaba la fiesta, está solo.",
+      "scene": {
+        "type": "party"
+      }
+    },
+    {
+      "text": "Extraña aquel cuarto y la forma en que ella lo miraba.",
+      "scene": {
+        "type": "memory"
+      }
+    },
+    {
+      "text": "Vuelve al barrio, se quita las cadenas y toca su puerta.",
+      "scene": {
+        "type": "return"
+      }
+    },
+    {
+      "text": "Porque nada de lo que ganó vale lo que tenía antes de la fama.",
+      "scene": {
+        "type": "message"
+      }
+    },
+    {
+      "text": "¿Qué canción te cuento ahora? Entra a mi LIVE, abajo a la izquierda, y coméntala.",
+      "tts": "¿Qué canción te cuento ahora? Entra a mi laiv, abajo a la izquierda, y coméntala.",
+      "scene": {
+        "type": "outro"
+      }
+    }
+  ]
+}
