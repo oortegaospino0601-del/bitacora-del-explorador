@@ -1,0 +1,98 @@
+{
+  "slug": "historia-la-vida-era-mas-corta",
+  "title": "La vida era más corta (Milo J) contada como historia",
+  "composition": "Historia-salamanca",
+  "song": "La vida era más corta",
+  "artist": "Milo J",
+  "lead": 0.05,
+  "bed": false,
+  "speed": 1.07,
+  "gap": 0.22,
+  "outroSeconds": 1.2,
+  "sentences": [
+    {
+      "text": "Se prometieron amor para siempre. Pero uno de los dos creía que nunca tendría que cumplirlo.",
+      "scene": {
+        "id": "salon",
+        "transition": "whip"
+      }
+    },
+    {
+      "text": "Todo empezó demasiado temprano, cuando un para siempre todavía sonaba fácil.",
+      "scene": {
+        "id": "temprano",
+        "transition": "smoke"
+      }
+    },
+    {
+      "text": "Lo suyo se sentía prohibido, casi un pecado guardado en secreto.",
+      "scene": {
+        "id": "secreto",
+        "transition": "tilt"
+      }
+    },
+    {
+      "text": "Como en la leyenda de la Salamanca, la cueva donde se baila de noche y se hacen pactos a oscuras.",
+      "scene": {
+        "id": "cueva",
+        "transition": "zoom"
+      }
+    },
+    {
+      "text": "Ahí bailaban sin soltarse, y entre vueltas se juraron quererse para siempre.",
+      "scene": {
+        "id": "promesa",
+        "transition": "flash"
+      }
+    },
+    {
+      "text": "Pero uno pensaba que la vida sería demasiado corta como para tener que cumplirlo.",
+      "scene": {
+        "id": "duda",
+        "transition": "iris"
+      }
+    },
+    {
+      "text": "Los mensajes quedaron en visto, y las llamadas se perdían de madrugada.",
+      "scene": {
+        "id": "celular",
+        "transition": "smoke"
+      }
+    },
+    {
+      "text": "Llegó un cansancio que no se iba con nada, y su luz se fue apagando.",
+      "scene": {
+        "id": "vela",
+        "transition": "tilt"
+      }
+    },
+    {
+      "text": "Aquel amor se fue joven y pálido, como una flor que se marchita antes de abrir.",
+      "scene": {
+        "id": "flor",
+        "transition": "whip"
+      }
+    },
+    {
+      "text": "Quedó un directo donde ya nadie aparece, y una foto de los dos que se apaga.",
+      "scene": {
+        "id": "pantallas",
+        "transition": "flash"
+      }
+    },
+    {
+      "text": "Creyó que la vida no le alcanzaría para ese para siempre. Y lo que no alcanzó fue el amor.",
+      "scene": {
+        "id": "camino",
+        "transition": "iris"
+      }
+    },
+    {
+      "text": "¿Qué canción cuento ahora? Entra a mi LIVE, aquí abajo a la izquierda, y coméntamela.",
+      "tts": "¿Qué canción cuento ahora? Entra a mi laiv, aquí abajo a la izquierda, y coméntamela.",
+      "scene": {
+        "id": "cierre"
+      }
+    }
+  ]
+}

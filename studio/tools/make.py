@@ -121,18 +121,19 @@ def build_voice(spec):
     ensure_models()
     k = Kokoro(str(KOKORO / "kokoro-v1.0.onnx"), str(KOKORO / "voices-v1.0.bin"))
     pieces, timings = [], []
-    cursor = 0.35
-    lead = np.zeros(int(0.35 * SR), dtype=np.float32)
+    lead_s = float(spec.get("lead", 0.35))  # silencio antes de la primera frase
+    cursor = lead_s
+    lead = np.zeros(int(lead_s * SR), dtype=np.float32)
     pieces.append(lead)
     for i, s in enumerate(spec["sentences"]):
         spoken = s.get("tts") or expand_numbers(s["text"])
-        samples, sr = k.create(spoken, voice=VOICE, speed=SPEED, lang="es")
+        samples, sr = k.create(spoken, voice=VOICE, speed=float(s.get("speed", spec.get("speed", SPEED))), lang="es")
         assert sr == SR, f"sample rate inesperado {sr}"
         x = trim(np.asarray(samples, dtype=np.float32))
         dur = len(x) / SR
         start, end = cursor, cursor + dur
         pieces.append(x)
-        gap = 0.46 if s["text"].rstrip().endswith("?") else 0.3
+        gap = float(s.get("gap", 0.46 if s["text"].rstrip().endswith("?") else spec.get("gap", 0.3)))
         pieces.append(np.zeros(int(gap * SR), dtype=np.float32))
         cursor = end + gap
         timings.append({"start": round(start, 3), "end": round(end, 3), "words": word_timings(s["text"], start, end)})
@@ -143,8 +144,20 @@ def build_voice(spec):
         t["sceneEnd"] = round(max(timings[i + 1]["start"] - 0.12, t["end"]), 3) if i < n - 1 else round(t["end"] + 0.5, 3)
     narration = np.concatenate(pieces)
     outro_start = timings[-1]["sceneEnd"]
-    total = round(outro_start + OUTRO_SECONDS, 3)
+    total = round(outro_start + float(spec.get("outroSeconds", OUTRO_SECONDS)), 3)
     return narration, timings, outro_start, total
+
+
+def mix_voice_only(narration, total):
+    """Solo voz (sin fondo sonoro): la música se añade después en la app."""
+    WORK.mkdir(parents=True, exist_ok=True)
+    PUBLIC.mkdir(parents=True, exist_ok=True)
+    nar = WORK / "narration.wav"
+    sf.write(str(nar), narration, SR)
+    fc = (f"[0]aresample=48000,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,"
+          f"apad=whole_dur={total:.3f},atrim=0:{total:.3f}[mix]")
+    sh(["ffmpeg", "-y", "-loglevel", "error", "-i", str(nar), "-filter_complex", fc, "-map", "[mix]",
+        "-ac", "2", "-ar", "48000", str(PUBLIC / "audio.wav")])
 
 
 def mix_audio(narration, total):
@@ -234,7 +247,10 @@ def main():
     narration, timings, outro_start, total = build_voice(spec)
     if total > 59:
         raise SystemExit(f"El video duraría {total:.1f}s (>59). Acorta el guion.")
-    mix_audio(narration, total)
+    if spec.get("bed", True):
+        mix_audio(narration, total)
+    else:
+        mix_voice_only(narration, total)
     props = {"spec": spec, "timings": timings, "totalSeconds": total, "outroStart": outro_start, "audioFile": "audio.wav"}
     (WORK / "props.json").write_text(json.dumps(props, ensure_ascii=False), encoding="utf-8")
     print(f"Duración total: {total:.1f}s. Renderizando con Remotion ...", flush=True)
