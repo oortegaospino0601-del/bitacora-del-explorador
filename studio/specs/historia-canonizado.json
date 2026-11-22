@@ -1,0 +1,89 @@
+{
+ "slug": "historia-canonizado",
+ "title": "Canonizado",
+ "composition": "Historia-cancion-canon",
+ "song": "Canonizado",
+ "artist": "Nsqk",
+ "voice": "em_alex",
+ "speed": 0.96,
+ "lead": 0.04,
+ "sentences": [
+  {
+   "text": "Sale a la calle y lo miran como a un santo. Y nadie lo ha nombrado nunca.",
+   "scene": {
+    "type": "salida"
+   }
+  },
+  {
+   "text": "La gente levanta el celular para verlo pasar, como en una procesión.",
+   "scene": {
+    "type": "procesion",
+    "in": "swipe"
+   }
+  },
+  {
+   "text": "Lo graban, lo transmiten en vivo, y los corazones no paran.",
+   "scene": {
+    "type": "directo",
+    "in": "glitch"
+   }
+  },
+  {
+   "text": "No tiene trofeo ni corona. Nadie lo nominó… y aun así camina como si ya hubiera ganado.",
+   "scene": {
+    "type": "podio",
+    "in": "gild"
+   }
+  },
+  {
+   "text": "Se siente divino, aunque ningún papel lo diga. El halo se lo puso él mismo.",
+   "scene": {
+    "type": "espejo",
+    "in": "flip"
+   }
+  },
+  {
+   "text": "Y sus cicatrices no las esconde: las lleva con orgullo, como prueba de su carácter.",
+   "scene": {
+    "type": "cicatrices",
+    "in": "mosaic"
+   }
+  },
+  {
+   "text": "No todos aplauden: hay envidia y críticas, pero le zumban alrededor y no lo tocan.",
+   "scene": {
+    "type": "moscas",
+    "in": "notif"
+   }
+  },
+  {
+   "text": "Al caer la noche, su silueta llena la pantalla gigante de la avenida.",
+   "scene": {
+    "type": "pantalla",
+    "in": "sparkle"
+   }
+  },
+  {
+   "text": "Y el público hace lo que ningún jurado: con sus reacciones, lo canoniza.",
+   "scene": {
+    "type": "canoniza",
+    "in": "hearts"
+   }
+  },
+  {
+   "text": "No necesitó un premio para saber lo que vale, y la calle se lo confirmó.",
+   "scene": {
+    "type": "vitral",
+    "in": "gild"
+   }
+  },
+  {
+   "text": "¿Qué canción canonizas tú? Entra a mi LIVE, abajo a la izquierda, y coméntala.",
+   "tts": "¿Qué canción canonizas tú? Entra a mi laiv, abajo a la izquierda, y coméntala.",
+   "scene": {
+    "type": "outro",
+    "in": "swipe"
+   }
+  }
+ ]
+}

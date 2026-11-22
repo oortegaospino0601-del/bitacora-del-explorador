@@ -1,0 +1,96 @@
+{
+ "slug": "historia-cuando-el-agua-hirviendo",
+ "title": "Cuando el agua hirviendo",
+ "composition": "Historia-cancion-vapor",
+ "song": "Cuando El Agua Hirviendo",
+ "artist": "Milo J",
+ "voice": "em_alex",
+ "speed": 0.96,
+ "lead": 0.04,
+ "sentences": [
+  {
+   "text": "Lo que antes le quemaba, hoy ya no le duele. Y eso es lo que más le asusta.",
+   "scene": {
+    "type": "boil"
+   }
+  },
+  {
+   "text": "Hubo un tiempo en que fue tan feliz, que nunca pensó que pudiera acabarse.",
+   "scene": {
+    "type": "memory",
+    "in": "polaroid"
+   }
+  },
+  {
+   "text": "Daba por hecho sus mañanas, su risa, sus mensajes de buenas noches.",
+   "scene": {
+    "type": "days",
+    "in": "focus"
+   }
+  },
+  {
+   "text": "Y sin darse cuenta, la fue soltando: descuidos, silencios, peleas.",
+   "scene": {
+    "type": "drift",
+    "in": "blinds"
+   }
+  },
+  {
+   "text": "Hasta que ella se fue… y la casa se volvió enorme.",
+   "scene": {
+    "type": "leave",
+    "in": "steam"
+   }
+  },
+  {
+   "text": "Ahora mira atrás, y se arrepiente de sus errores y de las lágrimas que gastó en lo que no importaba.",
+   "scene": {
+    "type": "lookback",
+    "in": "lightoff"
+   }
+  },
+  {
+   "text": "Quisiera volver el tiempo atrás, y ser otra vez el que ella conoció.",
+   "scene": {
+    "type": "rewind",
+    "in": "rewind"
+   }
+  },
+  {
+   "text": "Pero ese ya no está. Y por miedo a volver a amar, aprendió a estar solo.",
+   "scene": {
+    "type": "alone",
+    "in": "drip"
+   }
+  },
+  {
+   "text": "Como el agua hirviendo: primero quema… y luego, uno se acostumbra.",
+   "scene": {
+    "type": "cool",
+    "in": "steam"
+   }
+  },
+  {
+   "text": "Pero aunque ya no queme, la soledad se queda por dentro.",
+   "scene": {
+    "type": "empty",
+    "in": "roll"
+   }
+  },
+  {
+   "text": "Y aun así, le desea que alguien la quiera como él no supo quererla.",
+   "scene": {
+    "type": "wish",
+    "in": "leak"
+   }
+  },
+  {
+   "text": "¿Qué canción te cuento ahora? Entra a mi LIVE, abajo a la izquierda, y coméntala.",
+   "tts": "¿Qué canción te cuento ahora? Entra a mi laiv, abajo a la izquierda, y coméntala.",
+   "scene": {
+    "type": "outro",
+    "in": "dissolve"
+   }
+  }
+ ]
+}
