@@ -81,3 +81,21 @@ invita a comentar (`statement`). Texto de escena corto: se lee en 2 o 3 segundos
 ## Composiciones propias
 Ids de composición: solo letras, números y guiones (NO guion bajo). Ej.: `Short-diario`
 (`src/styles/diario/`, portada de periódico). En el JSON: `"composition": "Short-diario"`.
+
+## Historias de canciones con reproductor (formato de marca para TikTok)
+Referencia visual: `videos/historia-cosas-que-no-te-dije.mp4`. NO cambiar el estilo entre videos.
+- Composición `Historia-cancion` (`src/styles/cancion/`): `kit.tsx` (paleta cálida, personajes sin rasgos con la
+  cara en sombra, lámpara, radio, ventana de noche, bokeh), `escenas.tsx` (escenas de cada historia) y
+  `HistoriaCancion.tsx` (reproductor fijo arriba en 221,207 de 638x120 con ecualizador, canción · artistas,
+  tiempo y barra; subtítulos Fraunces 800 de 78 px en caja oscura con palabra activa ámbar en y=1131;
+  fundidos cruzados de 0,8 s; grano; flecha brillante al botón LIVE abajo a la izquierda durante la última frase).
+- Voz: SIEMPRE Kokoro `em_alex` a 0,96 (no usar voz femenina), pausas de ~0,9 s, -13,7 LUFS, solo voz (sin música).
+- Guion: `specs/<slug>.json` con `composition: "Historia-cancion"`, `song`, `artist` y una frase por escena
+  (`scene.type` = escena de `escenas.tsx`). La última frase invita al LIVE.
+- Generar: `CHROME=/opt/pw-browsers/chromium python3 -I tools/historia_cancion.py specs/<slug>.json`
+  (`--audio-only` solo la voz). Revisar fotogramas: `node tools/stills.mjs <dir> Historia-cancion work/props.json 0.5 <frames...>`.
+- Para una canción nueva se reutiliza todo y solo se escriben escenas nuevas en `escenas.tsx` con el mismo kit.
+- Variante `Historia-cancion-vapor` (`src/styles/vapor/`): misma marca con paleta de madrugada verde azulada y recuerdos
+  en sepia, cámaras y transiciones propias (ver LEDGER #12). El guion admite `"lead"` (segundos antes de la voz; 0,04 para
+  que la narración arranque en el segundo 0). Si `pip install kokoro-onnx` falla por `docopt`, instálalo en un venv:
+  `python3 -m venv /tmp/kvenv && /tmp/kvenv/bin/pip install kokoro-onnx soundfile numpy num2words` y ejecuta con ese Python.

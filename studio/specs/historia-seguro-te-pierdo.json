@@ -1,0 +1,102 @@
+{
+ "slug": "historia-seguro-te-pierdo",
+ "title": "Seguro Te Pierdo",
+ "composition": "Historia-cancion-lluvia",
+ "song": "Seguro Te Pierdo",
+ "artist": "Sergi, Kid Flex",
+ "voice": "em_alex",
+ "speed": 0.96,
+ "sentences": [
+  {
+   "text": "Desde que la conoció, no suelta el celular… por si ella escribe.",
+   "scene": {
+    "type": "glow"
+   }
+  },
+  {
+   "text": "Se conocieron una noche de lluvia, en una parada de bus.",
+   "scene": {
+    "type": "stop",
+    "in": "iris"
+   }
+  },
+  {
+   "text": "Hablaron tanto que dejaron pasar el bus y se dieron sus números.",
+   "scene": {
+    "type": "bus",
+    "in": "whip"
+   }
+  },
+  {
+   "text": "Desde entonces se escriben cada noche, y él sonríe frente a la pantalla.",
+   "scene": {
+    "type": "split",
+    "in": "slide"
+   }
+  },
+  {
+   "text": "Pero lo que siente crece tanto, que le da miedo decírselo y perderla.",
+   "scene": {
+    "type": "grow",
+    "in": "zoom"
+   }
+  },
+  {
+   "text": "Escribe lo que siente, lo lee mil veces… y lo vuelve a borrar.",
+   "scene": {
+    "type": "type",
+    "in": "screen"
+   }
+  },
+  {
+   "text": "Y cuando pasan horas sin saber de ella, se desespera.",
+   "scene": {
+    "type": "seen",
+    "in": "rain"
+   }
+  },
+  {
+   "text": "Una luz en la pantalla lo hace saltar… pero no era ella.",
+   "scene": {
+    "type": "bed",
+    "in": "blink"
+   }
+  },
+  {
+   "text": "Entonces entiende que callarse también es perderla.",
+   "scene": {
+    "type": "decide",
+    "in": "flash"
+   }
+  },
+  {
+   "text": "Sale bajo la lluvia a la parada donde se conocieron, y la llama.",
+   "scene": {
+    "type": "walk",
+    "in": "whip"
+   }
+  },
+  {
+   "text": "Le dice todo, sin borrar nada… y ella sentía lo mismo.",
+   "scene": {
+    "type": "call",
+    "in": "slide"
+   }
+  },
+  {
+   "text": "Porque el miedo a perder a alguien no se quita esperando: se quita diciéndolo.",
+   "scene": {
+    "type": "together",
+    "in": "iris"
+   }
+  },
+  {
+   "text": "¿Qué canción te cuento ahora? Entra a mi LIVE, abajo a la izquierda, y coméntala.",
+   "tts": "¿Qué canción te cuento ahora? Entra a mi laiv, abajo a la izquierda, y coméntala.",
+   "scene": {
+    "type": "outro",
+    "in": "dissolve"
+   }
+  }
+ ]
+}
