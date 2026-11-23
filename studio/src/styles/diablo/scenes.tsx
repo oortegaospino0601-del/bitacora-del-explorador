@@ -52,9 +52,27 @@ export const Entrada: React.FC<SceneProps> = ({f, dur}) => {
           </g>
         ))}
         <Bokeh f={f} n={10} seed={2} y0={260} y1={700} drift={1.2} />
-        {/* sombra alargada hacia la cámara, con cuernos sutiles */}
-        <g transform={`translate(${540 + sway} ${herY}) scale(${herS * 1.25} ${-herS * 1.3}) skewX(${Math.sin(f / 22) * 4})`} opacity={0.82}>
-          <Her x={0} y={0} walk={f * 0.27} mono="#120206" horns={lerp(0.35, 1, u)} />
+        {/* sombra en el piso, corta */}
+        <g transform={`translate(${540 + sway} ${herY}) scale(${herS * 1.1} ${-herS * 0.45})`} opacity={0.75}>
+          <Her x={0} y={0} walk={f * 0.27} mono="#120206" />
+        </g>
+        {/* los flashes proyectan su sombra en la puerta iluminada: la sombra tiene cuernos */}
+        <clipPath id="doorClip">
+          <rect x={380} y={430} width={320} height={530} />
+        </clipPath>
+        <g clipPath="url(#doorClip)">
+          <Her
+            x={540 + sway * 1.6 + 26}
+            y={herY - 10}
+            s={herS * 1.32}
+            walk={f * 0.27}
+            mono="#3a030c"
+            opacity={0.88}
+            horns={lerp(0.75, 1, u)}
+            hairSwing={Math.sin(f * 0.27) * 5}
+            armL={8 + Math.sin(f * 0.27) * 6}
+            armR={6 - Math.sin(f * 0.27) * 6}
+          />
         </g>
         {/* halo de "ángel" y ella */}
         <ellipse cx={540 + sway} cy={herY - 160 * herS} rx={130 * herS} ry={190 * herS} fill="url(#softWhite)" opacity={0.75} />
@@ -114,8 +132,12 @@ export const Celulares: React.FC<SceneProps> = ({f, dur}) => {
                 <rect x={10} y={300} width={170} height={4} rx={2} fill="#fff" opacity={0.3} />
                 <rect x={10} y={300} width={((f * 2 + i * 30) % 170)} height={4} rx={2} fill={C.neon} />
               </PhoneFrame>
-              <ellipse cx={-70} cy={150} rx={40} ry={70} fill={C.skinD} />
-              <ellipse cx={80} cy={120} rx={22} ry={34} fill={C.skin} />
+              <rect x={-58} y={190} width={116} height={260} rx={30} fill="#1c1420" />
+              <path d="M -88 70 Q -96 200 -40 215 L 40 215 Q 96 200 92 80 L 80 150 Q 60 180 0 182 Q -60 180 -78 150 Z" fill={C.skin} />
+              {[0, 1, 2].map((k) => (
+                <rect key={k} x={-112} y={40 + k * 44} width={30} height={36} rx={15} fill={k % 2 ? C.skinD : C.skin} />
+              ))}
+              <rect x={86} y={60} width={26} height={74} rx={13} fill={C.skin} transform="rotate(-14 99 97)" />
               <Flash x={60} y={-160} r={110} o={flashAt(f, i + 20, 34)} />
             </g>
           );

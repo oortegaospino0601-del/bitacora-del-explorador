@@ -265,7 +265,7 @@ export const Sparkles: React.FC<{f: number; n?: number; seed?: number; fall?: nu
 // Celular genérico (sin marcas)
 export const PhoneFrame: React.FC<{w: number; h: number; children?: React.ReactNode; dark?: string}> = ({w, h, children, dark = '#0e0e13'}) => (
   <g>
-    <rect x={-w / 2 - 10} y={-h / 2 - 10} width={w + 20} height={h + 20} rx={42} fill={dark} />
+    <rect x={-w / 2 - 10} y={-h / 2 - 10} width={w + 20} height={h + 20} rx={42} fill={dark} stroke="#4a4552" strokeWidth={3} />
     <svg x={-w / 2} y={-h / 2} width={w} height={h} viewBox={`0 0 ${w} ${h}`} overflow="hidden">
       {children}
     </svg>
