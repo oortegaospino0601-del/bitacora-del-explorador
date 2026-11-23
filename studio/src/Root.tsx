@@ -7,6 +7,7 @@ import {ShortChat} from './styles/chat/ShortChat';
 import {ShortCrt} from './styles/crt/ShortCrt';
 import {ShortComic} from './styles/comic/ShortComic';
 import {Props} from './types';
+import {Historia666, Props666} from './styles/diablo/Historia666';
 
 const FPS = 30;
 
@@ -95,6 +96,18 @@ export const Root: React.FC = () => (
     defaultProps={defaultProps}
     calculateMetadata={({props}) => ({
       durationInFrames: Math.max(30, Math.ceil(props.totalSeconds * FPS)),
+    })}
+  />
+  <Composition
+    id="Historia-666"
+    component={Historia666}
+    width={1080}
+    height={1920}
+    fps={FPS}
+    durationInFrames={150}
+    defaultProps={{song: '666', artists: 'Yan Block, Cris MJ, Panda Black', total: 5, sentences: [], audioFile: 'audio.wav'} as Props666}
+    calculateMetadata={({props}) => ({
+      durationInFrames: Math.max(30, Math.ceil(props.total * FPS)),
     })}
   />
   </>
