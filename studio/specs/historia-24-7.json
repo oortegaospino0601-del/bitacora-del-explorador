@@ -1,0 +1,90 @@
+{
+  "slug": "historia-24-7",
+  "title": "24/7 (Juandy y Valeria Sandoval) contada como historia",
+  "composition": "Historia-salsa",
+  "song": "24/7",
+  "artist": "Juandy & Valeria Sandoval",
+  "lead": 0.03,
+  "bed": false,
+  "speed": 1.05,
+  "gap": 0.26,
+  "outroSeconds": 1.0,
+  "sentences": [
+    {
+      "text": "Tenían todo planeado. Hasta que alguien se les cruzó en el camino.",
+      "scene": {
+        "id": "calle",
+        "transition": "petals"
+      }
+    },
+    {
+      "text": "Esta canción cuenta eso: un amor que no estaba en los planes de nadie.",
+      "scene": {
+        "id": "mapa",
+        "transition": "blinds"
+      }
+    },
+    {
+      "text": "Ella iba por su lado, él por el suyo. Y con una sola mirada, los dos cambiaron de rumbo.",
+      "scene": {
+        "id": "esquina",
+        "transition": "clock"
+      }
+    },
+    {
+      "text": "Empezó con un mensaje. Después otro. Y el chat ya no se apagaba, ni de día ni de noche.",
+      "scene": {
+        "id": "chat",
+        "transition": "rise"
+      }
+    },
+    {
+      "text": "Café en la mañana, risas por la tarde, y bailar juntos cuando caía la noche.",
+      "scene": {
+        "id": "dia",
+        "transition": "heart"
+      }
+    },
+    {
+      "text": "Porque cuando alguien llega así, sin avisar, ya no lo quieres lejos: lo quieres cerca a toda hora.",
+      "scene": {
+        "id": "orbita",
+        "transition": "petals"
+      }
+    },
+    {
+      "text": "Lo que empezó como una casualidad se volvió costumbre. Y la costumbre, poco a poco, se volvió un hogar.",
+      "scene": {
+        "id": "hogar",
+        "transition": "blinds"
+      }
+    },
+    {
+      "text": "Dejaron de hablar de mis planes y tus planes. Ahora eran los planes de los dos.",
+      "scene": {
+        "id": "planes",
+        "transition": "rise"
+      }
+    },
+    {
+      "text": "Y un día lo decidieron sin miedo: quedarse juntos, todos los días.",
+      "scene": {
+        "id": "arco",
+        "transition": "clock"
+      }
+    },
+    {
+      "text": "Por eso esta canción suena a fiesta. Celebra el amor que llegó de sorpresa y eligió quedarse.",
+      "scene": {
+        "id": "fiesta",
+        "transition": "heart"
+      }
+    },
+    {
+      "text": "Porque hay amores que llegan para un rato. Y hay otros que llegan para quedarse toda la vida.",
+      "scene": {
+        "id": "final"
+      }
+    }
+  ]
+}
