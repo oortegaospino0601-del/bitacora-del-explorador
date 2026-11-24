@@ -3,3 +3,4 @@ studio/work/
 studio/out/
 studio/public/audio.wav
 __pycache__/
+studio/noticias/*/work/

@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Toma de rehenes en Cartagena · escena</title>
+<style>
+@font-face{font-family:'Manrope';font-weight:500;src:url(node_modules/@fontsource/manrope/files/manrope-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Manrope';font-weight:700;src:url(node_modules/@fontsource/manrope/files/manrope-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Manrope';font-weight:800;src:url(node_modules/@fontsource/manrope/files/manrope-latin-800-normal.woff2) format('woff2')}
+@font-face{font-family:'JBMono';font-weight:500;src:url(node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'JBMono';font-weight:700;src:url(node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff2) format('woff2')}
+:root{
+  --navy:#08111F; --ink:#0E1A2C; --ink2:#14233A;
+  --amber:#FFB547; --cyan:#7AD7FF; --red:#FF6262; --green:#55D98F;
+  --paper:#F5F1EA; --mute:#A9B6C8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--navy);font-family:'Manrope',sans-serif;color:#fff}
+#gl{position:absolute;inset:0;width:1080px;height:1920px}
+.layer{position:absolute;inset:0;pointer-events:none}
+.mono{font-family:'JBMono',monospace}
+/* degradados para legibilidad */
+#shadeTop{background:linear-gradient(180deg,rgba(8,17,31,.92) 0%,rgba(8,17,31,.55) 14%,rgba(8,17,31,0) 24%)}
+#shadeBot{background:linear-gradient(0deg,rgba(8,17,31,.96) 0%,rgba(8,17,31,.86) 17%,rgba(8,17,31,.5) 30%,rgba(8,17,31,0) 42%)}
+#scrim{background:rgba(8,17,31,.0)}
+#vignette{background:radial-gradient(ellipse at 50% 45%,rgba(0,0,0,0) 55%,rgba(0,0,0,.35) 100%)}
+/* cabecera */
+#header{position:absolute;left:64px;right:64px;top:196px;height:120px}
+.sello{display:flex;align-items:center;gap:16px}
+.sello svg{width:54px;height:54px}
+.sello .t1{font-weight:800;font-size:30px;letter-spacing:.06em}
+.sello .t2{font-family:'JBMono';font-weight:500;font-size:19px;letter-spacing:.22em;color:var(--amber);margin-top:2px}
+#chip{position:absolute;right:0;top:6px;display:flex;align-items:center;gap:12px;padding:10px 18px;border-radius:40px;background:rgba(14,26,44,.78);border:1.5px solid rgba(255,181,71,.55);font-family:'JBMono';font-weight:700;font-size:20px;letter-spacing:.12em;color:var(--amber)}
+#chip i{width:13px;height:13px;border-radius:50%;background:var(--amber);display:block}
+#corte{position:absolute;left:0;top:78px;font-family:'JBMono';font-weight:500;font-size:23px;color:#DDE6F2;letter-spacing:.04em}
+#corte b{color:var(--amber);font-weight:700}
+/* titular del gancho */
+#headline{position:absolute;left:64px;right:64px;top:380px}
+#headline .k{display:inline-block;font-family:'JBMono';font-weight:700;font-size:28px;letter-spacing:.26em;color:var(--navy);background:var(--amber);padding:8px 16px;border-radius:8px}
+#headline .h{font-weight:800;font-size:104px;line-height:.98;letter-spacing:-.02em;margin-top:14px;text-shadow:0 6px 30px rgba(0,0,0,.45)}
+/* subtítulos */
+#caps{position:absolute;left:70px;width:860px;top:1236px;height:300px;display:flex;align-items:flex-start}
+#caps .line{font-weight:800;font-size:86px;line-height:1.08;letter-spacing:-.01em;text-shadow:0 4px 0 rgba(0,0,0,.35),0 10px 30px rgba(0,0,0,.55)}
+#caps span.w{display:inline-block;margin-right:.24em;transform-origin:50% 80%}
+#caps span.key{color:var(--amber)}
+/* etiquetas 3D */
+.tag{position:absolute;left:0;top:0;transform-origin:0 100%}
+.tag .stem{position:absolute;left:0;bottom:0;width:3px;background:linear-gradient(0deg,rgba(255,255,255,.0),#fff);transform:translateX(-1.5px)}
+.tag .box{position:absolute;left:-2px;display:flex;align-items:stretch;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.35);white-space:nowrap}
+.tag .n{background:var(--amber);color:var(--navy);font-family:'JBMono';font-weight:700;font-size:30px;padding:12px 14px}
+.tag .l{background:rgba(8,17,31,.9);font-weight:800;font-size:28px;letter-spacing:.05em;padding:12px 18px;display:flex;align-items:center}
+.ring{position:absolute;width:44px;height:22px;border:3px solid var(--amber);border-radius:50%;transform:translate(-50%,-50%)}
+#roadlabel{position:absolute;font-family:'JBMono';font-weight:700;font-size:26px;letter-spacing:.2em;color:#fff;background:rgba(8,17,31,.82);padding:10px 16px;border-radius:10px;border-left:5px solid var(--cyan);white-space:nowrap}
+#zona{position:absolute;left:64px;top:356px;display:flex;gap:12px;align-items:center;font-family:'JBMono';font-weight:700;font-size:24px;letter-spacing:.14em;background:rgba(8,17,31,.78);padding:12px 18px;border-radius:12px;color:#fff}
+#zona svg{width:26px;height:26px}
+#nota{position:absolute;left:64px;top:1180px;font-family:'JBMono';font-size:19px;color:#C7D2E0;letter-spacing:.06em}
+/* tarjetas */
+.card{position:absolute;left:60px;width:890px;border-radius:30px;background:rgba(10,20,36,.80);border:1.5px solid rgba(255,255,255,.13);box-shadow:0 30px 80px rgba(0,0,0,.45);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:36px 40px}
+.card .ttl{font-family:'JBMono';font-weight:700;font-size:25px;letter-spacing:.2em;color:var(--amber);display:flex;align-items:center;gap:14px}
+.src{font-family:'JBMono';font-weight:500;font-size:19px;color:var(--mute);letter-spacing:.03em}
+/* REC */
+#rec{position:absolute;left:40px;right:40px;top:340px;height:850px}
+#rec .c{position:absolute;width:64px;height:64px;border-color:rgba(255,255,255,.9);border-style:solid;border-width:0}
+#rec .tl{left:0;top:0;border-top-width:5px;border-left-width:5px}
+#rec .tr{right:0;top:0;border-top-width:5px;border-right-width:5px}
+#rec .bl{left:0;bottom:0;border-bottom-width:5px;border-left-width:5px}
+#rec .br{right:0;bottom:0;border-bottom-width:5px;border-right-width:5px}
+#rec .r{position:absolute;left:30px;top:26px;display:flex;align-items:center;gap:12px;font-family:'JBMono';font-weight:700;font-size:26px;letter-spacing:.14em}
+#rec .r i{width:18px;height:18px;border-radius:50%;background:var(--red);display:block}
+#rec .tc{position:absolute;right:30px;top:26px;font-family:'JBMono';font-weight:500;font-size:24px;letter-spacing:.08em}
+#rec .lbl{position:absolute;left:30px;bottom:24px;font-family:'JBMono';font-weight:500;font-size:20px;letter-spacing:.14em;color:#DDE6F2}
+#timeline{position:absolute;left:84px;top:440px;width:830px;padding:26px 26px 6px 12px;border-radius:24px;background:rgba(8,17,31,.55);backdrop-filter:blur(10px);overflow:hidden}
+.tli{position:relative;padding-left:52px;margin-bottom:16px}
+.tli .dot{position:absolute;left:0;top:8px;width:24px;height:24px;border-radius:50%;background:var(--navy);border:4px solid var(--amber)}
+.tli .h{font-family:'JBMono';font-weight:700;font-size:24px;color:var(--amber);letter-spacing:.1em}
+.tli .d{font-weight:700;font-size:33px;line-height:1.2;margin-top:4px;text-shadow:0 3px 14px rgba(0,0,0,.6)}
+.tli .d small{font-family:'JBMono';font-weight:500;font-size:19px;color:var(--mute);display:block;margin-top:4px}
+#tlbar{position:absolute;left:22px;top:46px;width:3px;background:rgba(255,181,71,.55)}
+/* versiones */
+.vcard{position:absolute;left:60px;width:890px;display:flex;gap:28px;align-items:center;border-radius:28px;background:rgba(10,20,36,.82);border:1.5px solid rgba(255,255,255,.13);padding:30px 34px;backdrop-filter:blur(14px)}
+.vcard .who{font-family:'JBMono';font-weight:700;font-size:22px;letter-spacing:.16em;color:var(--cyan)}
+.vcard .q{font-weight:800;font-size:44px;line-height:1.1;margin-top:8px}
+.vcard .s{font-weight:500;font-size:26px;color:#D5DEEA;margin-top:8px}
+.sil{width:120px;height:120px;flex:none}
+/* contador */
+#counter .big{font-weight:800;font-size:250px;line-height:.9;letter-spacing:-.04em;color:#fff;font-variant-numeric:tabular-nums}
+#counter .lab{font-family:'JBMono';font-weight:700;font-size:26px;letter-spacing:.18em;color:var(--green)}
+.row{display:flex;justify-content:space-between;align-items:baseline;border-top:1.5px solid rgba(255,255,255,.12);padding-top:18px;margin-top:18px}
+.row .a{font-weight:700;font-size:30px}
+.row .b{font-weight:800;font-size:54px;color:var(--amber)}
+.badge{display:inline-block;font-family:'JBMono';font-weight:700;font-size:21px;letter-spacing:.14em;padding:8px 14px;border-radius:10px;border:2px solid var(--amber);color:var(--amber)}
+/* estado */
+.srow{display:flex;gap:26px;align-items:center;padding:20px 0;border-top:1.5px solid rgba(255,255,255,.12)}
+.srow:first-of-type{border-top:none}
+.srow .ic{width:96px;height:96px;flex:none;border-radius:22px;background:rgba(122,215,255,.12);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:34px;color:var(--cyan)}
+.srow .tx{font-weight:700;font-size:33px;line-height:1.18}
+.srow .tx small{display:block;font-family:'JBMono';font-weight:500;font-size:19px;color:var(--mute);margin-top:6px}
+/* avión */
+#sky{position:relative;height:260px;margin:18px 0 10px;border-radius:20px;background:linear-gradient(180deg,rgba(122,215,255,.10),rgba(122,215,255,.02));overflow:hidden}
+.pill{display:inline-flex;align-items:center;gap:12px;font-family:'JBMono';font-weight:700;font-size:26px;letter-spacing:.12em;padding:12px 20px;border-radius:40px}
+/* desmentido */
+#desm .stamp{position:absolute;right:34px;top:26px;font-family:'JBMono';font-weight:700;font-size:30px;letter-spacing:.18em;color:var(--red);border:4px solid var(--red);padding:8px 16px;border-radius:10px;transform:rotate(-6deg)}
+.ditem{padding:20px 0;border-top:1.5px solid rgba(255,255,255,.12)}
+.ditem .claim{position:relative;display:inline-block;font-weight:700;font-size:34px;color:#E9EEF5}
+.ditem .claim .strike{position:absolute;left:-4px;top:52%;height:5px;background:var(--red);border-radius:3px}
+.ditem .truth{display:flex;gap:12px;align-items:flex-start;font-weight:800;font-size:31px;margin-top:10px;color:#fff;line-height:1.2}
+.ditem .truth b{color:var(--red);font-family:'JBMono';font-size:24px;letter-spacing:.1em;padding-top:5px;flex:none}
+/* no confirmado */
+#nocf{border:3px dashed rgba(255,181,71,.8)}
+.nitem{display:flex;gap:18px;align-items:flex-start;padding:16px 0;border-top:1.5px solid rgba(255,255,255,.10);font-weight:700;font-size:32px;line-height:1.2}
+.nitem .q{flex:none;width:44px;height:44px;border-radius:50%;border:3px solid var(--amber);color:var(--amber);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:26px}
+.nitem small{display:block;font-family:'JBMono';font-weight:500;font-size:19px;color:var(--mute);margin-top:6px}
+/* cierre */
+#cierre{position:absolute;left:64px;right:64px;top:470px}
+#cierre .big{font-weight:800;font-size:112px;line-height:.98;letter-spacing:-.02em;text-shadow:0 8px 40px rgba(0,0,0,.5)}
+#cierre .big em{font-style:normal;color:var(--amber)}
+#cierre .ln{display:flex;gap:16px;align-items:center;font-weight:700;font-size:36px;margin-top:22px}
+#cierre .ln i{width:16px;height:16px;border-radius:50%;background:var(--amber);display:block;flex:none}
+/* fuentes */
+#fuentes .grp{font-family:'JBMono';font-weight:700;font-size:22px;letter-spacing:.18em;color:var(--cyan);margin-top:24px}
+#fuentes .lst{font-weight:700;font-size:31px;line-height:1.45;margin-top:8px}
+#fuentes .fin{font-family:'JBMono';font-weight:500;font-size:20px;color:var(--mute);margin-top:26px;line-height:1.5}
+</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+</head>
+<body>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div class="layer" id="vignette"></div>
+<div class="layer" id="scrim"></div>
+<div class="layer" id="shadeTop"></div>
+<div class="layer" id="shadeBot"></div>
+<div class="layer" id="labels"></div>
+
+<div class="layer" id="ui">
+  <div id="header">
+    <div class="sello">
+      <svg viewBox="0 0 54 54"><circle cx="27" cy="27" r="24" fill="none" stroke="#FFB547" stroke-width="3"/><path d="M27 8 L32 27 L27 46 L22 27 Z" fill="#FFB547"/><path d="M8 27 L27 23 L46 27 L27 31 Z" fill="#fff" opacity=".85"/><circle cx="27" cy="27" r="3.5" fill="#08111F"/></svg>
+      <div><div class="t1">BITÁCORA</div><div class="t2">INFORME · CARTAGENA</div></div>
+    </div>
+    <div id="chip"><i></i>EN DESARROLLO</div>
+    <div id="corte">Información hasta las <b>4:50 p. m.</b> · mar 24 nov 2026</div>
+  </div>
+
+  <div id="headline"><div class="k">LO QUE SE SABE</div><div class="h">Toma de rehenes en Cartagena</div></div>
+
+  <div id="zona"><svg viewBox="0 0 26 26"><path d="M13 2a8 8 0 0 0-8 8c0 6 8 14 8 14s8-8 8-14a8 8 0 0 0-8-8z" fill="#7AD7FF"/><circle cx="13" cy="10" r="3" fill="#08111F"/></svg>LA CASTELLANA · CARTAGENA</div>
+  <div id="roadlabel">AV. PEDRO DE HEREDIA</div>
+  <div id="nota">Mapa ilustrativo · no a escala · solo exteriores</div>
+
+  <!-- cronología con marco REC -->
+  <div id="rec"><div class="c tl"></div><div class="c tr"></div><div class="c bl"></div><div class="c br"></div>
+    <div class="r"><i></i>REC · CRONOLOGÍA</div><div class="tc mono" id="tc">00:00:00:00</div></div>
+  <div id="timeline"><div id="tlbar"></div>
+    <div class="tli"><div class="dot"></div><div class="h">EN LA MAÑANA</div><div class="d">Hombres armados intentan asaltar un carro de valores<small>versión del presidente</small></div></div>
+    <div class="tli"><div class="dot"></div><div class="h">EN LA MAÑANA</div><div class="d">Se encierran con clientes y trabajadores</div></div>
+    <div class="tli"><div class="dot"></div><div class="h">ANTES DEL MEDIODÍA</div><div class="d">Aterrizajes suspendidos ≈45 min<small>Aerocivil</small></div></div>
+    <div class="tli"><div class="dot"></div><div class="h">MEDIODÍA</div><div class="d">Policía: aún no han salido todos<small>vía El Tiempo</small></div></div>
+    <div class="tli"><div class="dot"></div><div class="h">2:30 P. M.</div><div class="d">Al menos 21 seguirían adentro<small>El Heraldo</small></div></div>
+    <div class="tli"><div class="dot"></div><div class="h">4:50 P. M.</div><div class="d">El operativo sigue en curso</div></div>
+  </div>
+
+  <!-- versiones -->
+  <div class="vcard" id="v1" style="top:420px">
+    <svg class="sil" viewBox="0 0 120 120"><circle cx="60" cy="60" r="58" fill="rgba(255,255,255,.06)"/><circle cx="60" cy="46" r="20" fill="#5E6B7E"/><path d="M22 104c4-22 20-32 38-32s34 10 38 32z" fill="#5E6B7E"/><text x="60" y="54" text-anchor="middle" font-family="JBMono" font-weight="700" font-size="22" fill="#08111F">?</text></svg>
+    <div><div class="who">VERSIÓN DEL PRESIDENTE</div><div class="q">“Delincuentes comunes”</div><div class="s">Querían asaltar un carro de valores</div></div>
+  </div>
+  <div class="vcard" id="v2" style="top:720px">
+    <svg class="sil" viewBox="0 0 120 120"><circle cx="60" cy="60" r="58" fill="rgba(255,255,255,.06)"/><circle cx="60" cy="46" r="20" fill="#5E6B7E"/><path d="M22 104c4-22 20-32 38-32s34 10 38 32z" fill="#5E6B7E"/><text x="60" y="54" text-anchor="middle" font-family="JBMono" font-weight="700" font-size="22" fill="#08111F">?</text></svg>
+    <div><div class="who">VERSIÓN DE LA ALCALDÍA</div><div class="q">Posible grupo armado organizado</div><div class="s">Hombres uniformados y con armas largas</div></div>
+  </div>
+
+  <!-- contador -->
+  <div class="card" id="counter" style="top:380px">
+    <div class="ttl"><span>RETENIDOS Y LIBERADOS</span></div>
+    <div style="margin-top:14px"><span class="badge">SIN CIFRA OFICIAL ÚNICA</span></div>
+    <div style="display:flex;align-items:flex-end;gap:26px;margin-top:22px">
+      <div class="big" id="cnum">0</div>
+      <div style="padding-bottom:30px"><div class="lab">LIBERADOS</div><div class="src" id="csrc" style="font-size:22px;margin-top:8px;max-width:420px">&nbsp;</div></div>
+    </div>
+    <div class="row" id="r30"><div class="a">Retenidas al inicio<div class="src">según el presidente</div></div><div class="b">≈30</div></div>
+    <div class="row" id="r21"><div class="a">Seguirían adentro<div class="src">El Heraldo · 2:30 p. m.</div></div><div class="b">≥21</div></div>
+    <div class="src" id="cnote" style="margin-top:16px">Cifras de fuentes distintas: pueden no cuadrar entre sí.</div>
+  </div>
+
+  <!-- estado -->
+  <div class="card" id="estado" style="top:380px">
+    <div class="ttl">QUÉ HA HECHO EL ESTADO</div>
+    <div style="margin-top:10px">
+      <div class="srow" id="s1"><div class="ic">≈500</div><div class="tx">Policías y militares en el operativo<small>reportes de prensa</small></div></div>
+      <div class="srow" id="s2"><div class="ic">PMU</div><div class="tx">Puesto de Mando Unificado con el alcalde Dumek Turbay<small>Alcaldía de Cartagena</small></div></div>
+      <div class="srow" id="s3"><div class="ic"><svg width="52" height="52" viewBox="0 0 52 52"><path d="M26 4l18 8v12c0 12-8 20-18 24C16 44 8 36 8 24V12z" fill="none" stroke="#7AD7FF" stroke-width="4"/></svg></div><div class="tx">El presidente y el ministro de Defensa, Jorge Mora, viajaron a Cartagena</div></div>
+      <div class="srow" id="s4"><div class="ic"><svg width="50" height="50" viewBox="0 0 50 50"><path d="M25 44S6 32 6 18a10 10 0 0 1 19-4 10 10 0 0 1 19 4c0 14-19 26-19 26z" fill="none" stroke="#7AD7FF" stroke-width="4"/></svg></div><div class="tx">La empresa del almacén: “la protección de la vida es prioridad”<small>comunicado de la compañía</small></div></div>
+    </div>
+  </div>
+
+  <!-- avión -->
+  <div class="card" id="avion" style="top:400px">
+    <div class="ttl"><svg width="30" height="30" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" fill="#FFB547"/></svg>AEROPUERTO RAFAEL NÚÑEZ</div>
+    <div id="sky">
+      <svg width="810" height="260" style="position:absolute;left:0;top:0"><path id="arc" d="M-40 210 C 220 40, 560 40, 850 200" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="3" stroke-dasharray="10 12"/><line x1="0" y1="236" x2="810" y2="236" stroke="rgba(255,255,255,.25)" stroke-width="3"/></svg>
+      <svg id="plane" width="84" height="84" viewBox="0 0 24 24" style="position:absolute;left:0;top:0"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" fill="#fff"/></svg>
+    </div>
+    <div style="font-weight:800;font-size:42px;line-height:1.15">Aterrizajes suspendidos ≈45 minutos, antes del mediodía</div>
+    <div style="font-weight:500;font-size:28px;color:#D5DEEA;margin-top:10px">Los despegues siguieron operando.</div>
+    <div style="display:flex;align-items:center;gap:18px;margin-top:22px">
+      <div class="pill" id="p1" style="border:3px solid var(--amber);color:var(--amber)">● SUSPENDIDOS</div>
+      <div class="pill" id="p2" style="background:var(--green);color:var(--navy)">✓ REANUDADOS</div>
+    </div>
+    <div class="src" style="margin-top:16px">Fuente: Aerocivil, citada por medios</div>
+  </div>
+
+  <!-- desmentido -->
+  <div class="card" id="desm" style="top:380px;border-color:rgba(255,98,98,.55)">
+    <div class="ttl" style="color:var(--red)">LO QUE ES FALSO</div>
+    <div class="stamp">DESMENTIDO</div>
+    <div style="margin-top:24px">
+      <div class="ditem" id="d1"><span class="claim">“Hay heridos dentro del almacén”<span class="strike"></span></span><div class="truth"><b>REAL</b><span>Falso, según la Policía</span></div></div>
+      <div class="ditem" id="d2"><span class="claim">“Video de liberación de rehenes”<span class="strike"></span></span><div class="truth"><b>REAL</b><span>Era la evacuación de locales cercanos, al inicio</span></div></div>
+      <div class="ditem" id="d3"><span class="claim">“Ya liberaron a todos”<span class="strike"></span></span><div class="truth"><b>REAL</b><span>La Policía aclaró al mediodía que no<small class="src" style="display:block;margin-top:4px">vía El Tiempo</small></span></div></div>
+    </div>
+  </div>
+
+  <!-- no confirmado -->
+  <div class="card" id="nocf" style="top:380px">
+    <div class="ttl">NO CONFIRMADO</div>
+    <div style="margin-top:16px">
+      <div class="nitem" id="n1"><div class="q">?</div><div>Una carta atribuida a los captores<small>las autoridades verifican si es auténtica</small></div></div>
+      <div class="nitem" id="n2"><div class="q">?</div><div>Que haya unas 170 personas adentro<small>cifra de esa carta</small></div></div>
+      <div class="nitem" id="n3"><div class="q">?</div><div>Exigencias: $7.000 millones, vehículos blindados y desalojo de Transcaribe</div></div>
+      <div class="nitem" id="n4"><div class="q">?</div><div>Que buscaran huir hacia Barranquilla</div></div>
+    </div>
+    <div class="src" id="n5" style="margin-top:14px;line-height:1.5">Origen: reportes de prensa y fuentes no oficiales.<br>Las autoridades descartan negociar.</div>
+  </div>
+
+  <!-- cierre -->
+  <div id="cierre">
+    <div class="big">El caso sigue <em>abierto</em></div>
+    <div class="ln" id="cl1"><i></i>Las cifras pueden cambiar</div>
+    <div class="ln" id="cl2"><i></i>Comparte solo información verificada</div>
+    <div class="ln" id="cl3"><i></i>No difundas imágenes de las personas retenidas</div>
+  </div>
+
+  <!-- fuentes -->
+  <div class="card" id="fuentes" style="top:360px">
+    <div class="ttl">FUENTES</div>
+    <div class="grp">MEDIOS</div>
+    <div class="lst">El Tiempo · El Heraldo · El Espectador · El Colombiano · Semana · Infobae · Bloomberg Línea · Noticias Caracol · Vanguardia · Pulzo · NTN24 · El Montemariano</div>
+    <div class="grp">ENTIDADES (declaraciones citadas por medios)</div>
+    <div class="lst">Presidencia · Ministerio de Defensa · Policía Nacional · Alcaldía de Cartagena · Aerocivil · Grupo Éxito</div>
+    <div class="fin">Información hasta las 4:50 p. m. (hora de Colombia) del 24 nov 2026. Puede cambiar.<br>Animación ilustrativa: no muestra el interior ni el operativo.</div>
+  </div>
+
+  <div id="caps"></div>
+</div>
+
+<script type="module">
+import * as THREE from 'three';
+import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
+import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
+import {ShaderPass} from 'three/addons/postprocessing/ShaderPass.js';
+import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
+import {HorizontalTiltShiftShader} from 'three/addons/shaders/HorizontalTiltShiftShader.js';
+import {VerticalTiltShiftShader} from 'three/addons/shaders/VerticalTiltShiftShader.js';
+
+const W = 1080, H = 1920, FPS = 30;
+const T = await (await fetch('work/tiempos.json')).json();
+const S = T.sentences;
+const END = 89.6;
+
+// ---------- utilidades de tiempo ----------
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const ease = x => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const eOut = x => 1 - Math.pow(1 - clamp(x), 3);
+const eBack = x => { x = clamp(x); const c = 1.5; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const lerp = (a, b, k) => a + (b - a) * k;
+const norm = s => s.toLowerCase().replace(/[^\wáéíóúñü:.]/g, '').replace(/\.$/, '');
+function wt(si, word, nth = 0) {           // inicio de una palabra de la frase si
+  const ws = S[si].words; let c = 0;
+  for (const w of ws) if (norm(w.w) === norm(word)) { if (c++ === nth) return w.start; }
+  throw new Error('palabra no encontrada: ' + word + ' en ' + si);
+}
+// tramos por sección
+const secs = {};
+S.forEach((s, i) => {
+  const prev = S[i - 1];
+  const st = i === 0 ? 0 : (prev.end + s.start) / 2;
+  if (!secs[s.sec]) secs[s.sec] = {a: st, b: null};
+  if (prev && prev.sec !== s.sec) secs[prev.sec].b = st;
+});
+secs[S[S.length - 1].sec].b = T.narrationEnd + 0.45;
+secs.fuentes = {a: T.narrationEnd + 0.45, b: END};
+window.SECS = secs;
+// visibilidad suave de un bloque entre a y b
+const vis = (a, b, fin = .45, fout = .4) => Math.min(eOut((t_ - a) / fin), 1 - ease((t_ - (b - fout)) / fout));
+let t_ = 0;
+
+// ---------- escena 3D ----------
+const canvas = document.getElementById('gl');
+const renderer = new THREE.WebGLRenderer({canvas, antialias: true, preserveDrawingBuffer: true});
+renderer.setPixelRatio(1); renderer.setSize(W, H, false);
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.22;
+const scene = new THREE.Scene();
+const fogCol = new THREE.Color('#c9d6df');
+scene.background = fogCol.clone();
+scene.fog = new THREE.Fog(fogCol.clone(), 520, 1500);
+const camera = new THREE.PerspectiveCamera(44, W / H, 1, 4000);
+
+const hemi = new THREE.HemisphereLight('#e6f2ff', '#a08c70', 1.5); scene.add(hemi);
+const sun = new THREE.DirectionalLight('#fff1dc', 2.6);
+sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048);
+const sc = sun.shadow.camera; sc.left = -380; sc.right = 380; sc.top = 380; sc.bottom = -380; sc.near = 10; sc.far = 1500;
+sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.6;
+scene.add(sun); scene.add(sun.target);
+
+// PRNG determinista
+let seed = 20261124; const rnd = () => (seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296;
+const mat = (c, o = {}) => new THREE.MeshStandardMaterial({color: c, roughness: .9, metalness: 0, ...o});
+
+// suelo
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(4000, 4000), mat('#e3dac8'));
+ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
+function slab(x0, x1, z0, z1, y, color, recv = true) {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(x1 - x0, .4, z1 - z0), mat(color));
+  m.position.set((x0 + x1) / 2, y, (z0 + z1) / 2); m.receiveShadow = recv; scene.add(m); return m;
+}
+function box(x, z, w, d, h, color, o = {}) {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat(color, o));
+  m.position.set(x, h / 2 + (o.y || 0), z); m.castShadow = true; m.receiveShadow = true; scene.add(m); return m;
+}
+// avenida (eje X): calzadas, separadores, carril exclusivo y andenes
+const L = 2400;
+slab(-L, L, -17, 17, .05, '#bfb7a8');             // andenes
+slab(-L, L, -14, -4.5, .15, '#3d434c');           // calzada norte
+slab(-L, L, 4.5, 14, .15, '#3d434c');             // calzada sur
+slab(-L, L, -4.5, 4.5, .18, '#7d6a60');           // carril exclusivo (buses)
+slab(-L, L, -4.9, -4.3, .5, '#e7e1d5'); slab(-L, L, 4.3, 4.9, .5, '#e7e1d5');
+// marcas viales
+{
+  const g = new THREE.PlaneGeometry(6, .45), m = new THREE.MeshBasicMaterial({color: '#f1ede4'});
+  const n = 2 * Math.floor(L / 14); const im = new THREE.InstancedMesh(g, m, n * 2); const o = new THREE.Object3D(); let k = 0;
+  for (let i = 0; i < n; i++) for (const z of [-9.25, 9.25]) { o.position.set(-L + i * 14, .36, z); o.rotation.set(-Math.PI / 2, 0, 0); o.updateMatrix(); im.setMatrixAt(k++, o.matrix); }
+  scene.add(im);
+}
+// calles secundarias (grilla)
+const STREET = '#4a5059';
+for (let x = -1200; x <= 1200; x += 64) slab(x - 4.5, x + 4.5, -1200, -17, .1, STREET), slab(x - 4.5, x + 4.5, 17, 1200, .1, STREET);
+for (let z of [-81, -145, -209, -273, -337, -401, -465, -529, -593, 81, 145, 209, 273, 337, 401, 465, 529, 593]) slab(-1200, 1200, z - 4.5, z + 4.5, .1, STREET);
+
+// zonas reservadas (sin casas): supermercado, parqueadero, centro comercial
+const reserved = [[-98, 2, 17, 112], [6, 122, 17, 112]];
+const inRes = (x, z, r = 6) => reserved.some(([a, b, c, d]) => x > a - r && x < b + r && z > c - r && z < d + r);
+
+// casas y edificios con colores caribeños (instanciados)
+const PAL = ['#f0c66b', '#e9967a', '#8fcfb4', '#f3e5c8', '#a9c9e8', '#f2b3c6', '#e8dcc8', '#c9b79c', '#f6efe3', '#d7a86e'];
+const geoB = new THREE.BoxGeometry(1, 1, 1);
+const bMat = new THREE.MeshStandardMaterial({roughness: .85, metalness: 0});
+const MAXB = 4200; const bIm = new THREE.InstancedMesh(geoB, bMat, MAXB); bIm.castShadow = bIm.receiveShadow = true;
+const roofIm = new THREE.InstancedMesh(geoB, new THREE.MeshStandardMaterial({color: '#9a9488', roughness: .9}), MAXB); roofIm.castShadow = true;
+let nb = 0, nr = 0; const o3 = new THREE.Object3D(); const col = new THREE.Color();
+function addB(x, z, w, d, h, c) {
+  if (nb >= MAXB) return;
+  o3.position.set(x, h / 2, z); o3.rotation.set(0, 0, 0); o3.scale.set(w, h, d); o3.updateMatrix();
+  bIm.setMatrixAt(nb, o3.matrix); bIm.setColorAt(nb, col.set(c)); nb++;
+  if (rnd() < .45 && nr < MAXB) { const s = 1.5 + rnd() * 2; o3.position.set(x + (rnd() - .5) * w * .5, h + s / 2, z + (rnd() - .5) * d * .5); o3.scale.set(s, s, s); o3.updateMatrix(); roofIm.setMatrixAt(nr++, o3.matrix); }
+}
+for (let bx = -1200; bx < 1200; bx += 64) for (const [z0, z1] of [[-77, -21], [-141, -85], [-205, -149], [-269, -213], [-333, -277], [-397, -341], [-461, -405], [-525, -469], [21, 77], [85, 141], [149, 205], [213, 269], [277, 333], [341, 397], [405, 461], [469, 525]]) {
+  const x0 = bx + 4.5, x1 = bx + 64 - 4.5;
+  const far = Math.hypot((x0 + x1) / 2, (z0 + z1) / 2);
+  if (far > 900) continue;
+  // lotes en hilera a lo largo del perímetro de la manzana
+  const lots = [];
+  for (let x = x0 + 1; x < x1 - 6; x += 8 + rnd() * 4) lots.push([x, z0 + 1, 'n'], [x, z1 - 1, 's']);
+  for (const [x, z, side] of lots) {
+    const w = 6 + rnd() * 3, d = 10 + rnd() * 8; const cz = side === 'n' ? z + d / 2 : z - d / 2;
+    if (inRes(x + w / 2, cz)) continue;
+    const dc = Math.hypot(x - 0, cz - 40);
+    const tall = dc > 230 && rnd() < .07;
+    const h = tall ? 18 + rnd() * 34 : 4 + rnd() * 7;
+    addB(x + w / 2, cz, w * .94, d, h, tall ? ['#e9e4da', '#d6dde3', '#c8d3db', '#efe6d6'][Math.floor(rnd() * 4)] : PAL[Math.floor(rnd() * PAL.length)]);
+  }
+}
+bIm.count = nb; roofIm.count = nr; bIm.instanceColor.needsUpdate = true; scene.add(bIm); scene.add(roofIm);
+
+// árboles y palmas
+{
+  const trunk = new THREE.InstancedMesh(new THREE.CylinderGeometry(.35, .5, 1, 6), mat('#7a5c45'), 1400);
+  const crown = new THREE.InstancedMesh(new THREE.IcosahedronGeometry(1, 0), mat('#4f9a5a', {flatShading: true}), 1400);
+  trunk.castShadow = crown.castShadow = true; let k = 0;
+  const put = (x, z, s) => { if (k >= 1400) return; const h = 5 + s * 4;
+    o3.position.set(x, h / 2, z); o3.scale.set(1, h, 1); o3.rotation.set(0, 0, 0); o3.updateMatrix(); trunk.setMatrixAt(k, o3.matrix);
+    o3.position.set(x, h + 1, z); const r = 2.4 + s * 1.6; o3.scale.set(r, r * .8, r); o3.rotation.set(0, rnd() * 6, 0); o3.updateMatrix(); crown.setMatrixAt(k, o3.matrix);
+    crown.setColorAt(k, col.set(['#4f9a5a', '#5aa865', '#43884f', '#6bb26c'][Math.floor(rnd() * 4)])); k++; };
+  for (let x = -900; x < 900; x += 22) { put(x + rnd() * 4, -15.5, rnd()); if (!(x > -100 && x < 125)) put(x + 9 + rnd() * 4, 15.5, rnd()); }
+  for (let i = 0; i < 700; i++) { const x = (rnd() - .5) * 1500, z = (rnd() - .5) * 1100; if (Math.abs(z) < 22 || inRes(x, z, 10)) continue;
+    const mx = ((x % 64) + 64) % 64, mz = ((Math.abs(z) - 17) % 64); if (mx < 7 || mx > 57) put(x, z, rnd()); else if (mz < 6) put(x, z, rnd()); }
+  trunk.count = crown.count = k; crown.instanceColor.needsUpdate = true; scene.add(trunk); scene.add(crown);
+}
+
+// 01 supermercado (volumen genérico, sin marca ni interior)
+const SUP = {x: -48, z: 66};
+box(-48, 66, 92, 64, 11, '#eef0ee');
+box(-48, 33.6, 92, .8, 2.2, '#2f8f86', {y: 8.6});      // franja de fachada (genérica)
+box(-48, 66, 94, 66, .8, '#c9ccca', {y: 11});           // cornisa
+for (let i = 0; i < 9; i++) box(-82 + i * 9, 72 + (i % 2) * 10, 4, 3, 2, '#b7bab8', {y: 11.8}); // equipos de cubierta
+// parqueadero exterior
+slab(-98, 2, 18, 33, .12, '#5a606a');
+{ const g = new THREE.PlaneGeometry(.35, 5.2), m = new THREE.MeshBasicMaterial({color: '#e9e6df'}); const im = new THREE.InstancedMesh(g, m, 40); let k = 0;
+  for (let x = -94; x < 0; x += 4.8) { o3.position.set(x, .34, 28.5); o3.rotation.set(-Math.PI / 2, 0, 0); o3.scale.set(1, 1, 1); o3.updateMatrix(); im.setMatrixAt(k++, o3.matrix); }
+  im.count = k; scene.add(im); }
+const carCols = ['#c43d3d', '#e8e8e8', '#2b2f36', '#3a6ea5', '#a8adb4', '#e1c16e'];
+[-90, -80.5, -66, -51.6, -37, -27.4, -13, -3.4].forEach((x, i) => box(x, 28.5, 2.6, 4.6, 1.6, carCols[i % carCols.length], {roughness: .5}));
+
+// 02 centro comercial
+box(64, 70, 104, 78, 18, '#dcc49e');
+box(64, 31.8, 104, .8, 5, '#7fa7c4', {y: 9, roughness: .2, metalness: .15});
+box(30, 58, 26, 30, 28, '#9cc0d8', {roughness: .25, metalness: .15});
+const atr = new THREE.Mesh(new THREE.CylinderGeometry(13, 13, 6, 24), mat('#a8cbe0', {roughness: .2, metalness: .2, transparent: true, opacity: .85}));
+atr.position.set(80, 19, 64); atr.castShadow = true; scene.add(atr);
+for (let i = 0; i < 6; i++) box(40 + i * 14, 96, 5, 3, 2, '#b5afa3', {y: 16.5});
+
+// 03 estación del sistema de buses (en el separador central)
+const EST = {x: 35, z: 0};
+box(35, 0, 54, 6, 1.2, '#cfcac0');                      // plataforma
+const glass = mat('#bfe4f2', {roughness: .1, metalness: .1, transparent: true, opacity: .55});
+const g1 = new THREE.Mesh(new THREE.BoxGeometry(52, 3.6, 5), glass); g1.position.set(35, 3, 0); scene.add(g1);
+const roof = box(35, 0, 58, 8, .9, '#f4f4f2', {y: 5.2});
+for (let i = 0; i < 7; i++) box(10 + i * 8.4, 0, .6, .6, 5.2, '#8e9499');
+// puentes peatonales de acceso
+box(35, -9.5, 4, 13, .8, '#d9d4ca', {y: 5.4}); box(35, -15.5, 4, 3, 6, '#d9d4ca');
+
+// ---------- postproceso: desenfoque de maqueta (tilt-shift) ----------
+const composer = new EffectComposer(renderer);
+composer.setPixelRatio(1); composer.setSize(W, H);
+composer.addPass(new RenderPass(scene, camera));
+const hts = new ShaderPass(HorizontalTiltShiftShader), vts = new ShaderPass(VerticalTiltShiftShader);
+const hts2 = new ShaderPass(HorizontalTiltShiftShader), vts2 = new ShaderPass(VerticalTiltShiftShader);
+[hts, vts, hts2, vts2].forEach(p => composer.addPass(p));
+composer.addPass(new OutputPass());
+
+// ---------- cámara: fotogramas clave + interpolación suave ----------
+const K = [
+  [0.0,  [-60, 700, 40],    [-45, 0, 45]],
+  [4.3,  [-290, 115, -14],  [-30, 0, 34]],
+  [8.2,  [-205, 112, -42],  [0, 0, 40]],
+  [12.1, [-150, 190, -110], [20, 0, 45]],
+  [17.6, [-185, 165, 150],  [-45, 0, 60]],
+  [23.2, [-60, 235, 215],   [-40, 0, 50]],
+  [29.6, [60, 300, 165],    [-10, 0, 40]],
+  [45.0, [150, 330, -120],  [10, 0, 40]],
+  [54.1, [200, 420, -300],  [15, 0, 40]],
+  [61.0, [265, 340, -80],   [15, 0, 40]],
+  [69.5, [170, 300, 150],   [10, 0, 40]],
+  [77.6, [-120, 320, -160], [10, 0, 40]],
+  [86.0, [-40, 680, -40],   [10, 0, 40]],
+  [END,  [-30, 720, -30],   [10, 0, 40]],
+];
+const posC = new THREE.CatmullRomCurve3(K.map(k => new THREE.Vector3(...k[1])), false, 'centripetal');
+const tgtC = new THREE.CatmullRomCurve3(K.map(k => new THREE.Vector3(...k[2])), false, 'centripetal');
+// interpolación cúbica monótona tiempo -> parámetro (velocidad continua, sin tirones)
+const kt = K.map(k => k[0]), ku = K.map((_, i) => i / (K.length - 1));
+const msl = (() => { const n = kt.length, d = [], m = [];
+  for (let i = 0; i < n - 1; i++) d.push((ku[i + 1] - ku[i]) / (kt[i + 1] - kt[i]));
+  m[0] = d[0] * .35; m[n - 1] = d[n - 2] * .5;   // arranque y final suaves
+  for (let i = 1; i < n - 1; i++) m[i] = d[i - 1] * d[i] <= 0 ? 0 : 2 / (1 / d[i - 1] + 1 / d[i]);
+  return m; })();
+m0fix: { msl[0] = (ku[1] - ku[0]) / (kt[1] - kt[0]) * 1.6; }   // el gancho arranca ya en movimiento y frena al llegar
+function uAt(t) {
+  t = clamp(t, 0, END); let i = 0; while (i < kt.length - 2 && t > kt[i + 1]) i++;
+  const h = kt[i + 1] - kt[i], s = (t - kt[i]) / h, s2 = s * s, s3 = s2 * s;
+  return (2 * s3 - 3 * s2 + 1) * ku[i] + (s3 - 2 * s2 + s) * h * msl[i] + (-2 * s3 + 3 * s2) * ku[i + 1] + (s3 - s2) * h * msl[i + 1];
+}
+const vP = new THREE.Vector3(), vT = new THREE.Vector3();
+
+// ---------- etiquetas proyectadas ----------
+const labelsEl = document.getElementById('labels');
+function mkTag(n, txt) {
+  const el = document.createElement('div'); el.className = 'tag';
+  el.innerHTML = `<div class="stem"></div><div class="box"><div class="n">${n}</div><div class="l">${txt}</div></div>`;
+  const ring = document.createElement('div'); ring.className = 'ring';
+  labelsEl.appendChild(ring); labelsEl.appendChild(el); return {el, ring};
+}
+const tags = [
+  {...mkTag('01', 'SUPERMERCADO'), p: new THREE.Vector3(SUP.x, 11, SUP.z - 10), word: [1, 'supermercado'], stem: 150},
+  {...mkTag('02', 'CENTRO COMERCIAL'), p: new THREE.Vector3(64, 16, 66), word: [1, 'centro'], stem: 230},
+  {...mkTag('03', 'ESTACIÓN DE TRANSCARIBE'), p: new THREE.Vector3(EST.x, 5.5, 0), word: [1, 'Transcaribe.'], stem: 120},
+];
+const proj = (v) => { const p = v.clone().project(camera); return {x: (p.x + 1) / 2 * W, y: (1 - p.y) / 2 * H, ok: p.z < 1}; };
+
+// ---------- subtítulos: bloques cortos, palabra por palabra ----------
+const chunks = [];
+S.forEach((s, si) => {
+  let cur = [];
+  const flush = () => { if (cur.length) chunks.push({si, words: cur}); cur = []; };
+  s.words.forEach((w, i) => {
+    const len = cur.reduce((a, x) => a + x.w.length + 1, 0);
+    if (cur.length && (len + w.w.length > 24 || cur.length >= 5)) flush();
+    cur.push(w);
+    if (/[,.;:?]$/.test(w.w) && len + w.w.length > 8) flush();
+  });
+  flush();
+});
+chunks.forEach((c, i) => {
+  c.a = c.words[0].start - .06;
+  const nx = chunks[i + 1];
+  const sEnd = S[c.si].end;
+  c.b = nx ? (nx.si === c.si ? nx.words[0].start - .06 : Math.min(nx.words[0].start - .06, sEnd + .45)) : sEnd + .5;
+});
+const capsEl = document.getElementById('caps');
+let lastChunk = -1;
+function drawCaps(t) {
+  const ci = chunks.findIndex(c => t >= c.a && t < c.b);
+  if (ci !== lastChunk) {
+    capsEl.innerHTML = ci < 0 ? '' : '<div class="line">' + chunks[ci].words.map(w => `<span class="w${w.key ? ' key' : ''}">${w.w}</span>`).join('') + '</div>';
+    lastChunk = ci;
+  }
+  if (ci < 0) return;
+  const spans = capsEl.querySelectorAll('span.w');
+  chunks[ci].words.forEach((w, i) => {
+    const k = clamp((t - w.start + .05) / .16);
+    const act = t >= w.start && t < w.end + .05;
+    const sp = spans[i];
+    sp.style.opacity = k < .01 ? 0 : lerp(.0, 1, eOut(k));
+    sp.style.transform = `translateY(${(1 - eOut(k)) * 26}px) scale(${act ? 1.05 : 1})`;
+  });
+  const out = clamp((t - (chunks[ci].b - .12)) / .12);
+  capsEl.style.opacity = 1 - out;
+}
+
+// ---------- UI ----------
+const $ = id => document.getElementById(id);
+const setV = (el, v, dy = 30) => { el.style.opacity = v; el.style.transform = `translateY(${(1 - v) * dy}px)`; el.style.filter = v < .999 ? `blur(${(1 - v) * 8}px)` : 'none'; el.style.visibility = v < .005 ? 'hidden' : 'visible'; };
+const tliEls = [...document.querySelectorAll('.tli')];
+
+function drawUI(t) {
+  const sc = secs;
+  // cabecera siempre visible; el chip respira
+  $('chip').querySelector('i').style.opacity = .45 + .55 * (0.5 + 0.5 * Math.cos(t * Math.PI * 1.2));
+  // titular del gancho: visible desde el fotograma 0
+  { const v = 1 - ease((t - (sc.gancho.b - .55)) / .5); setV($('headline'), v, -20); }
+  // dónde
+  { const a = sc.donde.a, b = sc.donde.b;
+    setV($('zona'), Math.min(eOut((t - wt(1, 'Castellana,')) / .4), 1 - ease((t - (b - .4)) / .4)), 16);
+    setV($('nota'), vis(a + .5, b + .2), 10);
+    const rl = $('roadlabel'); const rv = vis(wt(1, 'Pedro'), b - .1);
+    const rp = proj(new THREE.Vector3(-150, 1, -9));
+    rl.style.left = (clamp(rp.x, 70, 600)) + 'px'; rl.style.top = (rp.y - 30) + 'px';
+    rl.style.opacity = rv; rl.style.transform = `scale(${lerp(.9, 1, eOut(rv))})`;
+  }
+  // etiquetas 3D
+  tags.forEach((g, i) => {
+    const ta = wt(g.word[0], g.word[1]);
+    const tb = i === 0 ? wt(3, 'se') + .3 : sc.donde.b;
+    let v = Math.min(eBack((t - ta) / .45), 1 - ease((t - (tb - .35)) / .35));
+    if (t < ta) v = 0;
+    const p = proj(g.p);
+    const vv = p.ok ? clamp(v) : 0;
+    g.el.style.visibility = g.ring.style.visibility = vv > .01 ? 'visible' : 'hidden';
+    const stem = Math.max(40, Math.min(g.stem, p.y - 520)) * clamp(v * 1.2);
+    g.el.style.transform = `translate(${p.x}px, ${p.y}px)`;
+    g.el.querySelector('.stem').style.height = stem + 'px';
+    const bx = g.el.querySelector('.box'); bx.style.bottom = (stem - 2) + 'px';
+    const right = p.x > 560; bx.style.left = right ? 'auto' : '-2px'; bx.style.right = right ? '-2px' : 'auto'; bx.style.opacity = clamp(v * 1.4 - .2);
+    bx.style.transform = `scale(${lerp(.7, 1, clamp(v))})`; bx.style.transformOrigin = right ? '100% 100%' : '0 100%';
+    const pr = (t * .9 + i * .3) % 1;
+    g.ring.style.left = p.x + 'px'; g.ring.style.top = p.y + 'px'; g.ring.style.opacity = vv * (1 - pr);
+    g.ring.style.transform = `translate(-50%,-50%) scale(${1 + pr * 1.6})`;
+  });
+  // cronología (REC)
+  { const a = sc.inicio.a, b = sc.inicio.b; const v = vis(a, b, .4, .35);
+    setV($('rec'), v, 0); $('rec').style.transform = `scale(${lerp(1.04, 1, eOut(v))})`;
+    $('tc').textContent = (() => { const f = Math.floor((t - a) * FPS) ; const s = Math.max(0, Math.floor(f / FPS)); return `00:00:${String(s).padStart(2, '0')}:${String(Math.max(0, f % FPS)).padStart(2, '0')}`; })();
+    $('rec').querySelector('.r i').style.opacity = Math.floor(t * 2) % 2 ? .25 : 1;
+    const t2 = wt(3, 'descubiertos,'); const times = [wt(2, 'hombres'), t2, t2 + .6, t2 + 1.2, t2 + 1.8, t2 + 2.4];
+    let shown = 0, hh = 32;
+    tliEls.forEach((el, i) => { const k = Math.min(eOut((t - times[i]) / .4), 1 - ease((t - (b - .35)) / .35)); if (t < times[i]) { setV(el, 0, 20); return; } setV(el, k, 20); if (k > .5) shown = i + 1; hh += (el.offsetHeight + 16) * clamp(k * 1.25);
+      el.querySelector('.dot').style.background = i === 5 ? (Math.floor(t * 2) % 2 ? 'var(--amber)' : 'var(--navy)') : 'var(--navy)'; });
+    const last = tliEls[Math.max(0, shown - 1)];
+    $('timeline').style.height = hh + 'px';
+    const bar = $('tlbar'); bar.style.opacity = v; bar.style.height = shown ? Math.max(0, last.offsetTop - 46 + 20) + 'px' : '0px';
+  }
+  // versiones
+  { const b = sc.versiones.b;
+    setV($('v1'), vis(sc.versiones.a + .05, b), 40); setV($('v2'), t < wt(4, 'Alcaldía') - .1 ? 0 : vis(wt(4, 'Alcaldía') - .1, b), 40); }
+  // contador
+  { const a = sc.cifras.a, b = sc.cifras.b; setV($('counter'), vis(a, b), 40);
+    const t5 = wt(6, '30') + .1, t10 = wt(6, '10');
+    let n = 0, src = '&nbsp;';
+    if (t >= t5) { n = Math.round(lerp(0, 5, ease((t - t5) / .8))); src = 'primeras liberadas: cinco mujeres mayores · según el presidente'; }
+    if (t >= t10) { n = Math.round(lerp(5, 10, ease((t - t10) / .7))); src = 'según el Ministerio de Defensa · vía El Colombiano'; }
+    $('cnum').textContent = n; $('csrc').innerHTML = src;
+    $('cnum').style.transform = `scale(${1 + .06 * Math.max(0, 1 - Math.abs(t - t10 - .7) / .25)})`;
+    setV($('r30'), t < wt(6, '30') - .1 ? 0 : eOut((t - wt(6, '30') + .1) / .4), 16);
+    setV($('r21'), t < wt(7, '21') - .1 ? 0 : eOut((t - wt(7, '21') + .1) / .4), 16);
+    setV($('cnote'), t < wt(7, 'seguirían') ? 0 : eOut((t - wt(7, 'seguirían')) / .5), 8);
+  }
+  // estado
+  { const a = sc.estado.a, b = sc.estado.b; setV($('estado'), vis(a, b), 40);
+    [[1, wt(8, '500') - .15], [2, wt(8, 'Puesto') - .1], [3, wt(8, 'presidente')], [4, wt(8, 'Cartagena') + .1]].forEach(([i, ta]) => setV($('s' + i), t < ta ? 0 : eOut((t - ta) / .4), 18)); }
+  // avión
+  { const a = sc.avion.a, b = sc.avion.b; setV($('avion'), vis(a, b), 40);
+    const tr = wt(9, 'Ya'); const arc = $('arc'); const Lp = arc.getTotalLength();
+    // vuela, queda en espera (circuito) y aterriza cuando se reanudan las operaciones
+    let u; if (t < tr) u = lerp(0, .48, eOut((t - a) / 1.6)) + .025 * Math.sin((t - a) * 2.2) * clamp((t - a - 1.6) / .5);
+    else u = lerp(.48 + .025 * Math.sin((tr - a) * 2.2), 1, ease((t - tr) / 1.6));
+    const P = arc.getPointAtLength(Lp * clamp(u)), P2 = arc.getPointAtLength(Lp * clamp(u + .01));
+    const ang = Math.atan2(P2.y - P.y, P2.x - P.x) * 180 / Math.PI + 90;
+    $('plane').style.transform = `translate(${P.x - 42}px, ${P.y - 42}px) rotate(${ang}deg)`;
+    const k = clamp((t - tr) / .35); $('p1').style.opacity = 1 - k * .7; $('p2').style.opacity = k; $('p2').style.transform = `scale(${lerp(.8, 1, eBack(k))})`; }
+  // desmentido
+  { const a = sc.desmentido.a, b = sc.desmentido.b; setV($('desm'), vis(a, b), 40);
+    const st = $('desm').querySelector('.stamp'); const ks = clamp((t - wt(10, 'desmintió')) / .3);
+    st.style.opacity = ks; st.style.transform = `rotate(-6deg) scale(${lerp(1.8, 1, eOut(ks))})`;
+    [[1, wt(10, 'heridos') - .2], [2, wt(11, 'supuesta') - .1], [3, wt(11, 'evacuación') + .2]].forEach(([i, ta]) => {
+      const el = $('d' + i); setV(el, t < ta ? 0 : eOut((t - ta) / .35), 16);
+      const ks2 = clamp((t - ta - .35) / .35); const cl = el.querySelector('.claim');
+      el.querySelector('.strike').style.width = (cl.offsetWidth + 8) * eOut(ks2) + 'px';
+      cl.style.color = ks2 > .5 ? '#9AA7B8' : '#E9EEF5';
+      setV(el.querySelector('.truth'), eOut(clamp((t - ta - .55) / .35)), 10); }); }
+  // no confirmado
+  { const a = sc.noconf.a, b = sc.noconf.b; setV($('nocf'), vis(a, b), 40);
+    [[1, wt(12, 'carta') - .1], [2, wt(12, 'captores,') + .1], [3, wt(12, '7.000') - .1], [4, wt(12, 'pesos.') + .1], [5, wt(12, 'descartan') - .1]].forEach(([i, ta]) => setV($('n' + i), t < ta ? 0 : eOut((t - ta) / .35), 14)); }
+  // cierre
+  { const a = sc.cierre.a, b = sc.cierre.b; setV($('cierre'), vis(a, b, .6, .45), 30);
+    [[1, wt(13, 'cifras')], [2, wt(13, 'verifica:')], [3, wt(13, 'personas')]].forEach(([i, ta]) => setV($('cl' + i), t < ta ? 0 : eOut((t - ta) / .4), 14)); }
+  // fuentes
+  { const a = sc.fuentes.a; setV($('fuentes'), eOut((t - a) / .5), 40); }
+  // oscurecer el mapa cuando hay tarjetas
+  const panel = Math.max(vis(sc.cifras.a, sc.cifras.b), vis(sc.estado.a, sc.estado.b), vis(sc.avion.a, sc.avion.b), vis(sc.desmentido.a, sc.desmentido.b), vis(sc.noconf.a, sc.noconf.b), eOut((t - sc.fuentes.a) / .5));
+  const mid = Math.max(vis(sc.versiones.a, sc.versiones.b), vis(sc.cierre.a, sc.cierre.b));
+  $('scrim').style.background = `rgba(8,17,31,${.42 * panel + .22 * vis(sc.versiones.a, sc.versiones.b) + .38 * vis(sc.cierre.a, sc.cierre.b) + .30 * vis(sc.inicio.a, sc.inicio.b) + .22 * (1 - ease((t - (sc.gancho.b - .55)) / .5))})`;
+  return {panel, mid};
+}
+
+// ---------- render de un instante ----------
+window.renderAt = (t) => {
+  t_ = t;
+  const u = uAt(t);
+  posC.getPoint(u, vP); tgtC.getPoint(u, vT);
+  if (window.camOverride) { vP.set(...window.camOverride[0]); vT.set(...window.camOverride[1]); }
+  // micro-movimiento de cámara al hombro, muy suave
+  vP.x += Math.sin(t * .37) * 1.4; vP.y += Math.sin(t * .29 + 1) * 1.0;
+  camera.position.copy(vP); camera.lookAt(vT); camera.updateMatrixWorld();
+  // luz: de tarde clara a tono dorado al cierre
+  const g = clamp((t - 10) / (END - 10));
+  sun.color.set('#fff1dc').lerp(new THREE.Color('#ffc58f'), g);
+  sun.intensity = lerp(3.3, 2.7, g);
+  hemi.intensity = lerp(1.5, 1.2, g);
+  const sa = lerp(.9, .55, g), sz = lerp(-.6, -.3, g);
+  sun.position.set(vT.x + Math.cos(sa) * 420, lerp(520, 380, g), vT.z + sz * 420 + 260);
+  sun.target.position.copy(vT); sun.target.updateMatrixWorld();
+  const fc = new THREE.Color('#c9d6df').lerp(new THREE.Color('#e3cdbb'), g);
+  scene.fog.color.copy(fc); scene.background.copy(fc);
+  const {panel, mid} = drawUI(t);
+  // tilt-shift: la banda nítida sigue el centro; con tarjetas, el mapa pasa a fondo
+  const blur = lerp(2.2, 7.5, Math.max(panel, mid * .8));
+  const r = .52;
+  hts.uniforms.h.value = blur / W; vts.uniforms.v.value = blur / H; hts.uniforms.r.value = vts.uniforms.r.value = r;
+  hts2.uniforms.h.value = blur * .5 / W; vts2.uniforms.v.value = blur * .5 / H; hts2.uniforms.r.value = vts2.uniforms.r.value = r;
+  composer.render();
+  drawCaps(t);
+  return true;
+};
+await document.fonts.ready;
+window.renderAt(0);
+window.__ready = true;
+</script>
+</body>
+</html>

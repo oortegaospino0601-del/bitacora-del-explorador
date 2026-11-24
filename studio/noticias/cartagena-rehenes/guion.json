@@ -1,0 +1,132 @@
+{
+ "slug": "20261124-cartagena-toma-rehenes",
+ "corte": "4:50 p. m.",
+ "fecha": "MAR 24 NOV 2026",
+ "sentences": [
+  {
+   "sec": "gancho",
+   "text": "Esto es lo que se sabe, hasta ahora, de la toma de rehenes en Cartagena.",
+   "keys": [
+    "lo que se sabe,",
+    "Cartagena."
+   ]
+  },
+  {
+   "sec": "donde",
+   "text": "Ocurre en un supermercado de la avenida Pedro de Heredia, en La Castellana, junto a un centro comercial y una estación de Transcaribe.",
+   "keys": [
+    "supermercado",
+    "Pedro de Heredia,",
+    "La Castellana,",
+    "centro comercial",
+    "Transcaribe."
+   ]
+  },
+  {
+   "sec": "inicio",
+   "text": "Según el presidente Abelardo de la Espriella, en la mañana, hombres armados intentaron asaltar un carro de valores.",
+   "keys": [
+    "presidente",
+    "en la mañana,",
+    "carro de valores."
+   ]
+  },
+  {
+   "sec": "inicio",
+   "text": "Al verse descubiertos, se encerraron con clientes y trabajadores.",
+   "keys": [
+    "descubiertos,",
+    "clientes y trabajadores."
+   ]
+  },
+  {
+   "sec": "versiones",
+   "text": "El presidente los llamó delincuentes comunes; la Alcaldía habló de un posible grupo armado organizado.",
+   "keys": [
+    "delincuentes comunes;",
+    "Alcaldía",
+    "grupo armado organizado."
+   ]
+  },
+  {
+   "sec": "cifras",
+   "text": "¿Cuántas personas siguen adentro? No hay una cifra oficial.",
+   "keys": [
+    "cifra oficial."
+   ]
+  },
+  {
+   "sec": "cifras",
+   "text": "El presidente habló de unas 30 retenidas, y el Ministerio de Defensa ya reporta 10 liberados.",
+   "tts": "El presidente habló de unas treinta retenidas, y el Ministerio de Defensa ya reporta diez liberados.",
+   "keys": [
+    "30 retenidas,",
+    "10 liberados."
+   ]
+  },
+  {
+   "sec": "cifras",
+   "text": "A las 2:30 de la tarde, El Heraldo informó que al menos 21 seguirían adentro.",
+   "tts": "A las dos y media de la tarde, El Heraldo informó que al menos veintiuna seguirían adentro.",
+   "keys": [
+    "2:30",
+    "al menos 21"
+   ]
+  },
+  {
+   "sec": "estado",
+   "text": "Unos 500 policías y militares atienden el caso, con un Puesto de Mando Unificado. El presidente viajó a Cartagena con el ministro de Defensa.",
+   "tts": "Unos quinientos policías y militares atienden el caso, con un Puesto de Mando Unificado. El presidente viajó a Cartagena con el ministro de Defensa.",
+   "keys": [
+    "500",
+    "Puesto de Mando Unificado.",
+    "ministro de Defensa."
+   ]
+  },
+  {
+   "sec": "avion",
+   "text": "La Aerocivil suspendió los aterrizajes en el aeropuerto unos 45 minutos. Ya se reanudaron.",
+   "tts": "La Aerocivil suspendió los aterrizajes en el aeropuerto unos cuarenta y cinco minutos. Ya se reanudaron.",
+   "keys": [
+    "aterrizajes",
+    "45 minutos.",
+    "Ya se reanudaron."
+   ]
+  },
+  {
+   "sec": "desmentido",
+   "text": "Ojo: la Policía desmintió que haya heridos dentro del almacén.",
+   "keys": [
+    "desmintió",
+    "heridos"
+   ]
+  },
+  {
+   "sec": "desmentido",
+   "text": "Y el video de una supuesta liberación era la evacuación de locales cercanos.",
+   "keys": [
+    "supuesta liberación",
+    "evacuación"
+   ]
+  },
+  {
+   "sec": "noconf",
+   "text": "No está confirmada la carta atribuida a los captores, que pediría 7.000 millones de pesos. Las autoridades descartan negociar.",
+   "tts": "No está confirmada la carta atribuida a los captores, que pediría siete mil millones de pesos. Las autoridades descartan negociar.",
+   "keys": [
+    "No está confirmada",
+    "7.000 millones",
+    "descartan negociar."
+   ]
+  },
+  {
+   "sec": "cierre",
+   "text": "El operativo sigue en curso y las cifras pueden cambiar. Antes de compartir, verifica: todavía hay personas esperando salir a salvo.",
+   "keys": [
+    "sigue en curso",
+    "verifica:",
+    "salir a salvo."
+   ]
+  }
+ ]
+}

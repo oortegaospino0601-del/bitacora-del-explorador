@@ -1,0 +1,10 @@
+{
+  "name": "noticia-cartagena-rehenes",
+  "private": true,
+  "description": "Escena 3D (Three.js) + capas animadas renderizadas cuadro a cuadro con Playwright y unidas con ffmpeg",
+  "dependencies": {
+    "three": "0.170.0",
+    "@fontsource/manrope": "5.1.0",
+    "@fontsource/jetbrains-mono": "5.1.1"
+  }
+}
