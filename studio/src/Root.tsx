@@ -6,6 +6,7 @@ import {ShortPlano} from './styles/plano/ShortPlano';
 import {ShortChat} from './styles/chat/ShortChat';
 import {ShortCrt} from './styles/crt/ShortCrt';
 import {ShortComic} from './styles/comic/ShortComic';
+import {HistoriaMundo} from './styles/mundo/HistoriaMundo';
 import {Props} from './types';
 
 const FPS = 30;
@@ -95,6 +96,18 @@ export const Root: React.FC = () => (
     defaultProps={defaultProps}
     calculateMetadata={({props}) => ({
       durationInFrames: Math.max(30, Math.ceil(props.totalSeconds * FPS)),
+    })}
+  />
+  <Composition
+    id="Historia-mundo"
+    component={HistoriaMundo as unknown as React.FC<Record<string, unknown>>}
+    width={1080}
+    height={1920}
+    fps={FPS}
+    durationInFrames={150}
+    defaultProps={{spec: {slug: 'demo', title: 'Demo', player: {song: 'Demo', artist: 'Demo'}}, timings: [], scenes: [{id: 'hook', start: 0, end: 5}], totalSeconds: 5, audioFile: 'audio.wav'}}
+    calculateMetadata={({props}) => ({
+      durationInFrames: Math.max(30, Math.ceil((props.totalSeconds as number) * FPS)),
     })}
   />
   </>
