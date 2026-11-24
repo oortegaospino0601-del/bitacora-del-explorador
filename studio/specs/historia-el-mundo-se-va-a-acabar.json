@@ -1,0 +1,68 @@
+{
+  "slug": "historia-el-mundo-se-va-a-acabar",
+  "title": "El mundo se va a acabar",
+  "composition": "Historia-mundo",
+  "player": {
+    "song": "El mundo se va a acabar",
+    "artist": "Omar Courtz x KARBeats"
+  },
+  "sentences": [
+    {
+      "text": "Si mañana se acabara el mundo, ¿a quién irías a buscar primero?",
+      "scene": "hook"
+    },
+    {
+      "text": "Él lo supo enseguida.",
+      "scene": "hook"
+    },
+    {
+      "text": "Esa noche el cielo se puso naranja, y todas las pantallas decían lo mismo: al mundo le quedaba poco.",
+      "scene": "skyline"
+    },
+    {
+      "text": "La gente grababa el cielo, lo comentaba en vivo… y él solo pensaba en ella.",
+      "scene": "street"
+    },
+    {
+      "text": "Porque lo suyo nunca terminaba del todo: ella se alejaba, lo bloqueaba, se reía de él…",
+      "scene": "onoff"
+    },
+    {
+      "text": "y aun así, siempre volvían a encontrarse.",
+      "scene": "loop"
+    },
+    {
+      "text": "Esta vez no quiso esperar: si todo se acababa, no sería lejos de ella.",
+      "scene": "door"
+    },
+    {
+      "text": "Le escribió. Apareció el «escribiendo»… y se borró.",
+      "scene": "chat"
+    },
+    {
+      "text": "Salió corriendo a cruzar la ciudad, con el reloj en contra y el cielo cada vez más morado.",
+      "scene": "run"
+    },
+    {
+      "text": "Y justo cuando el cielo cambió de color, entró una llamada. Era ella.",
+      "scene": "call"
+    },
+    {
+      "text": "Se había reído, sí. Pero también lo estaba buscando.",
+      "scene": "her"
+    },
+    {
+      "text": "Se encontraron en la azotea, bajo ese cielo de fiesta, y el fin del mundo dejó de importar.",
+      "scene": "roof"
+    },
+    {
+      "text": "Quizás el mundo no se acabó esa noche. Pero lo suyo, otra vez, volvió a empezar.",
+      "scene": "dawn"
+    },
+    {
+      "text": "¿Qué canción cuento después? Entra a mi LIVE, aquí abajo, y pídemela en los comentarios.",
+      "tts": "¿Qué canción cuento después? Entra a mi láiv, aquí abajo, y pídemela en los comentarios.",
+      "scene": "cta"
+    }
+  ]
+}

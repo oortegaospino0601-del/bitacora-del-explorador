@@ -1,0 +1,72 @@
+{
+  "slug": "historia-si-en-tu-mente-estuve",
+  "title": "Si en tu mente estuve",
+  "composition": "Historia-mente",
+  "player": {
+    "song": "Si en tu mente estuve",
+    "artist": "Nsqk"
+  },
+  "sentences": [
+    {
+      "text": "Cuando ya no hablas con alguien, ¿qué es lo que más extrañas?",
+      "scene": "hook"
+    },
+    {
+      "text": "Para él, eran los detalles pequeños.",
+      "scene": "hook"
+    },
+    {
+      "text": "Pasaban los días sin hablar. Abría su chat, escribía… y lo borraba otra vez.",
+      "scene": "typing"
+    },
+    {
+      "text": "El último mensaje seguía ahí: visto, y sin respuesta.",
+      "scene": "seen"
+    },
+    {
+      "text": "Él no pedía explicaciones. Solo quería saber si ella miró las nubes, y qué animales encontró en ellas.",
+      "scene": "clouds"
+    },
+    {
+      "text": "Si en la calle se puso a contar carros y autobuses.",
+      "scene": "street"
+    },
+    {
+      "text": "A veces la veía en vivo, entre corazones, y la miraba desde lejos.",
+      "scene": "live"
+    },
+    {
+      "text": "Si una mariposa se asomó a su ventana.",
+      "scene": "butterfly"
+    },
+    {
+      "text": "Cómo pidió su café en la mañana.",
+      "scene": "coffee"
+    },
+    {
+      "text": "El celular vibró, y por un segundo creyó que era ella. No lo era.",
+      "scene": "notif"
+    },
+    {
+      "text": "Qué soñó anoche… quizás un campo verde, lleno de luz.",
+      "scene": "dream"
+    },
+    {
+      "text": "Pero, sobre todo, quería saber una cosa: si en algún momento de su día, ella pensó en él.",
+      "scene": "question"
+    },
+    {
+      "text": "Deslizó sus fotos juntos, despacio, sin tristeza.",
+      "scene": "gallery"
+    },
+    {
+      "text": "Y al atardecer vio una nube con forma de mariposa… y sonrió, pensando que quizás ella también la estaba mirando.",
+      "scene": "sunset"
+    },
+    {
+      "text": "¿Qué canción cuento después? Entra a mi LIVE, aquí abajo, y pídemela en los comentarios.",
+      "tts": "¿Qué canción cuento después? Entra a mi láiv, aquí abajo, y pídemela en los comentarios.",
+      "scene": "cta"
+    }
+  ]
+}
