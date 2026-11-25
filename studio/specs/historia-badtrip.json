@@ -1,0 +1,72 @@
+{
+  "slug": "historia-badtrip",
+  "title": "badtrip :( · Mora (historia)",
+  "composition": "Historia-badtrip",
+  "song": {
+    "title": "badtrip :(",
+    "artist": "Mora"
+  },
+  "sentences": [
+    {
+      "scene": "hook",
+      "text": "¿Cómo sueltas a alguien… que sigues mirando cada noche?"
+    },
+    {
+      "scene": "leal",
+      "text": "Él quería ser leal. Solo necesitaba un motivo para creerle."
+    },
+    {
+      "scene": "mentiras",
+      "text": "Pero ella solo sabía mentir, y cada mentira le quitaba las ganas."
+    },
+    {
+      "scene": "pendientes",
+      "text": "Quedaron cosas pendientes, y por eso él seguía pendiente de ella."
+    },
+    {
+      "scene": "notif",
+      "text": "Cada noche, el aviso de que ella estaba en vivo le iluminaba el cuarto."
+    },
+    {
+      "scene": "live",
+      "text": "Entraba en silencio. Veía llegar a más gente, más corazones…"
+    },
+    {
+      "scene": "comentario",
+      "text": "Escribía un comentario… y lo borraba."
+    },
+    {
+      "scene": "subasta",
+      "text": "Sentía que lo que él le daba, ella lo repartía entre todos."
+    },
+    {
+      "scene": "tiempo",
+      "text": "Y el tiempo no curaba nada: solo lo empeoraba."
+    },
+    {
+      "scene": "dedo",
+      "text": "Una noche, puso el dedo sobre el botón de bloquear."
+    },
+    {
+      "scene": "bloqueo",
+      "text": "La pantalla se oscureció, y el en vivo desapareció."
+    },
+    {
+      "scene": "mareo",
+      "text": "Pero no llegó la paz. Llegó el mareo: luces que giran, pantallas que se multiplican, su reflejo deformado."
+    },
+    {
+      "scene": "calma",
+      "text": "Respiró. Dejó el celular boca abajo, y por fin se apagó."
+    },
+    {
+      "scene": "amanecer",
+      "text": "Y por la ventana, despacio, entró el amanecer."
+    },
+    {
+      "scene": "cierre",
+      "text": "En mi live no se bloquea a nadie. Entra, aquí abajo, y coméntame qué canción cuento ahora.",
+      "tts": "En mi laiv no se bloquea a nadie. Entra, aquí abajo, y coméntame qué canción cuento ahora."
+    }
+  ]
+}

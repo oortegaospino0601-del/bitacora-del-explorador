@@ -1,0 +1,68 @@
+{
+  "slug": "historia-309",
+  "title": "309 · Nsqk (historia)",
+  "composition": "Historia-309",
+  "song": {
+    "title": "309",
+    "artist": "Nsqk"
+  },
+  "sentences": [
+    {
+      "scene": "hook",
+      "text": "¿Qué pasa cuando alguien se va… y hasta tu cuarto deja de sentirse tuyo?"
+    },
+    {
+      "scene": "antes",
+      "text": "Esta canción habla de alguien cuyo mundo entero era ella."
+    },
+    {
+      "scene": "manos",
+      "text": "Iban siempre de la mano, y a su lado todo era calma."
+    },
+    {
+      "scene": "puerta",
+      "text": "Hasta el día en que ella se fue, y la puerta se cerró."
+    },
+    {
+      "scene": "rutina",
+      "text": "Desde entonces nada es igual: la taza fría, la cama a medio hacer."
+    },
+    {
+      "scene": "chat",
+      "text": "Le escribe cada noche. Sin respuesta. Un escribiendo aparece… y se apaga."
+    },
+    {
+      "scene": "llamada",
+      "text": "La llama, y el tono se pierde en la oscuridad."
+    },
+    {
+      "scene": "galeria",
+      "text": "Desliza las fotos de los dos y recuerda lo que era tomar su mano."
+    },
+    {
+      "scene": "perdido",
+      "text": "Jamás había sentido tanta tristeza. Sin su amor, ya no sabe quién es."
+    },
+    {
+      "scene": "live",
+      "text": "Una noche la ve en un en vivo, sonriendo con otra persona, y la mira desde lejos."
+    },
+    {
+      "scene": "vacio",
+      "text": "Hay noches que se sienten vacías: la silla de enfrente, el reloj quieto, la luz que se apaga."
+    },
+    {
+      "scene": "tiempo",
+      "text": "Aunque ella se enamore de alguien más y envejezca a su lado, lo que él siente no va a cambiar."
+    },
+    {
+      "scene": "amanecer",
+      "text": "Al final, archiva el chat y abre la ventana. La sigue extrañando, pero deja entrar un nuevo día."
+    },
+    {
+      "scene": "cierre",
+      "text": "¿Qué canción quieres que cuente ahora? Entra a mi live, aquí abajo, y coméntala.",
+      "tts": "¿Qué canción quieres que cuente ahora? Entra a mi laiv, aquí abajo, y coméntala."
+    }
+  ]
+}
