@@ -1,0 +1,59 @@
+{
+  "slug": "historia-yoko",
+  "title": "YOKO",
+  "composition": "Historia-yoko",
+  "song": "YOKO",
+  "artist": "Álvaro Díaz",
+  "sentences": [
+    {
+      "text": "Él se equivoca en casi todo. Menos en quererla.",
+      "scene": "hook"
+    },
+    {
+      "text": "Todo empezó con una luz sobre la mesa: un mensaje de ella, y una sonrisa que ya no se le quitó.",
+      "scene": "mensaje"
+    },
+    {
+      "text": "Desde entonces hablan hasta tarde, cada uno en su pantalla, como si estuvieran juntos.",
+      "scene": "videollamada"
+    },
+    {
+      "text": "Cuando ella lo toca, el mundo cambia de color: las luces flotan y todo gira despacio.",
+      "scene": "magia"
+    },
+    {
+      "text": "Él lo sabe: a veces es un tonto, y se equivoca una y otra vez.",
+      "scene": "errores"
+    },
+    {
+      "text": "Y aun así, ella lo quiso incluso en los días en que él no se quería a sí mismo.",
+      "scene": "abrazo"
+    },
+    {
+      "text": "La ve brillar en un live, rodeada de corazones, y entiende que no cambiaría sus besos por ningún lujo.",
+      "tts": "La ve brillar en un laiv, rodeada de corazones, y entiende que no cambiaría sus besos por ningún lujo.",
+      "scene": "live"
+    },
+    {
+      "text": "Pero de noche le da miedo perderla. Le escribe que no se vaya… y lo borra.",
+      "scene": "miedo"
+    },
+    {
+      "text": "La canción lleva el nombre de una mujer a la que muchos juzgaron, pero que nunca se apartó de quien amaba.",
+      "scene": "juicio"
+    },
+    {
+      "text": "Así la quiere él: siempre a su lado. Abre una foto de los dos y por fin se lo pide: que se quede.",
+      "scene": "foto"
+    },
+    {
+      "text": "Que envejezcan juntos, en el mismo sofá, viendo pasar los atardeceres.",
+      "scene": "vejez"
+    },
+    {
+      "text": "¿Qué canción quieres que cuente ahora? Entra a mi LIVE y déjamela en los comentarios.",
+      "tts": "¿Qué canción quieres que cuente ahora? Entra a mi laiv, y déjamela en los comentarios.",
+      "scene": "cierre"
+    }
+  ]
+}
