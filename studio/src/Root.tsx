@@ -7,6 +7,7 @@ import {ShortChat} from './styles/chat/ShortChat';
 import {ShortCrt} from './styles/crt/ShortCrt';
 import {ShortComic} from './styles/comic/ShortComic';
 import {Props} from './types';
+import {HistoriaLuciernagas} from './styles/luciernagas/HistoriaLuciernagas';
 
 const FPS = 30;
 
@@ -94,6 +95,18 @@ export const Root: React.FC = () => (
     durationInFrames={150}
     defaultProps={defaultProps}
     calculateMetadata={({props}) => ({
+      durationInFrames: Math.max(30, Math.ceil(props.totalSeconds * FPS)),
+    })}
+  />
+  <Composition
+    id="Historia-luciernagas"
+    component={HistoriaLuciernagas as any}
+    width={1080}
+    height={1920}
+    fps={FPS}
+    durationInFrames={150}
+    defaultProps={{spec: {slug: 'luciernagas', title: 'Luciérnagas', song: 'Luciérnagas', artists: 'Milo J y Silvio Rodríguez', sentences: []}, timings: [], totalSeconds: 5, audioFile: 'luciernagas-voz.wav'} as any}
+    calculateMetadata={({props}: any) => ({
       durationInFrames: Math.max(30, Math.ceil(props.totalSeconds * FPS)),
     })}
   />
