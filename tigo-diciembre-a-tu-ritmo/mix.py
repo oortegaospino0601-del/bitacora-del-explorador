@@ -358,13 +358,16 @@ music *= duck
 # tail fade
 fade = np.ones(N); k = int((DUR - 0.9) * SR); fade[k:] = np.linspace(1, 0, N - k) ** 1.5
 VG, MG, SG = 1.0, 0.125, 0.6
+NOMUSIC = bool(os.environ.get('NOMUSIC'))  # voice + sound effects only (the user adds their own music)
+if NOMUSIC: MG = 0.0
+OUTWAV = 'out/voz_efectos.wav' if NOMUSIC else 'out/music.wav'
 mix = np.vstack([voice, voice]) * VG + music * MG + sfx * SG
 mix *= fade
 def wav(path, x):
     x = x / max(1.0, np.max(np.abs(x)) / 0.98)
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f64le', '-ar', str(SR), '-ac', '2', '-i', '-', '-c:a', 'pcm_s24le', path],
                    input=x.T.astype(np.float64).tobytes(), check=True)
-pre = 'out/premaster.wav'; wav(pre, mix)
+pre = 'out/premaster-nm.wav' if NOMUSIC else 'out/premaster.wav'; wav(pre, mix)
 if os.environ.get('STEMS'):
     wav('out/stem-voice.wav', np.vstack([voice, voice]) * VG * fade)
     wav('out/stem-music.wav', music * MG * fade)
@@ -375,5 +378,5 @@ r = subprocess.run(['ffmpeg', '-hide_banner', '-i', pre, '-af', 'loudnorm=I=-14:
 js = json.loads(r[r.rindex('{'):r.rindex('}') + 1])
 af = (f"loudnorm=I=-14:TP=-1.5:LRA=9:measured_I={js['input_i']}:measured_TP={js['input_tp']}:measured_LRA={js['input_lra']}"
       f":measured_thresh={js['input_thresh']}:offset={js['target_offset']}:linear=true,aresample=48000")
-subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', pre, '-af', af, '-c:a', 'pcm_s24le', 'out/music.wav'], check=True)
-print('wrote out/music.wav', js['input_i'], '->', '-14 LUFS')
+subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', pre, '-af', af, '-c:a', 'pcm_s24le', OUTWAV], check=True)
+print('wrote', OUTWAV, js['input_i'], '->', '-14 LUFS')
