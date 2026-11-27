@@ -1,5 +1,6 @@
 import numpy as np, wave, sys, json
-sr=44100; T=39.5; N=int(sr*T); rng=np.random.default_rng(7)
+SC_=__import__("json").loads(__import__("sys").argv[1]) if len(__import__("sys").argv)>1 else [39.5]
+sr=44100; T=SC_[-1]; N=int(sr*T); rng=np.random.default_rng(7)
 SC=json.loads(sys.argv[1]) if len(sys.argv)>1 else [0,2,6,12,15,19,22,26,31,37,39.5]
 out=sys.argv[2] if len(sys.argv)>2 else 'mix_noVO.wav'
 def add(buf,start,sig,g=1.0):
