@@ -171,7 +171,10 @@
     // sign
     const sg = rr(x0 + 30, top + 30, x1 - x0 - 60, 90, 14); shade(ctx, sg, [214, 50, 18], top + 30, top + 120);
     ctx.strokeStyle = c(P.gold, 0, 0.9); ctx.lineWidth = 3; ctx.stroke(sg);
-    L.text(ctx, 'TIENDA LA ESQUINA', (x0 + x1) / 2, top + 92, '900 44px Nunito', c(P.goldHi));
+    { // keep the sign out of TikTok's right-hand button strip: fade it when its right end would sit there
+      const re = L.scr(...L.dp((x0 + x1) / 2 + 200, top + 80, z))[0], vis = 1 - L.inv(915, 945, re);
+      if (vis > 0) { ctx.save(); ctx.globalAlpha = vis; L.text(ctx, 'TIENDA LA ESQUINA', (x0 + x1) / 2, top + 90, '900 38px Nunito', c(P.goldHi)); ctx.restore(); }
+    }
     glow(ctx, (x0 + x1) / 2, top + 75, 260, P.gold, 0.18);
     // roof line lights
     for (let k = 0; k <= 16; k++) { const x = lerp(x0, x1, k / 16), y = top + 6 + 8 * Math.sin(k * 0.9); const col = [P.gold, P.cyan, P.white, P.mint][k % 4]; const on = 0.6 + 0.4 * Math.sin(beat(t) * Math.PI + k); ctx.fillStyle = c(col, 10, on); ctx.beginPath(); ctx.arc(x, y, 5, 0, Math.PI * 2); ctx.fill(); glow(ctx, x, y, 22, col, 0.45 * on); }

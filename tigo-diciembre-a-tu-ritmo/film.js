@@ -9,7 +9,7 @@
     const p = E.outCubic(clamp(t / 3.3));
     return { x: lerp(-70, 0, p), y: lerp(-540, -515, p), z: lerp(0.58, 0.8, p), r: lerp(-0.05, 0, E.outQuint(clamp(t / 2.6))) };
   };
-  const WIDE = { x: 300, y: -929, z: 0.56, r: 0 };
+  const WIDE = { x: 345, y: -929, z: 0.56, r: 0 };
   const holds = [
     { a: EV.camAbuela + 0.95, b: EV.camHermano, f: (u) => ({ x: lerp(R.abuela.cx - 4, R.abuela.cx + 8, u), y: R.abuela.cy, z: lerp(2.38, 2.5, u), r: 0 }) },
     { a: EV.camHermano + 0.75, b: EV.camMama, f: (u) => ({ x: lerp(R.hermano.cx + 6, R.hermano.cx - 6, u), y: R.hermano.cy, z: lerp(2.38, 2.5, u), r: 0 }) },
