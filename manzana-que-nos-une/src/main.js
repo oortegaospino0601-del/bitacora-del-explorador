@@ -230,8 +230,8 @@ function renderFinale(B, t, rt) {
   let pos, look, fov;
   const back = easeOutExpo(clamp(b / 1.6));
   if (b < 8) {
-    pos = [lerp(0.62, 0.0, back), lerp(1.35, 1.3, back), lerp(0.75, 4.6, back)];
-    look = [lerp(0.62, 0, back), lerp(1.3, 1.12, back), lerp(-0.45, 0, back)];
+    pos = [lerp(0.86, 0.0, back), lerp(1.42, 1.3, back), lerp(0.2, 4.6, back)];
+    look = [lerp(0.7, 0, back), lerp(1.28, 1.12, back), lerp(-0.45, 0, back)];
     fov = lerp(30, 42, back) * (1 - punch(b, [2, 4], 0.05));
     const orb = smooth(clamp((b - 1.5) / 6.5));
     pos[0] += Math.sin(orb * 0.6) * 0.8; pos[2] -= orb * 0.3;
