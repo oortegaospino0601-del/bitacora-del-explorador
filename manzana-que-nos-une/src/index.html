@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>La Manzana que Nos Une</title>
+<style>
+@font-face { font-family: 'Dela'; src: url('../node_modules/@fontsource/dela-gothic-one/files/dela-gothic-one-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Rubik'; font-weight: 900; src: url('../node_modules/@fontsource/rubik/files/rubik-latin-900-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Rubik'; font-weight: 800; src: url('../node_modules/@fontsource/rubik/files/rubik-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Baloo'; font-weight: 800; src: url('../node_modules/@fontsource/baloo-2/files/baloo-2-latin-800-normal.woff2') format('woff2'); }
+html, body { margin: 0; padding: 0; background: #000; overflow: hidden; }
+#stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+#c { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+#ui { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; pointer-events: none; }
+.word { position: absolute; white-space: nowrap; transform-origin: 50% 60%; will-change: transform, opacity; }
+.safe { position: absolute; border: 3px dashed rgba(0,255,120,.8); box-sizing: border-box; display: none; }
+</style>
+<script type="importmap">
+{ "imports": { "three": "../node_modules/three/build/three.module.js", "three/addons/": "../node_modules/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<div id="stage"><canvas id="c" width="1080" height="1920"></canvas><div id="ui"></div></div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
