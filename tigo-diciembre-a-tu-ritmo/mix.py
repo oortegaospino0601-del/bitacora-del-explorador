@@ -307,8 +307,8 @@ def S_firework():
 for c in TL['sfx']:
     k, t, g = c['kind'], c['t'], c['g']
     if k == 'switch': put(sfx, S_switch(), t, 0.2, g * 0.5)
-    elif k == 'riser': put(sfx, S_riser(EV["hookHit"] - t), t, 0, g * 0.2)
-    elif k == 'impact': put(sfx, S_impact(), t, 0, g * 0.9)
+    elif k == 'riser': put(sfx, S_riser(EV["hookHit"] - t), t, 0, g * 0.14)
+    elif k == 'impact': put(sfx, S_impact(), t, 0, g * 0.6)
     elif k == 'shimmer': put(sfx, S_shimmer(), t, 0.3, g * 0.5)
     elif k == 'whoosh': put(sfx, S_whoosh(0.75), t, 0, g * 0.3)
     elif k == 'whooshBig': put(sfx, S_whoosh(1.5, 150, 2400), t, 0, g * 0.35)

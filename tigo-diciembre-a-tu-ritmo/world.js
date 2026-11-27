@@ -493,7 +493,7 @@
     for (let i = 0; i < 5; i++) { ctx.fillStyle = c(P.cyanHi); ctx.beginPath(); ctx.arc(mx - 60 + i * 22 + Math.sin(t * 2 + i) * 8, my - 30 + (i % 3) * 26, 4, 0, 7); ctx.fill(); ctx.fillStyle = c(P.goldHi); ctx.beginPath(); ctx.arc(mx - 40 + i * 24 + Math.cos(t * 2.4 + i) * 8, my - 20 + (i % 2) * 34, 4, 0, 7); ctx.fill(); }
     ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(bx, by, 3.5, 0, 7); ctx.fill();
     // friends on voice chat (generic avatars)
-    for (let i = 0; i < 3; i++) { const ax = mx - MW / 2 + 16, ay = my - MH / 2 + 16 + i * 26, hop = goal ? Math.abs(Math.sin((t - g0) * 12 + i)) * 5 : 0; ctx.fillStyle = c([P.cyan, P.gold, P.mint][i], -6); ctx.beginPath(); ctx.arc(ax, ay - hop, 10, 0, 7); ctx.fill(); ctx.fillStyle = c([28, 40, 58 - i * 8]); ctx.beginPath(); ctx.arc(ax, ay - 2 - hop, 5, 0, 7); ctx.fill(); ctx.beginPath(); ctx.arc(ax, ay + 9 - hop, 8, Math.PI, 0); ctx.fill(); }
+    for (let i = 0; i < 3; i++) { const ax = mx - MW / 2 + 16, ay = my - MH / 2 + 16 + i * 26, hop = goal ? Math.abs(Math.sin((t - g0) * 12 + i)) * 5 : 0; ctx.fillStyle = c([P.cyan, P.gold, P.mint][i], -6); ctx.beginPath(); ctx.arc(ax, ay - hop, 10, 0, 7); ctx.fill(); ctx.fillStyle = c([32, 40, 58 - i * 8]); ctx.beginPath(); ctx.arc(ax, ay - 2 - hop, 5, 0, 7); ctx.fill(); ctx.beginPath(); ctx.arc(ax, ay + 9 - hop, 8, Math.PI, 0); ctx.fill(); }
     if (goal) { ctx.fillStyle = c(P.goldHi, 0, 0.9); L.text(ctx, '¡GOL!', mx + 10, my + 12, '900 34px Nunito', c(P.goldHi), { stroke: c(P.navy), sw: 5 }); }
     ctx.restore();
     ctx.save(); ctx.globalCompositeOperation = 'lighter'; const sh = ctx.createLinearGradient(mx - MW / 2, my - MH / 2, mx + MW / 2, my + MH / 2); sh.addColorStop(0, 'rgba(255,255,255,0.16)'); sh.addColorStop(0.35, 'rgba(255,255,255,0)'); ctx.fillStyle = sh; ctx.fillRect(mx - MW / 2, my - MH / 2, MW, MH); ctx.restore();
@@ -604,8 +604,8 @@
       const hx = lerp(R.x0 - 60, px - 30, sn), hy = py - 38 - Math.sin(t * 8) * 3 * sn;
       ctx.lineCap = 'round'; ctx.strokeStyle = c([218, 52, 26]); ctx.lineWidth = 26; ctx.beginPath(); ctx.moveTo(R.x0 - 140, hy + 10); ctx.lineTo(hx - 18, hy); ctx.stroke();
       ctx.strokeStyle = c(P.gold); ctx.lineWidth = 5; ctx.beginPath(); ctx.moveTo(hx - 30, hy - 12); ctx.lineTo(hx - 30, hy + 12); ctx.stroke();
-      shade(ctx, ell(hx, hy, 13, 11), [27, 40, 58], hy - 11, hy + 11);
-      for (let i = 0; i < 3; i++) { ctx.fillStyle = c([27, 40, 54]); ctx.beginPath(); ctx.ellipse(hx + 12, hy - 6 + i * 6, 6, 3, 0, 0, 7); ctx.fill(); }
+      shade(ctx, ell(hx, hy, 13, 11), [31, 40, 58], hy - 11, hy + 11);
+      for (let i = 0; i < 3; i++) { ctx.fillStyle = c([31, 40, 54]); ctx.beginPath(); ctx.ellipse(hx + 12, hy - 6 + i * 6, 6, 3, 0, 0, 7); ctx.fill(); }
     }
     if (tapK > 0.05) { L.depth(ctx, 0.55); const sx2 = px - 40, sy2 = py - 50; ctx.save(); ctx.globalCompositeOperation = 'lighter'; for (let i = 0; i < 8; i++) { const a = i * Math.PI / 4, r1 = 14 + (1 - tapK) * 30, r2 = r1 + 18 * tapK; ctx.strokeStyle = c(P.goldHi, 0, tapK); ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(sx2 + Math.cos(a) * r1, sy2 + Math.sin(a) * r1); ctx.lineTo(sx2 + Math.cos(a) * r2, sy2 + Math.sin(a) * r2); ctx.stroke(); } ctx.restore(); }
     bubble(ctx, -150, -322, '¡Quieto!', t, EV.mamaTap - 0.02, EV.mamaTap + 1.1, { size: 32, tail: -20 });
